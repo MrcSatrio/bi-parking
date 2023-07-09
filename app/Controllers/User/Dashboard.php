@@ -51,7 +51,7 @@ class Dashboard extends BaseController
 
         $berkasModel = new PengumumanModel();
         $data['berkas'] = $berkasModel->findAll();
-
-        return view('r_user/dashboard', $data);
+        
+        return view('r_user/dashboard', $data);        
     }
 }

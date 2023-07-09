@@ -51,16 +51,18 @@ class Auth extends BaseController
                 } elseif ($user['id_role'] == 3) {
                     return redirect()->to('/operator/dashboard');
                 } else {
-                    return redirect()->to('/user/dashboard');
-                }
-            } else {
-                return redirect()->to('/')->withInput()->with('msg', 'NIM atau Password Salah');
+                    $popup = session('popup');
+                    if ($popup === 'show') {
+                        $data['showPopup'] = true;
+                        session()->remove('popup'); // Hapus flash data 'popup' setelah ditampilkan
+                    } else {
+                        $data['showPopup'] = false;
+                    }
+                    return redirect()->to('/user/dashboard')->with('popup', 'show')->with('data', $data);
+                }                
             }
-        } else {
-            return redirect()->to('/')->withInput()->with('msg', 'Hubungi Administrator Terkait' . $npm);
-        }
     }
-    
+    }
 
     public function logout()
     {

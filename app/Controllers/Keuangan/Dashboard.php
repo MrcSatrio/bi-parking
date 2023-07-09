@@ -20,13 +20,23 @@ class Dashboard extends BaseController
 
         // Hitung total nominal transaksi yang disetujui selama sebulan
         $totalApprovedNominal = $this->transaksiModel
-            ->selectSum('nominal_transaksi')
-            ->join('status_transaksi', 'status_transaksi.id_status_transaksi = transaksi.id_status_transaksi')
-            ->join('jenis_transaksi', 'jenis_transaksi.id_jenis_transaksi = transaksi.id_jenis_transaksi')
-            ->where('status_transaksi.id_status_transaksi', '3') // Filter status transaksi yang disetujui
-            ->where('transaksi.updated_at >=', $startDate) // Filter transaksi mulai dari tanggal awal
-            ->where('transaksi.updated_at <=', $endDate) // Filter transaksi sampai tanggal akhir
-            ->first();
+        ->selectSum('nominal_transaksi')
+        ->join('status_transaksi', 'status_transaksi.id_status_transaksi = transaksi.id_status_transaksi')
+        ->join('jenis_transaksi', 'jenis_transaksi.id_jenis_transaksi = transaksi.id_jenis_transaksi')
+        ->where('status_transaksi.id_status_transaksi', '3') // Filter status transaksi yang disetujui
+        ->where('transaksi.updated_at >=', $startDate) // Filter transaksi mulai dari tanggal awal
+        ->where('transaksi.updated_at <=', $endDate) // Filter transaksi sampai tanggal akhir
+        ->first();
+
+        $monthlyData = $this->transaksiModel
+        ->select("DATE_FORMAT(updated_at, '%M') as month, SUM(nominal_transaksi) as total_nominal")
+        ->join('status_transaksi', 'status_transaksi.id_status_transaksi = transaksi.id_status_transaksi')
+        ->join('jenis_transaksi', 'jenis_transaksi.id_jenis_transaksi = transaksi.id_jenis_transaksi')
+        ->where('status_transaksi.id_status_transaksi', '3') // Filter status transaksi yang disetujui
+        ->where('transaksi.updated_at >=', date('Y-01-01')) // Filter transaksi mulai dari Januari
+        ->where('transaksi.updated_at <=', date('Y-12-t')) // Filter transaksi sampai Desember
+        ->groupBy('month')
+        ->findAll();    
 
         $data = [
             'title' => 'Parking Management System',
@@ -48,7 +58,8 @@ class Dashboard extends BaseController
                 ->findAll(),
             'role' => $this->roleModel->findAll(),
             'pager' => $this->pager->makeLinks($offset, $limit, $totalRows, 'pagination'),
-            'totalApprovedNominal' => $totalApprovedNominal['nominal_transaksi'] // Jumlah total nominal transaksi yang disetujui
+            'totalApprovedNominal' => $totalApprovedNominal['nominal_transaksi'], // Jumlah total nominal transaksi yang disetujui
+            'monthlyData' => $monthlyData
         ];
 
         return view('r_keuangan/dashboard', $data);

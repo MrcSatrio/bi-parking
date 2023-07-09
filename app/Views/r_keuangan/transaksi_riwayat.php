@@ -30,6 +30,7 @@
                 <option value="3">Approved</option>
                 <option value="1">Pending</option>
                 <option value="4">Cancel</option>
+                <option value="2">Parkir</option>
             </select>
         </div>
         <div class="input-group-append">

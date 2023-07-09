@@ -1,7 +1,11 @@
 <?= $this->extend('template/index');
 
 $this->section('page_content'); ?>
-
+<?php if(session()->getFlashdata('error')): ?>
+    <div class="alert alert-danger">
+        <?= session()->getFlashdata('error') ?>
+    </div>
+<?php endif; ?>
 <div class="row justify-content-center">
     <div class="col">
         <div class="card shadow mx-2">
@@ -24,6 +28,7 @@ $this->section('page_content'); ?>
                 <option value="3">Approved</option>
                 <option value="1">Pending</option>
                 <option value="4">Cancel</option>
+                <option value="2">Parkir</option>
             </select>
         </div>
         <div class="input-group-append">
