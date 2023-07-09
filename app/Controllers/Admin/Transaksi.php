@@ -377,14 +377,18 @@ public function transaksi_result($booking_code, $nominal_saldo, $id_jenis_pembay
                     ->where('npm', session('npm'))
                     ->first(),
                 'transaksi' => $this->transaksiModel
+                    ->join('user', 'user.npm = transaksi.npm')
                     ->join('jenis_transaksi', 'jenis_transaksi.id_jenis_transaksi = transaksi.id_jenis_transaksi')
                     ->join('status_transaksi', 'status_transaksi.id_status_transaksi = transaksi.id_status_transaksi')
-                    ->orderBy('created_at', 'DESC')
+                    ->join('jenis_pembayaran', 'jenis_pembayaran.id_jenis_pembayaran = transaksi.id_jenis_pembayaran')
+                    ->orderBy('transaksi.updated_at', 'DESC')
                     ->paginate($limit, 'pagination'),
                 'pager' => $this->transaksiModel
+                    ->join('user', 'user.npm = transaksi.npm')
                     ->join('jenis_transaksi', 'jenis_transaksi.id_jenis_transaksi = transaksi.id_jenis_transaksi')
                     ->join('status_transaksi', 'status_transaksi.id_status_transaksi = transaksi.id_status_transaksi')
-                    ->orderBy('created_at', 'DESC')
+                    ->join('jenis_pembayaran', 'jenis_pembayaran.id_jenis_pembayaran = transaksi.id_jenis_pembayaran')
+                    ->orderBy('transaksi.updated_at', 'DESC')
                     ->pager,
                 'currentPage' => $currentPage,
                 'limit' => $limit,

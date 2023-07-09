@@ -2,7 +2,7 @@
 
 namespace App\Controllers\Keuangan;
 
-use \App\Controllers\BaseController;
+use App\Controllers\BaseController;
 
 class Transaksi extends BaseController
 {
@@ -154,7 +154,7 @@ class Transaksi extends BaseController
 
     return view('r_keuangan/transaksi_approve', $data);
 }
-    public function riwayat()
+public function riwayat()
 {
     $limit = 9; // Jumlah item per halaman
     $currentPage = $this->request->getVar('page_pagination') ? $this->request->getVar('page_pagination') : 1;
@@ -172,14 +172,14 @@ class Transaksi extends BaseController
             ->join('jenis_pembayaran', 'jenis_pembayaran.id_jenis_pembayaran = transaksi.id_jenis_pembayaran')
             ->whereIn('transaksi.id_jenis_transaksi', [1, 2]) // Menggunakan whereIn untuk mencari id_jenis_transaksi 1 atau 2
             ->orderBy('transaksi.updated_at', 'DESC') // Menentukan kolom updated_at secara spesifik
-            ->paginate($limit, 'transaksi_pagination'),
+            ->paginate($limit, 'pagination'),
         'pager' => $this->transaksiModel
             ->join('user', 'user.npm = transaksi.npm')
             ->join('jenis_transaksi', 'jenis_transaksi.id_jenis_transaksi = transaksi.id_jenis_transaksi')
             ->join('status_transaksi', 'status_transaksi.id_status_transaksi = transaksi.id_status_transaksi')
             ->join('jenis_pembayaran', 'jenis_pembayaran.id_jenis_pembayaran = transaksi.id_jenis_pembayaran')
             ->whereIn('transaksi.id_jenis_transaksi', [1, 2]) // Menggunakan whereIn untuk mencari id_jenis_transaksi 1 atau 2
-            ->orderBy('transaksi.created_at', 'DESC') // Menentukan kolom created_at secara spesifik
+            ->orderBy('transaksi.updated_at', 'DESC') // Menentukan kolom created_at secara spesifik
             ->pager,
         'currentPage' => $currentPage,
         'limit' => $limit,

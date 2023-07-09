@@ -2755,3 +2755,334 @@ INFO - 2023-07-09 22:31:18 --> Session: Class initialized using 'CodeIgniter\Ses
 INFO - 2023-07-09 22:31:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
 INFO - 2023-07-09 22:31:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
 INFO - 2023-07-09 22:31:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-07-09 22:51:41 --> mysqli_sql_exception: Not unique table/alias: 'status_transaksi' in C:\xampp\htdocs\bi-parking\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\bi-parking\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT COUNT(*)...', 0)
+#1 C:\xampp\htdocs\bi-parking\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 C:\xampp\htdocs\bi-parking\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 C:\xampp\htdocs\bi-parking\system\Database\BaseBuilder.php(1700): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 C:\xampp\htdocs\bi-parking\system\Model.php(606): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+#5 C:\xampp\htdocs\bi-parking\system\BaseModel.php(1188): CodeIgniter\Model->countAllResults(false)
+#6 C:\xampp\htdocs\bi-parking\app\Controllers\Admin\Transaksi.php(385): CodeIgniter\BaseModel->paginate(9, 'pagination')
+#7 C:\xampp\htdocs\bi-parking\system\CodeIgniter.php(934): App\Controllers\Admin\Transaksi->riwayat()
+#8 C:\xampp\htdocs\bi-parking\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Transaksi))
+#9 C:\xampp\htdocs\bi-parking\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\ParkingManagementSystem\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-07-09 22:51:41 --> Not unique table/alias: 'status_transaksi'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT COUNT(*) AS `numrows`
+FROM `transaksi`
+JOIN `jenis_transaksi` ON `jenis_transaksi`.`id_jenis_transaksi` = `transaksi`.`id_jenis_transaksi`
+JOIN `status_transaksi` ON `status_transaksi`.`id_status_transaksi` = `transaksi`.`id_status_transaksi`
+JOIN `status_transaksi` ON `status_transaksi`.`id_status_transaksi` = `transaksi`.`id_status_transaksi`
+JOIN `jenis_pembayaran` ON `jenis_pembayaran`.`id_jenis_pembayaran` = `transaksi`.`id_jenis_pembayaran`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `transaksi`
+JOIN `jenis_transaksi` ON `jenis_transaksi`.`id_jenis_transaksi` = `transaksi`.`id_jenis_transaksi`
+JOIN `status_transaksi` ON `status_transaksi`.`id_status_transaksi` = `transaksi`.`id_status_transaksi`
+JOIN `status_transaksi` ON `status_transaksi`.`id_status_transaksi` = `transaksi`.`id_status_transaksi`
+JOIN `jenis_pembayaran` ON `jenis_pembayaran`.`id_jenis_pembayaran` = `transaksi`.`id_jenis_pembayaran`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `transaksi`
+JOIN `jenis_transaksi` ON `jenis_transaksi`.`id_jenis_transaksi` = `transaksi`.`id_jenis_transaksi`
+JOIN `status_transaksi` ON `status_transaksi`.`id_status_transaksi` = `transaksi`.`id_status_transaksi`
+JOIN `status_transaksi` ON `status_transaksi`.`id_status_transaksi` = `transaksi`.`id_status_transaksi`
+JOIN `jenis_pembayaran` ON `jenis_pembayaran`.`id_jenis_pembayaran` = `transaksi`.`id_jenis_pembayaran`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1700): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `transaksi`
+JOIN `jenis_transaksi` ON `jenis_transaksi`.`id_jenis_transaksi` = `transaksi`.`id_jenis_transaksi`
+JOIN `status_transaksi` ON `status_transaksi`.`id_status_transaksi` = `transaksi`.`id_status_transaksi`
+JOIN `status_transaksi` ON `status_transaksi`.`id_status_transaksi` = `transaksi`.`id_status_transaksi`
+JOIN `jenis_pembayaran` ON `jenis_pembayaran`.`id_jenis_pembayaran` = `transaksi`.`id_jenis_pembayaran`', [], false)
+ 5 SYSTEMPATH\Model.php(606): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 6 SYSTEMPATH\BaseModel.php(1188): CodeIgniter\Model->countAllResults(false)
+ 7 APPPATH\Controllers\Admin\Transaksi.php(385): CodeIgniter\BaseModel->paginate(9, 'pagination')
+ 8 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin\Transaksi->riwayat()
+ 9 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Transaksi))
+10 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-07-09 22:52:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-07-09 22:52:33 --> mysqli_sql_exception: Not unique table/alias: 'status_transaksi' in C:\xampp\htdocs\bi-parking\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\bi-parking\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT COUNT(*)...', 0)
+#1 C:\xampp\htdocs\bi-parking\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 C:\xampp\htdocs\bi-parking\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 C:\xampp\htdocs\bi-parking\system\Database\BaseBuilder.php(1700): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 C:\xampp\htdocs\bi-parking\system\Model.php(606): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+#5 C:\xampp\htdocs\bi-parking\system\BaseModel.php(1188): CodeIgniter\Model->countAllResults(false)
+#6 C:\xampp\htdocs\bi-parking\app\Controllers\Admin\Transaksi.php(385): CodeIgniter\BaseModel->paginate(9, 'pagination')
+#7 C:\xampp\htdocs\bi-parking\system\CodeIgniter.php(934): App\Controllers\Admin\Transaksi->riwayat()
+#8 C:\xampp\htdocs\bi-parking\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Transaksi))
+#9 C:\xampp\htdocs\bi-parking\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\ParkingManagementSystem\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-07-09 22:52:33 --> Not unique table/alias: 'status_transaksi'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT COUNT(*) AS `numrows`
+FROM `transaksi`
+JOIN `jenis_transaksi` ON `jenis_transaksi`.`id_jenis_transaksi` = `transaksi`.`id_jenis_transaksi`
+JOIN `status_transaksi` ON `status_transaksi`.`id_status_transaksi` = `transaksi`.`id_status_transaksi`
+JOIN `status_transaksi` ON `status_transaksi`.`id_status_transaksi` = `transaksi`.`id_status_transaksi`
+JOIN `jenis_pembayaran` ON `jenis_pembayaran`.`id_jenis_pembayaran` = `transaksi`.`id_jenis_pembayaran`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `transaksi`
+JOIN `jenis_transaksi` ON `jenis_transaksi`.`id_jenis_transaksi` = `transaksi`.`id_jenis_transaksi`
+JOIN `status_transaksi` ON `status_transaksi`.`id_status_transaksi` = `transaksi`.`id_status_transaksi`
+JOIN `status_transaksi` ON `status_transaksi`.`id_status_transaksi` = `transaksi`.`id_status_transaksi`
+JOIN `jenis_pembayaran` ON `jenis_pembayaran`.`id_jenis_pembayaran` = `transaksi`.`id_jenis_pembayaran`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `transaksi`
+JOIN `jenis_transaksi` ON `jenis_transaksi`.`id_jenis_transaksi` = `transaksi`.`id_jenis_transaksi`
+JOIN `status_transaksi` ON `status_transaksi`.`id_status_transaksi` = `transaksi`.`id_status_transaksi`
+JOIN `status_transaksi` ON `status_transaksi`.`id_status_transaksi` = `transaksi`.`id_status_transaksi`
+JOIN `jenis_pembayaran` ON `jenis_pembayaran`.`id_jenis_pembayaran` = `transaksi`.`id_jenis_pembayaran`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1700): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `transaksi`
+JOIN `jenis_transaksi` ON `jenis_transaksi`.`id_jenis_transaksi` = `transaksi`.`id_jenis_transaksi`
+JOIN `status_transaksi` ON `status_transaksi`.`id_status_transaksi` = `transaksi`.`id_status_transaksi`
+JOIN `status_transaksi` ON `status_transaksi`.`id_status_transaksi` = `transaksi`.`id_status_transaksi`
+JOIN `jenis_pembayaran` ON `jenis_pembayaran`.`id_jenis_pembayaran` = `transaksi`.`id_jenis_pembayaran`', [], false)
+ 5 SYSTEMPATH\Model.php(606): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 6 SYSTEMPATH\BaseModel.php(1188): CodeIgniter\Model->countAllResults(false)
+ 7 APPPATH\Controllers\Admin\Transaksi.php(385): CodeIgniter\BaseModel->paginate(9, 'pagination')
+ 8 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin\Transaksi->riwayat()
+ 9 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Transaksi))
+10 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-07-09 22:53:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-09 22:53:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-09 22:53:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-07-09 22:53:22 --> mysqli_sql_exception: Not unique table/alias: 'status_transaksi' in C:\xampp\htdocs\bi-parking\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\bi-parking\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT COUNT(*)...', 0)
+#1 C:\xampp\htdocs\bi-parking\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 C:\xampp\htdocs\bi-parking\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 C:\xampp\htdocs\bi-parking\system\Database\BaseBuilder.php(1700): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 C:\xampp\htdocs\bi-parking\system\Model.php(606): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+#5 C:\xampp\htdocs\bi-parking\system\BaseModel.php(1188): CodeIgniter\Model->countAllResults(false)
+#6 C:\xampp\htdocs\bi-parking\app\Controllers\Admin\Transaksi.php(385): CodeIgniter\BaseModel->paginate(9, 'pagination')
+#7 C:\xampp\htdocs\bi-parking\system\CodeIgniter.php(934): App\Controllers\Admin\Transaksi->riwayat()
+#8 C:\xampp\htdocs\bi-parking\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Transaksi))
+#9 C:\xampp\htdocs\bi-parking\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\ParkingManagementSystem\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-07-09 22:53:22 --> Not unique table/alias: 'status_transaksi'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT COUNT(*) AS `numrows`
+FROM `transaksi`
+JOIN `jenis_transaksi` ON `jenis_transaksi`.`id_jenis_transaksi` = `transaksi`.`id_jenis_transaksi`
+JOIN `status_transaksi` ON `status_transaksi`.`id_status_transaksi` = `transaksi`.`id_status_transaksi`
+JOIN `status_transaksi` ON `status_transaksi`.`id_status_transaksi` = `transaksi`.`id_status_transaksi`
+JOIN `jenis_pembayaran` ON `jenis_pembayaran`.`id_jenis_pembayaran` = `transaksi`.`id_jenis_pembayaran`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `transaksi`
+JOIN `jenis_transaksi` ON `jenis_transaksi`.`id_jenis_transaksi` = `transaksi`.`id_jenis_transaksi`
+JOIN `status_transaksi` ON `status_transaksi`.`id_status_transaksi` = `transaksi`.`id_status_transaksi`
+JOIN `status_transaksi` ON `status_transaksi`.`id_status_transaksi` = `transaksi`.`id_status_transaksi`
+JOIN `jenis_pembayaran` ON `jenis_pembayaran`.`id_jenis_pembayaran` = `transaksi`.`id_jenis_pembayaran`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `transaksi`
+JOIN `jenis_transaksi` ON `jenis_transaksi`.`id_jenis_transaksi` = `transaksi`.`id_jenis_transaksi`
+JOIN `status_transaksi` ON `status_transaksi`.`id_status_transaksi` = `transaksi`.`id_status_transaksi`
+JOIN `status_transaksi` ON `status_transaksi`.`id_status_transaksi` = `transaksi`.`id_status_transaksi`
+JOIN `jenis_pembayaran` ON `jenis_pembayaran`.`id_jenis_pembayaran` = `transaksi`.`id_jenis_pembayaran`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1700): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `transaksi`
+JOIN `jenis_transaksi` ON `jenis_transaksi`.`id_jenis_transaksi` = `transaksi`.`id_jenis_transaksi`
+JOIN `status_transaksi` ON `status_transaksi`.`id_status_transaksi` = `transaksi`.`id_status_transaksi`
+JOIN `status_transaksi` ON `status_transaksi`.`id_status_transaksi` = `transaksi`.`id_status_transaksi`
+JOIN `jenis_pembayaran` ON `jenis_pembayaran`.`id_jenis_pembayaran` = `transaksi`.`id_jenis_pembayaran`', [], false)
+ 5 SYSTEMPATH\Model.php(606): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 6 SYSTEMPATH\BaseModel.php(1188): CodeIgniter\Model->countAllResults(false)
+ 7 APPPATH\Controllers\Admin\Transaksi.php(385): CodeIgniter\BaseModel->paginate(9, 'pagination')
+ 8 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin\Transaksi->riwayat()
+ 9 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Transaksi))
+10 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-07-09 22:53:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-09 22:54:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-07-09 22:54:37 --> mysqli_sql_exception: Not unique table/alias: 'status_transaksi' in C:\xampp\htdocs\bi-parking\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\bi-parking\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT COUNT(*)...', 0)
+#1 C:\xampp\htdocs\bi-parking\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 C:\xampp\htdocs\bi-parking\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 C:\xampp\htdocs\bi-parking\system\Database\BaseBuilder.php(1700): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 C:\xampp\htdocs\bi-parking\system\Model.php(606): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+#5 C:\xampp\htdocs\bi-parking\system\BaseModel.php(1188): CodeIgniter\Model->countAllResults(false)
+#6 C:\xampp\htdocs\bi-parking\app\Controllers\Admin\Transaksi.php(385): CodeIgniter\BaseModel->paginate(9, 'pagination')
+#7 C:\xampp\htdocs\bi-parking\system\CodeIgniter.php(934): App\Controllers\Admin\Transaksi->riwayat()
+#8 C:\xampp\htdocs\bi-parking\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Transaksi))
+#9 C:\xampp\htdocs\bi-parking\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\ParkingManagementSystem\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-07-09 22:54:37 --> Not unique table/alias: 'status_transaksi'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT COUNT(*) AS `numrows`
+FROM `transaksi`
+JOIN `jenis_transaksi` ON `jenis_transaksi`.`id_jenis_transaksi` = `transaksi`.`id_jenis_transaksi`
+JOIN `status_transaksi` ON `status_transaksi`.`id_status_transaksi` = `transaksi`.`id_status_transaksi`
+JOIN `status_transaksi` ON `status_transaksi`.`id_status_transaksi` = `transaksi`.`id_status_transaksi`
+JOIN `jenis_pembayaran` ON `jenis_pembayaran`.`id_jenis_pembayaran` = `transaksi`.`id_jenis_pembayaran`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `transaksi`
+JOIN `jenis_transaksi` ON `jenis_transaksi`.`id_jenis_transaksi` = `transaksi`.`id_jenis_transaksi`
+JOIN `status_transaksi` ON `status_transaksi`.`id_status_transaksi` = `transaksi`.`id_status_transaksi`
+JOIN `status_transaksi` ON `status_transaksi`.`id_status_transaksi` = `transaksi`.`id_status_transaksi`
+JOIN `jenis_pembayaran` ON `jenis_pembayaran`.`id_jenis_pembayaran` = `transaksi`.`id_jenis_pembayaran`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `transaksi`
+JOIN `jenis_transaksi` ON `jenis_transaksi`.`id_jenis_transaksi` = `transaksi`.`id_jenis_transaksi`
+JOIN `status_transaksi` ON `status_transaksi`.`id_status_transaksi` = `transaksi`.`id_status_transaksi`
+JOIN `status_transaksi` ON `status_transaksi`.`id_status_transaksi` = `transaksi`.`id_status_transaksi`
+JOIN `jenis_pembayaran` ON `jenis_pembayaran`.`id_jenis_pembayaran` = `transaksi`.`id_jenis_pembayaran`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1700): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `transaksi`
+JOIN `jenis_transaksi` ON `jenis_transaksi`.`id_jenis_transaksi` = `transaksi`.`id_jenis_transaksi`
+JOIN `status_transaksi` ON `status_transaksi`.`id_status_transaksi` = `transaksi`.`id_status_transaksi`
+JOIN `status_transaksi` ON `status_transaksi`.`id_status_transaksi` = `transaksi`.`id_status_transaksi`
+JOIN `jenis_pembayaran` ON `jenis_pembayaran`.`id_jenis_pembayaran` = `transaksi`.`id_jenis_pembayaran`', [], false)
+ 5 SYSTEMPATH\Model.php(606): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 6 SYSTEMPATH\BaseModel.php(1188): CodeIgniter\Model->countAllResults(false)
+ 7 APPPATH\Controllers\Admin\Transaksi.php(385): CodeIgniter\BaseModel->paginate(9, 'pagination')
+ 8 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin\Transaksi->riwayat()
+ 9 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Transaksi))
+10 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-07-09 22:54:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-07-09 22:54:38 --> mysqli_sql_exception: Not unique table/alias: 'status_transaksi' in C:\xampp\htdocs\bi-parking\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\bi-parking\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT COUNT(*)...', 0)
+#1 C:\xampp\htdocs\bi-parking\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 C:\xampp\htdocs\bi-parking\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 C:\xampp\htdocs\bi-parking\system\Database\BaseBuilder.php(1700): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 C:\xampp\htdocs\bi-parking\system\Model.php(606): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+#5 C:\xampp\htdocs\bi-parking\system\BaseModel.php(1188): CodeIgniter\Model->countAllResults(false)
+#6 C:\xampp\htdocs\bi-parking\app\Controllers\Admin\Transaksi.php(385): CodeIgniter\BaseModel->paginate(9, 'pagination')
+#7 C:\xampp\htdocs\bi-parking\system\CodeIgniter.php(934): App\Controllers\Admin\Transaksi->riwayat()
+#8 C:\xampp\htdocs\bi-parking\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Transaksi))
+#9 C:\xampp\htdocs\bi-parking\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\ParkingManagementSystem\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-07-09 22:54:38 --> Not unique table/alias: 'status_transaksi'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT COUNT(*) AS `numrows`
+FROM `transaksi`
+JOIN `jenis_transaksi` ON `jenis_transaksi`.`id_jenis_transaksi` = `transaksi`.`id_jenis_transaksi`
+JOIN `status_transaksi` ON `status_transaksi`.`id_status_transaksi` = `transaksi`.`id_status_transaksi`
+JOIN `status_transaksi` ON `status_transaksi`.`id_status_transaksi` = `transaksi`.`id_status_transaksi`
+JOIN `jenis_pembayaran` ON `jenis_pembayaran`.`id_jenis_pembayaran` = `transaksi`.`id_jenis_pembayaran`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `transaksi`
+JOIN `jenis_transaksi` ON `jenis_transaksi`.`id_jenis_transaksi` = `transaksi`.`id_jenis_transaksi`
+JOIN `status_transaksi` ON `status_transaksi`.`id_status_transaksi` = `transaksi`.`id_status_transaksi`
+JOIN `status_transaksi` ON `status_transaksi`.`id_status_transaksi` = `transaksi`.`id_status_transaksi`
+JOIN `jenis_pembayaran` ON `jenis_pembayaran`.`id_jenis_pembayaran` = `transaksi`.`id_jenis_pembayaran`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `transaksi`
+JOIN `jenis_transaksi` ON `jenis_transaksi`.`id_jenis_transaksi` = `transaksi`.`id_jenis_transaksi`
+JOIN `status_transaksi` ON `status_transaksi`.`id_status_transaksi` = `transaksi`.`id_status_transaksi`
+JOIN `status_transaksi` ON `status_transaksi`.`id_status_transaksi` = `transaksi`.`id_status_transaksi`
+JOIN `jenis_pembayaran` ON `jenis_pembayaran`.`id_jenis_pembayaran` = `transaksi`.`id_jenis_pembayaran`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1700): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `transaksi`
+JOIN `jenis_transaksi` ON `jenis_transaksi`.`id_jenis_transaksi` = `transaksi`.`id_jenis_transaksi`
+JOIN `status_transaksi` ON `status_transaksi`.`id_status_transaksi` = `transaksi`.`id_status_transaksi`
+JOIN `status_transaksi` ON `status_transaksi`.`id_status_transaksi` = `transaksi`.`id_status_transaksi`
+JOIN `jenis_pembayaran` ON `jenis_pembayaran`.`id_jenis_pembayaran` = `transaksi`.`id_jenis_pembayaran`', [], false)
+ 5 SYSTEMPATH\Model.php(606): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 6 SYSTEMPATH\BaseModel.php(1188): CodeIgniter\Model->countAllResults(false)
+ 7 APPPATH\Controllers\Admin\Transaksi.php(385): CodeIgniter\BaseModel->paginate(9, 'pagination')
+ 8 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin\Transaksi->riwayat()
+ 9 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Transaksi))
+10 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-07-09 22:56:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-07-09 22:56:32 --> Undefined array key "nama"
+in APPPATH\Views\r_admin\transaksi_riwayat.php on line 70.
+ 1 APPPATH\Views\r_admin\transaksi_riwayat.php(70): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nama"', 'C:\\xampp\\htdocs\\bi-parking\\app\\Views\\r_admin\\transaksi_riwayat.php', 70)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\bi-parking\\app\\Views\\r_admin\\transaksi_riwayat.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('r_admin/transaksi_riwayat', [], true)
+ 5 APPPATH\Controllers\Admin\Transaksi.php(396): view('r_admin/transaksi_riwayat', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin\Transaksi->riwayat()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Transaksi))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-07-09 22:57:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-07-09 22:57:17 --> mysqli_sql_exception: Column 'created_at' in order clause is ambiguous in C:\xampp\htdocs\bi-parking\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\bi-parking\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\bi-parking\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\bi-parking\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\bi-parking\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\bi-parking\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\bi-parking\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(9, 0)
+#6 C:\xampp\htdocs\bi-parking\system\BaseModel.php(1192): CodeIgniter\BaseModel->findAll(9, 0)
+#7 C:\xampp\htdocs\bi-parking\app\Controllers\Admin\Transaksi.php(385): CodeIgniter\BaseModel->paginate(9, 'pagination')
+#8 C:\xampp\htdocs\bi-parking\system\CodeIgniter.php(934): App\Controllers\Admin\Transaksi->riwayat()
+#9 C:\xampp\htdocs\bi-parking\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Transaksi))
+#10 C:\xampp\htdocs\bi-parking\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\ParkingManagementSystem\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-07-09 22:57:17 --> Column 'created_at' in order clause is ambiguous
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *
+FROM `transaksi`
+JOIN `user` ON `user`.`npm` = `transaksi`.`npm`
+JOIN `jenis_transaksi` ON `jenis_transaksi`.`id_jenis_transaksi` = `transaksi`.`id_jenis_transaksi`
+JOIN `status_transaksi` ON `status_transaksi`.`id_status_transaksi` = `transaksi`.`id_status_transaksi`
+JOIN `jenis_pembayaran` ON `jenis_pembayaran`.`id_jenis_pembayaran` = `transaksi`.`id_jenis_pembayaran`
+ORDER BY `created_at` DESC
+ LIMIT 9', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `transaksi`
+JOIN `user` ON `user`.`npm` = `transaksi`.`npm`
+JOIN `jenis_transaksi` ON `jenis_transaksi`.`id_jenis_transaksi` = `transaksi`.`id_jenis_transaksi`
+JOIN `status_transaksi` ON `status_transaksi`.`id_status_transaksi` = `transaksi`.`id_status_transaksi`
+JOIN `jenis_pembayaran` ON `jenis_pembayaran`.`id_jenis_pembayaran` = `transaksi`.`id_jenis_pembayaran`
+ORDER BY `created_at` DESC
+ LIMIT 9')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `transaksi`
+JOIN `user` ON `user`.`npm` = `transaksi`.`npm`
+JOIN `jenis_transaksi` ON `jenis_transaksi`.`id_jenis_transaksi` = `transaksi`.`id_jenis_transaksi`
+JOIN `status_transaksi` ON `status_transaksi`.`id_status_transaksi` = `transaksi`.`id_status_transaksi`
+JOIN `jenis_pembayaran` ON `jenis_pembayaran`.`id_jenis_pembayaran` = `transaksi`.`id_jenis_pembayaran`
+ORDER BY `created_at` DESC
+ LIMIT 9')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `transaksi`
+JOIN `user` ON `user`.`npm` = `transaksi`.`npm`
+JOIN `jenis_transaksi` ON `jenis_transaksi`.`id_jenis_transaksi` = `transaksi`.`id_jenis_transaksi`
+JOIN `status_transaksi` ON `status_transaksi`.`id_status_transaksi` = `transaksi`.`id_status_transaksi`
+JOIN `jenis_pembayaran` ON `jenis_pembayaran`.`id_jenis_pembayaran` = `transaksi`.`id_jenis_pembayaran`
+ORDER BY `created_at` DESC
+ LIMIT 9', [], false)
+ 5 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(9, 0)
+ 7 SYSTEMPATH\BaseModel.php(1192): CodeIgniter\BaseModel->findAll(9, 0)
+ 8 APPPATH\Controllers\Admin\Transaksi.php(385): CodeIgniter\BaseModel->paginate(9, 'pagination')
+ 9 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin\Transaksi->riwayat()
+10 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Transaksi))
+11 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-07-09 22:58:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-09 22:58:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-09 22:58:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-09 22:58:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-09 22:58:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-09 22:58:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-09 22:58:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-09 22:58:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-09 22:58:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-09 22:58:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-09 22:59:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-09 22:59:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-09 22:59:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-09 22:59:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-09 22:59:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-09 22:59:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-09 23:00:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-09 23:07:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-09 23:07:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
