@@ -91,7 +91,7 @@
         </button>
         <?php if ($tr['id_status_transaksi'] == 1) : ?>
             <div class="dropdown-menu shadow">
-                <form method="POST" action="<?= base_url(); ?>user/cancel/<?= $tr['id_transaksi']; ?>">
+            <form method="POST" action="<?= base_url(); ?>user/cancel/<?= base64_encode($tr['id_transaksi']); ?>">
                     <input type="hidden" name="id_status_transaksi" value="4">
                     <button type="submit" class="dropdown-item btn btn-danger" onclick="return confirm('Apakah Anda yakin ingin membatalkan?')">Batalkan</button>
                 </form>

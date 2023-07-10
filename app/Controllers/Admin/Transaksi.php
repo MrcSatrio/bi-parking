@@ -406,10 +406,12 @@ public function transaksi_result($booking_code, $nominal_saldo, $id_jenis_pembay
     ];
     $logModel = new \App\Models\LogModel();
     $logModel->insert($logData);
+    
+    $id_transaksi_decoded = base64_decode($id_transaksi);
 
     $data = $this->request->getPost();
-    if (isset($data['id_transaksi']) && $data['id_transaksi'] !== $id_transaksi) {
-        session()->setFlashdata('error', 'ID Transaksi tidak dapat diubah');
+    if (isset($data['id_transaksi']) && $data['id_transaksi'] !== $id_transaksi_decoded) {
+        session()->setFlashdata('error', 'Transaksi Tidak dapat Dibatalkan');
         return redirect()->back();
     }
 
@@ -423,14 +425,20 @@ public function transaksi_result($booking_code, $nominal_saldo, $id_jenis_pembay
     $user = $this->transaksiModel
         ->join('jenis_transaksi', 'jenis_transaksi.id_jenis_transaksi = transaksi.id_jenis_transaksi')
         ->join('status_transaksi', 'status_transaksi.id_status_transaksi = transaksi.id_status_transaksi')
-        ->where('id_transaksi', $id_transaksi)
+        ->where('id_transaksi', $id_transaksi_decoded)
         ->first();
-
-    $this->transaksiModel->update($user['id_transaksi'], $data);
-
-    session()->setFlashdata('success', 'Transaksi Berhasil Dibatalkan.');
+    
+    if ($user !== null) {
+        $this->transaksiModel->update($user['id_transaksi'], $data);
+        session()->setFlashdata('success', 'Transaksi Berhasil Dibatalkan.');
+    } else {
+        session()->setFlashdata('error', 'Transaksi Tidak dapat Dibatalkan');
+    }
+    
     return redirect()->back()->withInput();
 }
+
+    
 
     public function bukti($id_transaksi)
     {
