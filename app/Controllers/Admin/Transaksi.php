@@ -354,6 +354,13 @@ public function transaksi_result($booking_code, $nominal_saldo, $id_jenis_pembay
             ->join('role', 'role.id_role = user.id_role')
             ->where('npm', session('npm'))
             ->first(),
+        'transaksi' => $this->transaksiModel
+            ->join('user', 'user.npm = transaksi.npm')
+            ->join('jenis_transaksi', 'jenis_transaksi.id_jenis_transaksi = transaksi.id_jenis_transaksi')
+            ->join('status_transaksi', 'status_transaksi.id_status_transaksi = transaksi.id_status_transaksi')
+            ->join('jenis_pembayaran', 'jenis_pembayaran.id_jenis_pembayaran = transaksi.id_jenis_pembayaran')
+            ->where('kodebooking_transaksi', $booking_code)
+            ->first(), // Menggunakan first() untuk mendapatkan satu data transaksi saja
         'rekening' => $rekening,
         'booking_code' => $booking_code,
         'nominal_saldo' => $nominal_saldo,
@@ -363,6 +370,7 @@ public function transaksi_result($booking_code, $nominal_saldo, $id_jenis_pembay
     // Menampilkan hasil data booking code dan nominal saldo ke form transaksi_formResult
     return view('r_user/transaksi_formResult', $data);
 }
+
 
     public function riwayat()
     {
@@ -443,7 +451,7 @@ public function transaksi_result($booking_code, $nominal_saldo, $id_jenis_pembay
     public function bukti($id_transaksi)
     {
         $data = $this->request->getFile('bukti_pembayaran');
-        
+        $id_transaksi_decoded = base64_decode($id_transaksi);
         // Validasi ukuran file
         if ($data->getSize() > 4 * 1024 * 1024) {
             session()->setFlashdata('error', 'Ukuran file melebihi batas maksimum (4MB).');
@@ -458,7 +466,7 @@ public function transaksi_result($booking_code, $nominal_saldo, $id_jenis_pembay
         $user = $this->transaksiModel
             ->join('jenis_transaksi', 'jenis_transaksi.id_jenis_transaksi = transaksi.id_jenis_transaksi')
             ->join('status_transaksi', 'status_transaksi.id_status_transaksi = transaksi.id_status_transaksi')
-            ->where('id_transaksi', $id_transaksi)
+            ->where('id_transaksi', $id_transaksi_decoded)
             ->first();
     
         $this->transaksiModel->update($user['id_transaksi'], ['bukti_pembayaran' => $fileName]);

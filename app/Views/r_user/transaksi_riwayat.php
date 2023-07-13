@@ -85,40 +85,101 @@
                                     </td>
                                     <td><?= $tr['updated_at']; ?></td>
                                     <td>
-    <div class="btn-group">
-        <button type="button" class="btn btn-sm btn-secondary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-expanded="false" data-reference="parent">
-            <span class="sr-only">Toggle Dropdown</span>
-        </button>
-        <?php if ($tr['id_status_transaksi'] == 1) : ?>
-            <div class="dropdown-menu shadow">
-            <form method="POST" action="<?= base_url(); ?>user/cancel/<?= base64_encode($tr['id_transaksi']); ?>">
-                    <input type="hidden" name="id_status_transaksi" value="4">
-                    <button type="submit" class="dropdown-item btn btn-danger" onclick="return confirm('Apakah Anda yakin ingin membatalkan?')">Batalkan</button>
-                </form>
-                <?php if ($tr['id_jenis_pembayaran'] == 2 && empty($tr['bukti_pembayaran'])) : ?>
-                    <button type="button" class="dropdown-item btn btn-warning" data-toggle="modal" data-target="#uploadModal<?= $tr['id_transaksi']; ?>">Upload Bukti</button>
-                <?php endif; ?>
-            </div>
-        <?php endif; ?>
-    </div>
-</td>
-
+                                        <div class="btn-group">
+                                            <button type="button" class="btn btn-sm btn-secondary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-expanded="false" data-reference="parent">
+                                                <span class="sr-only">Toggle Dropdown</span>
+                                            </button>
+                                            <?php if ($tr['id_status_transaksi'] == 1) : ?>
+                                                <div class="dropdown-menu shadow">
+                                                    <form method="POST" action="<?= base_url(); ?>user/cancel/<?= base64_encode($tr['id_transaksi']); ?>">
+                                                        <input type="hidden" name="id_status_transaksi" value="4">
+                                                        <button type="submit" class="dropdown-item btn btn-danger" onclick="return confirm('Apakah Anda yakin ingin membatalkan?')">Batalkan</button>
+                                                    </form>
+                                                    <?php if ($tr['id_jenis_pembayaran'] == 2 && empty($tr['bukti_pembayaran'])) : ?>
+                                                        <button type="button" class="dropdown-item btn btn-warning" data-toggle="modal" data-target="#uploadModal<?= base64_encode($tr['id_transaksi']); ?>">Upload Bukti</button>
+                                                    <?php endif; ?>
+                                                </div>
+                                            <?php endif; ?>
+                                        </div>
+                                    </td>
                                 </tr>
                                 <!-- Modal -->
-                                <div class="modal fade" id="uploadModal<?= $tr['id_transaksi']; ?>" tabindex="-1" role="dialog" aria-labelledby="uploadModalLabel<?= $tr['id_transaksi']; ?>" aria-hidden="true">
-                                    <div class="modal-dialog modal-dialog-centered" role="document">
+                                <div class="modal fade" id="uploadModal<?= base64_encode($tr['id_transaksi']); ?>" tabindex="-1" role="dialog" aria-labelledby="uploadModalLabel<?= base64_encode($tr['id_transaksi']); ?>" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered modal-lg" role="dialog">
                                         <div class="modal-content">
-                                            <div class="modal-header bg-warning text-white">
-                                                <h5 class="modal-title" id="uploadModalLabel<?= $tr['id_transaksi']; ?>">Upload Bukti Pembayaran</h5>
+                                            <div class="modal-header bg-primary text-white">
+                                                <h5 class="modal-title" id="uploadModalLabel<?= base64_encode($tr['id_transaksi']); ?>">Upload Bukti Transfer</h5>
                                                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                                     <span aria-hidden="true">&times;</span>
                                                 </button>
                                             </div>
                                             <div class="modal-body">
-                                                <form method="POST" action="<?= base_url(); ?>user/bukti/<?= $tr['id_transaksi']; ?>" enctype="multipart/form-data">
+                                                <div class="container mt-5">
+                                                    <div class="row justify-content-center">
+                                                        <div class="col-md-6">
+                                                            <div class="card">
+                                                                <div class="card-header bg-primary text-white">
+                                                                    <h2 class="text-center">KODE PEMESANAN</h2>
+                                                                </div>
+                                                                <div class="card-header">
+                                                                    <div class="mb-4">
+                                                                        <center>
+                                                                            <label for="saldo" class="form-label">Kode Pemesanan:</label> <br>
+                                                                        </center>
+                                                                        <h1 class="text-center">
+                                                                            <p class="booking-code"><?= $tr['kodebooking_transaksi']; ?><button class="btn copy-button"><img src="<?= base_url() ?>assets/img/kopi.png" width="24px"></button></p>
+                                                                        </h1>
+                                                                    </div>
+                                                                    <div class="mb-4">
+                                                                        <center>
+                                                                            <label for="denda" class="form-label">Total Pembayaran:</label> <br>
+                                                                        </center>
+                                                                        <h1 class="text-center">
+                                                                            <p class="nominal"><?= number_format($tr['nominal_transaksi'], 0, ',', '.'); ?> <button class="btn copy-button"><img src="<?= base_url() ?>assets/img/kopi.png" width="24px"></button></p>
+                                                                        </h1>
+                                                                    </div>
+                                                                    <div class="mb-4 text-center">
+                                                                        <label for="rekening" class="form-label">No Rekening:</label>
+                                                                        <br>
+                                                                        <img src="https://mandiri-investasi.co.id/wp-content/uploads/2021/11/bsi-PNG.png" width="90px">
+                                                                        <p style="font-size: 20px;">7195540521 <button class="btn copy-button"><img src="<?= base_url() ?>assets/img/kopi.png" width="24px"></button></p>
+                                                                        <p style="font-size: 20px;">YAYASAN KEMAKMURAN DAN KESEJAHTERAAN ANAK BANGSA</p>
+                                                                    </div>
+                                                                    <div class="card-header text-white bg-warning mb-4">
+                                                                        <p class="text-center">Harap Melakukan Transfer Sesuai Total Pembayaran</p>
+                                                                    </div>
+                                                                    <div class="card-header text-white mb-4">
+                                                                        <center>
+                                                                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#uploadModal1<?= base64_encode($tr['id_transaksi']); ?>">Upload Bukti Transfer</button>
+                                                                        </center>                         
+                                                                    </div>
+                                                                    <div class="text-center">
+                                                                        <!-- kembali ke halaman sebelumnya -->
+                                                                        <a href="<?= base_url() ?>user/riwayatTransaksi" class="btn btn-secondary" data-dismiss="modal">Kembali</a>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="modal fade" id="uploadModal1<?= base64_encode($tr['id_transaksi']); ?>" tabindex="-1" role="dialog" aria-labelledby="uploadModalLabel<?= base64_encode($tr['id_transaksi']); ?>" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-header bg-warning text-white">
+                                                <h5 class="modal-title" id="uploadModalLabel<?= base64_encode($tr['id_transaksi']); ?>">Upload Bukti Pembayaran</h5>
+                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                    <span aria-hidden="true">&times;</span>
+                                                </button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <form method="POST" action="<?= base_url(); ?>user/bukti/<?= base64_encode($tr['id_transaksi']); ?>" enctype="multipart/form-data">
                                                     <div class="form-group">
-                                                        <label for="bukti_pembayaran<?= $tr['id_transaksi']; ?>">Pilih File Bukti Pembayaran:</label>
-                                                        <input type="file" class="form-control-file" id="bukti_pembayaran<?= $tr['id_transaksi']; ?>" name="bukti_pembayaran" accept=".jpg, .jpeg, .png" required maxFileSize="4194304">
+                                                        <label for="bukti_pembayaran<?= base64_encode($tr['id_transaksi']); ?>">Pilih File Bukti Pembayaran:</label>
+                                                        <input type="file" class="form-control-file" id="bukti_pembayaran<?= base64_encode($tr['id_transaksi']); ?>" name="bukti_pembayaran" accept=".jpg, .jpeg, .png" required maxFileSize="4194304">
                                                     </div>
                                             </div>
                                             <div class="modal-footer">
@@ -130,7 +191,6 @@
                                     </div>
                                 </div>
                             <?php endforeach; ?>
-
                         </tbody>
                     </table>
                     <?= $pager->links('pagination', 'pagination'); ?>
