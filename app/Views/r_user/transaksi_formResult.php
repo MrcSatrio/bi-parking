@@ -1,6 +1,16 @@
 <?= $this->extend('template/index'); ?>
 
 <?= $this->section('page_content'); ?>
+<?php if (!empty(session()->getFlashdata('success'))) : ?>
+    <div class="alert alert-success" role="alert">
+        <?= session()->getFlashdata('success'); ?>
+    </div>
+<?php endif; ?>
+<?php if (!empty(session()->getFlashdata('error'))) : ?>
+    <div class="alert alert-danger" role="alert">
+        <?= session()->getFlashdata('error'); ?>
+    </div>
+<?php endif; ?>
 <div class="container mt-5">
     <div class="row justify-content-center">
         <div class="col-md-6">
@@ -95,7 +105,7 @@
                                             </div>
                                             <div class="modal-footer">
                                                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Batal</button>
-                                                <button type="submit" class="btn btn-warning">Upload</button>
+                                                <button type="submit" class="btn btn-primary">Upload</button>
                                             </div>
                                             </form>
                                         </div>

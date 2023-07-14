@@ -15,17 +15,9 @@
     <div class="col">
         <div class="card shadow mx-2">
             <div class="card-header">
-                Riwayat Transaksi
-                <form class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100" action="<?= base_url().$user['nama_role']; ?>/search" method="post">
-                    <div class="input-group">
-                        <input type="text" class="form-control bg-light border-0 small" placeholder="Cari Transaksi" aria-label="Search" aria-describedby="basic-addon2" name="keyword">
-                        <div class="input-group-append">
-                            <button class="btn btn-primary" type="submit">
-                                <i class="fas fa-search fa-sm"></i>
-                            </button>
-                        </div>
-                    </div>
-                </form>
+                <div class="d-flex justify-content-between align-items-center">
+                    <span>Riwayat Transaksi</span>
+                </div>
             </div>
             <div class="card-body">
                 <div class="table-responsive-lg">
@@ -105,91 +97,72 @@
                                 </tr>
                                 <!-- Modal -->
                                 <div class="modal fade" id="uploadModal<?= base64_encode($tr['id_transaksi']); ?>" tabindex="-1" role="dialog" aria-labelledby="uploadModalLabel<?= base64_encode($tr['id_transaksi']); ?>" aria-hidden="true">
-                                    <div class="modal-dialog modal-dialog-centered modal-lg" role="dialog">
-                                        <div class="modal-content">
-                                            <div class="modal-header bg-primary text-white">
-                                                <h5 class="modal-title" id="uploadModalLabel<?= base64_encode($tr['id_transaksi']); ?>">Upload Bukti Transfer</h5>
-                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                                    <span aria-hidden="true">&times;</span>
-                                                </button>
-                                            </div>
-                                            <div class="modal-body">
-                                                <div class="container mt-5">
-                                                    <div class="row justify-content-center">
-                                                        <div class="col-md-6">
-                                                            <div class="card">
-                                                                <div class="card-header bg-primary text-white">
-                                                                    <h2 class="text-center">KODE PEMESANAN</h2>
-                                                                </div>
-                                                                <div class="card-header">
-                                                                    <div class="mb-4">
-                                                                        <center>
-                                                                            <label for="saldo" class="form-label">Kode Pemesanan:</label> <br>
-                                                                        </center>
-                                                                        <h1 class="text-center">
-                                                                            <p class="booking-code"><?= $tr['kodebooking_transaksi']; ?><button class="btn copy-button"><img src="<?= base_url() ?>assets/img/kopi.png" width="24px"></button></p>
-                                                                        </h1>
-                                                                    </div>
-                                                                    <div class="mb-4">
-                                                                        <center>
-                                                                            <label for="denda" class="form-label">Total Pembayaran:</label> <br>
-                                                                        </center>
-                                                                        <h1 class="text-center">
-                                                                            <p class="nominal"><?= number_format($tr['nominal_transaksi'], 0, ',', '.'); ?> <button class="btn copy-button"><img src="<?= base_url() ?>assets/img/kopi.png" width="24px"></button></p>
-                                                                        </h1>
-                                                                    </div>
-                                                                    <div class="mb-4 text-center">
-                                                                        <label for="rekening" class="form-label">No Rekening:</label>
-                                                                        <br>
-                                                                        <img src="https://mandiri-investasi.co.id/wp-content/uploads/2021/11/bsi-PNG.png" width="90px">
-                                                                        <p style="font-size: 20px;">7195540521 <button class="btn copy-button"><img src="<?= base_url() ?>assets/img/kopi.png" width="24px"></button></p>
-                                                                        <p style="font-size: 20px;">YAYASAN KEMAKMURAN DAN KESEJAHTERAAN ANAK BANGSA</p>
-                                                                    </div>
-                                                                    <div class="card-header text-white bg-warning mb-4">
-                                                                        <p class="text-center">Harap Melakukan Transfer Sesuai Total Pembayaran</p>
-                                                                    </div>
-                                                                    <div class="card-header text-white mb-4">
-                                                                        <center>
-                                                                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#uploadModal1<?= base64_encode($tr['id_transaksi']); ?>">Upload Bukti Transfer</button>
-                                                                        </center>                         
-                                                                    </div>
-                                                                    <div class="text-center">
-                                                                        <!-- kembali ke halaman sebelumnya -->
-                                                                        <a href="<?= base_url() ?>user/riwayatTransaksi" class="btn btn-secondary" data-dismiss="modal">Kembali</a>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
+    <div class="modal-dialog modal-dialog-centered modal-lg" role="dialog">
+        <div class="modal-content">
+            <div class="modal-header bg-primary text-white">
+                <h5 class="modal-title" id="uploadModalLabel<?= base64_encode($tr['id_transaksi']); ?>">Upload Bukti Transfer</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="container mt-5">
+                    <div class="row justify-content-center">
+                        <div class="col-md-8">
+                            <div class="card">
+                                <div class="card-header bg-primary text-white">
+                                    <h2 class="text-center">KODE PEMESANAN</h2>
                                 </div>
-                                <div class="modal fade" id="uploadModal1<?= base64_encode($tr['id_transaksi']); ?>" tabindex="-1" role="dialog" aria-labelledby="uploadModalLabel<?= base64_encode($tr['id_transaksi']); ?>" aria-hidden="true">
-                                    <div class="modal-dialog modal-dialog-centered" role="document">
-                                        <div class="modal-content">
-                                            <div class="modal-header bg-warning text-white">
-                                                <h5 class="modal-title" id="uploadModalLabel<?= base64_encode($tr['id_transaksi']); ?>">Upload Bukti Pembayaran</h5>
-                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                                    <span aria-hidden="true">&times;</span>
-                                                </button>
-                                            </div>
-                                            <div class="modal-body">
-                                                <form method="POST" action="<?= base_url(); ?>user/bukti/<?= base64_encode($tr['id_transaksi']); ?>" enctype="multipart/form-data">
-                                                    <div class="form-group">
-                                                        <label for="bukti_pembayaran<?= base64_encode($tr['id_transaksi']); ?>">Pilih File Bukti Pembayaran:</label>
-                                                        <input type="file" class="form-control-file" id="bukti_pembayaran<?= base64_encode($tr['id_transaksi']); ?>" name="bukti_pembayaran" accept=".jpg, .jpeg, .png" required maxFileSize="4194304">
-                                                    </div>
-                                            </div>
-                                            <div class="modal-footer">
-                                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Batal</button>
-                                                <button type="submit" class="btn btn-warning">Upload</button>
-                                            </div>
-                                            </form>
-                                        </div>
+                                <div class="card-body">
+                                    <div class="mb-4">
+                                        <center>
+                                            <label for="saldo" class="form-label">Kode Pemesanan:</label> <br>
+                                        </center>
+                                        <h1 class="text-center">
+                                            <p class="booking-code"><?= $tr['kodebooking_transaksi']; ?><button class="btn copy-button"><img src="<?= base_url() ?>assets/img/kopi.png" width="24px"></button></p>
+                                        </h1>
                                     </div>
+                                    <div class="mb-4">
+                                        <center>
+                                            <label for="denda" class="form-label">Total Pembayaran:</label> <br>
+                                        </center>
+                                        <h1 class="text-center">
+                                            <p class="nominal"><?= number_format($tr['nominal_transaksi'], 0, ',', '.'); ?> <button class="btn copy-button"><img src="<?= base_url() ?>assets/img/kopi.png" width="24px"></button></p>
+                                        </h1>
+                                    </div>
+                                    <div class="mb-4 text-center">
+                                        <label for="rekening" class="form-label">No Rekening:</label>
+                                        <br>
+                                        <img src="https://mandiri-investasi.co.id/wp-content/uploads/2021/11/bsi-PNG.png" width="90px">
+                                        <p style="font-size: 20px;">7195540521 <button class="btn copy-button"><img src="<?= base_url() ?>assets/img/kopi.png" width="24px"></button></p>
+                                        <p style="font-size: 20px;">YAYASAN KEMAKMURAN DAN KESEJAHTERAAN ANAK BANGSA</p>
+                                    </div>
+                                    <div class="card-header text-white bg-warning mb-4">
+                                        <p class="text-center">Harap Melakukan Transfer Sesuai Total Pembayaran</p>
+                                    </div>
+                                    <form method="POST" action="<?= base_url(); ?>user/bukti/<?= base64_encode($tr['id_transaksi']); ?>" enctype="multipart/form-data">
+                                        <div class="mb-3">
+                                            <label for="formFile" class="form-label">Upload Bukti Pembayaran</label>
+                                            <input type="file" class="form-control-file" id="bukti_pembayaran<?= base64_encode($tr['id_transaksi']); ?>" name="bukti_pembayaran" accept=".jpg, .jpeg, .png" required maxFileSize="4194304">
+                                        </div>
+                                        <div class="text-center">
+                                            <button type="submit" class="btn btn-primary">Upload</button>
+                                        </div>
+                                    </form>
                                 </div>
+                                <div class="card-footer text-center">
+                                    <!-- kembali ke halaman sebelumnya -->
+                                    <a href="<?= base_url() ?>user/riwayatTransaksi" class="btn btn-secondary" data-dismiss="modal">Kembali</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
                             <?php endforeach; ?>
                         </tbody>
                     </table>
@@ -200,4 +173,144 @@
     </div>
 </div>
 
+<style>
+    .alert {
+        margin-bottom: 20px;
+    }
+
+    .card-header {
+        background-color: #4e73df;
+        color: #ffffff;
+        font-weight: bold;
+    }
+
+    .form-inline .form-control {
+        width: 300px;
+    }
+
+    .table {
+        margin-bottom: 0;
+    }
+
+    .table-success th {
+        background-color: #1cc88a;
+        color: #ffffff;
+        font-weight: bold;
+    }
+
+    .badge-info {
+        background-color: #36b9cc;
+        color: #ffffff;
+    }
+
+    .badge-warning {
+        background-color: #f6c23e;
+        color: #ffffff;
+    }
+
+    .badge-success {
+        background-color: #1cc88a;
+        color: #ffffff;
+    }
+
+    .badge-danger {
+        background-color: #e74a3b;
+        color: #ffffff;
+    }
+
+    .btn-secondary {
+        background-color: #6c757d;
+        color: #ffffff;
+    }
+
+    .dropdown-menu {
+        min-width: 8rem;
+    }
+
+    .dropdown-menu .dropdown-item {
+        color: #000000;
+    }
+
+    .modal-header {
+        background-color: #4e73df;
+        color: #ffffff;
+    }
+
+    .modal-content {
+        background-color: #f8f9fc;
+    }
+
+    .modal-body {
+        padding: 1rem;
+    }
+
+    .card {
+        margin-bottom: 1rem;
+    }
+
+    .card-header.bg-primary {
+        background-color: #4e73df;
+        color: #ffffff;
+    }
+
+    .card-header.bg-warning {
+        background-color: #f6c23e;
+        color: #ffffff;
+    }
+
+    .btn-primary {
+        background-color: #4e73df;
+        color: #ffffff;
+    }
+
+    .btn-warning {
+        background-color: #f6c23e;
+        color: #ffffff;
+    }
+
+    .btn-primary:hover {
+        background-color: #2653ca;
+    }
+
+    .btn-warning:hover {
+        background-color: #d1a828;
+    }
+
+    .btn-secondary:hover {
+        background-color: #5a6268;
+    }
+
+    .btn-danger {
+        background-color: #e74a3b;
+        color: #ffffff;
+    }
+
+    .btn-danger:hover {
+        background-color: #be261e;
+    }
+
+    .btn-info {
+        background-color: #36b9cc;
+        color: #ffffff;
+    }
+
+    .btn-info:hover {
+        background-color: #258999;
+    }
+
+    .btn-sm {
+        font-size: 0.75rem;
+        padding: 0.25rem 0.5rem;
+    }
+</style>
+
+<script>
+    $(document).ready(function() {
+        $('.copy-button').click(function() {
+            var text = $(this).parent().text();
+            navigator.clipboard.writeText(text);
+            alert('Text copied to clipboard');
+        });
+    });
+</script>
 <?= $this->endSection(); ?>
