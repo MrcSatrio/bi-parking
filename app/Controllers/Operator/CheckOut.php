@@ -1,7 +1,8 @@
 <?php
+
 namespace App\Controllers\Operator;
 
-use \App\Controllers\BaseController;
+use App\Controllers\BaseController;
 
 class CheckOut extends BaseController
 {
@@ -9,6 +10,15 @@ class CheckOut extends BaseController
     protected $kartuModel;
     protected $logModel;
     protected $transaksiModel;
+
+    public function __construct()
+    {
+        // Inisialisasi model-model yang diperlukan
+        $this->userModel = new \App\Models\UserModel();
+        $this->kartuModel = new \App\Models\KartuModel();
+        $this->logModel = new \App\Models\LogModel();
+        $this->transaksiModel = new \App\Models\TransaksiModel();
+    }
 
     public function index()
     {
@@ -39,6 +49,9 @@ class CheckOut extends BaseController
                 session()->setFlashdata('error', 'Saldo Tidak Cukup');
                 return redirect()->back()->withInput();
             } else {
+                $nama = $user_parking['nama']; // Ganti 'nama' dengan kolom yang menyimpan nama pada tabel pengguna parkir
+                $sisa_saldo = $user_parking['saldo'] - $nominal_transaksi;
+
                 $this->transaksiModel->save([
                     'kodebooking_transaksi' => substr(str_shuffle(str_repeat("0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ", 6)), 0, 6),
                     'npm' => $user_parking['npm'],
@@ -62,10 +75,12 @@ class CheckOut extends BaseController
                     'details' => 'Transaksi Parkir sebesar ' . $nominal_transaksi,
                     'ip_address' => $this->request->getIPAddress()
                 ];
-                $logModel = new \App\Models\LogModel();
-                $logModel->insert($logData);
+                $this->logModel->insert($logData);
 
                 session()->setFlashdata('success', 'Transaksi Berhasil, Silahkan Buka Portal');
+                session()->setFlashdata('nama', $nama); // Menyimpan data nama dalam flash data
+                session()->setFlashdata('sisa_saldo', $sisa_saldo); // Menyimpan data sisa saldo dalam flash data
+
                 return redirect()->back()->withInput();
             }
         } elseif ($user_parking['id_status'] == 2) {
@@ -100,8 +115,7 @@ class CheckOut extends BaseController
                         'details' => 'Transaksi Parkir sebesar ' . $nominal_transaksi,
                         'ip_address' => $this->request->getIPAddress()
                     ];
-                    $logModel = new \App\Models\LogModel();
-                    $logModel->insert($logData);
+                    $this->logModel->insert($logData);
 
                     session()->setFlashdata('success', 'Transaksi Berhasil, Silahkan Buka Portal');
                     return redirect()->back()->withInput();
