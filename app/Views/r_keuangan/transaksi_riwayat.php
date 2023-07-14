@@ -27,6 +27,7 @@
         <div class="form-group">
             <label for="jenis_transaksi"> Status Transaksi: </label>
             <select name="id_status_transaksi" id="id_status_transaksi" class="form-control">
+                <option value="">All</option>
                 <option value="3">Approved</option>
                 <option value="1">Pending</option>
                 <option value="4">Cancel</option>
