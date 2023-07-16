@@ -69,6 +69,8 @@ $routes->group('admin', ['filter' => 'roleFilter'], function ($routes) {
     $routes->post('transaksi_validasiinputkodebooking', 'Admin\Transaksi::transaksi_validasiinputkodebooking');
     $routes->post('transaksi_approve', 'Admin\Transaksi::transaksi_approve');
     $routes->get('transaksi_riwayat', 'Admin\Transaksi::riwayat');
+    $routes->post('cancel/(:segment)', 'Admin\Transaksi::cancel/$1');
+    $routes->post('cetak/(:segment)', 'Admin\Transaksi::cetak/$1');
     //endTransaksi
     // Pengumuman
     $routes->get('form_upload', 'Admin\Berkas::create');
@@ -106,6 +108,7 @@ $routes->group('keuangan', ['filter' => 'roleFilter'], function ($routes) {
     $routes->post('transaksi_validasiinputkodebooking', 'Keuangan\Transaksi::transaksi_validasiinputkodebooking');
     $routes->post('transaksi_approve', 'Keuangan\Transaksi::transaksi_approve');
     $routes->post('cetak/(:segment)', 'Admin\Transaksi::cetak/$1');
+    $routes->post('cancel/(:segment)', 'Admin\Transaksi::cancel/$1');
     $routes->get('transaksi_riwayat', 'Keuangan\Transaksi::riwayat');
     $routes->get('transaksi_rekening', 'Admin\Transaksi::rekening');
     $routes->get('edit_rekening/(:segment)', 'Admin\Transaksi::edit_rekening/$1');

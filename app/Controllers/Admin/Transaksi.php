@@ -372,35 +372,39 @@ public function transaksi_result($booking_code, $nominal_saldo, $id_jenis_pembay
 }
 
 
-    public function riwayat()
-    {
-        $limit = 9; // Jumlah item per halaman
-        $currentPage = $this->request->getVar('page_pagination') ? $this->request->getVar('page_pagination') : 1;
+public function riwayat()
+{
+    $limit = 9; // Jumlah item per halaman
+    $currentPage = $this->request->getVar('page_pagination') ? $this->request->getVar('page_pagination') : 1;
 
-        $data =
-            [
-                'title' => 'Parking Management System',
-                'user' => $this->userModel
-                    ->join('role', 'role.id_role = user.id_role')
-                    ->where('npm', session('npm'))
-                    ->first(),
-                'transaksi' => $this->transaksiModel
-                    ->join('user', 'user.npm = transaksi.npm')
-                    ->join('jenis_transaksi', 'jenis_transaksi.id_jenis_transaksi = transaksi.id_jenis_transaksi')
-                    ->join('status_transaksi', 'status_transaksi.id_status_transaksi = transaksi.id_status_transaksi')
-                    ->join('jenis_pembayaran', 'jenis_pembayaran.id_jenis_pembayaran = transaksi.id_jenis_pembayaran')
-                    ->orderBy('transaksi.updated_at', 'DESC')
-                    ->paginate($limit, 'pagination'),
-                'pager' => $this->transaksiModel
-                    ->join('user', 'user.npm = transaksi.npm')
-                    ->join('jenis_transaksi', 'jenis_transaksi.id_jenis_transaksi = transaksi.id_jenis_transaksi')
-                    ->join('status_transaksi', 'status_transaksi.id_status_transaksi = transaksi.id_status_transaksi')
-                    ->join('jenis_pembayaran', 'jenis_pembayaran.id_jenis_pembayaran = transaksi.id_jenis_pembayaran')
-                    ->orderBy('transaksi.updated_at', 'DESC')
-                    ->pager,
-                'currentPage' => $currentPage,
-                'limit' => $limit,
-            ];
+    $data = [
+    'title' => 'Parking Management System',
+    'user' => $this->userModel
+        ->join('role', 'role.id_role = user.id_role')
+        ->where('npm', session('npm'))
+        ->first(),
+        'transaksi' => $this->transaksiModel
+    ->select('transaksi.*, user.nama, jenis_transaksi.nama_jenis_transaksi, status_transaksi.nama_status_transaksi, jenis_pembayaran.nama_jenis_pembayaran')
+    ->join('user', 'user.npm = transaksi.npm')
+    ->join('jenis_transaksi', 'jenis_transaksi.id_jenis_transaksi = transaksi.id_jenis_transaksi')
+    ->join('status_transaksi', 'status_transaksi.id_status_transaksi = transaksi.id_status_transaksi')
+    ->join('jenis_pembayaran', 'jenis_pembayaran.id_jenis_pembayaran = transaksi.id_jenis_pembayaran')
+    ->orderBy('transaksi.created_at', 'DESC')
+    ->paginate($limit, 'pagination'),
+'pager' => $this->transaksiModel
+    ->select('transaksi.*, user.nama, jenis_transaksi.nama_jenis_transaksi, status_transaksi.nama_status_transaksi, jenis_pembayaran.nama_jenis_pembayaran')
+    ->join('user', 'user.npm = transaksi.npm')
+    ->join('jenis_transaksi', 'jenis_transaksi.id_jenis_transaksi = transaksi.id_jenis_transaksi')
+    ->join('status_transaksi', 'status_transaksi.id_status_transaksi = transaksi.id_status_transaksi')
+    ->join('jenis_pembayaran', 'jenis_pembayaran.id_jenis_pembayaran = transaksi.id_jenis_pembayaran')
+    ->orderBy('transaksi.created_at', 'DESC')
+    ->pager,
+
+
+    
+    'currentPage' => $currentPage,
+    'limit' => $limit,
+];
 
         return view('r_admin/transaksi_riwayat', $data);
     }
@@ -478,13 +482,13 @@ public function transaksi_result($booking_code, $nominal_saldo, $id_jenis_pembay
     public function cetak($id_transaksi)
     {
         $transaksi = $this->transaksiModel
+            ->select('transaksi.*, user.nama, transaksi.*, user.email, jenis_transaksi.nama_jenis_transaksi, status_transaksi.nama_status_transaksi, jenis_pembayaran.nama_jenis_pembayaran')
             ->join('user', 'user.npm = transaksi.npm')
-            ->join('kartu', 'kartu.id_kartu = user.id_kartu')
-            ->join('status_transaksi', 'status_transaksi.id_status_transaksi = transaksi.id_status_transaksi')
             ->join('jenis_transaksi', 'jenis_transaksi.id_jenis_transaksi = transaksi.id_jenis_transaksi')
+            ->join('status_transaksi', 'status_transaksi.id_status_transaksi = transaksi.id_status_transaksi')
+            ->join('jenis_pembayaran', 'jenis_pembayaran.id_jenis_pembayaran = transaksi.id_jenis_pembayaran')
             ->where('id_transaksi', $id_transaksi)
             ->first();
-    
         $data = [
             'title' => 'Parking Management System',
             'user' => $this->userModel

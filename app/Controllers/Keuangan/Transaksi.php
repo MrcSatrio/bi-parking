@@ -160,31 +160,39 @@ public function riwayat()
     $currentPage = $this->request->getVar('page_pagination') ? $this->request->getVar('page_pagination') : 1;
 
     $data = [
-        'title' => 'Parking Management System',
-        'user' => $this->userModel
-            ->join('role', 'role.id_role = user.id_role')
-            ->where('npm', session('npm'))
-            ->first(),
+    'title' => 'Parking Management System',
+    'user' => $this->userModel
+        ->join('role', 'role.id_role = user.id_role')
+        ->where('npm', session('npm'))
+        ->first(),
         'transaksi' => $this->transaksiModel
-            ->join('user', 'user.npm = transaksi.npm')
-            ->join('jenis_transaksi', 'jenis_transaksi.id_jenis_transaksi = transaksi.id_jenis_transaksi')
-            ->join('status_transaksi', 'status_transaksi.id_status_transaksi = transaksi.id_status_transaksi')
-            ->join('jenis_pembayaran', 'jenis_pembayaran.id_jenis_pembayaran = transaksi.id_jenis_pembayaran')
-            ->whereIn('transaksi.id_jenis_transaksi', [1, 2]) // Menggunakan whereIn untuk mencari id_jenis_transaksi 1 atau 2
-            ->orderBy('transaksi.updated_at', 'DESC') // Menentukan kolom updated_at secara spesifik
-            ->paginate($limit, 'pagination'),
-        'pager' => $this->transaksiModel
-            ->join('user', 'user.npm = transaksi.npm')
-            ->join('jenis_transaksi', 'jenis_transaksi.id_jenis_transaksi = transaksi.id_jenis_transaksi')
-            ->join('status_transaksi', 'status_transaksi.id_status_transaksi = transaksi.id_status_transaksi')
-            ->join('jenis_pembayaran', 'jenis_pembayaran.id_jenis_pembayaran = transaksi.id_jenis_pembayaran')
-            ->whereIn('transaksi.id_jenis_transaksi', [1, 2]) // Menggunakan whereIn untuk mencari id_jenis_transaksi 1 atau 2
-            ->orderBy('transaksi.updated_at', 'DESC') // Menentukan kolom created_at secara spesifik
-            ->pager,
-        'currentPage' => $currentPage,
-        'limit' => $limit,
-    ];
+    ->select('transaksi.*, user.nama, jenis_transaksi.nama_jenis_transaksi, status_transaksi.nama_status_transaksi, jenis_pembayaran.nama_jenis_pembayaran')
+    ->join('user', 'user.npm = transaksi.npm')
+    ->join('jenis_transaksi', 'jenis_transaksi.id_jenis_transaksi = transaksi.id_jenis_transaksi')
+    ->join('status_transaksi', 'status_transaksi.id_status_transaksi = transaksi.id_status_transaksi')
+    ->join('jenis_pembayaran', 'jenis_pembayaran.id_jenis_pembayaran = transaksi.id_jenis_pembayaran')
+    ->where('transaksi.id_status_transaksi !=', 2)
+    ->orderBy('transaksi.created_at', 'DESC')
+    ->paginate($limit, 'pagination'),
+'pager' => $this->transaksiModel
+    ->select('transaksi.*, user.nama, jenis_transaksi.nama_jenis_transaksi, status_transaksi.nama_status_transaksi, jenis_pembayaran.nama_jenis_pembayaran')
+    ->join('user', 'user.npm = transaksi.npm')
+    ->join('jenis_transaksi', 'jenis_transaksi.id_jenis_transaksi = transaksi.id_jenis_transaksi')
+    ->join('status_transaksi', 'status_transaksi.id_status_transaksi = transaksi.id_status_transaksi')
+    ->join('jenis_pembayaran', 'jenis_pembayaran.id_jenis_pembayaran = transaksi.id_jenis_pembayaran')
+    ->where('transaksi.id_status_transaksi !=', 2)
+    ->orderBy('transaksi.created_at', 'DESC')
+    ->pager,
 
+
+    
+    'currentPage' => $currentPage,
+    'limit' => $limit,
+];
+
+    
+    
     return view('r_keuangan/transaksi_riwayat', $data);
 }
+
 }
