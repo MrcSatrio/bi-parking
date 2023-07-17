@@ -92,7 +92,8 @@ class User extends BaseController
     $kodebooking_transaksi = substr(str_shuffle(str_repeat("0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ", 6)), 0, 6);
     $loggedInNpm = session('npm');
     $npm = $this->request->getVar('npm');
-    $password = $npm;
+    $password =  $npm;
+    $hashedPassword = md5($password);
     $saldo = $this->request->getVar('saldo');
 
     // Jika berhasil, simpan data ke database
@@ -100,7 +101,6 @@ class User extends BaseController
         'nomor_kartu' => $this->request->getVar('nomor_kartu'),
         'saldo' => $saldo,
     ]);
-
 
     $approvedBy = $this->userModel
         ->where('npm', session('npm'))
@@ -124,7 +124,7 @@ class User extends BaseController
         'id_status' => $this->request->getVar('id_status'),
         'nama' => $this->request->getVar('nama'),
         'email' => $this->request->getVar('email'),
-        'password' => password_hash($password, PASSWORD_DEFAULT)
+        'password' => $hashedPassword
     ];
     $this->userModel->insert($datauser);
 

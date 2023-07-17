@@ -56,7 +56,6 @@ class Dashboard extends BaseController
                 
                 ->where('transaksi.npm', session('npm'))
                 ->findAll(),
-            'role' => $this->roleModel->findAll(),
             'pager' => $this->pager->makeLinks($offset, $limit, $totalRows, 'pagination'),
             'totalApprovedNominal' => $totalApprovedNominal['nominal_transaksi'], // Jumlah total nominal transaksi yang disetujui
             'monthlyData' => $monthlyData

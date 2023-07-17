@@ -90,64 +90,140 @@ class Transaksi extends BaseController
     }
 
     public function transaksi_approve()
-    {
-        $validationRules = [
-            'nomor_kartu' => [
-                'rules' => 'is_unique[kartu.nomor_kartu]',
-                'errors' => [
-                    'is_unique' => 'Nomor Kartu ini Telah Digunakan Sebelumnya',
-                    'required' => 'Harus Di Isi'
-                ]
+{
+    $validationRules = [
+        'nomor_kartu' => [
+            'rules' => 'is_unique[kartu.nomor_kartu]',
+            'errors' => [
+                'is_unique' => 'Nomor Kartu ini Telah Digunakan Sebelumnya',
+                'required' => 'Harus Di Isi'
             ]
-        ];
-    
-        if (!$this->validate($validationRules)) {
-            session()->setFlashdata('error', $this->validator->listErrors());
-            return redirect()->to("admin/transaksi_inputkodebooking");
-        }
-    
-        $kodebooking_transaksi = $this->request->getVar('kode_booking');
-        $nomor_kartu = $this->request->getVar('nomor_kartu');
-    
-        $approvedBy = $this->userModel
-            ->where('npm', session('npm'))
-            ->first();
-    
-        $transaksi = $this->transaksiModel
-            ->join('user', 'user.npm = transaksi.npm')
-            ->join('kartu', 'kartu.id_kartu = user.id_kartu')
-            ->where('kodebooking_transaksi', $kodebooking_transaksi)
-            ->first();
-    
-        $this->transaksiModel->save([
-            'id_transaksi' => $transaksi['id_transaksi'],
-            'saldoawal_transaksi' => $transaksi['saldo'],
-            'saldoakhir_transaksi' => $transaksi['saldo'] + $transaksi['nominal_transaksi'],
-            'id_status_transaksi' => 3,
-            'validator' => $approvedBy['nama']
-        ]);
-    
-        $kartuData = [
-            'id_kartu' => $transaksi['id_kartu'],
-            'saldo' => $transaksi['saldo'] + $transaksi['nominal_transaksi']
-        ];
-    
-        if ($nomor_kartu) {
-            $kartuData['nomor_kartu'] = $nomor_kartu;
-        }
-    
-        $this->kartuModel->save($kartuData);
-    
-        $logData = [
-            'npm' => session('npm'),
-            'action' => 'transaksi_approve',
-            'details' => 'Transaksi dengan kode booking ' . $kodebooking_transaksi . ' disetujui',
-            'ip_address' => $this->request->getIPAddress()
-        ];
-    
-        $logModel = new \App\Models\LogModel();
-        $logModel->insert($logData);
-    
+        ]
+    ];
+
+    if (!$this->validate($validationRules)) {
+        session()->setFlashdata('error', $this->validator->listErrors());
+        return redirect()->to("admin/transaksi_inputkodebooking");
+    }
+
+    $kodebooking_transaksi = $this->request->getVar('kode_booking');
+    $nomor_kartu = $this->request->getVar('nomor_kartu');
+
+    $approvedBy = $this->userModel
+        ->where('npm', session('npm'))
+        ->first();
+
+    $pengguna = $this->userModel
+    ->join('transaksi', 'transaksi.npm = user.npm')
+    ->join('kartu', 'kartu.id_kartu = user.id_kartu')
+    ->where('kodebooking_transaksi', $kodebooking_transaksi)
+    ->first();
+
+    $transaksi = $this->transaksiModel
+        ->join('user', 'user.npm = transaksi.npm')
+        ->join('kartu', 'kartu.id_kartu = user.id_kartu')
+        ->join('jenis_pembayaran', 'jenis_pembayaran.id_jenis_pembayaran = transaksi.id_jenis_pembayaran')
+        ->where('kodebooking_transaksi', $kodebooking_transaksi)
+        ->first();
+
+    $this->transaksiModel->save([
+        'id_transaksi' => $transaksi['id_transaksi'],
+        'saldoawal_transaksi' => $transaksi['saldo'],
+        'saldoakhir_transaksi' => $transaksi['saldo'] + $transaksi['nominal_transaksi'],
+        'id_status_transaksi' => 3,
+        'validator' => $approvedBy['nama']
+    ]);
+
+    $kartuData = [
+        'id_kartu' => $transaksi['id_kartu'],
+        'saldo' => $transaksi['saldo'] + $transaksi['nominal_transaksi']
+    ];
+
+    if ($nomor_kartu) {
+        $kartuData['nomor_kartu'] = $nomor_kartu;
+    }
+
+    $this->kartuModel->save($kartuData);
+
+    $logData = [
+        'npm' => session('npm'),
+        'action' => 'transaksi_approve',
+        'details' => 'Transaksi dengan kode booking ' . $kodebooking_transaksi . ' disetujui',
+        'ip_address' => $this->request->getIPAddress()
+    ];
+
+    $logModel = new \App\Models\LogModel();
+    $logModel->insert($logData);
+
+    // Kirim email sebagai bukti pembayaran topup
+    $to = $pengguna['email'];
+    $subject = 'Bukti Pembayaran Topup';
+    $message = '
+        <html>
+        <head>
+            <style>
+                .container {
+                    max-width: 600px;
+                    margin: auto;
+                    padding: 20px;
+                    border: 1px solid #ccc;
+                    border-radius: 10px;
+                    font-family: Arial, sans-serif;
+                }
+                h1 {
+                    color: #333;
+                }
+                p {
+                    margin-bottom: 10px;
+                }
+                .bold {
+                    font-weight: bold;
+                }
+                .note {
+                    color: #999;
+                    font-size: 12px;
+                }
+                .footer {
+                    margin-top: 20px;
+                    text-align: center;
+                    color: #777;
+                    font-size: 12px;
+                }
+            </style>
+        </head>
+        <body>
+            <div class="container">
+                <h1>Bukti Pembayaran Topup</h1>
+                <p>Halo <span class="bold">' . $pengguna['nama'] . '</span>,</p>
+                <p>Terima kasih atas pembayaran Topup yang telah dilakukan. Berikut adalah rincian pembayaran:</p>
+                <p class="bold">Waktu Transaksi:</p>
+                <p>' . date('Y-m-d H:i:s') . '</p>
+                <p class="bold">Nominal Pembayaran:</p>
+                <p>Rp ' . number_format($transaksi['nominal_transaksi'], 0, ',', '.') . '</p>
+                <p class="bold">Sisa Saldo:</p>
+                <p>Rp ' . number_format($transaksi['saldoakhir_transaksi'], 0, ',', '.') . '</p>
+                <p class="bold">Metode Pembayaran:</p>
+                <p> ' . $transaksi['nama_jenis_pembayaran'] . '</p>
+                <p>Simpan email ini sebagai bukti pembayaran Anda.</p>
+                <p class="note">*Jika Anda tidak melakukan transaksi ini, mohon hubungi tim kami segera.</p>
+                <p>Salam,</p>
+                <p class="bold">Biu Parking Management</p>
+            </div>
+            <div class="footer">
+                Email ini dikirim secara otomatis. Mohon jangan membalas email ini.
+            </div>
+        </body>
+        </html>
+    ';
+
+    $email = \Config\Services::email();
+    $email->setTo($to);
+    $email->setFrom('biuparkingmanagement@gmail.com', 'Biu Parking Management');
+    $email->setSubject($subject);
+    $email->setMessage($message);
+    $email->setMailType('html'); // Mengatur jenis email sebagai HTML
+
+    if ($email->send()) {
         $data = [
             'title' => 'Parking Management System',
             'user' => $this->userModel
@@ -163,12 +239,10 @@ class Transaksi extends BaseController
                 ->first(),
             'harga' => $this->request->getVar('total_harga'),
         ];
-    
-        return view('r_admin/transaksi_approve', $data);
-    }
-    
-    
 
+        return view('r_admin/transaksi_approve', $data);
+    } 
+}
     public function topup()
     {
         if (!$this->validate([
