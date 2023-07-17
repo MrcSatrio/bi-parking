@@ -1,0 +1,510 @@
+INFO - 2023-07-16 23:24:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-16 23:24:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-16 23:25:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-16 23:26:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-16 23:26:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-16 23:26:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-07-16 23:26:12 --> [DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in APPPATH\Views\r_keuangan\dashboard.php on line 31.
+ 1 APPPATH\Views\r_keuangan\dashboard.php(31): number_format(null)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\bi-parking\\app\\Views\\r_keuangan\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('r_keuangan/dashboard', [], true)
+ 5 APPPATH\Controllers\Keuangan\Dashboard.php(65): view('r_keuangan/dashboard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Keuangan\Dashboard->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Keuangan\Dashboard))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-07-16 23:26:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-16 23:26:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-16 23:26:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-16 23:26:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-16 23:26:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-07-16 23:26:45 --> [DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in APPPATH\Views\r_user\dashboard.php on line 78.
+ 1 APPPATH\Views\r_user\dashboard.php(78): number_format(null)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\bi-parking\\app\\Views\\r_user\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('r_user/dashboard', [], true)
+ 5 APPPATH\Controllers\User\Dashboard.php(55): view('r_user/dashboard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\User\Dashboard->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User\Dashboard))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-07-16 23:26:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-16 23:26:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-16 23:26:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-16 23:27:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-16 23:27:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-16 23:30:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-16 23:32:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-16 23:32:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-16 23:32:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-16 23:32:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-16 23:32:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-16 23:32:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-16 23:32:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-16 23:32:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-16 23:33:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-16 23:33:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-16 23:33:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-16 23:34:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-16 23:34:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-16 23:34:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-16 23:34:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-16 23:34:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-16 23:34:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-16 23:35:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-07-16 23:35:53 --> Undefined array key "nama"
+in APPPATH\Views\r_keuangan\transaksi_riwayat.php on line 75.
+ 1 APPPATH\Views\r_keuangan\transaksi_riwayat.php(75): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nama"', 'C:\\xampp\\htdocs\\bi-parking\\app\\Views\\r_keuangan\\transaksi_riwayat.php', 75)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\bi-parking\\app\\Views\\r_keuangan\\transaksi_riwayat.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('r_keuangan/transaksi_riwayat', [], true)
+ 5 APPPATH\Controllers\Keuangan\Transaksi.php(184): view('r_keuangan/transaksi_riwayat', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Keuangan\Transaksi->riwayat()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Keuangan\Transaksi))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-07-16 23:36:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-07-16 23:36:18 --> mysqli_sql_exception: Column 'updated_at' in order clause is ambiguous in C:\xampp\htdocs\bi-parking\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\bi-parking\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\bi-parking\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\bi-parking\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\bi-parking\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\bi-parking\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\bi-parking\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(9, 0)
+#6 C:\xampp\htdocs\bi-parking\system\BaseModel.php(1192): CodeIgniter\BaseModel->findAll(9, 0)
+#7 C:\xampp\htdocs\bi-parking\app\Controllers\Keuangan\Transaksi.php(174): CodeIgniter\BaseModel->paginate(9, 'pagination')
+#8 C:\xampp\htdocs\bi-parking\system\CodeIgniter.php(934): App\Controllers\Keuangan\Transaksi->riwayat()
+#9 C:\xampp\htdocs\bi-parking\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Keuangan\Transaksi))
+#10 C:\xampp\htdocs\bi-parking\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\ParkingManagementSystem\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-07-16 23:36:18 --> Column 'updated_at' in order clause is ambiguous
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *
+FROM `transaksi`
+JOIN `user` ON `user`.`npm` = `transaksi`.`npm`
+JOIN `jenis_transaksi` ON `jenis_transaksi`.`id_jenis_transaksi` = `transaksi`.`id_jenis_transaksi`
+JOIN `status_transaksi` ON `status_transaksi`.`id_status_transaksi` = `transaksi`.`id_status_transaksi`
+JOIN `jenis_pembayaran` ON `jenis_pembayaran`.`id_jenis_pembayaran` = `transaksi`.`id_jenis_pembayaran`
+WHERE `transaksi`.`id_jenis_transaksi` IN (1,2)
+ORDER BY `updated_at` DESC
+ LIMIT 9', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `transaksi`
+JOIN `user` ON `user`.`npm` = `transaksi`.`npm`
+JOIN `jenis_transaksi` ON `jenis_transaksi`.`id_jenis_transaksi` = `transaksi`.`id_jenis_transaksi`
+JOIN `status_transaksi` ON `status_transaksi`.`id_status_transaksi` = `transaksi`.`id_status_transaksi`
+JOIN `jenis_pembayaran` ON `jenis_pembayaran`.`id_jenis_pembayaran` = `transaksi`.`id_jenis_pembayaran`
+WHERE `transaksi`.`id_jenis_transaksi` IN (1,2)
+ORDER BY `updated_at` DESC
+ LIMIT 9')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `transaksi`
+JOIN `user` ON `user`.`npm` = `transaksi`.`npm`
+JOIN `jenis_transaksi` ON `jenis_transaksi`.`id_jenis_transaksi` = `transaksi`.`id_jenis_transaksi`
+JOIN `status_transaksi` ON `status_transaksi`.`id_status_transaksi` = `transaksi`.`id_status_transaksi`
+JOIN `jenis_pembayaran` ON `jenis_pembayaran`.`id_jenis_pembayaran` = `transaksi`.`id_jenis_pembayaran`
+WHERE `transaksi`.`id_jenis_transaksi` IN (1,2)
+ORDER BY `updated_at` DESC
+ LIMIT 9')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `transaksi`
+JOIN `user` ON `user`.`npm` = `transaksi`.`npm`
+JOIN `jenis_transaksi` ON `jenis_transaksi`.`id_jenis_transaksi` = `transaksi`.`id_jenis_transaksi`
+JOIN `status_transaksi` ON `status_transaksi`.`id_status_transaksi` = `transaksi`.`id_status_transaksi`
+JOIN `jenis_pembayaran` ON `jenis_pembayaran`.`id_jenis_pembayaran` = `transaksi`.`id_jenis_pembayaran`
+WHERE `transaksi`.`id_jenis_transaksi` IN :transaksi.id_jenis_transaksi:
+ORDER BY `updated_at` DESC
+ LIMIT 9', [...], false)
+ 5 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(9, 0)
+ 7 SYSTEMPATH\BaseModel.php(1192): CodeIgniter\BaseModel->findAll(9, 0)
+ 8 APPPATH\Controllers\Keuangan\Transaksi.php(174): CodeIgniter\BaseModel->paginate(9, 'pagination')
+ 9 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Keuangan\Transaksi->riwayat()
+10 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Keuangan\Transaksi))
+11 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-07-16 23:36:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-07-16 23:36:30 --> mysqli_sql_exception: Column 'updated_at' in order clause is ambiguous in C:\xampp\htdocs\bi-parking\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\bi-parking\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\bi-parking\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\bi-parking\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\bi-parking\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\bi-parking\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\bi-parking\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(9, 0)
+#6 C:\xampp\htdocs\bi-parking\system\BaseModel.php(1192): CodeIgniter\BaseModel->findAll(9, 0)
+#7 C:\xampp\htdocs\bi-parking\app\Controllers\Keuangan\Transaksi.php(174): CodeIgniter\BaseModel->paginate(9, 'pagination')
+#8 C:\xampp\htdocs\bi-parking\system\CodeIgniter.php(934): App\Controllers\Keuangan\Transaksi->riwayat()
+#9 C:\xampp\htdocs\bi-parking\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Keuangan\Transaksi))
+#10 C:\xampp\htdocs\bi-parking\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\ParkingManagementSystem\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-07-16 23:36:30 --> Column 'updated_at' in order clause is ambiguous
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *
+FROM `transaksi`
+JOIN `user` ON `user`.`npm` = `transaksi`.`npm`
+JOIN `jenis_transaksi` ON `jenis_transaksi`.`id_jenis_transaksi` = `transaksi`.`id_jenis_transaksi`
+JOIN `status_transaksi` ON `status_transaksi`.`id_status_transaksi` = `transaksi`.`id_status_transaksi`
+JOIN `jenis_pembayaran` ON `jenis_pembayaran`.`id_jenis_pembayaran` = `transaksi`.`id_jenis_pembayaran`
+WHERE `transaksi`.`id_jenis_transaksi` IN (1,2)
+ORDER BY `updated_at` DESC
+ LIMIT 9', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `transaksi`
+JOIN `user` ON `user`.`npm` = `transaksi`.`npm`
+JOIN `jenis_transaksi` ON `jenis_transaksi`.`id_jenis_transaksi` = `transaksi`.`id_jenis_transaksi`
+JOIN `status_transaksi` ON `status_transaksi`.`id_status_transaksi` = `transaksi`.`id_status_transaksi`
+JOIN `jenis_pembayaran` ON `jenis_pembayaran`.`id_jenis_pembayaran` = `transaksi`.`id_jenis_pembayaran`
+WHERE `transaksi`.`id_jenis_transaksi` IN (1,2)
+ORDER BY `updated_at` DESC
+ LIMIT 9')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `transaksi`
+JOIN `user` ON `user`.`npm` = `transaksi`.`npm`
+JOIN `jenis_transaksi` ON `jenis_transaksi`.`id_jenis_transaksi` = `transaksi`.`id_jenis_transaksi`
+JOIN `status_transaksi` ON `status_transaksi`.`id_status_transaksi` = `transaksi`.`id_status_transaksi`
+JOIN `jenis_pembayaran` ON `jenis_pembayaran`.`id_jenis_pembayaran` = `transaksi`.`id_jenis_pembayaran`
+WHERE `transaksi`.`id_jenis_transaksi` IN (1,2)
+ORDER BY `updated_at` DESC
+ LIMIT 9')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `transaksi`
+JOIN `user` ON `user`.`npm` = `transaksi`.`npm`
+JOIN `jenis_transaksi` ON `jenis_transaksi`.`id_jenis_transaksi` = `transaksi`.`id_jenis_transaksi`
+JOIN `status_transaksi` ON `status_transaksi`.`id_status_transaksi` = `transaksi`.`id_status_transaksi`
+JOIN `jenis_pembayaran` ON `jenis_pembayaran`.`id_jenis_pembayaran` = `transaksi`.`id_jenis_pembayaran`
+WHERE `transaksi`.`id_jenis_transaksi` IN :transaksi.id_jenis_transaksi:
+ORDER BY `updated_at` DESC
+ LIMIT 9', [...], false)
+ 5 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(9, 0)
+ 7 SYSTEMPATH\BaseModel.php(1192): CodeIgniter\BaseModel->findAll(9, 0)
+ 8 APPPATH\Controllers\Keuangan\Transaksi.php(174): CodeIgniter\BaseModel->paginate(9, 'pagination')
+ 9 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Keuangan\Transaksi->riwayat()
+10 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Keuangan\Transaksi))
+11 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-07-16 23:36:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-16 23:36:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-16 23:37:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-16 23:37:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-07-16 23:37:03 --> [DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in APPPATH\Views\r_admin\dashboard.php on line 30.
+ 1 APPPATH\Views\r_admin\dashboard.php(30): number_format(null)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\bi-parking\\app\\Views\\r_admin\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('r_admin/dashboard', [], true)
+ 5 APPPATH\Controllers\Admin\Dashboard.php(64): view('r_admin/dashboard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin\Dashboard->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Dashboard))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-07-16 23:37:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-16 23:37:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-16 23:41:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-07-16 23:41:35 --> Class "App\Controllers\Keuangan\TransaksiModel" not found
+in APPPATH\Controllers\Keuangan\Transaksi.php on line 162.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Keuangan\Transaksi->riwayat()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Keuangan\Transaksi))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-07-16 23:43:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-07-16 23:43:22 --> Undefined variable $currentPage
+in APPPATH\Views\r_keuangan\transaksi_riwayat.php on line 67.
+ 1 APPPATH\Views\r_keuangan\transaksi_riwayat.php(67): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $currentPage', 'C:\\xampp\\htdocs\\bi-parking\\app\\Views\\r_keuangan\\transaksi_riwayat.php', 67)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\bi-parking\\app\\Views\\r_keuangan\\transaksi_riwayat.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('r_keuangan/transaksi_riwayat', [], true)
+ 5 APPPATH\Controllers\Keuangan\Transaksi.php(174): view('r_keuangan/transaksi_riwayat', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Keuangan\Transaksi->riwayat()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Keuangan\Transaksi))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-07-16 23:45:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-07-16 23:45:10 --> Undefined variable $transaksi
+in APPPATH\Views\r_keuangan\transaksi_riwayat.php on line 69.
+ 1 APPPATH\Views\r_keuangan\transaksi_riwayat.php(69): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $transaksi', 'C:\\xampp\\htdocs\\bi-parking\\app\\Views\\r_keuangan\\transaksi_riwayat.php', 69)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\bi-parking\\app\\Views\\r_keuangan\\transaksi_riwayat.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('r_keuangan/transaksi_riwayat', [], true)
+ 5 APPPATH\Controllers\Keuangan\Transaksi.php(182): view('r_keuangan/transaksi_riwayat', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Keuangan\Transaksi->riwayat()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Keuangan\Transaksi))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-07-16 23:45:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-07-16 23:45:11 --> Undefined variable $transaksi
+in APPPATH\Views\r_keuangan\transaksi_riwayat.php on line 69.
+ 1 APPPATH\Views\r_keuangan\transaksi_riwayat.php(69): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $transaksi', 'C:\\xampp\\htdocs\\bi-parking\\app\\Views\\r_keuangan\\transaksi_riwayat.php', 69)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\bi-parking\\app\\Views\\r_keuangan\\transaksi_riwayat.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('r_keuangan/transaksi_riwayat', [], true)
+ 5 APPPATH\Controllers\Keuangan\Transaksi.php(182): view('r_keuangan/transaksi_riwayat', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Keuangan\Transaksi->riwayat()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Keuangan\Transaksi))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-07-16 23:45:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-07-16 23:45:18 --> Undefined array key "nama_jenis_pembayaran"
+in APPPATH\Views\r_keuangan\transaksi_riwayat.php on line 101.
+ 1 APPPATH\Views\r_keuangan\transaksi_riwayat.php(101): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nama_jenis_pembayaran"', 'C:\\xampp\\htdocs\\bi-parking\\app\\Views\\r_keuangan\\transaksi_riwayat.php', 101)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\bi-parking\\app\\Views\\r_keuangan\\transaksi_riwayat.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('r_keuangan/transaksi_riwayat', [], true)
+ 5 APPPATH\Controllers\Keuangan\Transaksi.php(182): view('r_keuangan/transaksi_riwayat', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Keuangan\Transaksi->riwayat()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Keuangan\Transaksi))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-07-16 23:46:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-07-16 23:46:56 --> Undefined array key "nama_jenis_pembayaran"
+in APPPATH\Views\r_keuangan\transaksi_riwayat.php on line 101.
+ 1 APPPATH\Views\r_keuangan\transaksi_riwayat.php(101): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nama_jenis_pembayaran"', 'C:\\xampp\\htdocs\\bi-parking\\app\\Views\\r_keuangan\\transaksi_riwayat.php', 101)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\bi-parking\\app\\Views\\r_keuangan\\transaksi_riwayat.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('r_keuangan/transaksi_riwayat', [], true)
+ 5 APPPATH\Controllers\Keuangan\Transaksi.php(179): view('r_keuangan/transaksi_riwayat', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Keuangan\Transaksi->riwayat()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Keuangan\Transaksi))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-07-16 23:47:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-16 23:49:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-07-16 23:49:53 --> Undefined array key "nama"
+in APPPATH\Views\r_keuangan\transaksi_riwayat.php on line 75.
+ 1 APPPATH\Views\r_keuangan\transaksi_riwayat.php(75): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nama"', 'C:\\xampp\\htdocs\\bi-parking\\app\\Views\\r_keuangan\\transaksi_riwayat.php', 75)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\bi-parking\\app\\Views\\r_keuangan\\transaksi_riwayat.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('r_keuangan/transaksi_riwayat', [], true)
+ 5 APPPATH\Controllers\Keuangan\Transaksi.php(185): view('r_keuangan/transaksi_riwayat', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Keuangan\Transaksi->riwayat()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Keuangan\Transaksi))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-07-16 23:50:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-16 23:50:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-16 23:50:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-16 23:50:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-16 23:51:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-16 23:51:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-16 23:52:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-16 23:52:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-16 23:52:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-16 23:55:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-07-16 23:55:03 --> mysqli_sql_exception: Table 'db_mps.nama' doesn't exist in C:\xampp\htdocs\bi-parking\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\bi-parking\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT COUNT(*)...', 0)
+#1 C:\xampp\htdocs\bi-parking\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 C:\xampp\htdocs\bi-parking\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 C:\xampp\htdocs\bi-parking\system\Database\BaseBuilder.php(1700): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 C:\xampp\htdocs\bi-parking\system\Model.php(606): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+#5 C:\xampp\htdocs\bi-parking\system\BaseModel.php(1188): CodeIgniter\Model->countAllResults(false)
+#6 C:\xampp\htdocs\bi-parking\app\Controllers\Keuangan\Transaksi.php(174): CodeIgniter\BaseModel->paginate(9, 'pagination')
+#7 C:\xampp\htdocs\bi-parking\system\CodeIgniter.php(934): App\Controllers\Keuangan\Transaksi->riwayat()
+#8 C:\xampp\htdocs\bi-parking\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Keuangan\Transaksi))
+#9 C:\xampp\htdocs\bi-parking\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\ParkingManagementSystem\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-07-16 23:55:03 --> Table 'db_mps.nama' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT COUNT(*) AS `numrows`
+FROM `transaksi`
+JOIN `nama` ON `user`.`npm` = `transaksi`.`npm`
+JOIN `jenis_transaksi` ON `jenis_transaksi`.`id_jenis_transaksi` = `transaksi`.`id_jenis_transaksi`
+JOIN `status_transaksi` ON `status_transaksi`.`id_status_transaksi` = `transaksi`.`id_status_transaksi`
+JOIN `jenis_pembayaran` ON `jenis_pembayaran`.`id_jenis_pembayaran` = `transaksi`.`id_jenis_pembayaran`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `transaksi`
+JOIN `nama` ON `user`.`npm` = `transaksi`.`npm`
+JOIN `jenis_transaksi` ON `jenis_transaksi`.`id_jenis_transaksi` = `transaksi`.`id_jenis_transaksi`
+JOIN `status_transaksi` ON `status_transaksi`.`id_status_transaksi` = `transaksi`.`id_status_transaksi`
+JOIN `jenis_pembayaran` ON `jenis_pembayaran`.`id_jenis_pembayaran` = `transaksi`.`id_jenis_pembayaran`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `transaksi`
+JOIN `nama` ON `user`.`npm` = `transaksi`.`npm`
+JOIN `jenis_transaksi` ON `jenis_transaksi`.`id_jenis_transaksi` = `transaksi`.`id_jenis_transaksi`
+JOIN `status_transaksi` ON `status_transaksi`.`id_status_transaksi` = `transaksi`.`id_status_transaksi`
+JOIN `jenis_pembayaran` ON `jenis_pembayaran`.`id_jenis_pembayaran` = `transaksi`.`id_jenis_pembayaran`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1700): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `transaksi`
+JOIN `nama` ON `user`.`npm` = `transaksi`.`npm`
+JOIN `jenis_transaksi` ON `jenis_transaksi`.`id_jenis_transaksi` = `transaksi`.`id_jenis_transaksi`
+JOIN `status_transaksi` ON `status_transaksi`.`id_status_transaksi` = `transaksi`.`id_status_transaksi`
+JOIN `jenis_pembayaran` ON `jenis_pembayaran`.`id_jenis_pembayaran` = `transaksi`.`id_jenis_pembayaran`', [], false)
+ 5 SYSTEMPATH\Model.php(606): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 6 SYSTEMPATH\BaseModel.php(1188): CodeIgniter\Model->countAllResults(false)
+ 7 APPPATH\Controllers\Keuangan\Transaksi.php(174): CodeIgniter\BaseModel->paginate(9, 'pagination')
+ 8 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Keuangan\Transaksi->riwayat()
+ 9 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Keuangan\Transaksi))
+10 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-07-16 23:55:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-07-16 23:55:16 --> mysqli_sql_exception: Table 'db_mps.nama' doesn't exist in C:\xampp\htdocs\bi-parking\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\bi-parking\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT COUNT(*)...', 0)
+#1 C:\xampp\htdocs\bi-parking\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 C:\xampp\htdocs\bi-parking\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 C:\xampp\htdocs\bi-parking\system\Database\BaseBuilder.php(1700): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 C:\xampp\htdocs\bi-parking\system\Model.php(606): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+#5 C:\xampp\htdocs\bi-parking\system\BaseModel.php(1188): CodeIgniter\Model->countAllResults(false)
+#6 C:\xampp\htdocs\bi-parking\app\Controllers\Keuangan\Transaksi.php(174): CodeIgniter\BaseModel->paginate(9, 'pagination')
+#7 C:\xampp\htdocs\bi-parking\system\CodeIgniter.php(934): App\Controllers\Keuangan\Transaksi->riwayat()
+#8 C:\xampp\htdocs\bi-parking\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Keuangan\Transaksi))
+#9 C:\xampp\htdocs\bi-parking\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\ParkingManagementSystem\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-07-16 23:55:16 --> Table 'db_mps.nama' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT COUNT(*) AS `numrows`
+FROM `transaksi`
+JOIN `nama` ON `user`.`npm` = `transaksi`.`npm`
+JOIN `jenis_transaksi` ON `jenis_transaksi`.`id_jenis_transaksi` = `transaksi`.`id_jenis_transaksi`
+JOIN `status_transaksi` ON `status_transaksi`.`id_status_transaksi` = `transaksi`.`id_status_transaksi`
+JOIN `jenis_pembayaran` ON `jenis_pembayaran`.`id_jenis_pembayaran` = `transaksi`.`id_jenis_pembayaran`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `transaksi`
+JOIN `nama` ON `user`.`npm` = `transaksi`.`npm`
+JOIN `jenis_transaksi` ON `jenis_transaksi`.`id_jenis_transaksi` = `transaksi`.`id_jenis_transaksi`
+JOIN `status_transaksi` ON `status_transaksi`.`id_status_transaksi` = `transaksi`.`id_status_transaksi`
+JOIN `jenis_pembayaran` ON `jenis_pembayaran`.`id_jenis_pembayaran` = `transaksi`.`id_jenis_pembayaran`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `transaksi`
+JOIN `nama` ON `user`.`npm` = `transaksi`.`npm`
+JOIN `jenis_transaksi` ON `jenis_transaksi`.`id_jenis_transaksi` = `transaksi`.`id_jenis_transaksi`
+JOIN `status_transaksi` ON `status_transaksi`.`id_status_transaksi` = `transaksi`.`id_status_transaksi`
+JOIN `jenis_pembayaran` ON `jenis_pembayaran`.`id_jenis_pembayaran` = `transaksi`.`id_jenis_pembayaran`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1700): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `transaksi`
+JOIN `nama` ON `user`.`npm` = `transaksi`.`npm`
+JOIN `jenis_transaksi` ON `jenis_transaksi`.`id_jenis_transaksi` = `transaksi`.`id_jenis_transaksi`
+JOIN `status_transaksi` ON `status_transaksi`.`id_status_transaksi` = `transaksi`.`id_status_transaksi`
+JOIN `jenis_pembayaran` ON `jenis_pembayaran`.`id_jenis_pembayaran` = `transaksi`.`id_jenis_pembayaran`', [], false)
+ 5 SYSTEMPATH\Model.php(606): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 6 SYSTEMPATH\BaseModel.php(1188): CodeIgniter\Model->countAllResults(false)
+ 7 APPPATH\Controllers\Keuangan\Transaksi.php(174): CodeIgniter\BaseModel->paginate(9, 'pagination')
+ 8 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Keuangan\Transaksi->riwayat()
+ 9 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Keuangan\Transaksi))
+10 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-07-16 23:55:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-07-16 23:55:17 --> mysqli_sql_exception: Table 'db_mps.nama' doesn't exist in C:\xampp\htdocs\bi-parking\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\bi-parking\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT COUNT(*)...', 0)
+#1 C:\xampp\htdocs\bi-parking\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 C:\xampp\htdocs\bi-parking\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 C:\xampp\htdocs\bi-parking\system\Database\BaseBuilder.php(1700): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 C:\xampp\htdocs\bi-parking\system\Model.php(606): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+#5 C:\xampp\htdocs\bi-parking\system\BaseModel.php(1188): CodeIgniter\Model->countAllResults(false)
+#6 C:\xampp\htdocs\bi-parking\app\Controllers\Keuangan\Transaksi.php(174): CodeIgniter\BaseModel->paginate(9, 'pagination')
+#7 C:\xampp\htdocs\bi-parking\system\CodeIgniter.php(934): App\Controllers\Keuangan\Transaksi->riwayat()
+#8 C:\xampp\htdocs\bi-parking\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Keuangan\Transaksi))
+#9 C:\xampp\htdocs\bi-parking\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\ParkingManagementSystem\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-07-16 23:55:17 --> Table 'db_mps.nama' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT COUNT(*) AS `numrows`
+FROM `transaksi`
+JOIN `nama` ON `user`.`npm` = `transaksi`.`npm`
+JOIN `jenis_transaksi` ON `jenis_transaksi`.`id_jenis_transaksi` = `transaksi`.`id_jenis_transaksi`
+JOIN `status_transaksi` ON `status_transaksi`.`id_status_transaksi` = `transaksi`.`id_status_transaksi`
+JOIN `jenis_pembayaran` ON `jenis_pembayaran`.`id_jenis_pembayaran` = `transaksi`.`id_jenis_pembayaran`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `transaksi`
+JOIN `nama` ON `user`.`npm` = `transaksi`.`npm`
+JOIN `jenis_transaksi` ON `jenis_transaksi`.`id_jenis_transaksi` = `transaksi`.`id_jenis_transaksi`
+JOIN `status_transaksi` ON `status_transaksi`.`id_status_transaksi` = `transaksi`.`id_status_transaksi`
+JOIN `jenis_pembayaran` ON `jenis_pembayaran`.`id_jenis_pembayaran` = `transaksi`.`id_jenis_pembayaran`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `transaksi`
+JOIN `nama` ON `user`.`npm` = `transaksi`.`npm`
+JOIN `jenis_transaksi` ON `jenis_transaksi`.`id_jenis_transaksi` = `transaksi`.`id_jenis_transaksi`
+JOIN `status_transaksi` ON `status_transaksi`.`id_status_transaksi` = `transaksi`.`id_status_transaksi`
+JOIN `jenis_pembayaran` ON `jenis_pembayaran`.`id_jenis_pembayaran` = `transaksi`.`id_jenis_pembayaran`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1700): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `transaksi`
+JOIN `nama` ON `user`.`npm` = `transaksi`.`npm`
+JOIN `jenis_transaksi` ON `jenis_transaksi`.`id_jenis_transaksi` = `transaksi`.`id_jenis_transaksi`
+JOIN `status_transaksi` ON `status_transaksi`.`id_status_transaksi` = `transaksi`.`id_status_transaksi`
+JOIN `jenis_pembayaran` ON `jenis_pembayaran`.`id_jenis_pembayaran` = `transaksi`.`id_jenis_pembayaran`', [], false)
+ 5 SYSTEMPATH\Model.php(606): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 6 SYSTEMPATH\BaseModel.php(1188): CodeIgniter\Model->countAllResults(false)
+ 7 APPPATH\Controllers\Keuangan\Transaksi.php(174): CodeIgniter\BaseModel->paginate(9, 'pagination')
+ 8 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Keuangan\Transaksi->riwayat()
+ 9 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Keuangan\Transaksi))
+10 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-07-16 23:55:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-07-16 23:55:27 --> mysqli_sql_exception: Column 'created_at' in order clause is ambiguous in C:\xampp\htdocs\bi-parking\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\bi-parking\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\bi-parking\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\bi-parking\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\bi-parking\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\bi-parking\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\bi-parking\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(9, 0)
+#6 C:\xampp\htdocs\bi-parking\system\BaseModel.php(1192): CodeIgniter\BaseModel->findAll(9, 0)
+#7 C:\xampp\htdocs\bi-parking\app\Controllers\Keuangan\Transaksi.php(174): CodeIgniter\BaseModel->paginate(9, 'pagination')
+#8 C:\xampp\htdocs\bi-parking\system\CodeIgniter.php(934): App\Controllers\Keuangan\Transaksi->riwayat()
+#9 C:\xampp\htdocs\bi-parking\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Keuangan\Transaksi))
+#10 C:\xampp\htdocs\bi-parking\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\ParkingManagementSystem\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-07-16 23:55:27 --> Column 'created_at' in order clause is ambiguous
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *
+FROM `transaksi`
+JOIN `user` ON `user`.`npm` = `transaksi`.`npm`
+JOIN `jenis_transaksi` ON `jenis_transaksi`.`id_jenis_transaksi` = `transaksi`.`id_jenis_transaksi`
+JOIN `status_transaksi` ON `status_transaksi`.`id_status_transaksi` = `transaksi`.`id_status_transaksi`
+JOIN `jenis_pembayaran` ON `jenis_pembayaran`.`id_jenis_pembayaran` = `transaksi`.`id_jenis_pembayaran`
+ORDER BY `created_at` DESC
+ LIMIT 9', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `transaksi`
+JOIN `user` ON `user`.`npm` = `transaksi`.`npm`
+JOIN `jenis_transaksi` ON `jenis_transaksi`.`id_jenis_transaksi` = `transaksi`.`id_jenis_transaksi`
+JOIN `status_transaksi` ON `status_transaksi`.`id_status_transaksi` = `transaksi`.`id_status_transaksi`
+JOIN `jenis_pembayaran` ON `jenis_pembayaran`.`id_jenis_pembayaran` = `transaksi`.`id_jenis_pembayaran`
+ORDER BY `created_at` DESC
+ LIMIT 9')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `transaksi`
+JOIN `user` ON `user`.`npm` = `transaksi`.`npm`
+JOIN `jenis_transaksi` ON `jenis_transaksi`.`id_jenis_transaksi` = `transaksi`.`id_jenis_transaksi`
+JOIN `status_transaksi` ON `status_transaksi`.`id_status_transaksi` = `transaksi`.`id_status_transaksi`
+JOIN `jenis_pembayaran` ON `jenis_pembayaran`.`id_jenis_pembayaran` = `transaksi`.`id_jenis_pembayaran`
+ORDER BY `created_at` DESC
+ LIMIT 9')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `transaksi`
+JOIN `user` ON `user`.`npm` = `transaksi`.`npm`
+JOIN `jenis_transaksi` ON `jenis_transaksi`.`id_jenis_transaksi` = `transaksi`.`id_jenis_transaksi`
+JOIN `status_transaksi` ON `status_transaksi`.`id_status_transaksi` = `transaksi`.`id_status_transaksi`
+JOIN `jenis_pembayaran` ON `jenis_pembayaran`.`id_jenis_pembayaran` = `transaksi`.`id_jenis_pembayaran`
+ORDER BY `created_at` DESC
+ LIMIT 9', [], false)
+ 5 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(9, 0)
+ 7 SYSTEMPATH\BaseModel.php(1192): CodeIgniter\BaseModel->findAll(9, 0)
+ 8 APPPATH\Controllers\Keuangan\Transaksi.php(174): CodeIgniter\BaseModel->paginate(9, 'pagination')
+ 9 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Keuangan\Transaksi->riwayat()
+10 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Keuangan\Transaksi))
+11 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-07-16 23:56:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-16 23:59:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-07-16 23:59:01 --> Undefined array key "transaksi"
+in APPPATH\Views\r_keuangan\transaksi_riwayat.php on line 71.
+ 1 APPPATH\Views\r_keuangan\transaksi_riwayat.php(71): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "transaksi"', 'C:\\xampp\\htdocs\\bi-parking\\app\\Views\\r_keuangan\\transaksi_riwayat.php', 71)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\bi-parking\\app\\Views\\r_keuangan\\transaksi_riwayat.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('r_keuangan/transaksi_riwayat', [], true)
+ 5 APPPATH\Controllers\Keuangan\Transaksi.php(188): view('r_keuangan/transaksi_riwayat', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Keuangan\Transaksi->riwayat()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Keuangan\Transaksi))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
