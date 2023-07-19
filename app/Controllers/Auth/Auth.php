@@ -20,8 +20,13 @@ class Auth extends BaseController
     {
         $npm = $this->request->getVar('npm');
         $password = $this->request->getVar('password');
+        $captcha = $this->request->getVar('captcha');
         $user = $this->userModel->where('npm', $npm)->first();
-    
+
+        if (!$this->checkCaptcha($captcha)) {
+            // Jika CAPTCHA salah, tampilkan pesan kesalahan
+            return redirect()->to('/')->with('salah', 'CAPTCHA yang Anda masukkan salah.');
+        }
         if ($user) {
             if (md5($password) == $user['password']) {
                 //Session untuk login
@@ -59,10 +64,67 @@ class Auth extends BaseController
                         $data['showPopup'] = false;
                     }
                     return redirect()->to('/user/dashboard')->with('popup', 'show')->with('data', $data);
-                }                
+                }      
+            } else {
+                return redirect()->to('/')->withInput()->with('msg', 'NIM atau Password Salah');
             }
+        } else {
+            return redirect()->to('/')->withInput()->with('msg', 'Hubungi Administrator Terkait' . $npm);
+        }          
+            }
+    private function checkCaptcha($userCaptcha)
+{
+    $session = session();
+    $captchaCode = $session->get('captcha_code');
+
+    // Jika sesi CAPTCHA tidak ada atau CAPTCHA yang dimasukkan tidak sesuai, kembalikan false
+    if (!$captchaCode || strtolower($userCaptcha) !== strtolower($captchaCode)) {
+        return false;
     }
+
+    // Jika CAPTCHA sesuai, hapus sesi CAPTCHA dan kembalikan true
+    $session->remove('captcha_code');
+    return true;
+}
+    public function generateCaptcha()
+    {
+        $length = 5;
+        $characters = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
+        $captcha = '';
+        for ($i = 0; $i < $length; $i++) {
+            $captcha .= $characters[rand(0, strlen($characters) - 1)];
+        }
+    
+        $session = session();
+        $session->set('captcha_code', $captcha);
+    
+        // Buat gambar CAPTCHA
+        $width = 120;
+        $height = 40;
+        $image = imagecreatetruecolor($width, $height);
+    
+        $background_color = imagecolorallocate($image, 255, 255, 255);
+        $text_color = imagecolorallocate($image, 0, 0, 0);
+    
+        imagefilledrectangle($image, 0, 0, $width, $height, $background_color);
+    
+        // Tambahkan noise untuk meningkatkan keamanan
+        for ($i = 0; $i < 50; $i++) {
+            $x = rand(0, $width - 1);
+            $y = rand(0, $height - 1);
+            imagesetpixel($image, $x, $y, $text_color);
+        }
+    
+        // Tambahkan teks CAPTCHA
+        $font = FCPATH . 'text\Itim-Regular.ttf'; // Ganti dengan path font yang sesuai
+        imagettftext($image, 20, 0, 10, 30, $text_color, $font, $captcha);
+    
+        header('Content-Type: image/png');
+        imagepng($image);
+        imagedestroy($image);
     }
+    
+
 
     public function logout()
     {

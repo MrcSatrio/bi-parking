@@ -33,6 +33,7 @@ $routes->set404Override();
 //Authentikasi 
 $routes->get('/', 'Auth\Auth::index');
 $routes->post('/login', 'Auth\Auth::login');
+$routes->get('/captcha', 'Auth\Auth::generateCaptcha');
 $routes->get('/logout', 'Auth\Auth::logout');
 $routes->post('/ceksaldo', 'Auth\Saldo::ceksaldo');
 $routes->get('berkas/download/(:num)', 'Admin\Berkas::download/$1');

@@ -52,28 +52,16 @@
                                             <span toggle="#password-field" class="fa fa-fw fa-eye field-icon toggle-password"></span>
                                         </div>
                                     </div>
-
+                                    <div class="form-group">
+                                        <center><img src="<?= base_url('captcha') ?>" alt="CAPTCHA"></center>
+                                        <br>
+                                        <input type="text" class="form-control form-control-user" name="captcha" placeholder="Masukkan kode CAPTCHA di sini" required>
+                                    </div>
                                     <button type="submit" class="btn btn-primary btn-user btn-block">
                                         Login
                                     </button>
                                     <hr>
                                     <head>
-<script src="https://www.google.com/recaptcha/enterprise.js?render=6LdydxknAAAAAHqPN-VpqV41iKdbNn-tNMyztXRl"></script>
-...
-</head>
-
-<script>
-function onClick(e) {
-  e.preventDefault();
-  grecaptcha.enterprise.ready(async () => {
-    const token = await grecaptcha.enterprise.execute('6LdydxknAAAAAHqPN-VpqV41iKdbNn-tNMyztXRl', {action: 'LOGIN'});
-    // IMPORTANT: The 'token' that results from execute is an encrypted response sent by
-    // reCAPTCHA Enterprise to the end user's browser.
-    // This token must be validated by creating an assessment.
-    // See https://cloud.google.com/recaptcha-enterprise/docs/create-assessment
-  });
-}
-</script>
                                 </form>
 
                                 <div class="text-center">
