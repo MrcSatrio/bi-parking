@@ -1,0 +1,9 @@
+__ci_last_regenerate|i:1690326604;_ci_previous_url|s:57:"http://192.168.1.20/ParkingManagementSystem/resetpassword";captcha_code|s:5:"zfhAH";__ci_vars|a:2:{s:5:"error";s:3:"old";s:7:"success";s:3:"new";}error|s:258:"<!-- DEBUG-VIEW START 1 SYSTEMPATH\Validation\Views\list.php -->
+	<div class="errors" role="alert">
+		<ul>
+					<li>Password harus terdiri dari 8 karakter atau lebih</li>
+				</ul>
+	</div>
+
+<!-- DEBUG-VIEW ENDED 1 SYSTEMPATH\Validation\Views\list.php -->
+";success|s:35:"Silahkan Login Dengan Password Baru";

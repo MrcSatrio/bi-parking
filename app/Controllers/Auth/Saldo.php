@@ -16,11 +16,8 @@ class Saldo extends BaseController
             ->first();
 
         if (!$saldo) {
-            session()->setFlashdata('salah', 'Maaf NPM tidak Ditemukan.');
-            return redirect()->back()->withInput();
+            return redirect()->to('/')->withInput()->with('msg', 'NIM Tidak Terdaftar');
         }
-
-
         $data = [
             'title' => 'Parking Management System',
             'ceksaldo' => $saldo

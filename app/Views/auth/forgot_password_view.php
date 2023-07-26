@@ -1,10 +1,29 @@
 <?= $this->extend('auth/template/index');
 
 $this->section('content'); ?>
+<?php
+$errorMessage = session()->get('msg');
+?>
+<?php if (isset($flashSuccess) || isset($flashdata) || isset($flashSalah) || isset($errorMessage)) : ?>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            // Display error alert if there is an error message in the session
+            <?php if (!empty($errorMessage)) : ?>
+                Swal.fire({
+                    icon: 'error',
+                    title: 'Oops...',
+                    text: '<?php echo addslashes($errorMessage); ?>', // Addslashes to escape single quotes
+                });
+            <?php endif; ?>
+        });
+    </script>
+<?php endif; ?>
 
 <div class="container">
 
     <!-- Outer Row -->
+    <div class="login-card-container">
+    <div class="login-card">
     <div class="row justify-content-center">
 
         <div class="col-md-6">
@@ -18,24 +37,20 @@ $this->section('content'); ?>
                                 <div class="text-center">
                                     <h1 class="h4 text-gray-900 mb-4">Lupa Password</h1>
                                 </div>
-                                <?php if (!empty(session()->getFlashdata('error'))) : ?>
-                                    <div class="alert alert-danger" role="alert">
-                                        <h4>Error</h4>
-                                        </hr>
-                                        <?php echo session()->getFlashdata('error'); ?>
-                                    </div>
-                                <?php endif; ?>
-                                <form action="<?= base_url() ?>passwordreset" method="post" class="user">
-                                    <div class="form-group">
-                                        <input type="email" class="form-control form-control-user" name="email" placeholder="Masukan Email Anda" required>
-                                    </div>
-                                    <button type="submit" class="btn btn-primary btn-user btn-block">
+                                <form class="login-card-form" method="post" action="<?= base_url('passwordreset') ?>">
+                <div class="form-item">
+                    <span class="form-item-icon material-symbols-rounded">
+                        Email
+                    </span>
+                    <input type="text" placeholder="Email" required autofocus name="email" id="email">
+                </div>
+                                    <button type="submit">
                                         Kirim Kode
                                     </button>
                                 </form>
                                 <hr>
                                 <div class="text-center">
-                                    <a class="small" href="<?= base_url() ?>">Kembali login</a>
+                                    <a class="small" href="<?= base_url() ?>">Kembali</a>
                                 </div>
                             </div>
                         </div>

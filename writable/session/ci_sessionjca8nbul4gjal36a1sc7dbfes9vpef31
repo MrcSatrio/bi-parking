@@ -1,0 +1,9 @@
+__ci_last_regenerate|i:1690272778;_ci_previous_url|s:60:"http://192.168.180.229/ParkingManagementSystem/resetpassword";captcha_code|s:5:"xaacz";error|s:255:"<!-- DEBUG-VIEW START 1 SYSTEMPATH\Validation\Views\list.php -->
+	<div class="errors" role="alert">
+		<ul>
+					<li>Konfirmasi password tidak sama dengan password</li>
+				</ul>
+	</div>
+
+<!-- DEBUG-VIEW ENDED 1 SYSTEMPATH\Validation\Views\list.php -->
+";__ci_vars|a:1:{s:5:"error";s:3:"old";}

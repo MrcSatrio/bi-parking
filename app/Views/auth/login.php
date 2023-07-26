@@ -1,106 +1,127 @@
 <?= $this->extend('auth/template/index'); ?>
 
 <?= $this->section('content'); ?>
+<?php
+$flashdata = session()->getFlashdata('berhasil');
+$errorMessage = session()->get('msg');
+$flashSuccess = session()->getFlashdata('success');
+$flashSalah = session()->getFlashdata('salah');
+?>
 
-<div class="container">
-    <div class="row justify-content-center">
-        <div class="col-md-4">
-            <div class="card o-hidden border-0 shadow-lg my-5">
-                <div class="card-body p-0">
-                    <div class="row">
-                        <div class="col-lg">
-                            <div class="p-5">
-                                
-                                <div class="text-center">
-                                    
-  <img src="<?= base_url() ?>assets/img/logo.png" style="width: 200px; height: 200px;">
-                                    <h1 class="h4 text-gray-900 mb-4">Selamat Datang!</h1>
-                                </div>
-                                <?php if (session()->get('msg')) : ?>
-                                    <div class="alert alert-danger">
-                                        <?= session()->get('msg') ?>
-                                    </div>
-                                <?php endif ?>
+<?php if (isset($flashSuccess) || isset($flashdata) || isset($flashSalah) || isset($errorMessage)) : ?>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            // Display error alert if there is an error message in the session
+            <?php if (!empty($errorMessage)) : ?>
+                Swal.fire({
+                    icon: 'error',
+                    title: 'Oops...',
+                    text: '<?php echo addslashes($errorMessage); ?>', // Addslashes to escape single quotes
+                });
+            <?php endif; ?>
 
-                                <?php if (!empty(session()->getFlashdata('berhasil'))) : ?>
-                                    <div class="alert alert-success" role="alert">
-                                        <h4>Error</h4>
-                                        <hr>
-                                        <?= session()->getFlashdata('berhasil'); ?>
-                                    </div>
-                                <?php endif; ?>
+            // Display success alert if there is a 'berhasil' flashdata in the session
+            <?php if (!empty($flashdata)) : ?>
+                Swal.fire({
+                    icon: 'success',
+                    title: 'Success!',
+                    text: '<?php echo addslashes($flashdata); ?>', // Addslashes to escape single quotes
+                });
+            <?php endif; ?>
 
-                                <?php if (session()->getFlashdata('salah')) : ?>
-                                    <div class="alert alert-danger">
-                                        <?= session()->getFlashdata('salah'); ?>
-                                    </div>
-                                <?php endif; ?>
+            // Display success alert if there is a 'success' flashdata in the session
+            <?php if (!empty($flashSuccess)) : ?>
+                Swal.fire({
+                    icon: 'success',
+                    title: 'Success!',
+                    text: '<?php echo addslashes($flashSuccess); ?>', // Addslashes to escape single quotes
+                });
+            <?php endif; ?>
 
-                                <?php if (session()->getFlashdata('success')) : ?>
-                                    <div class="alert alert-success">
-                                        <?= session()->getFlashdata('success'); ?>
-                                    </div>
-                                <?php endif; ?>
+            // Display success alert if there is a 'salah' flashdata in the session
+            <?php if (!empty($flashSalah)) : ?>
+                Swal.fire({
+                    icon: 'success',
+                    title: 'Salah!',
+                    text: '<?php echo addslashes($flashSalah); ?>', // Addslashes to escape single quotes
+                });
+            <?php endif; ?>
+        });
+    </script>
+<?php endif; ?>
 
-                                <form class="user" method="post" action="<?= base_url('login') ?>">
-                                    <div class="form-group">
-                                        <input type="text" class="form-control form-control-user" name="npm" placeholder="Username" required>
-                                    </div>
-                                    <div class="form-group">
-                                        <div class="password-field">
-                                            <input id="password" type="password" class="form-control form-control-user" placeholder="Password" name="password" required>
-                                            <span toggle="#password-field" class="fa fa-fw fa-eye field-icon toggle-password"></span>
-                                        </div>
-                                    </div>
-                                    <div class="form-group">
-                                        <center><img src="<?= base_url('captcha') ?>" alt="CAPTCHA"></center>
-                                        <br>
-                                        <input type="text" class="form-control form-control-user" name="captcha" placeholder="Masukkan kode CAPTCHA di sini" required>
-                                    </div>
-                                    <button type="submit" class="btn btn-primary btn-user btn-block">
-                                        Login
-                                    </button>
-                                    <hr>
-                                    <head>
-                                </form>
+<div class="login-card-container">
+    <div class="login-card">
 
-                                <div class="text-center">
-                                    <a class="small" href="<?= base_url() ?>forgotpassword">Lupa Password</a><br>
-                                    <a class="small" href="#" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">Cek saldo</a>
-                                </div>
+        <div class="login-card-logo">
+            <img src="<?= base_url() ?>assets/img/biu.png">
+        </div>
+        <div class="login-card-header">
+            <h1>Selamat Datang!</h1>
+        </div>
+        <form class="login-card-form" method="post" action="<?= base_url('login') ?>">
+            <div class="form-item">
+                <span class="form-item-icon material-symbols-rounded">
+                    person
+                </span>
+                <input type="text" placeholder="Username" required autofocus name="npm" id="npm">
+            </div>
 
-                                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                    <div class="modal-dialog">
-                                        <div class="modal-content">
-                                            <div class="modal-header">
-                                                <h5 class="modal-title" id="exampleModalLabel">Cek Saldo Pengguna</h5>
-                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                                    <span aria-hidden="true">&times;</span>
-                                                </button>
-                                            </div>
-                                            <div class="modal-body">
-                                                <form action="<?= base_url() ?>ceksaldo" method="Post">
-                                                    <div class="form-group">
-                                                        <label for="recipient-name" class="col-form-label">NPM</label>
-                                                        <input type="text" class="form-control" id="recipient-name" name="npm" placeholder="Masukan NPM Anda" required>
-                                                    </div>
-                                                    <div class="modal-footer">
-                                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                                        <button type="submit" class="btn btn-primary">Cek</button>
-                                                    </div>
-                                                </form>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+            <div class="form-item">
+                <span class="form-item-icon material-symbols-rounded">
+                    lock
+                </span>
+                <input type="password" required placeholder="Password" name="password" id="password">
+                <span toggle="#password" class="fa fa-fw fa-eye field-icon toggle-password"></span>
+            </div>
+
+            <center><img src="<?= base_url('captcha') ?>" alt="CAPTCHA"></center>
+
+            <div class="form-item">
+                <span class="form-item-icon material-symbols-rounded">smart_toy</span>
+                <input type="text" class="form-control form-control-user" name="captcha" placeholder="Captcha" required>
+            </div>
+
+            <div class="footer-form">
+                <a class="left-sentence" href="<?= base_url() ?>forgotpassword">Lupa Password</a><br>
+                <a class="right-sentence" href="#" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">Cek saldo</a>
+            </div>
+            <button type="submit">Masuk</button>
+        </form>
+
+        <div class="login-card-footer">
+
+        </div>
+    </div>
+</div>
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Cek Saldo Pengguna</h5>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="login-card">
+                    <form class="login-card-form" action="<?= base_url() ?>ceksaldo" method="post">
+                        <div class="form-item">
+                            <span class="form-item-icon material-symbols-rounded">
+                                person
+                            </span>
+                            <input type="text" placeholder="NPM" required autofocus name="npm" id="npm">
                         </div>
-                    </div>
                 </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="submit" class="btn-primary">Cek</button>
+                </div>
+                </form>
             </div>
         </div>
     </div>
 </div>
+
 
 <script>
     var passwordField = document.getElementById("password");
@@ -119,5 +140,4 @@
         }
     });
 </script>
-
 <?= $this->endSection(); ?>
