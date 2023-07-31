@@ -38,6 +38,7 @@ $routes->get('/logout', 'Auth\Auth::logout');
 $routes->post('/ceksaldo', 'Auth\Saldo::ceksaldo');
 $routes->get('berkas/download/(:num)', 'Admin\Berkas::download/$1');
 
+
 //FORGOT
 $routes->get('/forgotpassword', 'Auth\Auth::forgot_password');
 $routes->match(['get', 'post'], '/passwordreset', 'Auth\Auth::password_reset');
@@ -45,6 +46,7 @@ $routes->match(['get', 'post'], '/passwordreset', 'Auth\Auth::password_reset');
 //reset page
 $routes->get('/resetpassword', 'Auth\Auth::change_password');
 $routes->match(['get', 'post'], '/updatepassword', 'Auth\Auth::update_password');
+
 //endAuth
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////
 //FILTERS
@@ -72,6 +74,7 @@ $routes->group('admin', ['filter' => 'roleFilter'], function ($routes) {
     $routes->get('transaksi_riwayat', 'Admin\Transaksi::riwayat');
     $routes->post('cancel/(:segment)', 'Admin\Transaksi::cancel/$1');
     $routes->post('cetak/(:segment)', 'Admin\Transaksi::cetak/$1');
+    
     //endTransaksi
     // Pengumuman
     $routes->get('form_upload', 'Admin\Berkas::create');
@@ -155,6 +158,7 @@ $routes->group('user', ['filter' => 'roleFilter'], function ($routes) {
     $routes->post('transaksi_topup', 'Admin\Transaksi::topup');
     $routes->post('cancel/(:segment)', 'Admin\Transaksi::cancel/$1');
     $routes->post('bukti/(:segment)', 'Admin\Transaksi::bukti/$1');
+    $routes->get('xendit-callback', 'Admin\CallbackController::xenditCallback');
     //endtopup
     //kartuhilang
     $routes->get('kartuhilang', 'User\KartuHilang::index');

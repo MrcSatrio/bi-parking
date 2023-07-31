@@ -14,6 +14,8 @@ class Transaksi extends BaseController
     protected $JenisPembayaranModel;
     protected $hargaModel;
     protected $pager;
+    private $xenditCallbackToken = 'cYJxEJ38axyZym1Wjl3ua9aTiYfryiORBZGCJSTXNDsFhgz6';
+    
 
     public function __construct()
     {
@@ -26,6 +28,8 @@ class Transaksi extends BaseController
         $this->hargaModel = new \App\Models\HargaModel();
         $this->pager = \Config\Services::pager();
     }
+
+
     public function transaksi_inputkodebooking()
     {
         $data =
@@ -243,90 +247,200 @@ class Transaksi extends BaseController
         return view('r_admin/transaksi_approve', $data);
     } 
 }
-    public function topup()
-    {
-        if (!$this->validate([
-            'nominal' => [
-                'rules' => 'numeric',
-                'errors' => [
-                    'numeric' => 'Pilih Nominal Saldo!',
-                    
-                ]
-            ],
-            'jenis_pembayaran' => [
-                'rules' => 'numeric|required',
-                'errors' => [
-                    'numeric' => 'Pilih Metode Pembayaran!',
-                    'required' => 'Pilih Metode Pembayaran!'
-                ]
-            ],
-            
-        ])) {
-            session()->setFlashdata('error', $this->validator->listErrors());
-            return redirect()->back()->withInput();
-        }
-    
-        $user = $this->userModel->where('npm', session('npm'))->first();
-        $transaksiData = $this->transaksiModel->where('npm', session('npm'))->findAll();
-        $rekening = $this->rekeningModel->findAll();
-        
-    
-        $transaksiJenis = array_column($transaksiData, 'id_status_transaksi');
-    
-        if ($user['id_status'] == 1 && in_array(1, $transaksiJenis)) {
-            session()->setFlashdata('error', 'Transaksi gagal. Anda sudah memiliki transaksi yang sedang diproses.');
-            return redirect()->back()->withInput();
-        } elseif ($user['id_status'] == 2) {
-            $masaBerlaku = strtotime($user['masa_berlaku']);
-            $currentTime = time();
-    
-            if ($masaBerlaku > $currentTime || in_array(1, $transaksiJenis)) {
-                session()->setFlashdata('error', 'Transaksi gagal. Anda sudah memiliki transaksi yang sedang diproses atau masa berlaku Member belum habis.');
-                return redirect()->back()->withInput();
-            }
-        }
-    
-        // Lanjutkan dengan proses topup jika kondisi di atas tidak terpenuhi
-    
-        $kodebooking_transaksi = substr(str_shuffle(str_repeat("0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ", 6)), 0, 6);
-        $npm = $this->request->getVar('npm');
-        $nominal_saldo = $this->request->getVar('nominal');
-        $saldo_awal = $this->request->getVar('saldoawal');
-        $id_jenis_transaksi = $this->request->getVar('jenis_transaksi');
-        $id_jenis_pembayaran = $this->request->getVar('jenis_pembayaran');
-        $id_status_transaksi = $this->request->getVar('status_transaksi');
-        $saldo_akhir = $saldo_awal + $nominal_saldo;
-    
-        $transaksi = [
-            'kodebooking_transaksi' => $kodebooking_transaksi,
-            'npm' => $npm,
-            'id_jenis_transaksi' => $id_jenis_transaksi,
-            'saldoawal_transaksi' => $saldo_awal,
-            'nominal_transaksi' => $nominal_saldo,
-            'saldoakhir_transaksi' => $saldo_akhir,
-            'id_jenis_pembayaran' => $id_jenis_pembayaran,
-            'id_status_transaksi' => $id_status_transaksi
-        ];
-        $this->transaksiModel->save($transaksi);
-        $logData = [
-            'npm' => session('npm'),
-            'action' => 'transaksi_Topup',
-            'details' => 'Topup dengan kode booking ' . $kodebooking_transaksi . ' sebesar ' . $nominal_saldo ,
-            'ip_address' => $this->request->getIPAddress()
-        ];
-        $logModel = new \App\Models\LogModel();
-        $logModel->insert($logData);
-        
-    
-        return redirect()->to("user/transaksi_result/$kodebooking_transaksi/$nominal_saldo/$id_jenis_pembayaran");
+public function topup()
+{
+    // Validate the input data
+    if (!$this->validate([
+        'nominal' => [
+            'rules' => 'numeric',
+            'errors' => [
+                'numeric' => 'Pilih Nominal Saldo!',
+            ]
+        ],
+        'jenis_pembayaran' => [
+            'rules' => 'numeric|required',
+            'errors' => [
+                'numeric' => 'Pilih Metode Pembayaran!',
+                'required' => 'Pilih Metode Pembayaran!'
+            ]
+        ],
+    ])) {
+        session()->setFlashdata('error', $this->validator->listErrors());
+        return redirect()->back()->withInput();
     }
+
+    // Check user's status and ongoing transactions
+    $user = $this->userModel->where('npm', session('npm'))->first();
+    $transaksiData = $this->transaksiModel->where('npm', session('npm'))->findAll();
+    $transaksiJenis = array_column($transaksiData, 'id_status_transaksi');
+
+    if ($user['id_status'] == 1 && in_array(1, $transaksiJenis)) {
+        session()->setFlashdata('error', 'Transaksi gagal. Anda sudah memiliki transaksi yang sedang diproses.');
+        return redirect()->back()->withInput();
+    } elseif ($user['id_status'] == 2) {
+        $masaBerlaku = strtotime($user['masa_berlaku']);
+        $currentTime = time();
+
+        if ($masaBerlaku > $currentTime || in_array(1, $transaksiJenis)) {
+            session()->setFlashdata('error', 'Transaksi gagal. Anda sudah memiliki transaksi yang sedang diproses atau masa berlaku Member belum habis.');
+            return redirect()->back()->withInput();
+        }
+    }
+
+    // Continue with the top-up process if conditions above are not met
+    $kodebooking_transaksi = substr(str_shuffle(str_repeat("0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ", 6)), 0, 6);
+    $npm = session('npm');
+    $nominal_saldo = $this->request->getVar('nominal');
+    $saldo_awal = $this->request->getVar('saldoawal');
+    $id_jenis_transaksi = $this->request->getVar('jenis_transaksi');
+    $id_jenis_pembayaran = $this->request->getVar('jenis_pembayaran');
+    $id_status_transaksi = $this->request->getVar('status_transaksi');
+    $saldo_akhir = $saldo_awal + $nominal_saldo;
+    $fee_ewallet = $nominal_saldo * 0.020;
+    $fee_bank = $nominal_saldo * 0.250;
+    $fee_qris = $nominal_saldo * 0.010;
+    $params = [
+            'external_id' => $kodebooking_transaksi,
+            'description' => 'TOPUP SALDO',
+            'payer_email' => $user['email'],
+            'customer_notification_preference' => [
+                'invoice_created' => ['email'],
+                'invoice_reminder' => ['email'],
+                'invoice_paid' => ['email'],
+                'invoice_expired' => ['email']
+            ],
+            'payment_methods' => [],
+            'fees' => []
+        ];
     
-
-
+        if ($id_jenis_pembayaran == 1) {
+            $transaksi = [
+                'kodebooking_transaksi' => $kodebooking_transaksi,
+                'npm' => $npm,
+                'id_jenis_transaksi' => $id_jenis_transaksi,
+                'saldoawal_transaksi' => $saldo_awal,
+                'nominal_transaksi' => $nominal_saldo,
+                'saldoakhir_transaksi' => $saldo_akhir,
+                'id_jenis_pembayaran' => $id_jenis_pembayaran,
+                'id_status_transaksi' => $id_status_transaksi
+            ];
+            $this->transaksiModel->save($transaksi);
     
+            // Optionally, you can add a success message here.
+            session()->setFlashdata('success', 'Top-up berhasil dilakukan.');
     
+            // Redirect the user to a success page or any other appropriate page.
+            return redirect()->to("user/transaksi_result/$kodebooking_transaksi/$nominal_saldo/$id_jenis_pembayaran");
+        } elseif (in_array($id_jenis_pembayaran, [2, 3, 4])) {
+            if ($id_jenis_pembayaran == 2) {
+                $params['amount'] = $nominal_saldo + $fee_ewallet;
+                $params['payment_methods'] = ['OVO', 'DANA', 'SHOPEEPAY', 'LINKAJA'];
+                $params['fees'] = [['type' => 'ADMIN', 'value' => $fee_ewallet]];
+            } elseif ($id_jenis_pembayaran == 3) {
+                $params['amount'] = $nominal_saldo + $fee_bank;
+                $params['payment_methods'] = ['BCA', 'BNI', 'BSI', 'BRI', 'MANDIRI', 'PERMATA', 'SAHABAT_SAMPOERNA'];
+                $params['fees'] = [['type' => 'ADMIN', 'value' => $fee_bank]];
+            } elseif ($id_jenis_pembayaran == 4) {
+                $params['amount'] = $nominal_saldo + $fee_qris;
+                $params['payment_methods'] = ['QRIS'];
+                $params['fees'] = [['type' => 'ADMIN', 'value' => $fee_qris]];
+            }
 
+        // Assuming XenditService is a custom class for interacting with Xendit API
+        $xenditService = new XenditService();
+        $xendit_response = $xenditService->createInvoice($params);
 
+        // Handle Xendit API response
+        if (isset($xendit_response['id'])) {
+            // Invoice berhasil dibuat, dapatkan URL invoice dan ID invoice dari $xendit_response
+            $invoice_id = $xendit_response['id'];
+            $invoice_url = $xendit_response['invoice_url'];
+
+            // Redirect pengguna ke halaman pembayaran Xendit
+            return redirect()->to($invoice_url);
+        } else {
+            // Tangani jika ada error dari Xendit saat membuat invoice
+            session()->setFlashdata('error', 'Terjadi kesalahan saat membuat invoice. Silakan coba lagi nanti.');
+            return redirect()->back()->withInput();
+        }
+    } else {
+        // Invalid jenis_pembayaran value
+        session()->setFlashdata('error', 'Metode pembayaran tidak valid.');
+        return redirect()->back()->withInput();
+    }
+}
+    public function xenditCallback()
+{
+    // Menerima data callback dari Xendit
+    $rawData = file_get_contents('php://input');
+    $callbackData = json_decode($rawData, true);
+
+    // Pastikan callbackData bukan null dan verifikasi Callback Verification Token
+    if ($callbackData) {
+        $xenditCallbackToken = $_SERVER['HTTP_X_CALLBACK_TOKEN'];
+        if ($xenditCallbackToken === $this->xenditCallbackToken) {
+            // Token sesuai, callback valid dari Xendit
+            // Lanjutkan dengan penanganan sesuai status pembayaran
+            $invoiceId = $callbackData['id'];
+            $status = $callbackData['status'];
+            $amount = $callbackData['amount'];
+            $externalId = $callbackData['external_id'];
+
+            if ($status === 'PAID') {
+                // Lakukan tindakan sesuai dengan pembayaran yang berhasil
+                // Misalnya, perbarui status pembayaran di database Anda dan berikan saldo ke pengguna
+                // Contoh:
+                $pengguna = $this->userModel
+                    ->join('transaksi', 'transaksi.npm = user.npm')
+                    ->join('kartu', 'kartu.id_kartu = user.id_kartu')
+                    ->where('kodebooking_transaksi', $externalId)
+                    ->first();
+                $transaksi = $this->transaksiModel
+                    ->join('user', 'user.npm = transaksi.npm')
+                    ->join('kartu', 'kartu.id_kartu = user.id_kartu')
+                    ->join('jenis_pembayaran', 'jenis_pembayaran.id_jenis_pembayaran = transaksi.id_jenis_pembayaran')
+                    ->where('kodebooking_transaksi', $externalId)
+                    ->first();
+
+                $this->transaksiModel->save([
+                    'id_transaksi' => $transaksi['id_transaksi'],
+                    'saldoawal_transaksi' => $transaksi['saldo'],
+                    'saldoakhir_transaksi' => $transaksi['saldo'] + $amount,
+                    'id_status_transaksi' => 3,
+                    'validator' => 'XENDIT'
+                ]);
+
+                $kartuData = [
+                    'id_kartu' => $transaksi['id_kartu'],
+                    'saldo' => $transaksi['saldo'] + $amount,
+                ];
+                $this->kartuModel->save($kartuData);
+
+                $logData = [
+                    'npm' => session('npm'),
+                    'action' => 'transaksi_approve',
+                    'details' => 'Transaksi dengan kode booking ' . $externalId . ' disetujui',
+                    'ip_address' => $this->request->getIPAddress()
+                ];
+
+                $logModel = new \App\Models\LogModel();
+                $logModel->insert($logData);
+                session()->setFlashdata('success', 'Top-up berhasil dilakukan.');
+                return redirect()->to("user/riwayatTransaksi");
+        
+            } elseif ($status === 'EXPIRED') {
+                session()->setFlashdata('error', 'Top-up Kadaluwarsa.');
+                return redirect()->to("user/riwayat");
+            } elseif ($status === 'FAILED') {
+                session()->setFlashdata('error', 'Top-up gagal.');
+                return redirect()->to("user/riwayatTransaksi");
+            }
+        } else {
+            session()->setFlashdata('error', 'GAGAL.');
+                return redirect()->to("user/riwayatTransaksi");
+        }
+    }
+}
 
     public function transaksi_kartuHilang()
 {
@@ -637,7 +751,4 @@ public function riwayat()
     session()->setFlashdata('success', 'Rekening berhasil diperbarui.');
     return redirect()->to('keuangan/transaksi_rekening');
 }
-
-
-    // ...
 }
