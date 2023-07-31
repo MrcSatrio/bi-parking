@@ -1,0 +1,840 @@
+INFO - 2023-07-28 08:27:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-28 08:27:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-28 08:27:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-28 08:27:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-28 08:27:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-28 08:27:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-28 08:27:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-28 08:28:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-07-28 08:29:20 --> mysqli_sql_exception: MySQL server has gone away in C:\xampp\htdocs\bi-parking\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\bi-parking\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `lo...', 0)
+#1 C:\xampp\htdocs\bi-parking\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `lo...')
+#2 C:\xampp\htdocs\bi-parking\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `lo...')
+#3 C:\xampp\htdocs\bi-parking\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `lo...', Array, false)
+#4 C:\xampp\htdocs\bi-parking\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\bi-parking\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\bi-parking\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\bi-parking\app\Controllers\Auth\Auth.php(141): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\bi-parking\system\CodeIgniter.php(934): App\Controllers\Auth\Auth->logout()
+#9 C:\xampp\htdocs\bi-parking\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth\Auth))
+#10 C:\xampp\htdocs\bi-parking\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\ParkingManagementSystem\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-07-28 08:29:21 --> MySQL server has gone away
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `log_aktivitas` (`npm`, `action`, `details`, `ip_address`) VALUES (\'2\', \'logout\', \'User logged out\', \'192.168.1.17\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `log_aktivitas` (`npm`, `action`, `details`, `ip_address`) VALUES (\'2\', \'logout\', \'User logged out\', \'192.168.1.17\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `log_aktivitas` (`npm`, `action`, `details`, `ip_address`) VALUES (\'2\', \'logout\', \'User logged out\', \'192.168.1.17\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `log_aktivitas` (`npm`, `action`, `details`, `ip_address`) VALUES (:npm:, :action:, :details:, :ip_address:)', [...], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\Auth\Auth.php(141): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Auth\Auth->logout()
+10 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth\Auth))
+11 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-07-28 08:29:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-28 08:29:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-07-28 08:29:23 --> filesize(): stat failed for C:\xampp\htdocs\bi-parking\writable\session/ci_sessionesslj538p0q8kna96b76m3eef7kgjjr9
+in SYSTEMPATH\Session\Handlers\FileHandler.php on line 160.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'filesize(): stat failed for C:\\xampp\\htdocs\\bi-parking\\writable\\session/ci_sessionesslj538p0q8kna96b76m3eef7kgjjr9', 'C:\\xampp\\htdocs\\bi-parking\\system\\Session\\Handlers\\FileHandler.php', 160)
+ 2 SYSTEMPATH\Session\Handlers\FileHandler.php(160): filesize('C:\\xampp\\htdocs\\bi-parking\\writable\\session/ci_sessionesslj538p0q8kna96b76m3eef7kgjjr9')
+ 3 [internal function]: CodeIgniter\Session\Handlers\FileHandler->read('esslj538p0q8kna96b76m3eef7kgjjr9')
+ 4 SYSTEMPATH\Session\Session.php(928): session_start()
+ 5 SYSTEMPATH\Session\Session.php(250): CodeIgniter\Session\Session->startSession()
+ 6 SYSTEMPATH\Config\Services.php(674): CodeIgniter\Session\Session->start()
+ 7 SYSTEMPATH\Config\BaseService.php(252): CodeIgniter\Config\Services::session(Object(Config\App), false)
+ 8 SYSTEMPATH\Config\BaseService.php(193): CodeIgniter\Config\BaseService::__callStatic('session', [...])
+ 9 SYSTEMPATH\Config\Services.php(641): CodeIgniter\Config\BaseService::getSharedInstance('session', null)
+10 SYSTEMPATH\Config\BaseService.php(252): CodeIgniter\Config\Services::session()
+11 SYSTEMPATH\Common.php(988): CodeIgniter\Config\BaseService::__callStatic('session', [])
+12 APPPATH\Controllers\Auth\Auth.php(132): session()
+13 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Auth\Auth->logout()
+14 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth\Auth))
+15 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+16 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-28 08:29:23 --> filesize(): stat failed for C:\xampp\htdocs\bi-parking\writable\session/ci_sessionesslj538p0q8kna96b76m3eef7kgjjr9
+in SYSTEMPATH\Session\Handlers\FileHandler.php on line 160.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'filesize(): stat failed for C:\\xampp\\htdocs\\bi-parking\\writable\\session/ci_sessionesslj538p0q8kna96b76m3eef7kgjjr9', 'C:\\xampp\\htdocs\\bi-parking\\system\\Session\\Handlers\\FileHandler.php', 160)
+ 2 SYSTEMPATH\Session\Handlers\FileHandler.php(160): filesize('C:\\xampp\\htdocs\\bi-parking\\writable\\session/ci_sessionesslj538p0q8kna96b76m3eef7kgjjr9')
+ 3 [internal function]: CodeIgniter\Session\Handlers\FileHandler->read('esslj538p0q8kna96b76m3eef7kgjjr9')
+ 4 SYSTEMPATH\Session\Session.php(928): session_start()
+ 5 SYSTEMPATH\Session\Session.php(250): CodeIgniter\Session\Session->startSession()
+ 6 SYSTEMPATH\Config\Services.php(674): CodeIgniter\Session\Session->start()
+ 7 SYSTEMPATH\Config\BaseService.php(252): CodeIgniter\Config\Services::session(Object(Config\App), false)
+ 8 SYSTEMPATH\Config\BaseService.php(193): CodeIgniter\Config\BaseService::__callStatic('session', [...])
+ 9 SYSTEMPATH\Config\Services.php(641): CodeIgniter\Config\BaseService::getSharedInstance('session', null)
+10 SYSTEMPATH\Config\BaseService.php(252): CodeIgniter\Config\Services::session()
+11 SYSTEMPATH\Common.php(988): CodeIgniter\Config\BaseService::__callStatic('session', [])
+12 APPPATH\Controllers\Auth\Auth.php(132): session()
+13 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Auth\Auth->logout()
+14 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth\Auth))
+15 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+16 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-28 08:29:23 --> filesize(): stat failed for C:\xampp\htdocs\bi-parking\writable\session/ci_sessionesslj538p0q8kna96b76m3eef7kgjjr9
+in SYSTEMPATH\Session\Handlers\FileHandler.php on line 160.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'filesize(): stat failed for C:\\xampp\\htdocs\\bi-parking\\writable\\session/ci_sessionesslj538p0q8kna96b76m3eef7kgjjr9', 'C:\\xampp\\htdocs\\bi-parking\\system\\Session\\Handlers\\FileHandler.php', 160)
+ 2 SYSTEMPATH\Session\Handlers\FileHandler.php(160): filesize('C:\\xampp\\htdocs\\bi-parking\\writable\\session/ci_sessionesslj538p0q8kna96b76m3eef7kgjjr9')
+ 3 [internal function]: CodeIgniter\Session\Handlers\FileHandler->read('esslj538p0q8kna96b76m3eef7kgjjr9')
+ 4 SYSTEMPATH\Session\Session.php(928): session_start()
+ 5 SYSTEMPATH\Session\Session.php(250): CodeIgniter\Session\Session->startSession()
+ 6 SYSTEMPATH\Config\Services.php(674): CodeIgniter\Session\Session->start()
+ 7 SYSTEMPATH\Config\BaseService.php(252): CodeIgniter\Config\Services::session(Object(Config\App), false)
+ 8 SYSTEMPATH\Config\BaseService.php(193): CodeIgniter\Config\BaseService::__callStatic('session', [...])
+ 9 SYSTEMPATH\Config\Services.php(641): CodeIgniter\Config\BaseService::getSharedInstance('session', null)
+10 SYSTEMPATH\Config\BaseService.php(252): CodeIgniter\Config\Services::session()
+11 SYSTEMPATH\Common.php(988): CodeIgniter\Config\BaseService::__callStatic('session', [])
+12 APPPATH\Controllers\Auth\Auth.php(132): session()
+13 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Auth\Auth->logout()
+14 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth\Auth))
+15 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+16 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-28 08:29:23 --> filesize(): stat failed for C:\xampp\htdocs\bi-parking\writable\session/ci_sessionesslj538p0q8kna96b76m3eef7kgjjr9
+in SYSTEMPATH\Session\Handlers\FileHandler.php on line 160.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'filesize(): stat failed for C:\\xampp\\htdocs\\bi-parking\\writable\\session/ci_sessionesslj538p0q8kna96b76m3eef7kgjjr9', 'C:\\xampp\\htdocs\\bi-parking\\system\\Session\\Handlers\\FileHandler.php', 160)
+ 2 SYSTEMPATH\Session\Handlers\FileHandler.php(160): filesize('C:\\xampp\\htdocs\\bi-parking\\writable\\session/ci_sessionesslj538p0q8kna96b76m3eef7kgjjr9')
+ 3 [internal function]: CodeIgniter\Session\Handlers\FileHandler->read('esslj538p0q8kna96b76m3eef7kgjjr9')
+ 4 SYSTEMPATH\Session\Session.php(928): session_start()
+ 5 SYSTEMPATH\Session\Session.php(250): CodeIgniter\Session\Session->startSession()
+ 6 SYSTEMPATH\Config\Services.php(674): CodeIgniter\Session\Session->start()
+ 7 SYSTEMPATH\Config\BaseService.php(252): CodeIgniter\Config\Services::session(Object(Config\App), false)
+ 8 SYSTEMPATH\Config\BaseService.php(193): CodeIgniter\Config\BaseService::__callStatic('session', [...])
+ 9 SYSTEMPATH\Config\Services.php(641): CodeIgniter\Config\BaseService::getSharedInstance('session', null)
+10 SYSTEMPATH\Config\BaseService.php(252): CodeIgniter\Config\Services::session()
+11 SYSTEMPATH\Common.php(988): CodeIgniter\Config\BaseService::__callStatic('session', [])
+12 APPPATH\Controllers\Auth\Auth.php(132): session()
+13 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Auth\Auth->logout()
+14 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth\Auth))
+15 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+16 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-28 08:29:23 --> filesize(): stat failed for C:\xampp\htdocs\bi-parking\writable\session/ci_sessionesslj538p0q8kna96b76m3eef7kgjjr9
+in SYSTEMPATH\Session\Handlers\FileHandler.php on line 160.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'filesize(): stat failed for C:\\xampp\\htdocs\\bi-parking\\writable\\session/ci_sessionesslj538p0q8kna96b76m3eef7kgjjr9', 'C:\\xampp\\htdocs\\bi-parking\\system\\Session\\Handlers\\FileHandler.php', 160)
+ 2 SYSTEMPATH\Session\Handlers\FileHandler.php(160): filesize('C:\\xampp\\htdocs\\bi-parking\\writable\\session/ci_sessionesslj538p0q8kna96b76m3eef7kgjjr9')
+ 3 [internal function]: CodeIgniter\Session\Handlers\FileHandler->read('esslj538p0q8kna96b76m3eef7kgjjr9')
+ 4 SYSTEMPATH\Session\Session.php(928): session_start()
+ 5 SYSTEMPATH\Session\Session.php(250): CodeIgniter\Session\Session->startSession()
+ 6 SYSTEMPATH\Config\Services.php(674): CodeIgniter\Session\Session->start()
+ 7 SYSTEMPATH\Config\BaseService.php(252): CodeIgniter\Config\Services::session(Object(Config\App), false)
+ 8 SYSTEMPATH\Config\BaseService.php(193): CodeIgniter\Config\BaseService::__callStatic('session', [...])
+ 9 SYSTEMPATH\Config\Services.php(641): CodeIgniter\Config\BaseService::getSharedInstance('session', null)
+10 SYSTEMPATH\Config\BaseService.php(252): CodeIgniter\Config\Services::session()
+11 SYSTEMPATH\Common.php(988): CodeIgniter\Config\BaseService::__callStatic('session', [])
+12 APPPATH\Controllers\Auth\Auth.php(132): session()
+13 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Auth\Auth->logout()
+14 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth\Auth))
+15 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+16 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-28 08:29:23 --> filesize(): stat failed for C:\xampp\htdocs\bi-parking\writable\session/ci_sessionesslj538p0q8kna96b76m3eef7kgjjr9
+in SYSTEMPATH\Session\Handlers\FileHandler.php on line 160.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'filesize(): stat failed for C:\\xampp\\htdocs\\bi-parking\\writable\\session/ci_sessionesslj538p0q8kna96b76m3eef7kgjjr9', 'C:\\xampp\\htdocs\\bi-parking\\system\\Session\\Handlers\\FileHandler.php', 160)
+ 2 SYSTEMPATH\Session\Handlers\FileHandler.php(160): filesize('C:\\xampp\\htdocs\\bi-parking\\writable\\session/ci_sessionesslj538p0q8kna96b76m3eef7kgjjr9')
+ 3 [internal function]: CodeIgniter\Session\Handlers\FileHandler->read('esslj538p0q8kna96b76m3eef7kgjjr9')
+ 4 SYSTEMPATH\Session\Session.php(928): session_start()
+ 5 SYSTEMPATH\Session\Session.php(250): CodeIgniter\Session\Session->startSession()
+ 6 SYSTEMPATH\Config\Services.php(674): CodeIgniter\Session\Session->start()
+ 7 SYSTEMPATH\Config\BaseService.php(252): CodeIgniter\Config\Services::session(Object(Config\App), false)
+ 8 SYSTEMPATH\Config\BaseService.php(193): CodeIgniter\Config\BaseService::__callStatic('session', [...])
+ 9 SYSTEMPATH\Config\Services.php(641): CodeIgniter\Config\BaseService::getSharedInstance('session', null)
+10 SYSTEMPATH\Config\BaseService.php(252): CodeIgniter\Config\Services::session()
+11 SYSTEMPATH\Common.php(988): CodeIgniter\Config\BaseService::__callStatic('session', [])
+12 APPPATH\Controllers\Auth\Auth.php(132): session()
+13 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Auth\Auth->logout()
+14 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth\Auth))
+15 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+16 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-28 08:29:23 --> filesize(): stat failed for C:\xampp\htdocs\bi-parking\writable\session/ci_sessionesslj538p0q8kna96b76m3eef7kgjjr9
+in SYSTEMPATH\Session\Handlers\FileHandler.php on line 160.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'filesize(): stat failed for C:\\xampp\\htdocs\\bi-parking\\writable\\session/ci_sessionesslj538p0q8kna96b76m3eef7kgjjr9', 'C:\\xampp\\htdocs\\bi-parking\\system\\Session\\Handlers\\FileHandler.php', 160)
+ 2 SYSTEMPATH\Session\Handlers\FileHandler.php(160): filesize('C:\\xampp\\htdocs\\bi-parking\\writable\\session/ci_sessionesslj538p0q8kna96b76m3eef7kgjjr9')
+ 3 [internal function]: CodeIgniter\Session\Handlers\FileHandler->read('esslj538p0q8kna96b76m3eef7kgjjr9')
+ 4 SYSTEMPATH\Session\Session.php(928): session_start()
+ 5 SYSTEMPATH\Session\Session.php(250): CodeIgniter\Session\Session->startSession()
+ 6 SYSTEMPATH\Config\Services.php(674): CodeIgniter\Session\Session->start()
+ 7 SYSTEMPATH\Config\BaseService.php(252): CodeIgniter\Config\Services::session(Object(Config\App), false)
+ 8 SYSTEMPATH\Config\BaseService.php(193): CodeIgniter\Config\BaseService::__callStatic('session', [...])
+ 9 SYSTEMPATH\Config\Services.php(641): CodeIgniter\Config\BaseService::getSharedInstance('session', null)
+10 SYSTEMPATH\Config\BaseService.php(252): CodeIgniter\Config\Services::session()
+11 SYSTEMPATH\Common.php(988): CodeIgniter\Config\BaseService::__callStatic('session', [])
+12 APPPATH\Controllers\Auth\Auth.php(132): session()
+13 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Auth\Auth->logout()
+14 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth\Auth))
+15 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+16 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-28 08:29:23 --> filesize(): stat failed for C:\xampp\htdocs\bi-parking\writable\session/ci_sessionesslj538p0q8kna96b76m3eef7kgjjr9
+in SYSTEMPATH\Session\Handlers\FileHandler.php on line 160.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'filesize(): stat failed for C:\\xampp\\htdocs\\bi-parking\\writable\\session/ci_sessionesslj538p0q8kna96b76m3eef7kgjjr9', 'C:\\xampp\\htdocs\\bi-parking\\system\\Session\\Handlers\\FileHandler.php', 160)
+ 2 SYSTEMPATH\Session\Handlers\FileHandler.php(160): filesize('C:\\xampp\\htdocs\\bi-parking\\writable\\session/ci_sessionesslj538p0q8kna96b76m3eef7kgjjr9')
+ 3 [internal function]: CodeIgniter\Session\Handlers\FileHandler->read('esslj538p0q8kna96b76m3eef7kgjjr9')
+ 4 SYSTEMPATH\Session\Session.php(928): session_start()
+ 5 SYSTEMPATH\Session\Session.php(250): CodeIgniter\Session\Session->startSession()
+ 6 SYSTEMPATH\Config\Services.php(674): CodeIgniter\Session\Session->start()
+ 7 SYSTEMPATH\Config\BaseService.php(252): CodeIgniter\Config\Services::session(Object(Config\App), false)
+ 8 SYSTEMPATH\Config\BaseService.php(193): CodeIgniter\Config\BaseService::__callStatic('session', [...])
+ 9 SYSTEMPATH\Config\Services.php(641): CodeIgniter\Config\BaseService::getSharedInstance('session', null)
+10 SYSTEMPATH\Config\BaseService.php(252): CodeIgniter\Config\Services::session()
+11 SYSTEMPATH\Common.php(988): CodeIgniter\Config\BaseService::__callStatic('session', [])
+12 APPPATH\Controllers\Auth\Auth.php(132): session()
+13 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Auth\Auth->logout()
+14 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth\Auth))
+15 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+16 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-28 08:29:23 --> filesize(): stat failed for C:\xampp\htdocs\bi-parking\writable\session/ci_sessionesslj538p0q8kna96b76m3eef7kgjjr9
+in SYSTEMPATH\Session\Handlers\FileHandler.php on line 160.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'filesize(): stat failed for C:\\xampp\\htdocs\\bi-parking\\writable\\session/ci_sessionesslj538p0q8kna96b76m3eef7kgjjr9', 'C:\\xampp\\htdocs\\bi-parking\\system\\Session\\Handlers\\FileHandler.php', 160)
+ 2 SYSTEMPATH\Session\Handlers\FileHandler.php(160): filesize('C:\\xampp\\htdocs\\bi-parking\\writable\\session/ci_sessionesslj538p0q8kna96b76m3eef7kgjjr9')
+ 3 [internal function]: CodeIgniter\Session\Handlers\FileHandler->read('esslj538p0q8kna96b76m3eef7kgjjr9')
+ 4 SYSTEMPATH\Session\Session.php(928): session_start()
+ 5 SYSTEMPATH\Session\Session.php(250): CodeIgniter\Session\Session->startSession()
+ 6 SYSTEMPATH\Config\Services.php(674): CodeIgniter\Session\Session->start()
+ 7 SYSTEMPATH\Config\BaseService.php(252): CodeIgniter\Config\Services::session(Object(Config\App), false)
+ 8 SYSTEMPATH\Config\BaseService.php(193): CodeIgniter\Config\BaseService::__callStatic('session', [...])
+ 9 SYSTEMPATH\Config\Services.php(641): CodeIgniter\Config\BaseService::getSharedInstance('session', null)
+10 SYSTEMPATH\Config\BaseService.php(252): CodeIgniter\Config\Services::session()
+11 SYSTEMPATH\Common.php(988): CodeIgniter\Config\BaseService::__callStatic('session', [])
+12 APPPATH\Controllers\Auth\Auth.php(132): session()
+13 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Auth\Auth->logout()
+14 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth\Auth))
+15 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+16 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-28 08:29:23 --> filesize(): stat failed for C:\xampp\htdocs\bi-parking\writable\session/ci_sessionesslj538p0q8kna96b76m3eef7kgjjr9
+in SYSTEMPATH\Session\Handlers\FileHandler.php on line 160.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'filesize(): stat failed for C:\\xampp\\htdocs\\bi-parking\\writable\\session/ci_sessionesslj538p0q8kna96b76m3eef7kgjjr9', 'C:\\xampp\\htdocs\\bi-parking\\system\\Session\\Handlers\\FileHandler.php', 160)
+ 2 SYSTEMPATH\Session\Handlers\FileHandler.php(160): filesize('C:\\xampp\\htdocs\\bi-parking\\writable\\session/ci_sessionesslj538p0q8kna96b76m3eef7kgjjr9')
+ 3 [internal function]: CodeIgniter\Session\Handlers\FileHandler->read('esslj538p0q8kna96b76m3eef7kgjjr9')
+ 4 SYSTEMPATH\Session\Session.php(928): session_start()
+ 5 SYSTEMPATH\Session\Session.php(250): CodeIgniter\Session\Session->startSession()
+ 6 SYSTEMPATH\Config\Services.php(674): CodeIgniter\Session\Session->start()
+ 7 SYSTEMPATH\Config\BaseService.php(252): CodeIgniter\Config\Services::session(Object(Config\App), false)
+ 8 SYSTEMPATH\Config\BaseService.php(193): CodeIgniter\Config\BaseService::__callStatic('session', [...])
+ 9 SYSTEMPATH\Config\Services.php(641): CodeIgniter\Config\BaseService::getSharedInstance('session', null)
+10 SYSTEMPATH\Config\BaseService.php(252): CodeIgniter\Config\Services::session()
+11 SYSTEMPATH\Common.php(988): CodeIgniter\Config\BaseService::__callStatic('session', [])
+12 APPPATH\Views\auth\login.php(5): session()
+13 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\bi-parking\\app\\Views\\auth\\login.php')
+14 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+15 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('auth/login', [], true)
+16 APPPATH\Controllers\Auth\Auth.php(16): view('auth/login', [...])
+17 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Auth\Auth->index()
+18 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth\Auth))
+19 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+20 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-07-28 08:29:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-28 08:29:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-28 08:29:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-28 08:29:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-28 08:29:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-28 08:29:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-28 08:29:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-28 08:29:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-28 08:29:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-28 08:29:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-28 08:29:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-28 08:30:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-28 08:30:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-07-28 08:30:14 --> [DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in APPPATH\Views\r_user\dashboard.php on line 78.
+ 1 APPPATH\Views\r_user\dashboard.php(78): number_format(null)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\bi-parking\\app\\Views\\r_user\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('r_user/dashboard', [], true)
+ 5 APPPATH\Controllers\User\Dashboard.php(55): view('r_user/dashboard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\User\Dashboard->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User\Dashboard))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-07-28 08:30:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-28 10:01:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-28 10:01:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-07-28 10:01:11 --> Class "App\Controllers\Admin\Xendit" not found
+in APPPATH\Controllers\Admin\Transaksi.php on line 318.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin\Transaksi->topup()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Transaksi))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-07-28 10:17:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-28 10:17:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-28 10:17:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-28 10:17:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-28 10:17:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-28 10:17:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-28 10:17:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-28 10:17:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-07-28 10:17:49 --> Call to undefined method Xendit\Xendit::createInvoice()
+in APPPATH\Libraries\XenditService.php on line 18.
+ 1 APPPATH\Controllers\Admin\Transaksi.php(320): App\Libraries\XenditService->createInvoice([...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin\Transaksi->topup()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Transaksi))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-07-28 10:18:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-28 10:18:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-28 10:18:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-28 10:18:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-28 10:18:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-28 10:18:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-28 10:18:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-07-28 10:18:53 --> No API Key detected. Please provide your API key in the Authorization header, using Basic auth (e.g. "Authorization: Basic YOUR_SECRET_KEY"). See https://developers.xendit.co/api-reference/#authentication for details
+in VENDORPATH\xendit\xendit-php\src\HttpClient\GuzzleClient.php on line 171.
+ 1 VENDORPATH\xendit\xendit-php\src\HttpClient\GuzzleClient.php(141): Xendit\HttpClient\GuzzleClient::_handleAPIError([...])
+ 2 VENDORPATH\xendit\xendit-php\src\HttpClient\GuzzleClient.php(90): Xendit\HttpClient\GuzzleClient->_executeRequest([...], '/v2/invoices')
+ 3 VENDORPATH\xendit\xendit-php\src\ApiRequestor.php(83): Xendit\HttpClient\GuzzleClient->sendRequest('POST', '/v2/invoices', [...], [...])
+ 4 VENDORPATH\xendit\xendit-php\src\ApiRequestor.php(43): Xendit\ApiRequestor->_requestRaw('POST', '/v2/invoices', [...], [])
+ 5 VENDORPATH\xendit\xendit-php\src\ApiOperations\Request.php(98): Xendit\ApiRequestor->request('POST', '/v2/invoices', [...], [])
+ 6 VENDORPATH\xendit\xendit-php\src\ApiOperations\Create.php(40): Xendit\Invoice::_request('POST', '/v2/invoices', [...])
+ 7 APPPATH\Libraries\XenditService.php(18): Xendit\Invoice::create([...])
+ 8 APPPATH\Controllers\Admin\Transaksi.php(320): App\Libraries\XenditService->createInvoice([...])
+ 9 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin\Transaksi->topup()
+10 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Transaksi))
+11 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-07-28 10:19:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-28 10:19:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-28 10:20:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-28 10:20:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-28 10:20:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-28 10:20:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-28 10:20:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-07-28 10:20:17 --> No API Key detected. Please provide your API key in the Authorization header, using Basic auth (e.g. "Authorization: Basic YOUR_SECRET_KEY"). See https://developers.xendit.co/api-reference/#authentication for details
+in VENDORPATH\xendit\xendit-php\src\HttpClient\GuzzleClient.php on line 171.
+ 1 VENDORPATH\xendit\xendit-php\src\HttpClient\GuzzleClient.php(141): Xendit\HttpClient\GuzzleClient::_handleAPIError([...])
+ 2 VENDORPATH\xendit\xendit-php\src\HttpClient\GuzzleClient.php(90): Xendit\HttpClient\GuzzleClient->_executeRequest([...], '/v2/invoices')
+ 3 VENDORPATH\xendit\xendit-php\src\ApiRequestor.php(83): Xendit\HttpClient\GuzzleClient->sendRequest('POST', '/v2/invoices', [...], [...])
+ 4 VENDORPATH\xendit\xendit-php\src\ApiRequestor.php(43): Xendit\ApiRequestor->_requestRaw('POST', '/v2/invoices', [...], [])
+ 5 VENDORPATH\xendit\xendit-php\src\ApiOperations\Request.php(98): Xendit\ApiRequestor->request('POST', '/v2/invoices', [...], [])
+ 6 VENDORPATH\xendit\xendit-php\src\ApiOperations\Create.php(40): Xendit\Invoice::_request('POST', '/v2/invoices', [...])
+ 7 APPPATH\Libraries\XenditService.php(19): Xendit\Invoice::create([...])
+ 8 APPPATH\Controllers\Admin\Transaksi.php(320): App\Libraries\XenditService->createInvoice([...])
+ 9 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin\Transaksi->topup()
+10 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Transaksi))
+11 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-07-28 10:21:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-28 10:21:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-28 10:21:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-28 10:21:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-28 10:21:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-28 10:21:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-07-28 10:21:46 --> Invalid input data. Please check your request
+in VENDORPATH\xendit\xendit-php\src\HttpClient\GuzzleClient.php on line 171.
+ 1 VENDORPATH\xendit\xendit-php\src\HttpClient\GuzzleClient.php(141): Xendit\HttpClient\GuzzleClient::_handleAPIError([...])
+ 2 VENDORPATH\xendit\xendit-php\src\HttpClient\GuzzleClient.php(90): Xendit\HttpClient\GuzzleClient->_executeRequest([...], '/v2/invoices')
+ 3 VENDORPATH\xendit\xendit-php\src\ApiRequestor.php(83): Xendit\HttpClient\GuzzleClient->sendRequest('POST', '/v2/invoices', [...], [...])
+ 4 VENDORPATH\xendit\xendit-php\src\ApiRequestor.php(43): Xendit\ApiRequestor->_requestRaw('POST', '/v2/invoices', [...], [])
+ 5 VENDORPATH\xendit\xendit-php\src\ApiOperations\Request.php(98): Xendit\ApiRequestor->request('POST', '/v2/invoices', [...], [])
+ 6 VENDORPATH\xendit\xendit-php\src\ApiOperations\Create.php(40): Xendit\Invoice::_request('POST', '/v2/invoices', [...])
+ 7 APPPATH\Libraries\XenditService.php(22): Xendit\Invoice::create([...])
+ 8 APPPATH\Controllers\Admin\Transaksi.php(320): App\Libraries\XenditService->createInvoice([...])
+ 9 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin\Transaksi->topup()
+10 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Transaksi))
+11 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-07-28 10:25:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-28 10:25:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-28 10:25:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-28 10:25:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-28 10:25:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-28 10:25:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-28 10:25:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-07-28 10:26:00 --> Invalid input data. Please check your request
+in VENDORPATH\xendit\xendit-php\src\HttpClient\GuzzleClient.php on line 171.
+ 1 VENDORPATH\xendit\xendit-php\src\HttpClient\GuzzleClient.php(141): Xendit\HttpClient\GuzzleClient::_handleAPIError([...])
+ 2 VENDORPATH\xendit\xendit-php\src\HttpClient\GuzzleClient.php(90): Xendit\HttpClient\GuzzleClient->_executeRequest([...], '/v2/invoices')
+ 3 VENDORPATH\xendit\xendit-php\src\ApiRequestor.php(83): Xendit\HttpClient\GuzzleClient->sendRequest('POST', '/v2/invoices', [...], [...])
+ 4 VENDORPATH\xendit\xendit-php\src\ApiRequestor.php(43): Xendit\ApiRequestor->_requestRaw('POST', '/v2/invoices', [...], [])
+ 5 VENDORPATH\xendit\xendit-php\src\ApiOperations\Request.php(98): Xendit\ApiRequestor->request('POST', '/v2/invoices', [...], [])
+ 6 VENDORPATH\xendit\xendit-php\src\ApiOperations\Create.php(40): Xendit\Invoice::_request('POST', '/v2/invoices', [...])
+ 7 APPPATH\Libraries\XenditService.php(22): Xendit\Invoice::create([...])
+ 8 APPPATH\Controllers\Admin\Transaksi.php(320): App\Libraries\XenditService->createInvoice([...])
+ 9 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin\Transaksi->topup()
+10 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Transaksi))
+11 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-07-28 10:43:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-28 10:43:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-28 10:43:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-28 10:43:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-28 10:43:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-28 10:43:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-07-28 10:43:41 --> You must pass required parameters on your params. Check https://xendit.github.io/apireference/ for more information.
+in VENDORPATH\xendit\xendit-php\src\ApiOperations\Request.php on line 47.
+ 1 VENDORPATH\xendit\xendit-php\src\ApiOperations\Create.php(36): Xendit\Invoice::validateParams([...], [...])
+ 2 APPPATH\Libraries\XenditService.php(22): Xendit\Invoice::create([...])
+ 3 APPPATH\Controllers\Admin\Transaksi.php(333): App\Libraries\XenditService->createInvoice([...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin\Transaksi->topup()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Transaksi))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-07-28 10:45:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-28 10:45:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-28 10:45:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-28 10:45:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-28 10:45:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-28 10:46:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-28 10:46:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-07-28 10:46:05 --> You must pass required parameters on your params. Check https://xendit.github.io/apireference/ for more information.
+in VENDORPATH\xendit\xendit-php\src\ApiOperations\Request.php on line 47.
+ 1 VENDORPATH\xendit\xendit-php\src\ApiOperations\Create.php(36): Xendit\Invoice::validateParams([...], [...])
+ 2 APPPATH\Libraries\XenditService.php(22): Xendit\Invoice::create([...])
+ 3 APPPATH\Controllers\Admin\Transaksi.php(334): App\Libraries\XenditService->createInvoice([...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin\Transaksi->topup()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Transaksi))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-07-28 10:56:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-28 10:56:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-28 10:56:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-28 10:56:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-28 10:56:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-28 10:56:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-07-28 10:56:27 --> You must pass required parameters on your params. Check https://xendit.github.io/apireference/ for more information.
+in VENDORPATH\xendit\xendit-php\src\ApiOperations\Request.php on line 47.
+ 1 VENDORPATH\xendit\xendit-php\src\ApiOperations\Create.php(36): Xendit\Invoice::validateParams([...], [...])
+ 2 APPPATH\Libraries\XenditService.php(22): Xendit\Invoice::create([...])
+ 3 APPPATH\Controllers\Admin\Transaksi.php(336): App\Libraries\XenditService->createInvoice([...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin\Transaksi->topup()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Transaksi))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-07-28 10:59:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-28 10:59:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-28 10:59:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-28 10:59:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-28 10:59:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-28 10:59:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-07-28 10:59:54 --> You must pass required parameters on your params. Check https://xendit.github.io/apireference/ for more information.
+in VENDORPATH\xendit\xendit-php\src\ApiOperations\Request.php on line 47.
+ 1 VENDORPATH\xendit\xendit-php\src\ApiOperations\Create.php(36): Xendit\Invoice::validateParams([...], [...])
+ 2 APPPATH\Libraries\XenditService.php(22): Xendit\Invoice::create([...])
+ 3 APPPATH\Controllers\Admin\Transaksi.php(337): App\Libraries\XenditService->createInvoice([...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin\Transaksi->topup()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Transaksi))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-07-28 11:07:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-07-28 11:07:10 --> Undefined property: App\Controllers\Admin\Transaksi::$xendit_service
+in APPPATH\Controllers\Admin\Transaksi.php on line 686.
+ 1 APPPATH\Controllers\Admin\Transaksi.php(686): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Admin\\Transaksi::$xendit_service', 'C:\\xampp\\htdocs\\bi-parking\\app\\Controllers\\Admin\\Transaksi.php', 686)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin\Transaksi->testCreateInvoice()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Transaksi))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-07-28 11:09:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-07-28 11:09:39 --> Call to undefined method App\Controllers\Admin\Transaksi::assertEquals()
+in APPPATH\Controllers\Admin\Transaksi.php on line 690.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin\Transaksi->testCreateInvoice()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Transaksi))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-07-28 11:10:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-07-28 11:10:51 --> Attempt to read property "code" on array
+in APPPATH\Controllers\Admin\Transaksi.php on line 695.
+ 1 APPPATH\Controllers\Admin\Transaksi.php(695): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "code" on array', 'C:\\xampp\\htdocs\\bi-parking\\app\\Controllers\\Admin\\Transaksi.php', 695)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin\Transaksi->testCreateInvoice()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Transaksi))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-07-28 11:11:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-07-28 11:11:57 --> Attempt to read property "code" on array
+in APPPATH\Controllers\Admin\Transaksi.php on line 698.
+ 1 APPPATH\Controllers\Admin\Transaksi.php(698): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "code" on array', 'C:\\xampp\\htdocs\\bi-parking\\app\\Controllers\\Admin\\Transaksi.php', 698)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin\Transaksi->testCreateInvoice()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Transaksi))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-07-28 11:15:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-07-28 11:15:11 --> Undefined property: Xendit\Xendit::$invoice
+in APPPATH\Libraries\XenditService.php on line 22.
+ 1 APPPATH\Libraries\XenditService.php(22): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: Xendit\\Xendit::$invoice', 'C:\\xampp\\htdocs\\bi-parking\\app\\Libraries\\XenditService.php', 22)
+ 2 APPPATH\Controllers\Admin\Transaksi.php(695): App\Libraries\XenditService->createInvoice([...])
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin\Transaksi->testCreateInvoice()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Transaksi))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-07-28 11:18:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-07-28 11:18:08 --> Undefined property: App\Controllers\Admin\Transaksi::$load
+in APPPATH\Controllers\Admin\Transaksi.php on line 687.
+ 1 APPPATH\Controllers\Admin\Transaksi.php(687): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Admin\\Transaksi::$load', 'C:\\xampp\\htdocs\\bi-parking\\app\\Controllers\\Admin\\Transaksi.php', 687)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin\Transaksi->testCreateInvoice()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Transaksi))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-07-28 11:21:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-07-28 11:21:02 --> Cannot call constructor
+in APPPATH\Controllers\Admin\Transaksi.php on line 24.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Admin\Transaksi->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-07-28 11:21:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-07-28 11:21:56 --> Cannot call constructor
+in APPPATH\Controllers\Admin\Transaksi.php on line 22.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Admin\Transaksi->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-07-28 11:21:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-07-28 11:21:57 --> Cannot call constructor
+in APPPATH\Controllers\Admin\Transaksi.php on line 22.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Admin\Transaksi->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-07-28 11:22:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-07-28 11:22:09 --> Undefined property: App\Controllers\Admin\Transaksi::$load
+in APPPATH\Controllers\Admin\Transaksi.php on line 22.
+ 1 APPPATH\Controllers\Admin\Transaksi.php(22): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Admin\\Transaksi::$load', 'C:\\xampp\\htdocs\\bi-parking\\app\\Controllers\\Admin\\Transaksi.php', 22)
+ 2 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Admin\Transaksi->__construct()
+ 3 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-07-28 11:23:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-07-28 11:23:48 --> Class "App\Controllers\Admin\CI_Loader" not found
+in APPPATH\Controllers\Admin\Transaksi.php on line 23.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Admin\Transaksi->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-07-28 11:23:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-07-28 11:23:49 --> Class "App\Controllers\Admin\CI_Loader" not found
+in APPPATH\Controllers\Admin\Transaksi.php on line 23.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Admin\Transaksi->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-07-28 11:26:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-07-28 11:26:24 --> Call to a member function library() on null
+in APPPATH\Controllers\Admin\Transaksi.php on line 23.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Admin\Transaksi->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-07-28 11:27:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-07-28 11:27:22 --> Class "App\Controllers\Admin\CI_Loader" not found
+in APPPATH\Controllers\Admin\Transaksi.php on line 23.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Admin\Transaksi->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-07-28 18:48:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-28 18:48:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-28 18:48:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-28 18:48:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-07-28 18:48:58 --> [DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in APPPATH\Views\r_user\dashboard.php on line 78.
+ 1 APPPATH\Views\r_user\dashboard.php(78): number_format(null)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\bi-parking\\app\\Views\\r_user\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('r_user/dashboard', [], true)
+ 5 APPPATH\Controllers\User\Dashboard.php(55): view('r_user/dashboard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\User\Dashboard->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User\Dashboard))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-07-28 18:49:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-28 18:49:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-28 18:49:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-28 18:52:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-28 18:52:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-28 18:52:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-28 18:52:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-28 18:52:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-28 18:52:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-28 18:52:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-28 18:52:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-28 18:52:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-28 18:52:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-07-28 18:54:03 --> mysqli_sql_exception: MySQL server has gone away in C:\xampp\htdocs\bi-parking\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\bi-parking\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `lo...', 0)
+#1 C:\xampp\htdocs\bi-parking\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `lo...')
+#2 C:\xampp\htdocs\bi-parking\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `lo...')
+#3 C:\xampp\htdocs\bi-parking\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `lo...', Array, false)
+#4 C:\xampp\htdocs\bi-parking\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\bi-parking\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\bi-parking\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\bi-parking\app\Controllers\Auth\Auth.php(49): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\bi-parking\system\CodeIgniter.php(934): App\Controllers\Auth\Auth->login()
+#9 C:\xampp\htdocs\bi-parking\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth\Auth))
+#10 C:\xampp\htdocs\bi-parking\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\ParkingManagementSystem\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-07-28 18:54:03 --> MySQL server has gone away
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `log_aktivitas` (`npm`, `action`, `details`, `ip_address`) VALUES (\'2021320004\', \'login\', \'User logged in\', \'192.168.1.17\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `log_aktivitas` (`npm`, `action`, `details`, `ip_address`) VALUES (\'2021320004\', \'login\', \'User logged in\', \'192.168.1.17\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `log_aktivitas` (`npm`, `action`, `details`, `ip_address`) VALUES (\'2021320004\', \'login\', \'User logged in\', \'192.168.1.17\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `log_aktivitas` (`npm`, `action`, `details`, `ip_address`) VALUES (:npm:, :action:, :details:, :ip_address:)', [...], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\Auth\Auth.php(49): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Auth\Auth->login()
+10 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth\Auth))
+11 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-07-28 18:54:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-28 18:54:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-28 18:54:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-28 18:54:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-28 18:54:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-28 18:54:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-07-28 18:54:16 --> [DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in APPPATH\Views\r_user\dashboard.php on line 78.
+ 1 APPPATH\Views\r_user\dashboard.php(78): number_format(null)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\bi-parking\\app\\Views\\r_user\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('r_user/dashboard', [], true)
+ 5 APPPATH\Controllers\User\Dashboard.php(55): view('r_user/dashboard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\User\Dashboard->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User\Dashboard))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-07-28 18:54:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-28 18:54:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-28 18:54:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-28 18:54:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-28 18:54:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-28 18:54:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-28 18:54:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-28 19:01:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-28 19:01:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-28 19:01:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-28 19:01:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-28 19:02:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-28 19:02:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-28 19:02:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-28 19:02:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-07-28 19:02:09 --> Class "App\Controllers\Admin\XenditService" not found
+in APPPATH\Controllers\Admin\Transaksi.php on line 344.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin\Transaksi->topup()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Transaksi))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-07-28 19:07:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-07-28 19:07:34 --> Undefined variable $data
+in APPPATH\Controllers\Admin\Transaksi.php on line 320.
+ 1 APPPATH\Controllers\Admin\Transaksi.php(320): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'C:\\xampp\\htdocs\\bi-parking\\app\\Controllers\\Admin\\Transaksi.php', 320)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin\Transaksi->topup()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Transaksi))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-07-28 19:08:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-07-28 19:08:52 --> Undefined property: Xendit\Xendit::$invoice
+in APPPATH\Controllers\Admin\XenditService.php on line 23.
+ 1 APPPATH\Controllers\Admin\XenditService.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: Xendit\\Xendit::$invoice', 'C:\\xampp\\htdocs\\bi-parking\\app\\Controllers\\Admin\\XenditService.php', 23)
+ 2 APPPATH\Controllers\Admin\Transaksi.php(346): App\Controllers\Admin\XenditService->createInvoice([...])
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin\Transaksi->topup()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Transaksi))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-07-28 19:12:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-07-28 19:12:41 --> Undefined property: Xendit\Xendit::$invoice
+in APPPATH\Controllers\Admin\XenditService.php on line 23.
+ 1 APPPATH\Controllers\Admin\XenditService.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: Xendit\\Xendit::$invoice', 'C:\\xampp\\htdocs\\bi-parking\\app\\Controllers\\Admin\\XenditService.php', 23)
+ 2 APPPATH\Controllers\Admin\Transaksi.php(346): App\Controllers\Admin\XenditService->createInvoice([...])
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin\Transaksi->topup()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Transaksi))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-07-28 19:13:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-07-28 19:13:27 --> You must pass required parameters on your params. Check https://xendit.github.io/apireference/ for more information.
+in VENDORPATH\xendit\xendit-php\src\ApiOperations\Request.php on line 47.
+ 1 VENDORPATH\xendit\xendit-php\src\ApiOperations\Create.php(36): Xendit\Invoice::validateParams([...], [...])
+ 2 APPPATH\Controllers\Admin\XenditService.php(22): Xendit\Invoice::create([...])
+ 3 APPPATH\Controllers\Admin\Transaksi.php(346): App\Controllers\Admin\XenditService->createInvoice([...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin\Transaksi->topup()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Transaksi))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-07-28 19:18:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-07-28 19:18:31 --> You must pass required parameters on your params. Check https://xendit.github.io/apireference/ for more information.
+in VENDORPATH\xendit\xendit-php\src\ApiOperations\Request.php on line 47.
+ 1 VENDORPATH\xendit\xendit-php\src\ApiOperations\Create.php(36): Xendit\Invoice::validateParams([...], [...])
+ 2 APPPATH\Controllers\Admin\XenditService.php(22): Xendit\Invoice::create([...])
+ 3 APPPATH\Controllers\Admin\Transaksi.php(346): App\Controllers\Admin\XenditService->createInvoice([...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin\Transaksi->topup()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Transaksi))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-07-28 19:35:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-07-28 19:35:35 --> No API Key detected. Please provide your API key in the Authorization header, using Basic auth (e.g. "Authorization: Basic YOUR_SECRET_KEY"). See https://developers.xendit.co/api-reference/#authentication for details
+in VENDORPATH\xendit\xendit-php\src\HttpClient\GuzzleClient.php on line 171.
+ 1 VENDORPATH\xendit\xendit-php\src\HttpClient\GuzzleClient.php(141): Xendit\HttpClient\GuzzleClient::_handleAPIError([...])
+ 2 VENDORPATH\xendit\xendit-php\src\HttpClient\GuzzleClient.php(90): Xendit\HttpClient\GuzzleClient->_executeRequest([...], '/v2/invoices')
+ 3 VENDORPATH\xendit\xendit-php\src\ApiRequestor.php(83): Xendit\HttpClient\GuzzleClient->sendRequest('POST', '/v2/invoices', [...], [...])
+ 4 VENDORPATH\xendit\xendit-php\src\ApiRequestor.php(43): Xendit\ApiRequestor->_requestRaw('POST', '/v2/invoices', [...], [...])
+ 5 VENDORPATH\xendit\xendit-php\src\ApiOperations\Request.php(98): Xendit\ApiRequestor->request('POST', '/v2/invoices', [...], [...])
+ 6 VENDORPATH\xendit\xendit-php\src\ApiOperations\Create.php(40): Xendit\Invoice::_request('POST', '/v2/invoices', [...])
+ 7 APPPATH\Controllers\Admin\XenditService.php(24): Xendit\Invoice::create([...])
+ 8 APPPATH\Controllers\Admin\XenditService.php(40): App\Controllers\Admin\XenditService->createInvoice([...])
+ 9 SYSTEMPATH\Autoloader\Autoloader.php(312): include_once('C:\\xampp\\htdocs\\bi-parking\\app\\Controllers\\Admin\\XenditService.php')
+10 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\bi-parking\\app\\Controllers\\Admin\\XenditService.php')
+11 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Admin\\XenditService')
+12 APPPATH\Controllers\Admin\Transaksi.php(319): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Admin\\XenditService')
+13 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin\Transaksi->topup()
+14 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Transaksi))
+15 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+16 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-07-28 19:37:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-07-28 19:38:00 --> No API Key detected. Please provide your API key in the Authorization header, using Basic auth (e.g. "Authorization: Basic YOUR_SECRET_KEY"). See https://developers.xendit.co/api-reference/#authentication for details
+in VENDORPATH\xendit\xendit-php\src\HttpClient\GuzzleClient.php on line 171.
+ 1 VENDORPATH\xendit\xendit-php\src\HttpClient\GuzzleClient.php(141): Xendit\HttpClient\GuzzleClient::_handleAPIError([...])
+ 2 VENDORPATH\xendit\xendit-php\src\HttpClient\GuzzleClient.php(90): Xendit\HttpClient\GuzzleClient->_executeRequest([...], '/v2/invoices')
+ 3 VENDORPATH\xendit\xendit-php\src\ApiRequestor.php(83): Xendit\HttpClient\GuzzleClient->sendRequest('POST', '/v2/invoices', [...], [...])
+ 4 VENDORPATH\xendit\xendit-php\src\ApiRequestor.php(43): Xendit\ApiRequestor->_requestRaw('POST', '/v2/invoices', [...], [...])
+ 5 VENDORPATH\xendit\xendit-php\src\ApiOperations\Request.php(98): Xendit\ApiRequestor->request('POST', '/v2/invoices', [...], [...])
+ 6 VENDORPATH\xendit\xendit-php\src\ApiOperations\Create.php(40): Xendit\Invoice::_request('POST', '/v2/invoices', [...])
+ 7 APPPATH\Controllers\Admin\XenditService.php(23): Xendit\Invoice::create([...])
+ 8 APPPATH\Controllers\Admin\XenditService.php(39): App\Controllers\Admin\XenditService->createInvoice([...])
+ 9 SYSTEMPATH\Autoloader\Autoloader.php(312): include_once('C:\\xampp\\htdocs\\bi-parking\\app\\Controllers\\Admin\\XenditService.php')
+10 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\bi-parking\\app\\Controllers\\Admin\\XenditService.php')
+11 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Admin\\XenditService')
+12 APPPATH\Controllers\Admin\Transaksi.php(319): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Admin\\XenditService')
+13 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin\Transaksi->topup()
+14 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Transaksi))
+15 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+16 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-07-28 19:38:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-07-28 19:38:05 --> No API Key detected. Please provide your API key in the Authorization header, using Basic auth (e.g. "Authorization: Basic YOUR_SECRET_KEY"). See https://developers.xendit.co/api-reference/#authentication for details
+in VENDORPATH\xendit\xendit-php\src\HttpClient\GuzzleClient.php on line 171.
+ 1 VENDORPATH\xendit\xendit-php\src\HttpClient\GuzzleClient.php(141): Xendit\HttpClient\GuzzleClient::_handleAPIError([...])
+ 2 VENDORPATH\xendit\xendit-php\src\HttpClient\GuzzleClient.php(90): Xendit\HttpClient\GuzzleClient->_executeRequest([...], '/v2/invoices')
+ 3 VENDORPATH\xendit\xendit-php\src\ApiRequestor.php(83): Xendit\HttpClient\GuzzleClient->sendRequest('POST', '/v2/invoices', [...], [...])
+ 4 VENDORPATH\xendit\xendit-php\src\ApiRequestor.php(43): Xendit\ApiRequestor->_requestRaw('POST', '/v2/invoices', [...], [...])
+ 5 VENDORPATH\xendit\xendit-php\src\ApiOperations\Request.php(98): Xendit\ApiRequestor->request('POST', '/v2/invoices', [...], [...])
+ 6 VENDORPATH\xendit\xendit-php\src\ApiOperations\Create.php(40): Xendit\Invoice::_request('POST', '/v2/invoices', [...])
+ 7 APPPATH\Controllers\Admin\XenditService.php(23): Xendit\Invoice::create([...])
+ 8 APPPATH\Controllers\Admin\XenditService.php(39): App\Controllers\Admin\XenditService->createInvoice([...])
+ 9 SYSTEMPATH\Autoloader\Autoloader.php(312): include_once('C:\\xampp\\htdocs\\bi-parking\\app\\Controllers\\Admin\\XenditService.php')
+10 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\bi-parking\\app\\Controllers\\Admin\\XenditService.php')
+11 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Admin\\XenditService')
+12 APPPATH\Controllers\Admin\Transaksi.php(319): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Admin\\XenditService')
+13 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin\Transaksi->topup()
+14 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Transaksi))
+15 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+16 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-07-28 19:43:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-28 19:43:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-28 19:43:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-28 19:43:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-28 19:44:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-28 19:44:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-28 19:51:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-28 19:51:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-28 19:51:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-28 20:03:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-28 20:03:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-28 20:04:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-28 20:04:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-28 20:04:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-28 20:04:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-28 20:04:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-28 20:04:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-28 20:04:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-28 20:04:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-28 20:04:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-28 20:04:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-28 20:10:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-28 20:10:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-28 20:12:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-28 20:12:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-28 20:14:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-28 20:14:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-28 20:14:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-28 20:14:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-28 20:14:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-28 20:23:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-28 20:23:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-28 20:23:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-28 20:25:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-28 20:25:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-28 20:27:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-28 20:27:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-28 20:28:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-28 20:28:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-28 20:29:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-28 20:29:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-07-28 20:29:05 --> [DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in APPPATH\Views\r_user\dashboard.php on line 78.
+ 1 APPPATH\Views\r_user\dashboard.php(78): number_format(null)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\bi-parking\\app\\Views\\r_user\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('r_user/dashboard', [], true)
+ 5 APPPATH\Controllers\User\Dashboard.php(55): view('r_user/dashboard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\User\Dashboard->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User\Dashboard))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-07-28 20:29:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-28 20:29:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-28 20:43:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-28 20:43:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-28 20:50:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-28 20:50:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-28 20:59:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-28 20:59:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-07-28 20:59:25 --> Undefined variable $params
+in APPPATH\Controllers\Admin\XenditService.php on line 43.
+ 1 APPPATH\Controllers\Admin\XenditService.php(43): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $params', 'C:\\xampp\\htdocs\\bi-parking\\app\\Controllers\\Admin\\XenditService.php', 43)
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(312): include_once('C:\\xampp\\htdocs\\bi-parking\\app\\Controllers\\Admin\\XenditService.php')
+ 3 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\bi-parking\\app\\Controllers\\Admin\\XenditService.php')
+ 4 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Admin\\XenditService')
+ 5 APPPATH\Controllers\Admin\Transaksi.php(319): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Admin\\XenditService')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin\Transaksi->topup()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Transaksi))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-07-28 20:59:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-28 21:00:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-28 21:00:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-28 21:00:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-28 21:00:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-28 21:28:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-28 21:34:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-28 21:34:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-28 21:42:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-28 21:42:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-28 22:21:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-28 22:21:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-28 22:21:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-28 22:52:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-28 22:52:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-28 22:52:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-28 22:52:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-28 22:52:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-28 22:52:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-28 22:52:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-28 22:52:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-28 22:54:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-28 22:54:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-28 22:55:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-28 22:55:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-28 22:55:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-28 22:56:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-28 22:56:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-28 22:59:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-28 23:14:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-28 23:15:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-28 23:16:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-28 23:16:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-28 23:18:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-28 23:18:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-28 23:19:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-28 23:19:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-28 23:24:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-28 23:24:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-28 23:29:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-28 23:29:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-28 23:29:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-28 23:30:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-28 23:32:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-28 23:32:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-28 23:33:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-28 23:33:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-07-28 23:33:53 --> Undefined variable $20000
+in APPPATH\Controllers\Admin\Transaksi.php on line 324.
+ 1 APPPATH\Controllers\Admin\Transaksi.php(324): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $20000', 'C:\\xampp\\htdocs\\bi-parking\\app\\Controllers\\Admin\\Transaksi.php', 324)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin\Transaksi->topup()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Transaksi))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-07-28 23:34:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
