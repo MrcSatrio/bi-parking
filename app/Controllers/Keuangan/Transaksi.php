@@ -87,19 +87,15 @@ class Transaksi extends BaseController
             ]
         ]
     ];
-
     if (!$this->validate($validationRules)) {
         session()->setFlashdata('error', $this->validator->listErrors());
         return redirect()->to("keuangan/transaksi_inputkodebooking");
     }
-
     $kodebooking_transaksi = $this->request->getVar('kode_booking');
     $nomor_kartu = $this->request->getVar('nomor_kartu');
-
     $approvedBy = $this->userModel
         ->where('npm', session('npm'))
         ->first();
-
     $pengguna = $this->userModel
     ->join('transaksi', 'transaksi.npm = user.npm')
     ->join('kartu', 'kartu.id_kartu = user.id_kartu')
@@ -141,8 +137,6 @@ class Transaksi extends BaseController
 
     $logModel = new \App\Models\LogModel();
     $logModel->insert($logData);
-
-    // Kirim email sebagai bukti pembayaran topup
     $to = $pengguna['email'];
     $subject = 'Bukti Pembayaran Topup';
     $message = '
@@ -259,15 +253,9 @@ public function riwayat()
     ->where('transaksi.id_status_transaksi !=', 2)
     ->orderBy('transaksi.created_at', 'DESC')
     ->pager,
-
-
-    
     'currentPage' => $currentPage,
     'limit' => $limit,
-];
-
-    
-    
+];  
     return view('r_keuangan/transaksi_riwayat', $data);
 }
 

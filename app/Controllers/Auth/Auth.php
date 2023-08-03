@@ -245,9 +245,9 @@ class Auth extends BaseController
         };
     
         // Function to set success message and return JSON response
-        $setSuccessAndReturnJSON = function ($message) {
+        $setSuccessAndRedirect = function ($message) {
             session()->setFlashdata('success', $message);
-            return $this->response->setJSON(['status' => 'success', 'message' => $message]);
+            return redirect()->to(site_url('/'));
         };
     
         // Check 'token'
@@ -296,7 +296,7 @@ class Auth extends BaseController
             $logModel->insert($logData);
     
             // Set success message in session and return JSON response
-            return $setSuccessAndReturnJSON('Silahkan Login Dengan Password Baru');
+            return $setSuccessAndRedirect('Silahkan Login Dengan Password Baru');
         } else {
             // Set error message in session and return JSON response
             return $setErrorAndRedirect('Token Tidak Valid');

@@ -1,824 +1,809 @@
-INFO - 2023-07-14 00:04:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 00:04:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 00:04:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 00:04:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 00:04:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 00:04:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 00:04:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 00:04:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 00:04:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 00:04:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 00:05:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 00:05:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 00:06:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 00:06:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 00:06:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 00:06:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 00:06:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 00:13:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-CRITICAL - 2023-07-14 00:13:55 --> Undefined variable $tr
-in APPPATH\Views\r_user\transaksi_formResult.php on line 51.
- 1 APPPATH\Views\r_user\transaksi_formResult.php(51): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $tr', 'C:\\xampp\\htdocs\\bi-parking\\app\\Views\\r_user\\transaksi_formResult.php', 51)
- 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\bi-parking\\app\\Views\\r_user\\transaksi_formResult.php')
- 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
- 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('r_user/transaksi_formResult', [], true)
- 5 APPPATH\Controllers\Admin\Transaksi.php(365): view('r_user/transaksi_formResult', [...])
- 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin\Transaksi->transaksi_result('9YU7MX', '20000', '2')
- 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Transaksi))
- 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
- 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
-INFO - 2023-07-14 00:14:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-CRITICAL - 2023-07-14 00:14:33 --> Undefined variable $tr
-in APPPATH\Views\r_user\transaksi_formResult.php on line 51.
- 1 APPPATH\Views\r_user\transaksi_formResult.php(51): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $tr', 'C:\\xampp\\htdocs\\bi-parking\\app\\Views\\r_user\\transaksi_formResult.php', 51)
- 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\bi-parking\\app\\Views\\r_user\\transaksi_formResult.php')
- 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
- 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('r_user/transaksi_formResult', [], true)
- 5 APPPATH\Controllers\Admin\Transaksi.php(365): view('r_user/transaksi_formResult', [...])
- 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin\Transaksi->transaksi_result('9YU7MX', '20000', '2')
- 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Transaksi))
- 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
- 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
-INFO - 2023-07-14 00:15:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 00:17:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 00:19:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 00:19:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 00:24:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-CRITICAL - 2023-07-14 00:24:40 --> Too few arguments to function App\Controllers\Admin\Transaksi::bukti(), 1 passed in C:\xampp\htdocs\bi-parking\system\CodeIgniter.php on line 934 and exactly 2 expected
-in APPPATH\Controllers\Admin\Transaksi.php on line 444.
- 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin\Transaksi->bukti('OVlVN01Y')
- 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Transaksi))
- 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
- 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
-INFO - 2023-07-14 00:27:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 00:27:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 00:28:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 00:28:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 00:28:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 00:28:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 00:29:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 00:29:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 00:29:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 00:29:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 00:29:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 00:29:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 00:29:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 00:29:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-CRITICAL - 2023-07-14 00:29:54 --> Trying to access array offset on value of type null
-in APPPATH\Controllers\Admin\Transaksi.php on line 465.
- 1 APPPATH\Controllers\Admin\Transaksi.php(465): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\bi-parking\\app\\Controllers\\Admin\\Transaksi.php', 465)
- 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin\Transaksi->bukti('MjE2')
- 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Transaksi))
- 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
- 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
-INFO - 2023-07-14 00:32:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-CRITICAL - 2023-07-14 00:32:05 --> Trying to access array offset on value of type null
-in APPPATH\Controllers\Admin\Transaksi.php on line 465.
- 1 APPPATH\Controllers\Admin\Transaksi.php(465): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\bi-parking\\app\\Controllers\\Admin\\Transaksi.php', 465)
- 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin\Transaksi->bukti('MjE2')
- 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Transaksi))
- 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
- 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
-INFO - 2023-07-14 00:32:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 00:32:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 00:32:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 00:32:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 00:33:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 00:35:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 00:35:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-ERROR - 2023-07-14 00:35:11 --> mysqli_sql_exception: Illegal mix of collations (utf8mb4_general_ci,IMPLICIT) and (utf8_general_ci,COERCIBLE) for operation '=' in C:\xampp\htdocs\bi-parking\system\Database\MySQLi\Connection.php:295
-Stack trace:
-#0 C:\xampp\htdocs\bi-parking\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
-#1 C:\xampp\htdocs\bi-parking\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
-#2 C:\xampp\htdocs\bi-parking\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
-#3 C:\xampp\htdocs\bi-parking\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
-#4 C:\xampp\htdocs\bi-parking\system\Model.php(268): CodeIgniter\Database\BaseBuilder->get()
-#5 C:\xampp\htdocs\bi-parking\system\BaseModel.php(656): CodeIgniter\Model->doFirst()
-#6 C:\xampp\htdocs\bi-parking\app\Controllers\Admin\Transaksi.php(463): CodeIgniter\BaseModel->first()
-#7 C:\xampp\htdocs\bi-parking\system\CodeIgniter.php(934): App\Controllers\Admin\Transaksi->bukti('216')
-#8 C:\xampp\htdocs\bi-parking\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Transaksi))
-#9 C:\xampp\htdocs\bi-parking\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
-#10 C:\xampp\htdocs\ParkingManagementSystem\index.php(67): CodeIgniter\CodeIgniter->run()
-#11 {main}
-CRITICAL - 2023-07-14 00:35:11 --> Illegal mix of collations (utf8mb4_general_ci,IMPLICIT) and (utf8_general_ci,COERCIBLE) for operation '='
-in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
- 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *
-FROM `transaksi`
-JOIN `jenis_transaksi` ON `jenis_transaksi`.`id_jenis_transaksi` = `transaksi`.`id_jenis_transaksi`
-JOIN `status_transaksi` ON `status_transaksi`.`id_status_transaksi` = `transaksi`.`id_status_transaksi`
-WHERE `kodebooking_transaksi` = \'Û^\'
- LIMIT 1', 0)
- 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
-FROM `transaksi`
-JOIN `jenis_transaksi` ON `jenis_transaksi`.`id_jenis_transaksi` = `transaksi`.`id_jenis_transaksi`
-JOIN `status_transaksi` ON `status_transaksi`.`id_status_transaksi` = `transaksi`.`id_status_transaksi`
-WHERE `kodebooking_transaksi` = \'Û^\'
- LIMIT 1')
- 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
-FROM `transaksi`
-JOIN `jenis_transaksi` ON `jenis_transaksi`.`id_jenis_transaksi` = `transaksi`.`id_jenis_transaksi`
-JOIN `status_transaksi` ON `status_transaksi`.`id_status_transaksi` = `transaksi`.`id_status_transaksi`
-WHERE `kodebooking_transaksi` = \'Û^\'
- LIMIT 1')
- 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
-FROM `transaksi`
-JOIN `jenis_transaksi` ON `jenis_transaksi`.`id_jenis_transaksi` = `transaksi`.`id_jenis_transaksi`
-JOIN `status_transaksi` ON `status_transaksi`.`id_status_transaksi` = `transaksi`.`id_status_transaksi`
-WHERE `kodebooking_transaksi` = :kodebooking_transaksi:
- LIMIT 1', [...], false)
- 5 SYSTEMPATH\Model.php(268): CodeIgniter\Database\BaseBuilder->get()
- 6 SYSTEMPATH\BaseModel.php(656): CodeIgniter\Model->doFirst()
- 7 APPPATH\Controllers\Admin\Transaksi.php(463): CodeIgniter\BaseModel->first()
- 8 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin\Transaksi->bukti('216')
- 9 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Transaksi))
-10 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
-11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
-INFO - 2023-07-14 00:36:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-ERROR - 2023-07-14 00:36:38 --> mysqli_sql_exception: Illegal mix of collations (utf8mb4_general_ci,IMPLICIT) and (utf8_general_ci,COERCIBLE) for operation '=' in C:\xampp\htdocs\bi-parking\system\Database\MySQLi\Connection.php:295
-Stack trace:
-#0 C:\xampp\htdocs\bi-parking\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
-#1 C:\xampp\htdocs\bi-parking\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
-#2 C:\xampp\htdocs\bi-parking\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
-#3 C:\xampp\htdocs\bi-parking\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
-#4 C:\xampp\htdocs\bi-parking\system\Model.php(268): CodeIgniter\Database\BaseBuilder->get()
-#5 C:\xampp\htdocs\bi-parking\system\BaseModel.php(656): CodeIgniter\Model->doFirst()
-#6 C:\xampp\htdocs\bi-parking\app\Controllers\Admin\Transaksi.php(463): CodeIgniter\BaseModel->first()
-#7 C:\xampp\htdocs\bi-parking\system\CodeIgniter.php(934): App\Controllers\Admin\Transaksi->bukti('216')
-#8 C:\xampp\htdocs\bi-parking\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Transaksi))
-#9 C:\xampp\htdocs\bi-parking\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
-#10 C:\xampp\htdocs\ParkingManagementSystem\index.php(67): CodeIgniter\CodeIgniter->run()
-#11 {main}
-CRITICAL - 2023-07-14 00:36:38 --> Illegal mix of collations (utf8mb4_general_ci,IMPLICIT) and (utf8_general_ci,COERCIBLE) for operation '='
-in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
- 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *
-FROM `transaksi`
-JOIN `jenis_transaksi` ON `jenis_transaksi`.`id_jenis_transaksi` = `transaksi`.`id_jenis_transaksi`
-JOIN `status_transaksi` ON `status_transaksi`.`id_status_transaksi` = `transaksi`.`id_status_transaksi`
-WHERE `kodebooking_transaksi` = \'Û^\'
- LIMIT 1', 0)
- 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
-FROM `transaksi`
-JOIN `jenis_transaksi` ON `jenis_transaksi`.`id_jenis_transaksi` = `transaksi`.`id_jenis_transaksi`
-JOIN `status_transaksi` ON `status_transaksi`.`id_status_transaksi` = `transaksi`.`id_status_transaksi`
-WHERE `kodebooking_transaksi` = \'Û^\'
- LIMIT 1')
- 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
-FROM `transaksi`
-JOIN `jenis_transaksi` ON `jenis_transaksi`.`id_jenis_transaksi` = `transaksi`.`id_jenis_transaksi`
-JOIN `status_transaksi` ON `status_transaksi`.`id_status_transaksi` = `transaksi`.`id_status_transaksi`
-WHERE `kodebooking_transaksi` = \'Û^\'
- LIMIT 1')
- 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
-FROM `transaksi`
-JOIN `jenis_transaksi` ON `jenis_transaksi`.`id_jenis_transaksi` = `transaksi`.`id_jenis_transaksi`
-JOIN `status_transaksi` ON `status_transaksi`.`id_status_transaksi` = `transaksi`.`id_status_transaksi`
-WHERE `kodebooking_transaksi` = :kodebooking_transaksi:
- LIMIT 1', [...], false)
- 5 SYSTEMPATH\Model.php(268): CodeIgniter\Database\BaseBuilder->get()
- 6 SYSTEMPATH\BaseModel.php(656): CodeIgniter\Model->doFirst()
- 7 APPPATH\Controllers\Admin\Transaksi.php(463): CodeIgniter\BaseModel->first()
- 8 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin\Transaksi->bukti('216')
- 9 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Transaksi))
-10 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
-11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
-INFO - 2023-07-14 00:36:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 00:37:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-CRITICAL - 2023-07-14 00:37:22 --> Trying to access array offset on value of type null
-in APPPATH\Controllers\Admin\Transaksi.php on line 465.
- 1 APPPATH\Controllers\Admin\Transaksi.php(465): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\bi-parking\\app\\Controllers\\Admin\\Transaksi.php', 465)
- 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin\Transaksi->bukti('MjE2')
- 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Transaksi))
- 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
- 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
-INFO - 2023-07-14 00:38:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-CRITICAL - 2023-07-14 00:38:28 --> Undefined variable $216
-in APPPATH\Controllers\Admin\Transaksi.php on line 461.
- 1 APPPATH\Controllers\Admin\Transaksi.php(461): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $216', 'C:\\xampp\\htdocs\\bi-parking\\app\\Controllers\\Admin\\Transaksi.php', 461)
- 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin\Transaksi->bukti('MjE2')
- 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Transaksi))
- 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
- 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
-INFO - 2023-07-14 00:38:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 00:38:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-CRITICAL - 2023-07-14 00:38:54 --> Undefined variable $216
-in APPPATH\Controllers\Admin\Transaksi.php on line 461.
- 1 APPPATH\Controllers\Admin\Transaksi.php(461): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $216', 'C:\\xampp\\htdocs\\bi-parking\\app\\Controllers\\Admin\\Transaksi.php', 461)
- 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin\Transaksi->bukti('MjE2')
- 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Transaksi))
- 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
- 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
-INFO - 2023-07-14 00:41:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 00:41:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 00:41:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 00:42:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 00:42:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 00:47:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 00:47:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 00:47:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 00:47:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 00:47:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 00:48:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-CRITICAL - 2023-07-14 00:48:13 --> Undefined variable $tr
-in APPPATH\Views\r_user\transaksi_formResult.php on line 74.
- 1 APPPATH\Views\r_user\transaksi_formResult.php(74): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $tr', 'C:\\xampp\\htdocs\\bi-parking\\app\\Views\\r_user\\transaksi_formResult.php', 74)
- 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\bi-parking\\app\\Views\\r_user\\transaksi_formResult.php')
- 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
- 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('r_user/transaksi_formResult', [], true)
- 5 APPPATH\Controllers\Admin\Transaksi.php(371): view('r_user/transaksi_formResult', [...])
- 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin\Transaksi->transaksi_result('97H8MB', '20000', '2')
- 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Transaksi))
- 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
- 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
-INFO - 2023-07-14 00:49:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 00:51:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 00:51:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 00:52:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 00:52:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 00:52:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 00:52:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 00:52:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 00:52:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 00:52:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 00:53:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 00:54:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 00:54:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 00:55:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 00:55:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 00:55:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 00:55:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-WARNING - 2023-07-14 00:55:50 --> [DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in APPPATH\Views\r_user\dashboard.php on line 78.
- 1 APPPATH\Views\r_user\dashboard.php(78): number_format(null)
- 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\bi-parking\\app\\Views\\r_user\\dashboard.php')
- 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
- 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('r_user/dashboard', [], true)
- 5 APPPATH\Controllers\User\Dashboard.php(55): view('r_user/dashboard', [...])
- 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\User\Dashboard->index()
- 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User\Dashboard))
- 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
- 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
-INFO - 2023-07-14 00:55:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 00:55:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 00:56:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 00:56:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 00:56:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-WARNING - 2023-07-14 00:56:02 --> [DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in APPPATH\Views\r_user\dashboard.php on line 78.
- 1 APPPATH\Views\r_user\dashboard.php(78): number_format(null)
- 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\bi-parking\\app\\Views\\r_user\\dashboard.php')
- 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
- 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('r_user/dashboard', [], true)
- 5 APPPATH\Controllers\User\Dashboard.php(55): view('r_user/dashboard', [...])
- 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\User\Dashboard->index()
- 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User\Dashboard))
- 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
- 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
-INFO - 2023-07-14 00:56:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 00:56:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 00:56:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 00:57:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 00:58:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 00:58:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 00:59:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 00:59:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 00:59:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 01:00:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 01:00:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 01:01:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 01:02:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-CRITICAL - 2023-07-14 01:02:16 --> syntax error, unexpected end of file, expecting "elseif" or "else" or "endif"
-in APPPATH\Views\r_user\transaksi_formResult.php on line 100.
- 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
- 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('r_user/transaksi_formResult', [], true)
- 3 APPPATH\Controllers\Admin\Transaksi.php(371): view('r_user/transaksi_formResult', [...])
- 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin\Transaksi->transaksi_result('TGH0NA', '20000', '2')
+CRITICAL - 2023-07-14 15:41:22 --> Updates are not allowed unless they contain a "where" or "like" clause.
+in SYSTEMPATH\Model.php on line 391.
+ 1 SYSTEMPATH\BaseModel.php(943): CodeIgniter\Model->doUpdate(null, [...])
+ 2 SYSTEMPATH\Model.php(756): CodeIgniter\BaseModel->update(null, [...])
+ 3 APPPATH\Controllers\Admin\Transaksi.php(465): CodeIgniter\Model->update(null, [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin\Transaksi->bukti('MjYy')
  5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Transaksi))
  6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
  7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
-INFO - 2023-07-14 01:02:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 01:03:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 01:05:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 01:06:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 01:07:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 01:07:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 01:08:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 01:08:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 01:08:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 01:08:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 01:08:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 01:08:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 01:09:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 01:09:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 01:09:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 01:09:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 01:09:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 01:10:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 01:10:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 01:10:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 01:12:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 01:12:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 01:13:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 01:13:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-WARNING - 2023-07-14 01:13:36 --> [DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in APPPATH\Views\r_user\dashboard.php on line 78.
- 1 APPPATH\Views\r_user\dashboard.php(78): number_format(null)
- 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\bi-parking\\app\\Views\\r_user\\dashboard.php')
+CRITICAL - 2023-07-14 15:53:12 --> Invalid argument supplied for foreach()
+in APPPATH\Views\r_keuangan\transaksi_riwayat.php on line 69.
+ 1 APPPATH\Views\r_keuangan\transaksi_riwayat.php(69): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Invalid argument supplied for foreach()', 'C:\\xampp\\htdocs\\bi_parking\\app\\Views\\r_keuangan\\transaksi_riwayat.php', 69, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\bi_parking\\app\\Views\\r_keuangan\\transaksi_riwayat.php')
  3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
- 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('r_user/dashboard', [], true)
- 5 APPPATH\Controllers\User\Dashboard.php(55): view('r_user/dashboard', [...])
- 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\User\Dashboard->index()
- 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User\Dashboard))
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('r_keuangan/transaksi_riwayat', [], true)
+ 5 APPPATH\Controllers\Keuangan\Transaksi.php(180): view('r_keuangan/transaksi_riwayat', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Keuangan\Transaksi->riwayat()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Keuangan\Transaksi))
  8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
  9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
-INFO - 2023-07-14 01:13:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-WARNING - 2023-07-14 01:13:37 --> [DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in APPPATH\Views\r_user\dashboard.php on line 78.
- 1 APPPATH\Views\r_user\dashboard.php(78): number_format(null)
- 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\bi-parking\\app\\Views\\r_user\\dashboard.php')
- 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
- 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('r_user/dashboard', [], true)
- 5 APPPATH\Controllers\User\Dashboard.php(55): view('r_user/dashboard', [...])
- 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\User\Dashboard->index()
- 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User\Dashboard))
- 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
- 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
-INFO - 2023-07-14 01:13:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 01:13:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 01:13:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 01:14:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 01:14:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 01:14:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 01:14:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 01:14:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 01:14:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 01:14:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 01:15:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 01:15:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 01:15:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 01:15:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 01:15:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 01:15:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 01:15:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 01:16:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 01:16:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 01:16:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 01:16:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 01:16:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 01:17:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 01:18:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 01:19:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-CRITICAL - 2023-07-14 01:19:27 --> Undefined variable $booking_code
-in APPPATH\Views\r_user\transaksi_riwayat.php on line 124.
- 1 APPPATH\Views\r_user\transaksi_riwayat.php(124): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $booking_code', 'C:\\xampp\\htdocs\\bi-parking\\app\\Views\\r_user\\transaksi_riwayat.php', 124)
- 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\bi-parking\\app\\Views\\r_user\\transaksi_riwayat.php')
- 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
- 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('r_user/transaksi_riwayat', [], true)
- 5 APPPATH\Controllers\User\Riwayat.php(45): view('r_user/transaksi_riwayat', [...])
- 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\User\Riwayat->riwayat()
- 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User\Riwayat))
- 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
- 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
-INFO - 2023-07-14 01:21:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-CRITICAL - 2023-07-14 01:21:00 --> Undefined array key "id_transaksi"
-in APPPATH\Views\r_user\transaksi_riwayat.php on line 148.
- 1 APPPATH\Views\r_user\transaksi_riwayat.php(148): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id_transaksi"', 'C:\\xampp\\htdocs\\bi-parking\\app\\Views\\r_user\\transaksi_riwayat.php', 148)
- 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\bi-parking\\app\\Views\\r_user\\transaksi_riwayat.php')
- 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
- 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('r_user/transaksi_riwayat', [], true)
- 5 APPPATH\Controllers\User\Riwayat.php(45): view('r_user/transaksi_riwayat', [...])
- 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\User\Riwayat->riwayat()
- 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User\Riwayat))
- 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
- 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
-INFO - 2023-07-14 01:22:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 01:24:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 01:24:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 01:25:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 01:25:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-WARNING - 2023-07-14 01:25:51 --> [DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in APPPATH\Views\r_user\dashboard.php on line 78.
- 1 APPPATH\Views\r_user\dashboard.php(78): number_format(null)
- 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\bi-parking\\app\\Views\\r_user\\dashboard.php')
- 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
- 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('r_user/dashboard', [], true)
- 5 APPPATH\Controllers\User\Dashboard.php(55): view('r_user/dashboard', [...])
- 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\User\Dashboard->index()
- 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User\Dashboard))
- 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
- 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
-INFO - 2023-07-14 01:25:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 01:25:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-WARNING - 2023-07-14 01:25:57 --> [DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in APPPATH\Views\r_user\dashboard.php on line 78.
- 1 APPPATH\Views\r_user\dashboard.php(78): number_format(null)
- 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\bi-parking\\app\\Views\\r_user\\dashboard.php')
- 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
- 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('r_user/dashboard', [], true)
- 5 APPPATH\Controllers\User\Dashboard.php(55): view('r_user/dashboard', [...])
- 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\User\Dashboard->index()
- 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User\Dashboard))
- 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
- 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
-INFO - 2023-07-14 01:25:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 01:26:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 01:26:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 01:27:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-CRITICAL - 2023-07-14 01:27:07 --> Undefined array key "id_transaksi"
-in APPPATH\Views\r_user\transaksi_riwayat.php on line 153.
- 1 APPPATH\Views\r_user\transaksi_riwayat.php(153): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id_transaksi"', 'C:\\xampp\\htdocs\\bi-parking\\app\\Views\\r_user\\transaksi_riwayat.php', 153)
- 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\bi-parking\\app\\Views\\r_user\\transaksi_riwayat.php')
- 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
- 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('r_user/transaksi_riwayat', [], true)
- 5 APPPATH\Controllers\User\Riwayat.php(45): view('r_user/transaksi_riwayat', [...])
- 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\User\Riwayat->riwayat()
- 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User\Riwayat))
- 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
- 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
-INFO - 2023-07-14 01:28:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-CRITICAL - 2023-07-14 01:28:36 --> Undefined array key "id_transaksi"
-in APPPATH\Views\r_user\transaksi_riwayat.php on line 169.
- 1 APPPATH\Views\r_user\transaksi_riwayat.php(169): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id_transaksi"', 'C:\\xampp\\htdocs\\bi-parking\\app\\Views\\r_user\\transaksi_riwayat.php', 169)
- 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\bi-parking\\app\\Views\\r_user\\transaksi_riwayat.php')
- 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
- 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('r_user/transaksi_riwayat', [], true)
- 5 APPPATH\Controllers\User\Riwayat.php(45): view('r_user/transaksi_riwayat', [...])
- 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\User\Riwayat->riwayat()
- 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User\Riwayat))
- 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
- 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
-INFO - 2023-07-14 01:29:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-CRITICAL - 2023-07-14 01:29:02 --> Undefined array key "id_transaksi"
-in APPPATH\Views\r_user\transaksi_riwayat.php on line 169.
- 1 APPPATH\Views\r_user\transaksi_riwayat.php(169): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id_transaksi"', 'C:\\xampp\\htdocs\\bi-parking\\app\\Views\\r_user\\transaksi_riwayat.php', 169)
- 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\bi-parking\\app\\Views\\r_user\\transaksi_riwayat.php')
- 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
- 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('r_user/transaksi_riwayat', [], true)
- 5 APPPATH\Controllers\User\Riwayat.php(45): view('r_user/transaksi_riwayat', [...])
- 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\User\Riwayat->riwayat()
- 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User\Riwayat))
- 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
- 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
-INFO - 2023-07-14 01:32:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 01:32:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 01:32:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 01:32:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 01:33:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 01:33:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 01:33:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-WARNING - 2023-07-14 01:33:59 --> [DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in APPPATH\Views\r_user\dashboard.php on line 78.
- 1 APPPATH\Views\r_user\dashboard.php(78): number_format(null)
- 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\bi-parking\\app\\Views\\r_user\\dashboard.php')
- 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
- 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('r_user/dashboard', [], true)
- 5 APPPATH\Controllers\User\Dashboard.php(55): view('r_user/dashboard', [...])
- 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\User\Dashboard->index()
- 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User\Dashboard))
- 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
- 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
-INFO - 2023-07-14 01:35:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 01:36:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 01:37:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 01:37:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 01:37:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 01:37:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 01:37:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 01:37:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 01:37:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 01:37:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 01:37:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 01:37:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 08:51:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 08:52:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 08:54:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 08:54:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-WARNING - 2023-07-14 08:54:46 --> [DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in APPPATH\Views\r_user\dashboard.php on line 78.
- 1 APPPATH\Views\r_user\dashboard.php(78): number_format(null)
- 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\bi-parking\\app\\Views\\r_user\\dashboard.php')
- 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
- 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('r_user/dashboard', [], true)
- 5 APPPATH\Controllers\User\Dashboard.php(55): view('r_user/dashboard', [...])
- 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\User\Dashboard->index()
- 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User\Dashboard))
- 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
- 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
-INFO - 2023-07-14 08:54:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 08:54:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 08:54:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 08:54:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 08:54:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 08:54:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 08:54:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 08:54:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 08:55:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 08:55:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 08:57:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 08:57:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 08:58:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 08:59:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 09:00:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 09:00:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 09:02:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 09:03:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 09:03:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 09:03:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 09:03:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 09:03:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 09:03:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 09:03:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 09:04:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 09:05:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 09:05:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 09:07:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 09:08:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 09:08:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 09:09:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 09:11:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 09:11:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 09:12:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 09:12:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 09:13:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 09:14:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-CRITICAL - 2023-07-14 09:14:10 --> Undefined array key "id_transaksi"
-in APPPATH\Views\r_user\transaksi_riwayat.php on line 155.
- 1 APPPATH\Views\r_user\transaksi_riwayat.php(155): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id_transaksi"', 'C:\\xampp\\htdocs\\bi-parking\\app\\Views\\r_user\\transaksi_riwayat.php', 155)
- 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\bi-parking\\app\\Views\\r_user\\transaksi_riwayat.php')
- 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
- 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('r_user/transaksi_riwayat', [], true)
- 5 APPPATH\Controllers\User\Riwayat.php(45): view('r_user/transaksi_riwayat', [...])
- 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\User\Riwayat->riwayat()
- 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User\Riwayat))
- 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
- 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
-INFO - 2023-07-14 09:14:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 09:15:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 09:15:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 09:15:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 09:17:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 09:18:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 09:19:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 09:19:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 09:19:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 09:19:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 09:20:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-CRITICAL - 2023-07-14 09:20:52 --> Undefined array key "id_transaksi"
-in APPPATH\Views\r_user\transaksi_riwayat.php on line 154.
- 1 APPPATH\Views\r_user\transaksi_riwayat.php(154): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id_transaksi"', 'C:\\xampp\\htdocs\\bi-parking\\app\\Views\\r_user\\transaksi_riwayat.php', 154)
- 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\bi-parking\\app\\Views\\r_user\\transaksi_riwayat.php')
- 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
- 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('r_user/transaksi_riwayat', [], true)
- 5 APPPATH\Controllers\User\Riwayat.php(45): view('r_user/transaksi_riwayat', [...])
- 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\User\Riwayat->riwayat()
- 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User\Riwayat))
- 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
- 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
-INFO - 2023-07-14 09:20:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 09:21:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 09:23:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 09:23:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 09:23:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 09:23:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 09:24:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 09:24:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 09:24:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 09:24:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 09:24:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 09:24:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 09:24:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 09:26:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 09:28:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 09:28:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 09:28:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 09:29:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 09:29:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 09:30:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 09:31:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 09:35:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-WARNING - 2023-07-14 09:35:25 --> [DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in APPPATH\Views\r_user\dashboard.php on line 78.
- 1 APPPATH\Views\r_user\dashboard.php(78): number_format(null)
- 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\bi-parking\\app\\Views\\r_user\\dashboard.php')
- 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
- 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('r_user/dashboard', [], true)
- 5 APPPATH\Controllers\User\Dashboard.php(55): view('r_user/dashboard', [...])
- 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\User\Dashboard->index()
- 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User\Dashboard))
- 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
- 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
-INFO - 2023-07-14 09:35:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-WARNING - 2023-07-14 09:35:27 --> [DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in APPPATH\Views\r_user\dashboard.php on line 78.
- 1 APPPATH\Views\r_user\dashboard.php(78): number_format(null)
- 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\bi-parking\\app\\Views\\r_user\\dashboard.php')
- 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
- 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('r_user/dashboard', [], true)
- 5 APPPATH\Controllers\User\Dashboard.php(55): view('r_user/dashboard', [...])
- 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\User\Dashboard->index()
- 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User\Dashboard))
- 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
- 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
-INFO - 2023-07-14 09:37:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-WARNING - 2023-07-14 09:37:44 --> [DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in APPPATH\Views\r_user\dashboard.php on line 78.
- 1 APPPATH\Views\r_user\dashboard.php(78): number_format(null)
- 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\bi-parking\\app\\Views\\r_user\\dashboard.php')
- 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
- 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('r_user/dashboard', [], true)
- 5 APPPATH\Controllers\User\Dashboard.php(55): view('r_user/dashboard', [...])
- 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\User\Dashboard->index()
- 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User\Dashboard))
- 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
- 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
-INFO - 2023-07-14 09:38:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-WARNING - 2023-07-14 09:38:27 --> [DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in APPPATH\Views\r_user\dashboard.php on line 78.
- 1 APPPATH\Views\r_user\dashboard.php(78): number_format(null)
- 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\bi-parking\\app\\Views\\r_user\\dashboard.php')
- 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
- 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('r_user/dashboard', [], true)
- 5 APPPATH\Controllers\User\Dashboard.php(55): view('r_user/dashboard', [...])
- 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\User\Dashboard->index()
- 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User\Dashboard))
- 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
- 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
-INFO - 2023-07-14 09:38:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-WARNING - 2023-07-14 09:38:34 --> [DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in APPPATH\Views\r_user\dashboard.php on line 78.
- 1 APPPATH\Views\r_user\dashboard.php(78): number_format(null)
- 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\bi-parking\\app\\Views\\r_user\\dashboard.php')
- 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
- 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('r_user/dashboard', [], true)
- 5 APPPATH\Controllers\User\Dashboard.php(55): view('r_user/dashboard', [...])
- 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\User\Dashboard->index()
- 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User\Dashboard))
- 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
- 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
-INFO - 2023-07-14 09:38:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 09:39:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 09:39:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 09:39:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 09:39:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 09:42:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 09:42:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 09:42:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 09:42:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-WARNING - 2023-07-14 09:42:42 --> [DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in APPPATH\Views\r_user\dashboard.php on line 78.
- 1 APPPATH\Views\r_user\dashboard.php(78): number_format(null)
- 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\bi-parking\\app\\Views\\r_user\\dashboard.php')
- 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
- 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('r_user/dashboard', [], true)
- 5 APPPATH\Controllers\User\Dashboard.php(55): view('r_user/dashboard', [...])
- 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\User\Dashboard->index()
- 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User\Dashboard))
- 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
- 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
-INFO - 2023-07-14 09:42:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 09:43:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-CRITICAL - 2023-07-14 09:43:27 --> Call to a member function getSize() on null
-in APPPATH\Controllers\Admin\Transaksi.php on line 456.
- 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin\Transaksi->bukti('MjI1')
- 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Transaksi))
- 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
- 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
-INFO - 2023-07-14 09:43:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 09:43:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-CRITICAL - 2023-07-14 09:43:47 --> Call to a member function getSize() on null
-in APPPATH\Controllers\Admin\Transaksi.php on line 456.
- 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin\Transaksi->bukti('MjI1')
- 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Transaksi))
- 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
- 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
-INFO - 2023-07-14 09:46:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-CRITICAL - 2023-07-14 09:46:45 --> Call to a member function getSize() on null
-in APPPATH\Controllers\Admin\Transaksi.php on line 456.
- 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin\Transaksi->bukti('MjI1')
- 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Transaksi))
- 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
- 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
-INFO - 2023-07-14 09:46:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 09:46:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 09:46:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 09:46:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 09:47:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 09:47:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 09:47:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 09:47:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 09:47:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 09:47:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 09:47:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 09:47:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 09:47:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 09:48:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 09:48:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 09:50:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 09:50:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 09:50:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 09:50:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 09:50:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 09:50:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 09:50:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 09:50:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 09:52:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 09:52:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 09:52:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 10:00:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 10:00:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 10:00:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 10:00:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 10:00:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 10:02:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 10:02:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 10:03:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 10:03:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 10:06:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 10:09:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 10:09:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 10:09:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 10:09:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 10:09:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 10:10:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 10:10:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 10:10:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 10:10:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 10:10:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 10:16:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 10:19:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 10:21:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 10:21:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 10:21:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 10:21:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 10:22:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 10:22:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 10:22:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 10:23:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 10:23:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 10:24:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 10:24:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 10:24:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 10:24:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 10:24:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 10:30:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 10:31:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 10:31:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 10:32:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 10:32:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 10:33:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 10:34:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 10:35:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 10:35:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 10:35:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 10:37:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 10:37:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 10:37:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 10:37:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 10:37:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 10:37:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 10:38:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 10:38:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 10:38:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 10:38:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 10:38:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 10:38:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 10:38:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 10:44:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 10:44:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 10:44:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 10:44:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 10:45:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 10:46:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 10:46:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 10:46:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 10:47:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 10:47:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 10:48:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 10:48:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 10:48:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 10:49:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 10:49:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 10:49:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 10:51:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 10:51:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 10:51:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 10:51:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 10:52:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 10:52:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 10:52:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 10:52:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 10:52:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 10:52:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 10:52:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 10:52:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 10:52:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 10:52:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 10:57:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 10:57:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 10:57:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 10:58:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 10:58:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 10:58:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 11:00:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 11:00:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 11:00:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 11:00:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 11:00:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 11:00:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 11:00:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 11:00:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 11:00:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 11:00:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 11:01:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 11:01:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 11:01:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 11:02:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 11:02:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 11:02:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 22:30:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-14 22:30:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-07-14 15:58:32 --> mysqli_sql_exception: Column 'updated_at' in order clause is ambiguous in C:\xampp\htdocs\bi_parking\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\bi_parking\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\bi_parking\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\bi_parking\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\bi_parking\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\bi_parking\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\bi_parking\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(9, 0)
+#6 C:\xampp\htdocs\bi_parking\system\BaseModel.php(1192): CodeIgniter\BaseModel->findAll(9, 0)
+#7 C:\xampp\htdocs\bi_parking\app\Controllers\Keuangan\Transaksi.php(175): CodeIgniter\BaseModel->paginate(9, 'pagination')
+#8 C:\xampp\htdocs\bi_parking\system\CodeIgniter.php(934): App\Controllers\Keuangan\Transaksi->riwayat()
+#9 C:\xampp\htdocs\bi_parking\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Keuangan\Transaksi))
+#10 C:\xampp\htdocs\bi_parking\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\ParkingManagementSystem\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-07-14 15:58:32 --> Column 'updated_at' in order clause is ambiguous
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *
+FROM `transaksi`
+JOIN `user` ON `user`.`npm` = `transaksi`.`npm`
+JOIN `jenis_transaksi` ON `jenis_transaksi`.`id_jenis_transaksi` = `transaksi`.`id_jenis_transaksi`
+JOIN `status_transaksi` ON `status_transaksi`.`id_status_transaksi` = `transaksi`.`id_status_transaksi`
+WHERE `transaksi`.`id_jenis_transaksi` NOT IN (3)
+ORDER BY `updated_at` DESC
+ LIMIT 9', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `transaksi`
+JOIN `user` ON `user`.`npm` = `transaksi`.`npm`
+JOIN `jenis_transaksi` ON `jenis_transaksi`.`id_jenis_transaksi` = `transaksi`.`id_jenis_transaksi`
+JOIN `status_transaksi` ON `status_transaksi`.`id_status_transaksi` = `transaksi`.`id_status_transaksi`
+WHERE `transaksi`.`id_jenis_transaksi` NOT IN (3)
+ORDER BY `updated_at` DESC
+ LIMIT 9')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `transaksi`
+JOIN `user` ON `user`.`npm` = `transaksi`.`npm`
+JOIN `jenis_transaksi` ON `jenis_transaksi`.`id_jenis_transaksi` = `transaksi`.`id_jenis_transaksi`
+JOIN `status_transaksi` ON `status_transaksi`.`id_status_transaksi` = `transaksi`.`id_status_transaksi`
+WHERE `transaksi`.`id_jenis_transaksi` NOT IN (3)
+ORDER BY `updated_at` DESC
+ LIMIT 9')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `transaksi`
+JOIN `user` ON `user`.`npm` = `transaksi`.`npm`
+JOIN `jenis_transaksi` ON `jenis_transaksi`.`id_jenis_transaksi` = `transaksi`.`id_jenis_transaksi`
+JOIN `status_transaksi` ON `status_transaksi`.`id_status_transaksi` = `transaksi`.`id_status_transaksi`
+WHERE `transaksi`.`id_jenis_transaksi` NOT IN :transaksi.id_jenis_transaksi:
+ORDER BY `updated_at` DESC
+ LIMIT 9', [...], false)
+ 5 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(9, 0)
+ 7 SYSTEMPATH\BaseModel.php(1192): CodeIgniter\BaseModel->findAll(9, 0)
+ 8 APPPATH\Controllers\Keuangan\Transaksi.php(175): CodeIgniter\BaseModel->paginate(9, 'pagination')
+ 9 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Keuangan\Transaksi->riwayat()
+10 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Keuangan\Transaksi))
+11 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-07-14 15:59:13 --> mysqli_sql_exception: Column 'updated_at' in order clause is ambiguous in C:\xampp\htdocs\bi_parking\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\bi_parking\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\bi_parking\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\bi_parking\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\bi_parking\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\bi_parking\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\bi_parking\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(9, 0)
+#6 C:\xampp\htdocs\bi_parking\system\BaseModel.php(1192): CodeIgniter\BaseModel->findAll(9, 0)
+#7 C:\xampp\htdocs\bi_parking\app\Controllers\Keuangan\Transaksi.php(176): CodeIgniter\BaseModel->paginate(9, 'pagination')
+#8 C:\xampp\htdocs\bi_parking\system\CodeIgniter.php(934): App\Controllers\Keuangan\Transaksi->riwayat()
+#9 C:\xampp\htdocs\bi_parking\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Keuangan\Transaksi))
+#10 C:\xampp\htdocs\bi_parking\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\ParkingManagementSystem\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-07-14 15:59:13 --> Column 'updated_at' in order clause is ambiguous
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *
+FROM `transaksi`
+JOIN `user` ON `user`.`npm` = `transaksi`.`npm`
+JOIN `jenis_transaksi` ON `jenis_transaksi`.`id_jenis_transaksi` = `transaksi`.`id_jenis_transaksi`
+JOIN `status_transaksi` ON `status_transaksi`.`id_status_transaksi` = `transaksi`.`id_status_transaksi`
+JOIN `jenis_pembayaran` ON `jenis_pembayaran`.`id_jenis_pembayaran` = `transaksi`.`id_jenis_pembayaran`
+WHERE `transaksi`.`id_jenis_transaksi` NOT IN (3)
+ORDER BY `updated_at` DESC
+ LIMIT 9', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `transaksi`
+JOIN `user` ON `user`.`npm` = `transaksi`.`npm`
+JOIN `jenis_transaksi` ON `jenis_transaksi`.`id_jenis_transaksi` = `transaksi`.`id_jenis_transaksi`
+JOIN `status_transaksi` ON `status_transaksi`.`id_status_transaksi` = `transaksi`.`id_status_transaksi`
+JOIN `jenis_pembayaran` ON `jenis_pembayaran`.`id_jenis_pembayaran` = `transaksi`.`id_jenis_pembayaran`
+WHERE `transaksi`.`id_jenis_transaksi` NOT IN (3)
+ORDER BY `updated_at` DESC
+ LIMIT 9')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `transaksi`
+JOIN `user` ON `user`.`npm` = `transaksi`.`npm`
+JOIN `jenis_transaksi` ON `jenis_transaksi`.`id_jenis_transaksi` = `transaksi`.`id_jenis_transaksi`
+JOIN `status_transaksi` ON `status_transaksi`.`id_status_transaksi` = `transaksi`.`id_status_transaksi`
+JOIN `jenis_pembayaran` ON `jenis_pembayaran`.`id_jenis_pembayaran` = `transaksi`.`id_jenis_pembayaran`
+WHERE `transaksi`.`id_jenis_transaksi` NOT IN (3)
+ORDER BY `updated_at` DESC
+ LIMIT 9')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `transaksi`
+JOIN `user` ON `user`.`npm` = `transaksi`.`npm`
+JOIN `jenis_transaksi` ON `jenis_transaksi`.`id_jenis_transaksi` = `transaksi`.`id_jenis_transaksi`
+JOIN `status_transaksi` ON `status_transaksi`.`id_status_transaksi` = `transaksi`.`id_status_transaksi`
+JOIN `jenis_pembayaran` ON `jenis_pembayaran`.`id_jenis_pembayaran` = `transaksi`.`id_jenis_pembayaran`
+WHERE `transaksi`.`id_jenis_transaksi` NOT IN :transaksi.id_jenis_transaksi:
+ORDER BY `updated_at` DESC
+ LIMIT 9', [...], false)
+ 5 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(9, 0)
+ 7 SYSTEMPATH\BaseModel.php(1192): CodeIgniter\BaseModel->findAll(9, 0)
+ 8 APPPATH\Controllers\Keuangan\Transaksi.php(176): CodeIgniter\BaseModel->paginate(9, 'pagination')
+ 9 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Keuangan\Transaksi->riwayat()
+10 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Keuangan\Transaksi))
+11 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-07-14 15:59:14 --> mysqli_sql_exception: Column 'updated_at' in order clause is ambiguous in C:\xampp\htdocs\bi_parking\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\bi_parking\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\bi_parking\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\bi_parking\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\bi_parking\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\bi_parking\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\bi_parking\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(9, 0)
+#6 C:\xampp\htdocs\bi_parking\system\BaseModel.php(1192): CodeIgniter\BaseModel->findAll(9, 0)
+#7 C:\xampp\htdocs\bi_parking\app\Controllers\Keuangan\Transaksi.php(176): CodeIgniter\BaseModel->paginate(9, 'pagination')
+#8 C:\xampp\htdocs\bi_parking\system\CodeIgniter.php(934): App\Controllers\Keuangan\Transaksi->riwayat()
+#9 C:\xampp\htdocs\bi_parking\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Keuangan\Transaksi))
+#10 C:\xampp\htdocs\bi_parking\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\ParkingManagementSystem\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-07-14 15:59:14 --> Column 'updated_at' in order clause is ambiguous
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *
+FROM `transaksi`
+JOIN `user` ON `user`.`npm` = `transaksi`.`npm`
+JOIN `jenis_transaksi` ON `jenis_transaksi`.`id_jenis_transaksi` = `transaksi`.`id_jenis_transaksi`
+JOIN `status_transaksi` ON `status_transaksi`.`id_status_transaksi` = `transaksi`.`id_status_transaksi`
+JOIN `jenis_pembayaran` ON `jenis_pembayaran`.`id_jenis_pembayaran` = `transaksi`.`id_jenis_pembayaran`
+WHERE `transaksi`.`id_jenis_transaksi` NOT IN (3)
+ORDER BY `updated_at` DESC
+ LIMIT 9', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `transaksi`
+JOIN `user` ON `user`.`npm` = `transaksi`.`npm`
+JOIN `jenis_transaksi` ON `jenis_transaksi`.`id_jenis_transaksi` = `transaksi`.`id_jenis_transaksi`
+JOIN `status_transaksi` ON `status_transaksi`.`id_status_transaksi` = `transaksi`.`id_status_transaksi`
+JOIN `jenis_pembayaran` ON `jenis_pembayaran`.`id_jenis_pembayaran` = `transaksi`.`id_jenis_pembayaran`
+WHERE `transaksi`.`id_jenis_transaksi` NOT IN (3)
+ORDER BY `updated_at` DESC
+ LIMIT 9')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `transaksi`
+JOIN `user` ON `user`.`npm` = `transaksi`.`npm`
+JOIN `jenis_transaksi` ON `jenis_transaksi`.`id_jenis_transaksi` = `transaksi`.`id_jenis_transaksi`
+JOIN `status_transaksi` ON `status_transaksi`.`id_status_transaksi` = `transaksi`.`id_status_transaksi`
+JOIN `jenis_pembayaran` ON `jenis_pembayaran`.`id_jenis_pembayaran` = `transaksi`.`id_jenis_pembayaran`
+WHERE `transaksi`.`id_jenis_transaksi` NOT IN (3)
+ORDER BY `updated_at` DESC
+ LIMIT 9')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `transaksi`
+JOIN `user` ON `user`.`npm` = `transaksi`.`npm`
+JOIN `jenis_transaksi` ON `jenis_transaksi`.`id_jenis_transaksi` = `transaksi`.`id_jenis_transaksi`
+JOIN `status_transaksi` ON `status_transaksi`.`id_status_transaksi` = `transaksi`.`id_status_transaksi`
+JOIN `jenis_pembayaran` ON `jenis_pembayaran`.`id_jenis_pembayaran` = `transaksi`.`id_jenis_pembayaran`
+WHERE `transaksi`.`id_jenis_transaksi` NOT IN :transaksi.id_jenis_transaksi:
+ORDER BY `updated_at` DESC
+ LIMIT 9', [...], false)
+ 5 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(9, 0)
+ 7 SYSTEMPATH\BaseModel.php(1192): CodeIgniter\BaseModel->findAll(9, 0)
+ 8 APPPATH\Controllers\Keuangan\Transaksi.php(176): CodeIgniter\BaseModel->paginate(9, 'pagination')
+ 9 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Keuangan\Transaksi->riwayat()
+10 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Keuangan\Transaksi))
+11 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-07-14 15:59:53 --> mysqli_sql_exception: Column 'updated_at' in order clause is ambiguous in C:\xampp\htdocs\bi_parking\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\bi_parking\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\bi_parking\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\bi_parking\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\bi_parking\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\bi_parking\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\bi_parking\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(9, 0)
+#6 C:\xampp\htdocs\bi_parking\system\BaseModel.php(1192): CodeIgniter\BaseModel->findAll(9, 0)
+#7 C:\xampp\htdocs\bi_parking\app\Controllers\Keuangan\Transaksi.php(175): CodeIgniter\BaseModel->paginate(9, 'pagination')
+#8 C:\xampp\htdocs\bi_parking\system\CodeIgniter.php(934): App\Controllers\Keuangan\Transaksi->riwayat()
+#9 C:\xampp\htdocs\bi_parking\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Keuangan\Transaksi))
+#10 C:\xampp\htdocs\bi_parking\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\ParkingManagementSystem\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-07-14 15:59:53 --> Column 'updated_at' in order clause is ambiguous
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *
+FROM `transaksi`
+JOIN `user` ON `user`.`npm` = `transaksi`.`npm`
+JOIN `jenis_transaksi` ON `jenis_transaksi`.`id_jenis_transaksi` = `transaksi`.`id_jenis_transaksi`
+JOIN `status_transaksi` ON `status_transaksi`.`id_status_transaksi` = `transaksi`.`id_status_transaksi`
+JOIN `jenis_pembayaran` ON `jenis_pembayaran`.`id_jenis_pembayaran` = `transaksi`.`id_jenis_pembayaran`
+WHERE `transaksi`.`id_jenis_transaksi` NOT IN (3)
+ORDER BY `updated_at` DESC
+ LIMIT 9', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `transaksi`
+JOIN `user` ON `user`.`npm` = `transaksi`.`npm`
+JOIN `jenis_transaksi` ON `jenis_transaksi`.`id_jenis_transaksi` = `transaksi`.`id_jenis_transaksi`
+JOIN `status_transaksi` ON `status_transaksi`.`id_status_transaksi` = `transaksi`.`id_status_transaksi`
+JOIN `jenis_pembayaran` ON `jenis_pembayaran`.`id_jenis_pembayaran` = `transaksi`.`id_jenis_pembayaran`
+WHERE `transaksi`.`id_jenis_transaksi` NOT IN (3)
+ORDER BY `updated_at` DESC
+ LIMIT 9')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `transaksi`
+JOIN `user` ON `user`.`npm` = `transaksi`.`npm`
+JOIN `jenis_transaksi` ON `jenis_transaksi`.`id_jenis_transaksi` = `transaksi`.`id_jenis_transaksi`
+JOIN `status_transaksi` ON `status_transaksi`.`id_status_transaksi` = `transaksi`.`id_status_transaksi`
+JOIN `jenis_pembayaran` ON `jenis_pembayaran`.`id_jenis_pembayaran` = `transaksi`.`id_jenis_pembayaran`
+WHERE `transaksi`.`id_jenis_transaksi` NOT IN (3)
+ORDER BY `updated_at` DESC
+ LIMIT 9')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `transaksi`
+JOIN `user` ON `user`.`npm` = `transaksi`.`npm`
+JOIN `jenis_transaksi` ON `jenis_transaksi`.`id_jenis_transaksi` = `transaksi`.`id_jenis_transaksi`
+JOIN `status_transaksi` ON `status_transaksi`.`id_status_transaksi` = `transaksi`.`id_status_transaksi`
+JOIN `jenis_pembayaran` ON `jenis_pembayaran`.`id_jenis_pembayaran` = `transaksi`.`id_jenis_pembayaran`
+WHERE `transaksi`.`id_jenis_transaksi` NOT IN :transaksi.id_jenis_transaksi:
+ORDER BY `updated_at` DESC
+ LIMIT 9', [...], false)
+ 5 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(9, 0)
+ 7 SYSTEMPATH\BaseModel.php(1192): CodeIgniter\BaseModel->findAll(9, 0)
+ 8 APPPATH\Controllers\Keuangan\Transaksi.php(175): CodeIgniter\BaseModel->paginate(9, 'pagination')
+ 9 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Keuangan\Transaksi->riwayat()
+10 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Keuangan\Transaksi))
+11 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-07-14 15:59:54 --> mysqli_sql_exception: Column 'updated_at' in order clause is ambiguous in C:\xampp\htdocs\bi_parking\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\bi_parking\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\bi_parking\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\bi_parking\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\bi_parking\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\bi_parking\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\bi_parking\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(9, 0)
+#6 C:\xampp\htdocs\bi_parking\system\BaseModel.php(1192): CodeIgniter\BaseModel->findAll(9, 0)
+#7 C:\xampp\htdocs\bi_parking\app\Controllers\Keuangan\Transaksi.php(175): CodeIgniter\BaseModel->paginate(9, 'pagination')
+#8 C:\xampp\htdocs\bi_parking\system\CodeIgniter.php(934): App\Controllers\Keuangan\Transaksi->riwayat()
+#9 C:\xampp\htdocs\bi_parking\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Keuangan\Transaksi))
+#10 C:\xampp\htdocs\bi_parking\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\ParkingManagementSystem\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-07-14 15:59:54 --> Column 'updated_at' in order clause is ambiguous
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *
+FROM `transaksi`
+JOIN `user` ON `user`.`npm` = `transaksi`.`npm`
+JOIN `jenis_transaksi` ON `jenis_transaksi`.`id_jenis_transaksi` = `transaksi`.`id_jenis_transaksi`
+JOIN `status_transaksi` ON `status_transaksi`.`id_status_transaksi` = `transaksi`.`id_status_transaksi`
+JOIN `jenis_pembayaran` ON `jenis_pembayaran`.`id_jenis_pembayaran` = `transaksi`.`id_jenis_pembayaran`
+WHERE `transaksi`.`id_jenis_transaksi` NOT IN (3)
+ORDER BY `updated_at` DESC
+ LIMIT 9', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `transaksi`
+JOIN `user` ON `user`.`npm` = `transaksi`.`npm`
+JOIN `jenis_transaksi` ON `jenis_transaksi`.`id_jenis_transaksi` = `transaksi`.`id_jenis_transaksi`
+JOIN `status_transaksi` ON `status_transaksi`.`id_status_transaksi` = `transaksi`.`id_status_transaksi`
+JOIN `jenis_pembayaran` ON `jenis_pembayaran`.`id_jenis_pembayaran` = `transaksi`.`id_jenis_pembayaran`
+WHERE `transaksi`.`id_jenis_transaksi` NOT IN (3)
+ORDER BY `updated_at` DESC
+ LIMIT 9')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `transaksi`
+JOIN `user` ON `user`.`npm` = `transaksi`.`npm`
+JOIN `jenis_transaksi` ON `jenis_transaksi`.`id_jenis_transaksi` = `transaksi`.`id_jenis_transaksi`
+JOIN `status_transaksi` ON `status_transaksi`.`id_status_transaksi` = `transaksi`.`id_status_transaksi`
+JOIN `jenis_pembayaran` ON `jenis_pembayaran`.`id_jenis_pembayaran` = `transaksi`.`id_jenis_pembayaran`
+WHERE `transaksi`.`id_jenis_transaksi` NOT IN (3)
+ORDER BY `updated_at` DESC
+ LIMIT 9')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `transaksi`
+JOIN `user` ON `user`.`npm` = `transaksi`.`npm`
+JOIN `jenis_transaksi` ON `jenis_transaksi`.`id_jenis_transaksi` = `transaksi`.`id_jenis_transaksi`
+JOIN `status_transaksi` ON `status_transaksi`.`id_status_transaksi` = `transaksi`.`id_status_transaksi`
+JOIN `jenis_pembayaran` ON `jenis_pembayaran`.`id_jenis_pembayaran` = `transaksi`.`id_jenis_pembayaran`
+WHERE `transaksi`.`id_jenis_transaksi` NOT IN :transaksi.id_jenis_transaksi:
+ORDER BY `updated_at` DESC
+ LIMIT 9', [...], false)
+ 5 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(9, 0)
+ 7 SYSTEMPATH\BaseModel.php(1192): CodeIgniter\BaseModel->findAll(9, 0)
+ 8 APPPATH\Controllers\Keuangan\Transaksi.php(175): CodeIgniter\BaseModel->paginate(9, 'pagination')
+ 9 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Keuangan\Transaksi->riwayat()
+10 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Keuangan\Transaksi))
+11 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-07-14 15:59:54 --> mysqli_sql_exception: Column 'updated_at' in order clause is ambiguous in C:\xampp\htdocs\bi_parking\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\bi_parking\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\bi_parking\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\bi_parking\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\bi_parking\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\bi_parking\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\bi_parking\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(9, 0)
+#6 C:\xampp\htdocs\bi_parking\system\BaseModel.php(1192): CodeIgniter\BaseModel->findAll(9, 0)
+#7 C:\xampp\htdocs\bi_parking\app\Controllers\Keuangan\Transaksi.php(175): CodeIgniter\BaseModel->paginate(9, 'pagination')
+#8 C:\xampp\htdocs\bi_parking\system\CodeIgniter.php(934): App\Controllers\Keuangan\Transaksi->riwayat()
+#9 C:\xampp\htdocs\bi_parking\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Keuangan\Transaksi))
+#10 C:\xampp\htdocs\bi_parking\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\ParkingManagementSystem\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-07-14 15:59:54 --> Column 'updated_at' in order clause is ambiguous
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *
+FROM `transaksi`
+JOIN `user` ON `user`.`npm` = `transaksi`.`npm`
+JOIN `jenis_transaksi` ON `jenis_transaksi`.`id_jenis_transaksi` = `transaksi`.`id_jenis_transaksi`
+JOIN `status_transaksi` ON `status_transaksi`.`id_status_transaksi` = `transaksi`.`id_status_transaksi`
+JOIN `jenis_pembayaran` ON `jenis_pembayaran`.`id_jenis_pembayaran` = `transaksi`.`id_jenis_pembayaran`
+WHERE `transaksi`.`id_jenis_transaksi` NOT IN (3)
+ORDER BY `updated_at` DESC
+ LIMIT 9', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `transaksi`
+JOIN `user` ON `user`.`npm` = `transaksi`.`npm`
+JOIN `jenis_transaksi` ON `jenis_transaksi`.`id_jenis_transaksi` = `transaksi`.`id_jenis_transaksi`
+JOIN `status_transaksi` ON `status_transaksi`.`id_status_transaksi` = `transaksi`.`id_status_transaksi`
+JOIN `jenis_pembayaran` ON `jenis_pembayaran`.`id_jenis_pembayaran` = `transaksi`.`id_jenis_pembayaran`
+WHERE `transaksi`.`id_jenis_transaksi` NOT IN (3)
+ORDER BY `updated_at` DESC
+ LIMIT 9')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `transaksi`
+JOIN `user` ON `user`.`npm` = `transaksi`.`npm`
+JOIN `jenis_transaksi` ON `jenis_transaksi`.`id_jenis_transaksi` = `transaksi`.`id_jenis_transaksi`
+JOIN `status_transaksi` ON `status_transaksi`.`id_status_transaksi` = `transaksi`.`id_status_transaksi`
+JOIN `jenis_pembayaran` ON `jenis_pembayaran`.`id_jenis_pembayaran` = `transaksi`.`id_jenis_pembayaran`
+WHERE `transaksi`.`id_jenis_transaksi` NOT IN (3)
+ORDER BY `updated_at` DESC
+ LIMIT 9')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `transaksi`
+JOIN `user` ON `user`.`npm` = `transaksi`.`npm`
+JOIN `jenis_transaksi` ON `jenis_transaksi`.`id_jenis_transaksi` = `transaksi`.`id_jenis_transaksi`
+JOIN `status_transaksi` ON `status_transaksi`.`id_status_transaksi` = `transaksi`.`id_status_transaksi`
+JOIN `jenis_pembayaran` ON `jenis_pembayaran`.`id_jenis_pembayaran` = `transaksi`.`id_jenis_pembayaran`
+WHERE `transaksi`.`id_jenis_transaksi` NOT IN :transaksi.id_jenis_transaksi:
+ORDER BY `updated_at` DESC
+ LIMIT 9', [...], false)
+ 5 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(9, 0)
+ 7 SYSTEMPATH\BaseModel.php(1192): CodeIgniter\BaseModel->findAll(9, 0)
+ 8 APPPATH\Controllers\Keuangan\Transaksi.php(175): CodeIgniter\BaseModel->paginate(9, 'pagination')
+ 9 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Keuangan\Transaksi->riwayat()
+10 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Keuangan\Transaksi))
+11 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-07-14 15:59:59 --> mysqli_sql_exception: Column 'updated_at' in order clause is ambiguous in C:\xampp\htdocs\bi_parking\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\bi_parking\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\bi_parking\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\bi_parking\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\bi_parking\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\bi_parking\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\bi_parking\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(9, 0)
+#6 C:\xampp\htdocs\bi_parking\system\BaseModel.php(1192): CodeIgniter\BaseModel->findAll(9, 0)
+#7 C:\xampp\htdocs\bi_parking\app\Controllers\Keuangan\Transaksi.php(175): CodeIgniter\BaseModel->paginate(9, 'pagination')
+#8 C:\xampp\htdocs\bi_parking\system\CodeIgniter.php(934): App\Controllers\Keuangan\Transaksi->riwayat()
+#9 C:\xampp\htdocs\bi_parking\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Keuangan\Transaksi))
+#10 C:\xampp\htdocs\bi_parking\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\ParkingManagementSystem\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-07-14 15:59:59 --> Column 'updated_at' in order clause is ambiguous
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *
+FROM `transaksi`
+JOIN `user` ON `user`.`npm` = `transaksi`.`npm`
+JOIN `jenis_transaksi` ON `jenis_transaksi`.`id_jenis_transaksi` = `transaksi`.`id_jenis_transaksi`
+JOIN `status_transaksi` ON `status_transaksi`.`id_status_transaksi` = `transaksi`.`id_status_transaksi`
+JOIN `jenis_pembayaran` ON `jenis_pembayaran`.`id_jenis_pembayaran` = `transaksi`.`id_jenis_pembayaran`
+WHERE `transaksi`.`id_jenis_transaksi` NOT IN (3)
+ORDER BY `updated_at` DESC
+ LIMIT 9', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `transaksi`
+JOIN `user` ON `user`.`npm` = `transaksi`.`npm`
+JOIN `jenis_transaksi` ON `jenis_transaksi`.`id_jenis_transaksi` = `transaksi`.`id_jenis_transaksi`
+JOIN `status_transaksi` ON `status_transaksi`.`id_status_transaksi` = `transaksi`.`id_status_transaksi`
+JOIN `jenis_pembayaran` ON `jenis_pembayaran`.`id_jenis_pembayaran` = `transaksi`.`id_jenis_pembayaran`
+WHERE `transaksi`.`id_jenis_transaksi` NOT IN (3)
+ORDER BY `updated_at` DESC
+ LIMIT 9')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `transaksi`
+JOIN `user` ON `user`.`npm` = `transaksi`.`npm`
+JOIN `jenis_transaksi` ON `jenis_transaksi`.`id_jenis_transaksi` = `transaksi`.`id_jenis_transaksi`
+JOIN `status_transaksi` ON `status_transaksi`.`id_status_transaksi` = `transaksi`.`id_status_transaksi`
+JOIN `jenis_pembayaran` ON `jenis_pembayaran`.`id_jenis_pembayaran` = `transaksi`.`id_jenis_pembayaran`
+WHERE `transaksi`.`id_jenis_transaksi` NOT IN (3)
+ORDER BY `updated_at` DESC
+ LIMIT 9')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `transaksi`
+JOIN `user` ON `user`.`npm` = `transaksi`.`npm`
+JOIN `jenis_transaksi` ON `jenis_transaksi`.`id_jenis_transaksi` = `transaksi`.`id_jenis_transaksi`
+JOIN `status_transaksi` ON `status_transaksi`.`id_status_transaksi` = `transaksi`.`id_status_transaksi`
+JOIN `jenis_pembayaran` ON `jenis_pembayaran`.`id_jenis_pembayaran` = `transaksi`.`id_jenis_pembayaran`
+WHERE `transaksi`.`id_jenis_transaksi` NOT IN :transaksi.id_jenis_transaksi:
+ORDER BY `updated_at` DESC
+ LIMIT 9', [...], false)
+ 5 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(9, 0)
+ 7 SYSTEMPATH\BaseModel.php(1192): CodeIgniter\BaseModel->findAll(9, 0)
+ 8 APPPATH\Controllers\Keuangan\Transaksi.php(175): CodeIgniter\BaseModel->paginate(9, 'pagination')
+ 9 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Keuangan\Transaksi->riwayat()
+10 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Keuangan\Transaksi))
+11 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-07-14 16:00:01 --> mysqli_sql_exception: Column 'updated_at' in order clause is ambiguous in C:\xampp\htdocs\bi_parking\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\bi_parking\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\bi_parking\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\bi_parking\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\bi_parking\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\bi_parking\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\bi_parking\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(9, 0)
+#6 C:\xampp\htdocs\bi_parking\system\BaseModel.php(1192): CodeIgniter\BaseModel->findAll(9, 0)
+#7 C:\xampp\htdocs\bi_parking\app\Controllers\Keuangan\Transaksi.php(175): CodeIgniter\BaseModel->paginate(9, 'pagination')
+#8 C:\xampp\htdocs\bi_parking\system\CodeIgniter.php(934): App\Controllers\Keuangan\Transaksi->riwayat()
+#9 C:\xampp\htdocs\bi_parking\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Keuangan\Transaksi))
+#10 C:\xampp\htdocs\bi_parking\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\ParkingManagementSystem\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-07-14 16:00:01 --> Column 'updated_at' in order clause is ambiguous
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *
+FROM `transaksi`
+JOIN `user` ON `user`.`npm` = `transaksi`.`npm`
+JOIN `jenis_transaksi` ON `jenis_transaksi`.`id_jenis_transaksi` = `transaksi`.`id_jenis_transaksi`
+JOIN `status_transaksi` ON `status_transaksi`.`id_status_transaksi` = `transaksi`.`id_status_transaksi`
+JOIN `jenis_pembayaran` ON `jenis_pembayaran`.`id_jenis_pembayaran` = `transaksi`.`id_jenis_pembayaran`
+WHERE `transaksi`.`id_jenis_transaksi` NOT IN (3)
+ORDER BY `updated_at` DESC
+ LIMIT 9', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `transaksi`
+JOIN `user` ON `user`.`npm` = `transaksi`.`npm`
+JOIN `jenis_transaksi` ON `jenis_transaksi`.`id_jenis_transaksi` = `transaksi`.`id_jenis_transaksi`
+JOIN `status_transaksi` ON `status_transaksi`.`id_status_transaksi` = `transaksi`.`id_status_transaksi`
+JOIN `jenis_pembayaran` ON `jenis_pembayaran`.`id_jenis_pembayaran` = `transaksi`.`id_jenis_pembayaran`
+WHERE `transaksi`.`id_jenis_transaksi` NOT IN (3)
+ORDER BY `updated_at` DESC
+ LIMIT 9')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `transaksi`
+JOIN `user` ON `user`.`npm` = `transaksi`.`npm`
+JOIN `jenis_transaksi` ON `jenis_transaksi`.`id_jenis_transaksi` = `transaksi`.`id_jenis_transaksi`
+JOIN `status_transaksi` ON `status_transaksi`.`id_status_transaksi` = `transaksi`.`id_status_transaksi`
+JOIN `jenis_pembayaran` ON `jenis_pembayaran`.`id_jenis_pembayaran` = `transaksi`.`id_jenis_pembayaran`
+WHERE `transaksi`.`id_jenis_transaksi` NOT IN (3)
+ORDER BY `updated_at` DESC
+ LIMIT 9')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `transaksi`
+JOIN `user` ON `user`.`npm` = `transaksi`.`npm`
+JOIN `jenis_transaksi` ON `jenis_transaksi`.`id_jenis_transaksi` = `transaksi`.`id_jenis_transaksi`
+JOIN `status_transaksi` ON `status_transaksi`.`id_status_transaksi` = `transaksi`.`id_status_transaksi`
+JOIN `jenis_pembayaran` ON `jenis_pembayaran`.`id_jenis_pembayaran` = `transaksi`.`id_jenis_pembayaran`
+WHERE `transaksi`.`id_jenis_transaksi` NOT IN :transaksi.id_jenis_transaksi:
+ORDER BY `updated_at` DESC
+ LIMIT 9', [...], false)
+ 5 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(9, 0)
+ 7 SYSTEMPATH\BaseModel.php(1192): CodeIgniter\BaseModel->findAll(9, 0)
+ 8 APPPATH\Controllers\Keuangan\Transaksi.php(175): CodeIgniter\BaseModel->paginate(9, 'pagination')
+ 9 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Keuangan\Transaksi->riwayat()
+10 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Keuangan\Transaksi))
+11 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-07-14 16:00:01 --> mysqli_sql_exception: Column 'updated_at' in order clause is ambiguous in C:\xampp\htdocs\bi_parking\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\bi_parking\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\bi_parking\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\bi_parking\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\bi_parking\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\bi_parking\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\bi_parking\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(9, 27)
+#6 C:\xampp\htdocs\bi_parking\system\BaseModel.php(1192): CodeIgniter\BaseModel->findAll(9, 27)
+#7 C:\xampp\htdocs\bi_parking\app\Controllers\Keuangan\Transaksi.php(175): CodeIgniter\BaseModel->paginate(9, 'pagination')
+#8 C:\xampp\htdocs\bi_parking\system\CodeIgniter.php(934): App\Controllers\Keuangan\Transaksi->riwayat()
+#9 C:\xampp\htdocs\bi_parking\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Keuangan\Transaksi))
+#10 C:\xampp\htdocs\bi_parking\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\ParkingManagementSystem\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-07-14 16:00:01 --> Column 'updated_at' in order clause is ambiguous
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *
+FROM `transaksi`
+JOIN `user` ON `user`.`npm` = `transaksi`.`npm`
+JOIN `jenis_transaksi` ON `jenis_transaksi`.`id_jenis_transaksi` = `transaksi`.`id_jenis_transaksi`
+JOIN `status_transaksi` ON `status_transaksi`.`id_status_transaksi` = `transaksi`.`id_status_transaksi`
+JOIN `jenis_pembayaran` ON `jenis_pembayaran`.`id_jenis_pembayaran` = `transaksi`.`id_jenis_pembayaran`
+WHERE `transaksi`.`id_jenis_transaksi` NOT IN (3)
+ORDER BY `updated_at` DESC
+ LIMIT 27, 9', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `transaksi`
+JOIN `user` ON `user`.`npm` = `transaksi`.`npm`
+JOIN `jenis_transaksi` ON `jenis_transaksi`.`id_jenis_transaksi` = `transaksi`.`id_jenis_transaksi`
+JOIN `status_transaksi` ON `status_transaksi`.`id_status_transaksi` = `transaksi`.`id_status_transaksi`
+JOIN `jenis_pembayaran` ON `jenis_pembayaran`.`id_jenis_pembayaran` = `transaksi`.`id_jenis_pembayaran`
+WHERE `transaksi`.`id_jenis_transaksi` NOT IN (3)
+ORDER BY `updated_at` DESC
+ LIMIT 27, 9')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `transaksi`
+JOIN `user` ON `user`.`npm` = `transaksi`.`npm`
+JOIN `jenis_transaksi` ON `jenis_transaksi`.`id_jenis_transaksi` = `transaksi`.`id_jenis_transaksi`
+JOIN `status_transaksi` ON `status_transaksi`.`id_status_transaksi` = `transaksi`.`id_status_transaksi`
+JOIN `jenis_pembayaran` ON `jenis_pembayaran`.`id_jenis_pembayaran` = `transaksi`.`id_jenis_pembayaran`
+WHERE `transaksi`.`id_jenis_transaksi` NOT IN (3)
+ORDER BY `updated_at` DESC
+ LIMIT 27, 9')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `transaksi`
+JOIN `user` ON `user`.`npm` = `transaksi`.`npm`
+JOIN `jenis_transaksi` ON `jenis_transaksi`.`id_jenis_transaksi` = `transaksi`.`id_jenis_transaksi`
+JOIN `status_transaksi` ON `status_transaksi`.`id_status_transaksi` = `transaksi`.`id_status_transaksi`
+JOIN `jenis_pembayaran` ON `jenis_pembayaran`.`id_jenis_pembayaran` = `transaksi`.`id_jenis_pembayaran`
+WHERE `transaksi`.`id_jenis_transaksi` NOT IN :transaksi.id_jenis_transaksi:
+ORDER BY `updated_at` DESC
+ LIMIT 27, 9', [...], false)
+ 5 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(9, 27)
+ 7 SYSTEMPATH\BaseModel.php(1192): CodeIgniter\BaseModel->findAll(9, 27)
+ 8 APPPATH\Controllers\Keuangan\Transaksi.php(175): CodeIgniter\BaseModel->paginate(9, 'pagination')
+ 9 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Keuangan\Transaksi->riwayat()
+10 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Keuangan\Transaksi))
+11 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-07-14 16:00:02 --> mysqli_sql_exception: Column 'updated_at' in order clause is ambiguous in C:\xampp\htdocs\bi_parking\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\bi_parking\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\bi_parking\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\bi_parking\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\bi_parking\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\bi_parking\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\bi_parking\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(9, 18)
+#6 C:\xampp\htdocs\bi_parking\system\BaseModel.php(1192): CodeIgniter\BaseModel->findAll(9, 18)
+#7 C:\xampp\htdocs\bi_parking\app\Controllers\Keuangan\Transaksi.php(175): CodeIgniter\BaseModel->paginate(9, 'pagination')
+#8 C:\xampp\htdocs\bi_parking\system\CodeIgniter.php(934): App\Controllers\Keuangan\Transaksi->riwayat()
+#9 C:\xampp\htdocs\bi_parking\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Keuangan\Transaksi))
+#10 C:\xampp\htdocs\bi_parking\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\ParkingManagementSystem\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-07-14 16:00:02 --> Column 'updated_at' in order clause is ambiguous
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *
+FROM `transaksi`
+JOIN `user` ON `user`.`npm` = `transaksi`.`npm`
+JOIN `jenis_transaksi` ON `jenis_transaksi`.`id_jenis_transaksi` = `transaksi`.`id_jenis_transaksi`
+JOIN `status_transaksi` ON `status_transaksi`.`id_status_transaksi` = `transaksi`.`id_status_transaksi`
+JOIN `jenis_pembayaran` ON `jenis_pembayaran`.`id_jenis_pembayaran` = `transaksi`.`id_jenis_pembayaran`
+WHERE `transaksi`.`id_jenis_transaksi` NOT IN (3)
+ORDER BY `updated_at` DESC
+ LIMIT 18, 9', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `transaksi`
+JOIN `user` ON `user`.`npm` = `transaksi`.`npm`
+JOIN `jenis_transaksi` ON `jenis_transaksi`.`id_jenis_transaksi` = `transaksi`.`id_jenis_transaksi`
+JOIN `status_transaksi` ON `status_transaksi`.`id_status_transaksi` = `transaksi`.`id_status_transaksi`
+JOIN `jenis_pembayaran` ON `jenis_pembayaran`.`id_jenis_pembayaran` = `transaksi`.`id_jenis_pembayaran`
+WHERE `transaksi`.`id_jenis_transaksi` NOT IN (3)
+ORDER BY `updated_at` DESC
+ LIMIT 18, 9')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `transaksi`
+JOIN `user` ON `user`.`npm` = `transaksi`.`npm`
+JOIN `jenis_transaksi` ON `jenis_transaksi`.`id_jenis_transaksi` = `transaksi`.`id_jenis_transaksi`
+JOIN `status_transaksi` ON `status_transaksi`.`id_status_transaksi` = `transaksi`.`id_status_transaksi`
+JOIN `jenis_pembayaran` ON `jenis_pembayaran`.`id_jenis_pembayaran` = `transaksi`.`id_jenis_pembayaran`
+WHERE `transaksi`.`id_jenis_transaksi` NOT IN (3)
+ORDER BY `updated_at` DESC
+ LIMIT 18, 9')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `transaksi`
+JOIN `user` ON `user`.`npm` = `transaksi`.`npm`
+JOIN `jenis_transaksi` ON `jenis_transaksi`.`id_jenis_transaksi` = `transaksi`.`id_jenis_transaksi`
+JOIN `status_transaksi` ON `status_transaksi`.`id_status_transaksi` = `transaksi`.`id_status_transaksi`
+JOIN `jenis_pembayaran` ON `jenis_pembayaran`.`id_jenis_pembayaran` = `transaksi`.`id_jenis_pembayaran`
+WHERE `transaksi`.`id_jenis_transaksi` NOT IN :transaksi.id_jenis_transaksi:
+ORDER BY `updated_at` DESC
+ LIMIT 18, 9', [...], false)
+ 5 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(9, 18)
+ 7 SYSTEMPATH\BaseModel.php(1192): CodeIgniter\BaseModel->findAll(9, 18)
+ 8 APPPATH\Controllers\Keuangan\Transaksi.php(175): CodeIgniter\BaseModel->paginate(9, 'pagination')
+ 9 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Keuangan\Transaksi->riwayat()
+10 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Keuangan\Transaksi))
+11 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-07-14 16:00:02 --> mysqli_sql_exception: Column 'updated_at' in order clause is ambiguous in C:\xampp\htdocs\bi_parking\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\bi_parking\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\bi_parking\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\bi_parking\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\bi_parking\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\bi_parking\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\bi_parking\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(9, 9)
+#6 C:\xampp\htdocs\bi_parking\system\BaseModel.php(1192): CodeIgniter\BaseModel->findAll(9, 9)
+#7 C:\xampp\htdocs\bi_parking\app\Controllers\Keuangan\Transaksi.php(175): CodeIgniter\BaseModel->paginate(9, 'pagination')
+#8 C:\xampp\htdocs\bi_parking\system\CodeIgniter.php(934): App\Controllers\Keuangan\Transaksi->riwayat()
+#9 C:\xampp\htdocs\bi_parking\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Keuangan\Transaksi))
+#10 C:\xampp\htdocs\bi_parking\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\ParkingManagementSystem\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-07-14 16:00:02 --> Column 'updated_at' in order clause is ambiguous
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *
+FROM `transaksi`
+JOIN `user` ON `user`.`npm` = `transaksi`.`npm`
+JOIN `jenis_transaksi` ON `jenis_transaksi`.`id_jenis_transaksi` = `transaksi`.`id_jenis_transaksi`
+JOIN `status_transaksi` ON `status_transaksi`.`id_status_transaksi` = `transaksi`.`id_status_transaksi`
+JOIN `jenis_pembayaran` ON `jenis_pembayaran`.`id_jenis_pembayaran` = `transaksi`.`id_jenis_pembayaran`
+WHERE `transaksi`.`id_jenis_transaksi` NOT IN (3)
+ORDER BY `updated_at` DESC
+ LIMIT 9, 9', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `transaksi`
+JOIN `user` ON `user`.`npm` = `transaksi`.`npm`
+JOIN `jenis_transaksi` ON `jenis_transaksi`.`id_jenis_transaksi` = `transaksi`.`id_jenis_transaksi`
+JOIN `status_transaksi` ON `status_transaksi`.`id_status_transaksi` = `transaksi`.`id_status_transaksi`
+JOIN `jenis_pembayaran` ON `jenis_pembayaran`.`id_jenis_pembayaran` = `transaksi`.`id_jenis_pembayaran`
+WHERE `transaksi`.`id_jenis_transaksi` NOT IN (3)
+ORDER BY `updated_at` DESC
+ LIMIT 9, 9')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `transaksi`
+JOIN `user` ON `user`.`npm` = `transaksi`.`npm`
+JOIN `jenis_transaksi` ON `jenis_transaksi`.`id_jenis_transaksi` = `transaksi`.`id_jenis_transaksi`
+JOIN `status_transaksi` ON `status_transaksi`.`id_status_transaksi` = `transaksi`.`id_status_transaksi`
+JOIN `jenis_pembayaran` ON `jenis_pembayaran`.`id_jenis_pembayaran` = `transaksi`.`id_jenis_pembayaran`
+WHERE `transaksi`.`id_jenis_transaksi` NOT IN (3)
+ORDER BY `updated_at` DESC
+ LIMIT 9, 9')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `transaksi`
+JOIN `user` ON `user`.`npm` = `transaksi`.`npm`
+JOIN `jenis_transaksi` ON `jenis_transaksi`.`id_jenis_transaksi` = `transaksi`.`id_jenis_transaksi`
+JOIN `status_transaksi` ON `status_transaksi`.`id_status_transaksi` = `transaksi`.`id_status_transaksi`
+JOIN `jenis_pembayaran` ON `jenis_pembayaran`.`id_jenis_pembayaran` = `transaksi`.`id_jenis_pembayaran`
+WHERE `transaksi`.`id_jenis_transaksi` NOT IN :transaksi.id_jenis_transaksi:
+ORDER BY `updated_at` DESC
+ LIMIT 9, 9', [...], false)
+ 5 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(9, 9)
+ 7 SYSTEMPATH\BaseModel.php(1192): CodeIgniter\BaseModel->findAll(9, 9)
+ 8 APPPATH\Controllers\Keuangan\Transaksi.php(175): CodeIgniter\BaseModel->paginate(9, 'pagination')
+ 9 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Keuangan\Transaksi->riwayat()
+10 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Keuangan\Transaksi))
+11 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-07-14 16:00:02 --> mysqli_sql_exception: Column 'updated_at' in order clause is ambiguous in C:\xampp\htdocs\bi_parking\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\bi_parking\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\bi_parking\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\bi_parking\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\bi_parking\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\bi_parking\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\bi_parking\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(9, 0)
+#6 C:\xampp\htdocs\bi_parking\system\BaseModel.php(1192): CodeIgniter\BaseModel->findAll(9, 0)
+#7 C:\xampp\htdocs\bi_parking\app\Controllers\Keuangan\Transaksi.php(175): CodeIgniter\BaseModel->paginate(9, 'pagination')
+#8 C:\xampp\htdocs\bi_parking\system\CodeIgniter.php(934): App\Controllers\Keuangan\Transaksi->riwayat()
+#9 C:\xampp\htdocs\bi_parking\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Keuangan\Transaksi))
+#10 C:\xampp\htdocs\bi_parking\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\ParkingManagementSystem\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-07-14 16:00:02 --> Column 'updated_at' in order clause is ambiguous
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *
+FROM `transaksi`
+JOIN `user` ON `user`.`npm` = `transaksi`.`npm`
+JOIN `jenis_transaksi` ON `jenis_transaksi`.`id_jenis_transaksi` = `transaksi`.`id_jenis_transaksi`
+JOIN `status_transaksi` ON `status_transaksi`.`id_status_transaksi` = `transaksi`.`id_status_transaksi`
+JOIN `jenis_pembayaran` ON `jenis_pembayaran`.`id_jenis_pembayaran` = `transaksi`.`id_jenis_pembayaran`
+WHERE `transaksi`.`id_jenis_transaksi` NOT IN (3)
+ORDER BY `updated_at` DESC
+ LIMIT 9', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `transaksi`
+JOIN `user` ON `user`.`npm` = `transaksi`.`npm`
+JOIN `jenis_transaksi` ON `jenis_transaksi`.`id_jenis_transaksi` = `transaksi`.`id_jenis_transaksi`
+JOIN `status_transaksi` ON `status_transaksi`.`id_status_transaksi` = `transaksi`.`id_status_transaksi`
+JOIN `jenis_pembayaran` ON `jenis_pembayaran`.`id_jenis_pembayaran` = `transaksi`.`id_jenis_pembayaran`
+WHERE `transaksi`.`id_jenis_transaksi` NOT IN (3)
+ORDER BY `updated_at` DESC
+ LIMIT 9')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `transaksi`
+JOIN `user` ON `user`.`npm` = `transaksi`.`npm`
+JOIN `jenis_transaksi` ON `jenis_transaksi`.`id_jenis_transaksi` = `transaksi`.`id_jenis_transaksi`
+JOIN `status_transaksi` ON `status_transaksi`.`id_status_transaksi` = `transaksi`.`id_status_transaksi`
+JOIN `jenis_pembayaran` ON `jenis_pembayaran`.`id_jenis_pembayaran` = `transaksi`.`id_jenis_pembayaran`
+WHERE `transaksi`.`id_jenis_transaksi` NOT IN (3)
+ORDER BY `updated_at` DESC
+ LIMIT 9')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `transaksi`
+JOIN `user` ON `user`.`npm` = `transaksi`.`npm`
+JOIN `jenis_transaksi` ON `jenis_transaksi`.`id_jenis_transaksi` = `transaksi`.`id_jenis_transaksi`
+JOIN `status_transaksi` ON `status_transaksi`.`id_status_transaksi` = `transaksi`.`id_status_transaksi`
+JOIN `jenis_pembayaran` ON `jenis_pembayaran`.`id_jenis_pembayaran` = `transaksi`.`id_jenis_pembayaran`
+WHERE `transaksi`.`id_jenis_transaksi` NOT IN :transaksi.id_jenis_transaksi:
+ORDER BY `updated_at` DESC
+ LIMIT 9', [...], false)
+ 5 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(9, 0)
+ 7 SYSTEMPATH\BaseModel.php(1192): CodeIgniter\BaseModel->findAll(9, 0)
+ 8 APPPATH\Controllers\Keuangan\Transaksi.php(175): CodeIgniter\BaseModel->paginate(9, 'pagination')
+ 9 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Keuangan\Transaksi->riwayat()
+10 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Keuangan\Transaksi))
+11 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-07-14 16:00:04 --> mysqli_sql_exception: Column 'updated_at' in order clause is ambiguous in C:\xampp\htdocs\bi_parking\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\bi_parking\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\bi_parking\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\bi_parking\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\bi_parking\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\bi_parking\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\bi_parking\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(9, 0)
+#6 C:\xampp\htdocs\bi_parking\system\BaseModel.php(1192): CodeIgniter\BaseModel->findAll(9, 0)
+#7 C:\xampp\htdocs\bi_parking\app\Controllers\Keuangan\Transaksi.php(175): CodeIgniter\BaseModel->paginate(9, 'pagination')
+#8 C:\xampp\htdocs\bi_parking\system\CodeIgniter.php(934): App\Controllers\Keuangan\Transaksi->riwayat()
+#9 C:\xampp\htdocs\bi_parking\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Keuangan\Transaksi))
+#10 C:\xampp\htdocs\bi_parking\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\ParkingManagementSystem\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-07-14 16:00:04 --> Column 'updated_at' in order clause is ambiguous
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *
+FROM `transaksi`
+JOIN `user` ON `user`.`npm` = `transaksi`.`npm`
+JOIN `jenis_transaksi` ON `jenis_transaksi`.`id_jenis_transaksi` = `transaksi`.`id_jenis_transaksi`
+JOIN `status_transaksi` ON `status_transaksi`.`id_status_transaksi` = `transaksi`.`id_status_transaksi`
+JOIN `jenis_pembayaran` ON `jenis_pembayaran`.`id_jenis_pembayaran` = `transaksi`.`id_jenis_pembayaran`
+WHERE `transaksi`.`id_jenis_transaksi` NOT IN (3)
+ORDER BY `updated_at` DESC
+ LIMIT 9', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `transaksi`
+JOIN `user` ON `user`.`npm` = `transaksi`.`npm`
+JOIN `jenis_transaksi` ON `jenis_transaksi`.`id_jenis_transaksi` = `transaksi`.`id_jenis_transaksi`
+JOIN `status_transaksi` ON `status_transaksi`.`id_status_transaksi` = `transaksi`.`id_status_transaksi`
+JOIN `jenis_pembayaran` ON `jenis_pembayaran`.`id_jenis_pembayaran` = `transaksi`.`id_jenis_pembayaran`
+WHERE `transaksi`.`id_jenis_transaksi` NOT IN (3)
+ORDER BY `updated_at` DESC
+ LIMIT 9')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `transaksi`
+JOIN `user` ON `user`.`npm` = `transaksi`.`npm`
+JOIN `jenis_transaksi` ON `jenis_transaksi`.`id_jenis_transaksi` = `transaksi`.`id_jenis_transaksi`
+JOIN `status_transaksi` ON `status_transaksi`.`id_status_transaksi` = `transaksi`.`id_status_transaksi`
+JOIN `jenis_pembayaran` ON `jenis_pembayaran`.`id_jenis_pembayaran` = `transaksi`.`id_jenis_pembayaran`
+WHERE `transaksi`.`id_jenis_transaksi` NOT IN (3)
+ORDER BY `updated_at` DESC
+ LIMIT 9')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `transaksi`
+JOIN `user` ON `user`.`npm` = `transaksi`.`npm`
+JOIN `jenis_transaksi` ON `jenis_transaksi`.`id_jenis_transaksi` = `transaksi`.`id_jenis_transaksi`
+JOIN `status_transaksi` ON `status_transaksi`.`id_status_transaksi` = `transaksi`.`id_status_transaksi`
+JOIN `jenis_pembayaran` ON `jenis_pembayaran`.`id_jenis_pembayaran` = `transaksi`.`id_jenis_pembayaran`
+WHERE `transaksi`.`id_jenis_transaksi` NOT IN :transaksi.id_jenis_transaksi:
+ORDER BY `updated_at` DESC
+ LIMIT 9', [...], false)
+ 5 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(9, 0)
+ 7 SYSTEMPATH\BaseModel.php(1192): CodeIgniter\BaseModel->findAll(9, 0)
+ 8 APPPATH\Controllers\Keuangan\Transaksi.php(175): CodeIgniter\BaseModel->paginate(9, 'pagination')
+ 9 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Keuangan\Transaksi->riwayat()
+10 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Keuangan\Transaksi))
+11 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

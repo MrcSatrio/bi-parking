@@ -17,7 +17,7 @@ class Dashboard extends BaseController
         // Tambahkan parameter tanggal awal dan tanggal akhir untuk memfilter transaksi selama sebulan
         $startDate = date('Y-m-01'); // Tanggal awal bulan saat ini
         $endDate = date('Y-m-t'); // Tanggal akhir bulan saat ini
-
+        $totalUsers = $this->userModel->countAllResults();
         // Hitung total nominal transaksi yang disetujui selama sebulan
         $totalApprovedNominal = $this->transaksiModel
         ->selectSum('nominal_transaksi')
@@ -56,8 +56,10 @@ class Dashboard extends BaseController
                 
                 ->where('transaksi.npm', session('npm'))
                 ->findAll(),
+            'role' => $this->roleModel->findAll(),
             'pager' => $this->pager->makeLinks($offset, $limit, $totalRows, 'pagination'),
             'totalApprovedNominal' => $totalApprovedNominal['nominal_transaksi'], // Jumlah total nominal transaksi yang disetujui
+            'totalUsers' => $totalUsers,
             'monthlyData' => $monthlyData
         ];
 

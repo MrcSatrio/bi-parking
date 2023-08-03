@@ -160,14 +160,8 @@ class User extends BaseController
     }
 }
 
-    public function userUpdate($npm)
+public function userUpdate($npm)
 {
-    // Mendapatkan instance dari session service
-    $session = session();
-
-    // Mendapatkan data "season" pengguna yang sedang login sebelum melakukan query
-    $loggedInUserSeason = $session->get('season');
-
     // Mengambil data pengguna yang akan diedit dari database
     $userData = $this->userModel
         ->join('role', 'role.id_role = user.id_role')
@@ -175,16 +169,18 @@ class User extends BaseController
         ->where('npm', $npm)
         ->first();
 
-    // Memastikan bahwa data "season" yang diambil dari database tidak mengganti data "season" pengguna yang sedang login
-    $userData['season'] = $loggedInUserSeason;
-
     $data = [
         'title' => 'Parking Management System',
-        'user' => $userData,
+        'user' => $this->userModel
+                    ->join('role', 'role.id_role = user.id_role')
+                    ->where('npm', session('npm'))
+                    ->first(),
+        'userData' => $userData,
     ];
 
     return view('r_admin/userUpdate', $data);
 }
+
 
 
 

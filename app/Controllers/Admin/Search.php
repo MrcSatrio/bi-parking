@@ -38,6 +38,6 @@ class Search extends BaseController
             return view('r_admin/search', $data);
         } else {
             return redirect()->back()->with('error', 'Transaksi tidak ditemukan');
-        }
+        }        
     }
 }

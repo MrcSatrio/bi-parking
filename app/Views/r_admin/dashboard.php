@@ -44,7 +44,7 @@ $this->section('page_content'); ?>
                         <div class="text-xs font-weight-bold text-success text-uppercase mb-1">
                             Pengguna Terdaftar
                         </div>
-                        <div class="h5 mb-0 font-weight-bold text-gray-800"><?php echo count($user); ?> Akun</div>
+                        <div class="h5 mb-0 font-weight-bold text-gray-800"><?php echo $totalUsers ?> Akun</div>
                     </div>
                     <div class="col-auto">
                          <i class="fas fa-user fa-2x text-gray-300"></i>

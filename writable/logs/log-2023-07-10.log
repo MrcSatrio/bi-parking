@@ -1,108 +1,231 @@
-INFO - 2023-07-10 20:15:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-10 20:15:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-10 20:15:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-10 20:15:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-WARNING - 2023-07-10 20:15:55 --> [DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in APPPATH\Views\r_user\dashboard.php on line 78.
- 1 APPPATH\Views\r_user\dashboard.php(78): number_format(null)
- 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\bi-parking\\app\\Views\\r_user\\dashboard.php')
- 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
- 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('r_user/dashboard', [], true)
- 5 APPPATH\Controllers\User\Dashboard.php(55): view('r_user/dashboard', [...])
- 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\User\Dashboard->index()
- 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User\Dashboard))
- 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
- 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
-INFO - 2023-07-10 20:15:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-10 20:22:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-10 20:22:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-10 20:22:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-10 20:22:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-10 20:22:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-10 20:22:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-10 20:22:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-10 20:22:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-10 20:22:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-10 20:22:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-10 20:22:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-10 20:23:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-10 20:23:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-10 20:23:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-10 20:23:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-10 20:23:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-10 20:23:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-10 20:23:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-10 20:23:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-10 20:23:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-10 20:23:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-10 20:23:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-10 20:25:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-10 20:26:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-10 20:26:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-10 20:26:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-10 20:26:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-WARNING - 2023-07-10 20:26:38 --> [DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in APPPATH\Views\r_user\dashboard.php on line 78.
- 1 APPPATH\Views\r_user\dashboard.php(78): number_format(null)
- 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\bi-parking\\app\\Views\\r_user\\dashboard.php')
- 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
- 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('r_user/dashboard', [], true)
- 5 APPPATH\Controllers\User\Dashboard.php(55): view('r_user/dashboard', [...])
- 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\User\Dashboard->index()
- 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User\Dashboard))
- 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
- 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
-INFO - 2023-07-10 20:26:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-10 20:27:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-10 20:27:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-10 20:27:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-10 20:27:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-10 20:32:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-10 20:33:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-10 20:33:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-10 20:34:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-10 20:34:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-10 20:34:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-10 20:34:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-10 20:34:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-10 20:34:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-10 20:35:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-10 20:35:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-10 20:35:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-CRITICAL - 2023-07-10 20:35:39 --> Trying to access array offset on value of type null
-in APPPATH\Controllers\Admin\Transaksi.php on line 431.
- 1 APPPATH\Controllers\Admin\Transaksi.php(431): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\bi-parking\\app\\Controllers\\Admin\\Transaksi.php', 431)
- 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin\Transaksi->cancel('MjE9')
- 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Transaksi))
- 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
- 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
-INFO - 2023-07-10 20:38:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-10 20:38:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-10 20:39:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-10 20:39:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-10 20:39:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-10 20:39:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-10 20:39:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-10 20:39:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-10 21:26:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-10 21:26:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-10 21:26:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-10 21:26:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-10 21:26:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-10 21:26:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-10 21:26:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-10 21:26:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-10 21:26:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-10 21:26:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-WARNING - 2023-07-10 21:26:46 --> [DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in APPPATH\Views\r_user\dashboard.php on line 78.
- 1 APPPATH\Views\r_user\dashboard.php(78): number_format(null)
- 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\bi-parking\\app\\Views\\r_user\\dashboard.php')
- 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
- 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('r_user/dashboard', [], true)
- 5 APPPATH\Controllers\User\Dashboard.php(55): view('r_user/dashboard', [...])
- 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\User\Dashboard->index()
- 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User\Dashboard))
- 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
- 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
-INFO - 2023-07-10 21:26:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-10 21:26:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-10 21:26:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
-INFO - 2023-07-10 21:28:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-07-10 00:08:59 --> Invalid HTTP Protocol Version. Must be one of: 1.0, 1.1, 2.0, 3.0
+in SYSTEMPATH\HTTP\MessageTrait.php on line 232.
+ 1 SYSTEMPATH\HTTP\MessageTrait.php(232): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidHTTPProtocol('1.0, 1.1, 2.0, 3.0')
+ 2 SYSTEMPATH\Config\Services.php(519): CodeIgniter\HTTP\Message->setProtocolVersion('0.9')
+ 3 SYSTEMPATH\Config\BaseService.php(252): CodeIgniter\Config\Services::createRequest(Object(Config\App))
+ 4 SYSTEMPATH\CodeIgniter.php(646): CodeIgniter\Config\BaseService::__callStatic('createRequest', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(331): CodeIgniter\CodeIgniter->getRequestObject()
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-10 00:08:59 --> Invalid HTTP Protocol Version. Must be one of: 1.0, 1.1, 2.0, 3.0
+in SYSTEMPATH\HTTP\MessageTrait.php on line 232.
+ 1 SYSTEMPATH\HTTP\MessageTrait.php(232): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidHTTPProtocol('1.0, 1.1, 2.0, 3.0')
+ 2 SYSTEMPATH\Config\Services.php(519): CodeIgniter\HTTP\Message->setProtocolVersion('0.9')
+ 3 SYSTEMPATH\Config\BaseService.php(252): CodeIgniter\Config\Services::createRequest(Object(Config\App))
+ 4 SYSTEMPATH\CodeIgniter.php(646): CodeIgniter\Config\BaseService::__callStatic('createRequest', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(331): CodeIgniter\CodeIgniter->getRequestObject()
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-10 00:11:08 --> Invalid HTTP Protocol Version. Must be one of: 1.0, 1.1, 2.0, 3.0
+in SYSTEMPATH\HTTP\MessageTrait.php on line 232.
+ 1 SYSTEMPATH\HTTP\MessageTrait.php(232): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidHTTPProtocol('1.0, 1.1, 2.0, 3.0')
+ 2 SYSTEMPATH\Config\Services.php(519): CodeIgniter\HTTP\Message->setProtocolVersion('0.9')
+ 3 SYSTEMPATH\Config\BaseService.php(252): CodeIgniter\Config\Services::createRequest(Object(Config\App))
+ 4 SYSTEMPATH\CodeIgniter.php(646): CodeIgniter\Config\BaseService::__callStatic('createRequest', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(331): CodeIgniter\CodeIgniter->getRequestObject()
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-10 00:11:08 --> Invalid HTTP Protocol Version. Must be one of: 1.0, 1.1, 2.0, 3.0
+in SYSTEMPATH\HTTP\MessageTrait.php on line 232.
+ 1 SYSTEMPATH\HTTP\MessageTrait.php(232): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidHTTPProtocol('1.0, 1.1, 2.0, 3.0')
+ 2 SYSTEMPATH\Config\Services.php(519): CodeIgniter\HTTP\Message->setProtocolVersion('0.9')
+ 3 SYSTEMPATH\Config\BaseService.php(252): CodeIgniter\Config\Services::createRequest(Object(Config\App))
+ 4 SYSTEMPATH\CodeIgniter.php(646): CodeIgniter\Config\BaseService::__callStatic('createRequest', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(331): CodeIgniter\CodeIgniter->getRequestObject()
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-10 08:26:41 --> syntax error, unexpected 'else' (T_ELSE), expecting function (T_FUNCTION) or const (T_CONST)
+in APPPATH\Controllers\Admin\Search.php on line 40.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\bi_parking\\app\\Controllers\\Admin\\Search.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Admin\\Search')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Admin\\Search')
+ 4 [internal function]: spl_autoload_call('App\\Controllers\\Admin\\Search')
+ 5 SYSTEMPATH\CodeIgniter.php(892): class_exists('\\App\\Controllers\\Admin\\Search', true)
+ 6 SYSTEMPATH\CodeIgniter.php(486): CodeIgniter\CodeIgniter->startController()
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-10 08:26:43 --> syntax error, unexpected 'else' (T_ELSE), expecting function (T_FUNCTION) or const (T_CONST)
+in APPPATH\Controllers\Admin\Search.php on line 40.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\bi_parking\\app\\Controllers\\Admin\\Search.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Admin\\Search')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Admin\\Search')
+ 4 [internal function]: spl_autoload_call('App\\Controllers\\Admin\\Search')
+ 5 SYSTEMPATH\CodeIgniter.php(892): class_exists('\\App\\Controllers\\Admin\\Search', true)
+ 6 SYSTEMPATH\CodeIgniter.php(486): CodeIgniter\CodeIgniter->startController()
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-10 08:27:14 --> syntax error, unexpected 'else' (T_ELSE), expecting function (T_FUNCTION) or const (T_CONST)
+in APPPATH\Controllers\Admin\Search.php on line 41.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\bi_parking\\app\\Controllers\\Admin\\Search.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Admin\\Search')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Admin\\Search')
+ 4 [internal function]: spl_autoload_call('App\\Controllers\\Admin\\Search')
+ 5 SYSTEMPATH\CodeIgniter.php(892): class_exists('\\App\\Controllers\\Admin\\Search', true)
+ 6 SYSTEMPATH\CodeIgniter.php(486): CodeIgniter\CodeIgniter->startController()
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-10 08:52:14 --> syntax error, unexpected ''totalApprovedNominal'' (T_CONSTANT_ENCAPSED_STRING), expecting ']'
+in APPPATH\Controllers\Admin\Dashboard.php on line 50.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\bi_parking\\app\\Controllers\\Admin\\Dashboard.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Admin\\Dashboard')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Admin\\Dashboard')
+ 4 [internal function]: spl_autoload_call('App\\Controllers\\Admin\\Dashboard')
+ 5 SYSTEMPATH\CodeIgniter.php(892): class_exists('\\App\\Controllers\\Admin\\Dashboard', true)
+ 6 SYSTEMPATH\CodeIgniter.php(486): CodeIgniter\CodeIgniter->startController()
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-07-10 08:53:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-07-10 08:53:16 --> syntax error, unexpected ''totalApprovedNominal'' (T_CONSTANT_ENCAPSED_STRING), expecting ']'
+in APPPATH\Controllers\Admin\Dashboard.php on line 50.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\bi_parking\\app\\Controllers\\Admin\\Dashboard.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Admin\\Dashboard')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Admin\\Dashboard')
+ 4 [internal function]: spl_autoload_call('App\\Controllers\\Admin\\Dashboard')
+ 5 SYSTEMPATH\CodeIgniter.php(892): class_exists('\\App\\Controllers\\Admin\\Dashboard', true)
+ 6 SYSTEMPATH\CodeIgniter.php(486): CodeIgniter\CodeIgniter->startController()
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-10 08:54:03 --> syntax error, unexpected ''totalUsers'' (T_CONSTANT_ENCAPSED_STRING), expecting ']'
+in APPPATH\Controllers\Keuangan\Dashboard.php on line 54.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\bi_parking\\app\\Controllers\\Keuangan\\Dashboard.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Keuangan\\Dashboard')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Keuangan\\Dashboard')
+ 4 [internal function]: spl_autoload_call('App\\Controllers\\Keuangan\\Dashboard')
+ 5 SYSTEMPATH\CodeIgniter.php(892): class_exists('\\App\\Controllers\\Keuangan\\Dashboard', true)
+ 6 SYSTEMPATH\CodeIgniter.php(486): CodeIgniter\CodeIgniter->startController()
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-10 09:55:38 --> unlink(C:\xampp\htdocs\bi_parking\writable\session\ci_session2uaek1i3hggmpk3mjbq8stibtv0dgfra): No such file or directory
+in SYSTEMPATH\Session\Handlers\FileHandler.php on line 299.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'unlink(C:\\xampp\\htdocs\\bi_parking\\writable\\session\\ci_session2uaek1i3hggmpk3mjbq8stibtv0dgfra): No such file or directory', 'C:\\xampp\\htdocs\\bi_parking\\system\\Session\\Handlers\\FileHandler.php', 299, [...])
+ 2 SYSTEMPATH\Session\Handlers\FileHandler.php(299): unlink('C:\\xampp\\htdocs\\bi_parking\\writable\\session\\ci_session2uaek1i3hggmpk3mjbq8stibtv0dgfra')
+ 3 [internal function]: CodeIgniter\Session\Handlers\FileHandler->gc(7200)
+ 4 SYSTEMPATH\Session\Session.php(928): session_start()
+ 5 SYSTEMPATH\Session\Session.php(250): CodeIgniter\Session\Session->startSession()
+ 6 SYSTEMPATH\Config\Services.php(674): CodeIgniter\Session\Session->start()
+ 7 SYSTEMPATH\Config\BaseService.php(252): CodeIgniter\Config\Services::session(Object(Config\App), false)
+ 8 SYSTEMPATH\Config\BaseService.php(193): CodeIgniter\Config\BaseService::__callStatic('session', [...])
+ 9 SYSTEMPATH\Config\Services.php(641): CodeIgniter\Config\BaseService::getSharedInstance('session', null)
+10 SYSTEMPATH\Config\BaseService.php(252): CodeIgniter\Config\Services::session()
+11 SYSTEMPATH\Common.php(988): CodeIgniter\Config\BaseService::__callStatic('session', [])
+12 APPPATH\Views\auth\login.php(19): session()
+13 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\bi_parking\\app\\Views\\auth\\login.php')
+14 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+15 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('auth/login', [], true)
+16 APPPATH\Controllers\Auth\Auth.php(16): view('auth/login', [...])
+17 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Auth\Auth->index()
+18 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth\Auth))
+19 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+20 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-07-10 17:56:23 --> mysqli_sql_exception: Column 'npm' cannot be null in C:\xampp\htdocs\bi_parking\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\bi_parking\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `lo...', 0)
+#1 C:\xampp\htdocs\bi_parking\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `lo...')
+#2 C:\xampp\htdocs\bi_parking\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `lo...')
+#3 C:\xampp\htdocs\bi_parking\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `lo...', Array, false)
+#4 C:\xampp\htdocs\bi_parking\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\bi_parking\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\bi_parking\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\bi_parking\app\Controllers\Auth\Auth.php(84): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\bi_parking\system\CodeIgniter.php(934): App\Controllers\Auth\Auth->logout()
+#9 C:\xampp\htdocs\bi_parking\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth\Auth))
+#10 C:\xampp\htdocs\bi_parking\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\ParkingManagementSystem\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-07-10 17:56:23 --> Column 'npm' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `log_aktivitas` (`npm`, `action`, `details`, `ip_address`) VALUES (NULL, \'logout\', \'User logged out\', \'182.3.44.25\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `log_aktivitas` (`npm`, `action`, `details`, `ip_address`) VALUES (NULL, \'logout\', \'User logged out\', \'182.3.44.25\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `log_aktivitas` (`npm`, `action`, `details`, `ip_address`) VALUES (NULL, \'logout\', \'User logged out\', \'182.3.44.25\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `log_aktivitas` (`npm`, `action`, `details`, `ip_address`) VALUES (:npm:, :action:, :details:, :ip_address:)', [...], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\Auth\Auth.php(84): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Auth\Auth->logout()
+10 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth\Auth))
+11 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-07-10 20:27:55 --> mysqli_sql_exception: Column 'npm' cannot be null in C:\xampp\htdocs\bi_parking\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\bi_parking\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `lo...', 0)
+#1 C:\xampp\htdocs\bi_parking\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `lo...')
+#2 C:\xampp\htdocs\bi_parking\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `lo...')
+#3 C:\xampp\htdocs\bi_parking\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `lo...', Array, false)
+#4 C:\xampp\htdocs\bi_parking\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\bi_parking\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\bi_parking\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\bi_parking\app\Controllers\Auth\Auth.php(84): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\bi_parking\system\CodeIgniter.php(934): App\Controllers\Auth\Auth->logout()
+#9 C:\xampp\htdocs\bi_parking\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth\Auth))
+#10 C:\xampp\htdocs\bi_parking\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\ParkingManagementSystem\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-07-10 20:27:55 --> Column 'npm' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `log_aktivitas` (`npm`, `action`, `details`, `ip_address`) VALUES (NULL, \'logout\', \'User logged out\', \'120.188.67.155\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `log_aktivitas` (`npm`, `action`, `details`, `ip_address`) VALUES (NULL, \'logout\', \'User logged out\', \'120.188.67.155\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `log_aktivitas` (`npm`, `action`, `details`, `ip_address`) VALUES (NULL, \'logout\', \'User logged out\', \'120.188.67.155\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `log_aktivitas` (`npm`, `action`, `details`, `ip_address`) VALUES (:npm:, :action:, :details:, :ip_address:)', [...], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\Auth\Auth.php(84): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Auth\Auth->logout()
+10 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth\Auth))
+11 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-07-10 20:27:59 --> mysqli_sql_exception: Column 'npm' cannot be null in C:\xampp\htdocs\bi_parking\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\bi_parking\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `lo...', 0)
+#1 C:\xampp\htdocs\bi_parking\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `lo...')
+#2 C:\xampp\htdocs\bi_parking\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `lo...')
+#3 C:\xampp\htdocs\bi_parking\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `lo...', Array, false)
+#4 C:\xampp\htdocs\bi_parking\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\bi_parking\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\bi_parking\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\bi_parking\app\Controllers\Auth\Auth.php(84): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\bi_parking\system\CodeIgniter.php(934): App\Controllers\Auth\Auth->logout()
+#9 C:\xampp\htdocs\bi_parking\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth\Auth))
+#10 C:\xampp\htdocs\bi_parking\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\ParkingManagementSystem\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-07-10 20:27:59 --> Column 'npm' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `log_aktivitas` (`npm`, `action`, `details`, `ip_address`) VALUES (NULL, \'logout\', \'User logged out\', \'120.188.67.155\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `log_aktivitas` (`npm`, `action`, `details`, `ip_address`) VALUES (NULL, \'logout\', \'User logged out\', \'120.188.67.155\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `log_aktivitas` (`npm`, `action`, `details`, `ip_address`) VALUES (NULL, \'logout\', \'User logged out\', \'120.188.67.155\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `log_aktivitas` (`npm`, `action`, `details`, `ip_address`) VALUES (:npm:, :action:, :details:, :ip_address:)', [...], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\Auth\Auth.php(84): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Auth\Auth->logout()
+10 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth\Auth))
+11 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-07-10 22:08:47 --> mysqli_sql_exception: Column 'npm' cannot be null in C:\xampp\htdocs\bi_parking\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\bi_parking\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `lo...', 0)
+#1 C:\xampp\htdocs\bi_parking\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `lo...')
+#2 C:\xampp\htdocs\bi_parking\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `lo...')
+#3 C:\xampp\htdocs\bi_parking\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `lo...', Array, false)
+#4 C:\xampp\htdocs\bi_parking\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\bi_parking\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\bi_parking\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\bi_parking\app\Controllers\Auth\Auth.php(84): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\bi_parking\system\CodeIgniter.php(934): App\Controllers\Auth\Auth->logout()
+#9 C:\xampp\htdocs\bi_parking\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth\Auth))
+#10 C:\xampp\htdocs\bi_parking\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\ParkingManagementSystem\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-07-10 22:08:47 --> Column 'npm' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `log_aktivitas` (`npm`, `action`, `details`, `ip_address`) VALUES (NULL, \'logout\', \'User logged out\', \'101.255.92.77\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `log_aktivitas` (`npm`, `action`, `details`, `ip_address`) VALUES (NULL, \'logout\', \'User logged out\', \'101.255.92.77\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `log_aktivitas` (`npm`, `action`, `details`, `ip_address`) VALUES (NULL, \'logout\', \'User logged out\', \'101.255.92.77\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `log_aktivitas` (`npm`, `action`, `details`, `ip_address`) VALUES (:npm:, :action:, :details:, :ip_address:)', [...], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\Auth\Auth.php(84): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Auth\Auth->logout()
+10 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth\Auth))
+11 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

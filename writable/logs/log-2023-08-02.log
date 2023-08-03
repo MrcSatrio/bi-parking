@@ -1,0 +1,633 @@
+CRITICAL - 2023-08-02 09:03:07 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Admin\Transaksi.php on line 657.
+ 1 APPPATH\Controllers\Admin\Transaksi.php(657): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\laragon\\www\\bi_parking\\app\\Controllers\\Admin\\Transaksi.php', 657)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin\Transaksi->xenditCallback()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Transaksi))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-02 09:20:51 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Admin\Transaksi.php on line 658.
+ 1 APPPATH\Controllers\Admin\Transaksi.php(658): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\laragon\\www\\bi_parking\\app\\Controllers\\Admin\\Transaksi.php', 658)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin\Transaksi->xenditCallback()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Transaksi))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-02 09:52:38 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Admin\Transaksi.php on line 646.
+ 1 APPPATH\Controllers\Admin\Transaksi.php(646): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\laragon\\www\\bi_parking\\app\\Controllers\\Admin\\Transaksi.php', 646)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin\Transaksi->xenditCallback()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Transaksi))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-02 09:52:39 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Admin\Transaksi.php on line 646.
+ 1 APPPATH\Controllers\Admin\Transaksi.php(646): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\laragon\\www\\bi_parking\\app\\Controllers\\Admin\\Transaksi.php', 646)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin\Transaksi->xenditCallback()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Transaksi))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-02 09:52:39 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Admin\Transaksi.php on line 646.
+ 1 APPPATH\Controllers\Admin\Transaksi.php(646): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\laragon\\www\\bi_parking\\app\\Controllers\\Admin\\Transaksi.php', 646)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin\Transaksi->xenditCallback()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Transaksi))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-02 09:52:40 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Admin\Transaksi.php on line 646.
+ 1 APPPATH\Controllers\Admin\Transaksi.php(646): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\laragon\\www\\bi_parking\\app\\Controllers\\Admin\\Transaksi.php', 646)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin\Transaksi->xenditCallback()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Transaksi))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-02 09:52:40 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Admin\Transaksi.php on line 646.
+ 1 APPPATH\Controllers\Admin\Transaksi.php(646): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\laragon\\www\\bi_parking\\app\\Controllers\\Admin\\Transaksi.php', 646)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin\Transaksi->xenditCallback()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Transaksi))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-02 09:52:40 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Admin\Transaksi.php on line 646.
+ 1 APPPATH\Controllers\Admin\Transaksi.php(646): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\laragon\\www\\bi_parking\\app\\Controllers\\Admin\\Transaksi.php', 646)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin\Transaksi->xenditCallback()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Transaksi))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-02 09:52:40 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Admin\Transaksi.php on line 646.
+ 1 APPPATH\Controllers\Admin\Transaksi.php(646): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\laragon\\www\\bi_parking\\app\\Controllers\\Admin\\Transaksi.php', 646)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin\Transaksi->xenditCallback()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Transaksi))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-02 09:52:43 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Admin\Transaksi.php on line 646.
+ 1 APPPATH\Controllers\Admin\Transaksi.php(646): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\laragon\\www\\bi_parking\\app\\Controllers\\Admin\\Transaksi.php', 646)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin\Transaksi->xenditCallback()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Transaksi))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-02 09:53:02 --> Undefined variable $status
+in APPPATH\Controllers\Admin\Transaksi.php on line 657.
+ 1 APPPATH\Controllers\Admin\Transaksi.php(657): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $status', 'C:\\laragon\\www\\bi_parking\\app\\Controllers\\Admin\\Transaksi.php', 657)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin\Transaksi->xenditCallback()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Transaksi))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-02 09:53:10 --> Undefined variable $status
+in APPPATH\Controllers\Admin\Transaksi.php on line 657.
+ 1 APPPATH\Controllers\Admin\Transaksi.php(657): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $status', 'C:\\laragon\\www\\bi_parking\\app\\Controllers\\Admin\\Transaksi.php', 657)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin\Transaksi->xenditCallback()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Transaksi))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-02 09:53:28 --> Undefined variable $status
+in APPPATH\Controllers\Admin\Transaksi.php on line 658.
+ 1 APPPATH\Controllers\Admin\Transaksi.php(658): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $status', 'C:\\laragon\\www\\bi_parking\\app\\Controllers\\Admin\\Transaksi.php', 658)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin\Transaksi->xenditCallback()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Transaksi))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-02 10:11:46 --> syntax error, unexpected token ";", expecting "]"
+in APPPATH\Controllers\Admin\Transaksi.php on line 674.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\laragon\\www\\bi_parking\\app\\Controllers\\Admin\\Transaksi.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Admin\\Transaksi')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Admin\\Transaksi')
+ 4 SYSTEMPATH\CodeIgniter.php(892): class_exists('\\App\\Controllers\\Admin\\Transaksi', true)
+ 5 SYSTEMPATH\CodeIgniter.php(486): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-08-02 10:14:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-02 10:14:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-08-02 10:14:22 --> syntax error, unexpected token ";", expecting "]"
+in APPPATH\Controllers\Admin\Transaksi.php on line 674.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\laragon\\www\\bi_parking\\app\\Controllers\\Admin\\Transaksi.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Admin\\Transaksi')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Admin\\Transaksi')
+ 4 SYSTEMPATH\CodeIgniter.php(892): class_exists('\\App\\Controllers\\Admin\\Transaksi', true)
+ 5 SYSTEMPATH\CodeIgniter.php(486): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-02 10:17:22 --> syntax error, unexpected token ";", expecting "]"
+in APPPATH\Controllers\Admin\Transaksi.php on line 674.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\laragon\\www\\bi_parking\\app\\Controllers\\Admin\\Transaksi.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Admin\\Transaksi')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Admin\\Transaksi')
+ 4 SYSTEMPATH\CodeIgniter.php(892): class_exists('\\App\\Controllers\\Admin\\Transaksi', true)
+ 5 SYSTEMPATH\CodeIgniter.php(486): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-02 10:17:35 --> syntax error, unexpected token ";", expecting "]"
+in APPPATH\Controllers\Admin\Transaksi.php on line 674.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\laragon\\www\\bi_parking\\app\\Controllers\\Admin\\Transaksi.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Admin\\Transaksi')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Admin\\Transaksi')
+ 4 SYSTEMPATH\CodeIgniter.php(892): class_exists('\\App\\Controllers\\Admin\\Transaksi', true)
+ 5 SYSTEMPATH\CodeIgniter.php(486): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-08-02 10:17:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-08-02 10:17:52 --> syntax error, unexpected token ";", expecting "]"
+in APPPATH\Controllers\Admin\Transaksi.php on line 674.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\laragon\\www\\bi_parking\\app\\Controllers\\Admin\\Transaksi.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Admin\\Transaksi')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Admin\\Transaksi')
+ 4 SYSTEMPATH\CodeIgniter.php(892): class_exists('\\App\\Controllers\\Admin\\Transaksi', true)
+ 5 SYSTEMPATH\CodeIgniter.php(486): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-02 10:21:49 --> syntax error, unexpected variable "$status"
+in APPPATH\Controllers\Admin\Transaksi.php on line 659.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\laragon\\www\\bi_parking\\app\\Controllers\\Admin\\Transaksi.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Admin\\Transaksi')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Admin\\Transaksi')
+ 4 SYSTEMPATH\CodeIgniter.php(892): class_exists('\\App\\Controllers\\Admin\\Transaksi', true)
+ 5 SYSTEMPATH\CodeIgniter.php(486): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-02 10:22:04 --> syntax error, unexpected variable "$status"
+in APPPATH\Controllers\Admin\Transaksi.php on line 659.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\laragon\\www\\bi_parking\\app\\Controllers\\Admin\\Transaksi.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Admin\\Transaksi')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Admin\\Transaksi')
+ 4 SYSTEMPATH\CodeIgniter.php(892): class_exists('\\App\\Controllers\\Admin\\Transaksi', true)
+ 5 SYSTEMPATH\CodeIgniter.php(486): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-08-02 10:22:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-08-02 10:22:14 --> syntax error, unexpected variable "$status"
+in APPPATH\Controllers\Admin\Transaksi.php on line 659.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\laragon\\www\\bi_parking\\app\\Controllers\\Admin\\Transaksi.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Admin\\Transaksi')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Admin\\Transaksi')
+ 4 SYSTEMPATH\CodeIgniter.php(892): class_exists('\\App\\Controllers\\Admin\\Transaksi', true)
+ 5 SYSTEMPATH\CodeIgniter.php(486): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-02 11:23:25 --> Unclosed '{' on line 8
+in APPPATH\Controllers\Admin\Transaksi.php on line 687.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\laragon\\www\\bi_parking\\app\\Controllers\\Admin\\Transaksi.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Admin\\Transaksi')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Admin\\Transaksi')
+ 4 SYSTEMPATH\CodeIgniter.php(892): class_exists('\\App\\Controllers\\Admin\\Transaksi', true)
+ 5 SYSTEMPATH\CodeIgniter.php(486): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-02 11:23:57 --> Unclosed '{' on line 8
+in APPPATH\Controllers\Admin\Transaksi.php on line 687.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\laragon\\www\\bi_parking\\app\\Controllers\\Admin\\Transaksi.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Admin\\Transaksi')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Admin\\Transaksi')
+ 4 SYSTEMPATH\CodeIgniter.php(892): class_exists('\\App\\Controllers\\Admin\\Transaksi', true)
+ 5 SYSTEMPATH\CodeIgniter.php(486): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-02 11:24:03 --> Unclosed '{' on line 8
+in APPPATH\Controllers\Admin\Transaksi.php on line 687.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\laragon\\www\\bi_parking\\app\\Controllers\\Admin\\Transaksi.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Admin\\Transaksi')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Admin\\Transaksi')
+ 4 SYSTEMPATH\CodeIgniter.php(892): class_exists('\\App\\Controllers\\Admin\\Transaksi', true)
+ 5 SYSTEMPATH\CodeIgniter.php(486): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-02 11:24:14 --> Unclosed '{' on line 8
+in APPPATH\Controllers\Admin\Transaksi.php on line 687.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\laragon\\www\\bi_parking\\app\\Controllers\\Admin\\Transaksi.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Admin\\Transaksi')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Admin\\Transaksi')
+ 4 SYSTEMPATH\CodeIgniter.php(892): class_exists('\\App\\Controllers\\Admin\\Transaksi', true)
+ 5 SYSTEMPATH\CodeIgniter.php(486): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-02 11:26:07 --> Undefined array key "payment_destination"
+in APPPATH\Controllers\Admin\Transaksi.php on line 653.
+ 1 APPPATH\Controllers\Admin\Transaksi.php(653): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "payment_destination"', 'C:\\laragon\\www\\bi_parking\\app\\Controllers\\Admin\\Transaksi.php', 653)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin\Transaksi->xenditCallback()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Transaksi))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-02 11:41:51 --> Unclosed '{' on line 8
+in APPPATH\Controllers\Admin\Transaksi.php on line 667.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\laragon\\www\\bi_parking\\app\\Controllers\\Admin\\Transaksi.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Admin\\Transaksi')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Admin\\Transaksi')
+ 4 SYSTEMPATH\CodeIgniter.php(892): class_exists('\\App\\Controllers\\Admin\\Transaksi', true)
+ 5 SYSTEMPATH\CodeIgniter.php(486): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-02 11:45:58 --> Unclosed '{' on line 8
+in APPPATH\Controllers\Admin\Transaksi.php on line 672.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\laragon\\www\\bi_parking\\app\\Controllers\\Admin\\Transaksi.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Admin\\Transaksi')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Admin\\Transaksi')
+ 4 SYSTEMPATH\CodeIgniter.php(892): class_exists('\\App\\Controllers\\Admin\\Transaksi', true)
+ 5 SYSTEMPATH\CodeIgniter.php(486): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-08-02 11:46:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-08-02 11:46:11 --> Unclosed '{' on line 8
+in APPPATH\Controllers\Admin\Transaksi.php on line 672.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\laragon\\www\\bi_parking\\app\\Controllers\\Admin\\Transaksi.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Admin\\Transaksi')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Admin\\Transaksi')
+ 4 SYSTEMPATH\CodeIgniter.php(892): class_exists('\\App\\Controllers\\Admin\\Transaksi', true)
+ 5 SYSTEMPATH\CodeIgniter.php(486): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-02 13:33:20 --> Unclosed '{' on line 8
+in APPPATH\Controllers\Admin\Transaksi.php on line 662.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\laragon\\www\\bi_parking\\app\\Controllers\\Admin\\Transaksi.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Admin\\Transaksi')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Admin\\Transaksi')
+ 4 SYSTEMPATH\CodeIgniter.php(892): class_exists('\\App\\Controllers\\Admin\\Transaksi', true)
+ 5 SYSTEMPATH\CodeIgniter.php(486): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-02 13:33:33 --> Unclosed '{' on line 8
+in APPPATH\Controllers\Admin\Transaksi.php on line 662.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\laragon\\www\\bi_parking\\app\\Controllers\\Admin\\Transaksi.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Admin\\Transaksi')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Admin\\Transaksi')
+ 4 SYSTEMPATH\CodeIgniter.php(892): class_exists('\\App\\Controllers\\Admin\\Transaksi', true)
+ 5 SYSTEMPATH\CodeIgniter.php(486): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-08-02 14:50:47 --> mysqli_sql_exception: Column 'npm' cannot be null in C:\laragon\www\bi_parking\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\laragon\www\bi_parking\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `lo...', 0)
+#1 C:\laragon\www\bi_parking\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `lo...')
+#2 C:\laragon\www\bi_parking\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `lo...')
+#3 C:\laragon\www\bi_parking\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `lo...', Array, false)
+#4 C:\laragon\www\bi_parking\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\laragon\www\bi_parking\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\laragon\www\bi_parking\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\laragon\www\bi_parking\app\Controllers\Auth\Auth.php(141): CodeIgniter\Model->insert(Array)
+#8 C:\laragon\www\bi_parking\system\CodeIgniter.php(934): App\Controllers\Auth\Auth->logout()
+#9 C:\laragon\www\bi_parking\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth\Auth))
+#10 C:\laragon\www\bi_parking\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\laragon\www\ParkingManagementSystem\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-08-02 14:50:48 --> Column 'npm' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `log_aktivitas` (`npm`, `action`, `details`, `ip_address`) VALUES (NULL, \'logout\', \'User logged out\', \'114.79.6.5\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `log_aktivitas` (`npm`, `action`, `details`, `ip_address`) VALUES (NULL, \'logout\', \'User logged out\', \'114.79.6.5\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `log_aktivitas` (`npm`, `action`, `details`, `ip_address`) VALUES (NULL, \'logout\', \'User logged out\', \'114.79.6.5\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `log_aktivitas` (`npm`, `action`, `details`, `ip_address`) VALUES (:npm:, :action:, :details:, :ip_address:)', [...], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\Auth\Auth.php(141): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Auth\Auth->logout()
+10 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth\Auth))
+11 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-08-02 14:50:55 --> mysqli_sql_exception: Column 'npm' cannot be null in C:\laragon\www\bi_parking\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\laragon\www\bi_parking\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `lo...', 0)
+#1 C:\laragon\www\bi_parking\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `lo...')
+#2 C:\laragon\www\bi_parking\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `lo...')
+#3 C:\laragon\www\bi_parking\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `lo...', Array, false)
+#4 C:\laragon\www\bi_parking\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\laragon\www\bi_parking\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\laragon\www\bi_parking\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\laragon\www\bi_parking\app\Controllers\Auth\Auth.php(141): CodeIgniter\Model->insert(Array)
+#8 C:\laragon\www\bi_parking\system\CodeIgniter.php(934): App\Controllers\Auth\Auth->logout()
+#9 C:\laragon\www\bi_parking\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth\Auth))
+#10 C:\laragon\www\bi_parking\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\laragon\www\ParkingManagementSystem\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-08-02 14:50:55 --> Column 'npm' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `log_aktivitas` (`npm`, `action`, `details`, `ip_address`) VALUES (NULL, \'logout\', \'User logged out\', \'114.79.6.5\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `log_aktivitas` (`npm`, `action`, `details`, `ip_address`) VALUES (NULL, \'logout\', \'User logged out\', \'114.79.6.5\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `log_aktivitas` (`npm`, `action`, `details`, `ip_address`) VALUES (NULL, \'logout\', \'User logged out\', \'114.79.6.5\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `log_aktivitas` (`npm`, `action`, `details`, `ip_address`) VALUES (:npm:, :action:, :details:, :ip_address:)', [...], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\Auth\Auth.php(141): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Auth\Auth->logout()
+10 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth\Auth))
+11 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-02 14:56:59 --> Unclosed '{' on line 8
+in APPPATH\Controllers\Admin\Transaksi.php on line 664.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\laragon\\www\\bi_parking\\app\\Controllers\\Admin\\Transaksi.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Admin\\Transaksi')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Admin\\Transaksi')
+ 4 SYSTEMPATH\CodeIgniter.php(892): class_exists('\\App\\Controllers\\Admin\\Transaksi', true)
+ 5 SYSTEMPATH\CodeIgniter.php(486): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-02 14:57:02 --> Unclosed '{' on line 8
+in APPPATH\Controllers\Admin\Transaksi.php on line 664.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\laragon\\www\\bi_parking\\app\\Controllers\\Admin\\Transaksi.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Admin\\Transaksi')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Admin\\Transaksi')
+ 4 SYSTEMPATH\CodeIgniter.php(892): class_exists('\\App\\Controllers\\Admin\\Transaksi', true)
+ 5 SYSTEMPATH\CodeIgniter.php(486): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-02 14:57:04 --> Unclosed '{' on line 8
+in APPPATH\Controllers\Admin\Transaksi.php on line 664.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\laragon\\www\\bi_parking\\app\\Controllers\\Admin\\Transaksi.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Admin\\Transaksi')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Admin\\Transaksi')
+ 4 SYSTEMPATH\CodeIgniter.php(892): class_exists('\\App\\Controllers\\Admin\\Transaksi', true)
+ 5 SYSTEMPATH\CodeIgniter.php(486): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-08-02 15:23:34 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`db_mps`.`transaksi`, CONSTRAINT `fk_id_jenis_pembayaran_references_table_jenis_pembayaran` FOREIGN KEY (`id_jenis_pembayaran`) REFERENCES `jenis_pembayaran` (`id_jenis_pembayaran`)) in C:\laragon\www\bi_parking\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\laragon\www\bi_parking\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `tr...', 0)
+#1 C:\laragon\www\bi_parking\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tr...')
+#2 C:\laragon\www\bi_parking\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tr...')
+#3 C:\laragon\www\bi_parking\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tr...', Array, false)
+#4 C:\laragon\www\bi_parking\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\laragon\www\bi_parking\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\laragon\www\bi_parking\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, false)
+#7 C:\laragon\www\bi_parking\system\BaseModel.php(692): CodeIgniter\Model->insert(Array, false)
+#8 C:\laragon\www\bi_parking\app\Controllers\Admin\Transaksi.php(260): CodeIgniter\BaseModel->save(Array)
+#9 C:\laragon\www\bi_parking\system\CodeIgniter.php(934): App\Controllers\Admin\Transaksi->topup()
+#10 C:\laragon\www\bi_parking\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Transaksi))
+#11 C:\laragon\www\bi_parking\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\laragon\www\ParkingManagementSystem\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-08-02 15:23:34 --> Cannot add or update a child row: a foreign key constraint fails (`db_mps`.`transaksi`, CONSTRAINT `fk_id_jenis_pembayaran_references_table_jenis_pembayaran` FOREIGN KEY (`id_jenis_pembayaran`) REFERENCES `jenis_pembayaran` (`id_jenis_pembayaran`))
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `transaksi` (`kodebooking_transaksi`, `npm`, `id_jenis_transaksi`, `saldoawal_transaksi`, `nominal_transaksi`, `saldoakhir_transaksi`, `id_jenis_pembayaran`, `id_status_transaksi`, `created_at`, `updated_at`) VALUES (\'1K4BFJ\', \'1000000000\', \'1\', \'20000\', \'20000\', 40000, \'5\', \'1\', \'2023-08-02 15:23:34\', \'2023-08-02 15:23:34\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `transaksi` (`kodebooking_transaksi`, `npm`, `id_jenis_transaksi`, `saldoawal_transaksi`, `nominal_transaksi`, `saldoakhir_transaksi`, `id_jenis_pembayaran`, `id_status_transaksi`, `created_at`, `updated_at`) VALUES (\'1K4BFJ\', \'1000000000\', \'1\', \'20000\', \'20000\', 40000, \'5\', \'1\', \'2023-08-02 15:23:34\', \'2023-08-02 15:23:34\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `transaksi` (`kodebooking_transaksi`, `npm`, `id_jenis_transaksi`, `saldoawal_transaksi`, `nominal_transaksi`, `saldoakhir_transaksi`, `id_jenis_pembayaran`, `id_status_transaksi`, `created_at`, `updated_at`) VALUES (\'1K4BFJ\', \'1000000000\', \'1\', \'20000\', \'20000\', 40000, \'5\', \'1\', \'2023-08-02 15:23:34\', \'2023-08-02 15:23:34\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `transaksi` (`kodebooking_transaksi`, `npm`, `id_jenis_transaksi`, `saldoawal_transaksi`, `nominal_transaksi`, `saldoakhir_transaksi`, `id_jenis_pembayaran`, `id_status_transaksi`, `created_at`, `updated_at`) VALUES (:kodebooking_transaksi:, :npm:, :id_jenis_transaksi:, :saldoawal_transaksi:, :nominal_transaksi:, :saldoakhir_transaksi:, :id_jenis_pembayaran:, :id_status_transaksi:, :created_at:, :updated_at:)', [...], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], false)
+ 8 SYSTEMPATH\BaseModel.php(692): CodeIgniter\Model->insert([...], false)
+ 9 APPPATH\Controllers\Admin\Transaksi.php(260): CodeIgniter\BaseModel->save([...])
+10 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin\Transaksi->topup()
+11 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Transaksi))
+12 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-08-02 15:23:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-08-02 15:23:45 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`db_mps`.`transaksi`, CONSTRAINT `fk_id_jenis_pembayaran_references_table_jenis_pembayaran` FOREIGN KEY (`id_jenis_pembayaran`) REFERENCES `jenis_pembayaran` (`id_jenis_pembayaran`)) in C:\laragon\www\bi_parking\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\laragon\www\bi_parking\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `tr...', 0)
+#1 C:\laragon\www\bi_parking\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tr...')
+#2 C:\laragon\www\bi_parking\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tr...')
+#3 C:\laragon\www\bi_parking\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tr...', Array, false)
+#4 C:\laragon\www\bi_parking\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\laragon\www\bi_parking\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\laragon\www\bi_parking\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, false)
+#7 C:\laragon\www\bi_parking\system\BaseModel.php(692): CodeIgniter\Model->insert(Array, false)
+#8 C:\laragon\www\bi_parking\app\Controllers\Admin\Transaksi.php(260): CodeIgniter\BaseModel->save(Array)
+#9 C:\laragon\www\bi_parking\system\CodeIgniter.php(934): App\Controllers\Admin\Transaksi->topup()
+#10 C:\laragon\www\bi_parking\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Transaksi))
+#11 C:\laragon\www\bi_parking\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\laragon\www\ParkingManagementSystem\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-08-02 15:23:45 --> Cannot add or update a child row: a foreign key constraint fails (`db_mps`.`transaksi`, CONSTRAINT `fk_id_jenis_pembayaran_references_table_jenis_pembayaran` FOREIGN KEY (`id_jenis_pembayaran`) REFERENCES `jenis_pembayaran` (`id_jenis_pembayaran`))
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `transaksi` (`kodebooking_transaksi`, `npm`, `id_jenis_transaksi`, `saldoawal_transaksi`, `nominal_transaksi`, `saldoakhir_transaksi`, `id_jenis_pembayaran`, `id_status_transaksi`, `created_at`, `updated_at`) VALUES (\'IO0MI3\', \'1000000000\', \'1\', \'20000\', \'20000\', 40000, \'5\', \'1\', \'2023-08-02 15:23:45\', \'2023-08-02 15:23:45\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `transaksi` (`kodebooking_transaksi`, `npm`, `id_jenis_transaksi`, `saldoawal_transaksi`, `nominal_transaksi`, `saldoakhir_transaksi`, `id_jenis_pembayaran`, `id_status_transaksi`, `created_at`, `updated_at`) VALUES (\'IO0MI3\', \'1000000000\', \'1\', \'20000\', \'20000\', 40000, \'5\', \'1\', \'2023-08-02 15:23:45\', \'2023-08-02 15:23:45\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `transaksi` (`kodebooking_transaksi`, `npm`, `id_jenis_transaksi`, `saldoawal_transaksi`, `nominal_transaksi`, `saldoakhir_transaksi`, `id_jenis_pembayaran`, `id_status_transaksi`, `created_at`, `updated_at`) VALUES (\'IO0MI3\', \'1000000000\', \'1\', \'20000\', \'20000\', 40000, \'5\', \'1\', \'2023-08-02 15:23:45\', \'2023-08-02 15:23:45\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `transaksi` (`kodebooking_transaksi`, `npm`, `id_jenis_transaksi`, `saldoawal_transaksi`, `nominal_transaksi`, `saldoakhir_transaksi`, `id_jenis_pembayaran`, `id_status_transaksi`, `created_at`, `updated_at`) VALUES (:kodebooking_transaksi:, :npm:, :id_jenis_transaksi:, :saldoawal_transaksi:, :nominal_transaksi:, :saldoakhir_transaksi:, :id_jenis_pembayaran:, :id_status_transaksi:, :created_at:, :updated_at:)', [...], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], false)
+ 8 SYSTEMPATH\BaseModel.php(692): CodeIgniter\Model->insert([...], false)
+ 9 APPPATH\Controllers\Admin\Transaksi.php(260): CodeIgniter\BaseModel->save([...])
+10 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin\Transaksi->topup()
+11 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Transaksi))
+12 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-02 15:33:47 --> Unclosed '{' on line 8
+in APPPATH\Controllers\Admin\Transaksi.php on line 692.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\laragon\\www\\bi_parking\\app\\Controllers\\Admin\\Transaksi.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Admin\\Transaksi')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Admin\\Transaksi')
+ 4 SYSTEMPATH\CodeIgniter.php(892): class_exists('\\App\\Controllers\\Admin\\Transaksi', true)
+ 5 SYSTEMPATH\CodeIgniter.php(486): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-08-02 20:44:11 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: YES) in C:\laragon\www\bi-parking\system\Database\MySQLi\Connection.php:174
+Stack trace:
+#0 C:\laragon\www\bi-parking\system\Database\MySQLi\Connection.php(174): mysqli->real_connect('localhost', 'root', 'binainsanioke', 'db_mps', 3306, '', 0)
+#1 C:\laragon\www\bi-parking\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\laragon\www\bi-parking\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\laragon\www\bi-parking\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\laragon\www\bi-parking\system\Model.php(268): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\bi-parking\system\BaseModel.php(656): CodeIgniter\Model->doFirst()
+#6 C:\laragon\www\bi-parking\app\Controllers\Auth\Auth.php(24): CodeIgniter\BaseModel->first()
+#7 C:\laragon\www\bi-parking\system\CodeIgniter.php(934): App\Controllers\Auth\Auth->login()
+#8 C:\laragon\www\bi-parking\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth\Auth))
+#9 C:\laragon\www\bi-parking\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\laragon\www\ParkingManagementSystem\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: YES) in C:\laragon\www\bi-parking\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 C:\laragon\www\bi-parking\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\laragon\www\bi-parking\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\laragon\www\bi-parking\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\laragon\www\bi-parking\system\Model.php(268): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\laragon\www\bi-parking\system\BaseModel.php(656): CodeIgniter\Model->doFirst()
+#5 C:\laragon\www\bi-parking\app\Controllers\Auth\Auth.php(24): CodeIgniter\BaseModel->first()
+#6 C:\laragon\www\bi-parking\system\CodeIgniter.php(934): App\Controllers\Auth\Auth->login()
+#7 C:\laragon\www\bi-parking\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth\Auth))
+#8 C:\laragon\www\bi-parking\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon\www\ParkingManagementSystem\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-08-02 20:44:11 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: YES)
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `user`
+WHERE `npm` = :npm:
+ LIMIT 1', [...], false)
+ 3 SYSTEMPATH\Model.php(268): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(656): CodeIgniter\Model->doFirst()
+ 5 APPPATH\Controllers\Auth\Auth.php(24): CodeIgniter\BaseModel->first()
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Auth\Auth->login()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth\Auth))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-08-02 20:44:31 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: YES) in C:\laragon\www\bi-parking\system\Database\MySQLi\Connection.php:174
+Stack trace:
+#0 C:\laragon\www\bi-parking\system\Database\MySQLi\Connection.php(174): mysqli->real_connect('localhost', 'root', 'binainsanioke', 'db_mps', 3306, '', 0)
+#1 C:\laragon\www\bi-parking\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\laragon\www\bi-parking\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\laragon\www\bi-parking\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\laragon\www\bi-parking\system\Model.php(268): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\bi-parking\system\BaseModel.php(656): CodeIgniter\Model->doFirst()
+#6 C:\laragon\www\bi-parking\app\Controllers\Auth\Auth.php(24): CodeIgniter\BaseModel->first()
+#7 C:\laragon\www\bi-parking\system\CodeIgniter.php(934): App\Controllers\Auth\Auth->login()
+#8 C:\laragon\www\bi-parking\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth\Auth))
+#9 C:\laragon\www\bi-parking\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\laragon\www\ParkingManagementSystem\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: YES) in C:\laragon\www\bi-parking\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 C:\laragon\www\bi-parking\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\laragon\www\bi-parking\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\laragon\www\bi-parking\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\laragon\www\bi-parking\system\Model.php(268): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\laragon\www\bi-parking\system\BaseModel.php(656): CodeIgniter\Model->doFirst()
+#5 C:\laragon\www\bi-parking\app\Controllers\Auth\Auth.php(24): CodeIgniter\BaseModel->first()
+#6 C:\laragon\www\bi-parking\system\CodeIgniter.php(934): App\Controllers\Auth\Auth->login()
+#7 C:\laragon\www\bi-parking\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth\Auth))
+#8 C:\laragon\www\bi-parking\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon\www\ParkingManagementSystem\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-08-02 20:44:31 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: YES)
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `user`
+WHERE `npm` = :npm:
+ LIMIT 1', [...], false)
+ 3 SYSTEMPATH\Model.php(268): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(656): CodeIgniter\Model->doFirst()
+ 5 APPPATH\Controllers\Auth\Auth.php(24): CodeIgniter\BaseModel->first()
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Auth\Auth->login()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth\Auth))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-08-02 20:44:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-02 20:44:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-08-02 20:44:41 --> [DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in APPPATH\Views\r_user\dashboard.php on line 56.
+ 1 APPPATH\Views\r_user\dashboard.php(56): number_format(null)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\laragon\\www\\bi-parking\\app\\Views\\r_user\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('r_user/dashboard', [], true)
+ 5 APPPATH\Controllers\User\Dashboard.php(55): view('r_user/dashboard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\User\Dashboard->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User\Dashboard))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-08-02 20:44:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-02 20:45:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-02 21:12:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-08-02 21:12:48 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`db_mps`.`transaksi`, CONSTRAINT `fk_id_jenis_pembayaran_references_table_jenis_pembayaran` FOREIGN KEY (`id_jenis_pembayaran`) REFERENCES `jenis_pembayaran` (`id_jenis_pembayaran`)) in C:\laragon\www\bi-parking\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\laragon\www\bi-parking\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `tr...', 0)
+#1 C:\laragon\www\bi-parking\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tr...')
+#2 C:\laragon\www\bi-parking\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tr...')
+#3 C:\laragon\www\bi-parking\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tr...', Array, false)
+#4 C:\laragon\www\bi-parking\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\laragon\www\bi-parking\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\laragon\www\bi-parking\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, false)
+#7 C:\laragon\www\bi-parking\system\BaseModel.php(692): CodeIgniter\Model->insert(Array, false)
+#8 C:\laragon\www\bi-parking\app\Controllers\Admin\Transaksi.php(260): CodeIgniter\BaseModel->save(Array)
+#9 C:\laragon\www\bi-parking\system\CodeIgniter.php(934): App\Controllers\Admin\Transaksi->topup()
+#10 C:\laragon\www\bi-parking\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Transaksi))
+#11 C:\laragon\www\bi-parking\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\laragon\www\ParkingManagementSystem\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-08-02 21:12:48 --> Cannot add or update a child row: a foreign key constraint fails (`db_mps`.`transaksi`, CONSTRAINT `fk_id_jenis_pembayaran_references_table_jenis_pembayaran` FOREIGN KEY (`id_jenis_pembayaran`) REFERENCES `jenis_pembayaran` (`id_jenis_pembayaran`))
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `transaksi` (`kodebooking_transaksi`, `npm`, `id_jenis_transaksi`, `saldoawal_transaksi`, `nominal_transaksi`, `saldoakhir_transaksi`, `id_jenis_pembayaran`, `id_status_transaksi`, `created_at`, `updated_at`) VALUES (\'0DLX8W\', \'4\', \'1\', \'180000\', \'20000\', 200000, \'5\', \'1\', \'2023-08-02 21:12:48\', \'2023-08-02 21:12:48\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `transaksi` (`kodebooking_transaksi`, `npm`, `id_jenis_transaksi`, `saldoawal_transaksi`, `nominal_transaksi`, `saldoakhir_transaksi`, `id_jenis_pembayaran`, `id_status_transaksi`, `created_at`, `updated_at`) VALUES (\'0DLX8W\', \'4\', \'1\', \'180000\', \'20000\', 200000, \'5\', \'1\', \'2023-08-02 21:12:48\', \'2023-08-02 21:12:48\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `transaksi` (`kodebooking_transaksi`, `npm`, `id_jenis_transaksi`, `saldoawal_transaksi`, `nominal_transaksi`, `saldoakhir_transaksi`, `id_jenis_pembayaran`, `id_status_transaksi`, `created_at`, `updated_at`) VALUES (\'0DLX8W\', \'4\', \'1\', \'180000\', \'20000\', 200000, \'5\', \'1\', \'2023-08-02 21:12:48\', \'2023-08-02 21:12:48\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `transaksi` (`kodebooking_transaksi`, `npm`, `id_jenis_transaksi`, `saldoawal_transaksi`, `nominal_transaksi`, `saldoakhir_transaksi`, `id_jenis_pembayaran`, `id_status_transaksi`, `created_at`, `updated_at`) VALUES (:kodebooking_transaksi:, :npm:, :id_jenis_transaksi:, :saldoawal_transaksi:, :nominal_transaksi:, :saldoakhir_transaksi:, :id_jenis_pembayaran:, :id_status_transaksi:, :created_at:, :updated_at:)', [...], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], false)
+ 8 SYSTEMPATH\BaseModel.php(692): CodeIgniter\Model->insert([...], false)
+ 9 APPPATH\Controllers\Admin\Transaksi.php(260): CodeIgniter\BaseModel->save([...])
+10 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin\Transaksi->topup()
+11 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Transaksi))
+12 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-08-02 21:13:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-02 21:14:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-02 21:14:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-02 21:14:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-02 21:14:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-02 21:14:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-02 21:14:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-02 21:14:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-02 21:14:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-02 21:16:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-02 21:16:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-02 21:16:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-02 21:16:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-02 21:16:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-02 21:16:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-02 21:20:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-02 21:20:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-02 21:20:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-02 21:20:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-02 21:21:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-02 21:21:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-02 21:37:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-02 21:37:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-02 21:37:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-02 21:37:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-02 21:38:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-08-02 21:38:05 --> Undefined variable $params
+in APPPATH\Controllers\Admin\XenditService.php on line 43.
+ 1 APPPATH\Controllers\Admin\XenditService.php(43): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $params', 'C:\\laragon\\www\\bi-parking\\app\\Controllers\\Admin\\XenditService.php', 43)
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(312): include_once('C:\\laragon\\www\\bi-parking\\app\\Controllers\\Admin\\XenditService.php')
+ 3 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\laragon\\www\\bi-parking\\app\\Controllers\\Admin\\XenditService.php')
+ 4 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Admin\\XenditService')
+ 5 APPPATH\Controllers\Admin\Transaksi.php(259): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Admin\\XenditService')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin\Transaksi->topup()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Transaksi))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-08-02 21:39:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-02 21:39:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-02 21:39:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-02 21:39:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-02 21:39:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-02 21:41:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-02 21:41:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-02 21:41:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-02 21:44:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-02 21:44:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-02 21:51:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-02 21:51:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-02 22:04:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-02 22:04:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-02 22:04:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-02 22:04:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-02 22:14:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-02 22:14:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-02 22:14:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-02 22:14:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-02 22:14:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-02 22:14:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-08-02 22:14:30 --> [DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in APPPATH\Views\r_user\dashboard.php on line 56.
+ 1 APPPATH\Views\r_user\dashboard.php(56): number_format(null)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\laragon\\www\\bi-parking\\app\\Views\\r_user\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('r_user/dashboard', [], true)
+ 5 APPPATH\Controllers\User\Dashboard.php(55): view('r_user/dashboard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\User\Dashboard->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User\Dashboard))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-08-02 22:14:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-02 22:14:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-02 22:14:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-02 22:14:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-02 22:14:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-02 22:14:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-02 22:14:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-02 22:30:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-02 22:39:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-02 22:39:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-02 22:39:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-02 22:45:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-02 22:45:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-02 22:45:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-02 22:45:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-02 22:45:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-02 22:45:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-02 22:45:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-02 23:07:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

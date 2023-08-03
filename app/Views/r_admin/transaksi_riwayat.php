@@ -126,9 +126,6 @@
         </div>
     </div>
 </td>
-
-
-
                                 </tr>
                             <?php endforeach; ?>
                         </tbody>

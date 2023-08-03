@@ -12,45 +12,45 @@
     <div class="card-header">
         UBAH DATA USER
     </div>
-    <form action="<?= base_url(); ?>admin/edit/<?= $user['npm']; ?>" method="post">
+    <form action="<?= base_url(); ?>admin/edit/<?= $userData['npm']; ?>" method="post">
         <div class="form-group row">
             <label class="col-sm-3 col-form-label">Nomor Pokok Mahasiswa</label>
             <div class="col-sm-9">
-                <input type="text" class="form-control" name="npm" value="<?= $user['npm']; ?>" disabled>
+                <input type="text" class="form-control" name="npm" value="<?= $userData['npm']; ?>" disabled>
             </div>
         </div>
         <div class="form-group row">
             <label class="col-sm-3 col-form-label">Nama Lengkap</label>
             <div class="col-sm-9">
-                <input type="text" class="form-control" name="nama" value="<?= $user['nama'] ?>">
+                <input type="text" class="form-control" name="nama" value="<?= $userData['nama'] ?>">
             </div>
         </div>
         <div class="form-group row">
             <label class="col-sm-3 col-form-label">Email</label>
             <div class="col-sm-9">
-                <input type="text" class="form-control" name="email" value="<?= $user['email'] ?>">
+                <input type="text" class="form-control" name="email" value="<?= $userData['email'] ?>">
             </div>
         </div>
         <div class="form-group row">
             <label class="col-sm-3 col-form-label">Nomor Kartu</label>
             <div class="col-sm-9">
-                <input type="text" class="form-control" name="nomor_kartu" value="<?= $user['nomor_kartu'] ?>" onkeydown="return event.key !== 'Enter';">
+                <input type="text" class="form-control" name="nomor_kartu" value="<?= $userData['nomor_kartu'] ?>" onkeydown="return event.key !== 'Enter';">
             </div>
         </div>
         <div class="form-group row">
             <label class="col-sm-3 col-form-label">Saldo</label>
             <div class="col-sm-9">
-                <input type="text" class="form-control" name="saldo" value="<?= $user['saldo'] ?>">
+                <input type="text" class="form-control" name="saldo" value="<?= $userData['saldo'] ?>" disabled>
             </div>
         </div>
         <div class="form-group row">
             <label class="col-sm-3 col-form-label">Role</label>
             <div class="col-sm-9">
                 <select class="form-control" name="id_role">
-                    <option value="1" <?= ($user['id_role'] == '1') ? 'selected' : ''; ?>>Admin</option>
-                    <option value="2" <?= ($user['id_role'] == '2') ? 'selected' : ''; ?>>Keuangan</option>
-                    <option value="3" <?= ($user['id_role'] == '3') ? 'selected' : ''; ?>>Operator</option>
-                    <option value="4" <?= ($user['id_role'] == '4') ? 'selected' : ''; ?>>Mahasiswa</option>
+                    <option value="1" <?= ($userData['id_role'] == '1') ? 'selected' : ''; ?>>Admin</option>
+                    <option value="2" <?= ($userData['id_role'] == '2') ? 'selected' : ''; ?>>Keuangan</option>
+                    <option value="3" <?= ($userData['id_role'] == '3') ? 'selected' : ''; ?>>Operator</option>
+                    <option value="4" <?= ($userData['id_role'] == '4') ? 'selected' : ''; ?>>Mahasiswa</option>
                 </select>
             </div>
         </div>
@@ -58,8 +58,8 @@
             <label class="col-sm-3 col-form-label">Status</label>
             <div class="col-sm-9">
                 <select name="id_status" class="custom-select form-control" id="id_status" required>
-                    <option value="1" <?= ($user['id_status'] == '1') ? 'selected' : ''; ?>>E-Biu</option>
-                    <option value="2" <?= ($user['id_status'] == '2') ? 'selected' : ''; ?>>Member</option>
+                    <option value="1" <?= ($userData['id_status'] == '1') ? 'selected' : ''; ?>>E-Biu</option>
+                    <option value="2" <?= ($userData['id_status'] == '2') ? 'selected' : ''; ?>>Member</option>
                 </select>
             </div>
         </div>

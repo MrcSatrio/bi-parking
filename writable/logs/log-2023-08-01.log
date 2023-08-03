@@ -1,0 +1,416 @@
+ERROR - 2023-08-01 08:52:20 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in C:\laragon\www\bi_parking\system\Database\MySQLi\Connection.php:174
+Stack trace:
+#0 C:\laragon\www\bi_parking\system\Database\MySQLi\Connection.php(174): mysqli->real_connect('localhost', 'root', 'binainsanioke', 'db_mps', 3306, '', 0)
+#1 C:\laragon\www\bi_parking\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\laragon\www\bi_parking\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\laragon\www\bi_parking\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\laragon\www\bi_parking\system\Model.php(268): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\bi_parking\system\BaseModel.php(656): CodeIgniter\Model->doFirst()
+#6 C:\laragon\www\bi_parking\app\Controllers\Auth\Saldo.php(16): CodeIgniter\BaseModel->first()
+#7 C:\laragon\www\bi_parking\system\CodeIgniter.php(934): App\Controllers\Auth\Saldo->ceksaldo()
+#8 C:\laragon\www\bi_parking\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth\Saldo))
+#9 C:\laragon\www\bi_parking\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\laragon\www\ParkingManagementSystem\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in C:\laragon\www\bi_parking\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 C:\laragon\www\bi_parking\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\laragon\www\bi_parking\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\laragon\www\bi_parking\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\laragon\www\bi_parking\system\Model.php(268): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\laragon\www\bi_parking\system\BaseModel.php(656): CodeIgniter\Model->doFirst()
+#5 C:\laragon\www\bi_parking\app\Controllers\Auth\Saldo.php(16): CodeIgniter\BaseModel->first()
+#6 C:\laragon\www\bi_parking\system\CodeIgniter.php(934): App\Controllers\Auth\Saldo->ceksaldo()
+#7 C:\laragon\www\bi_parking\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth\Saldo))
+#8 C:\laragon\www\bi_parking\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon\www\ParkingManagementSystem\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-08-01 08:52:20 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `user`
+JOIN `kartu` ON `kartu`.`id_kartu` = `user`.`id_kartu`
+WHERE `npm` = :npm:
+ LIMIT 1', [...], false)
+ 3 SYSTEMPATH\Model.php(268): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(656): CodeIgniter\Model->doFirst()
+ 5 APPPATH\Controllers\Auth\Saldo.php(16): CodeIgniter\BaseModel->first()
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Auth\Saldo->ceksaldo()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth\Saldo))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-08-01 08:52:30 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in C:\laragon\www\bi_parking\system\Database\MySQLi\Connection.php:174
+Stack trace:
+#0 C:\laragon\www\bi_parking\system\Database\MySQLi\Connection.php(174): mysqli->real_connect('localhost', 'root', 'binainsanioke', 'db_mps', 3306, '', 0)
+#1 C:\laragon\www\bi_parking\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\laragon\www\bi_parking\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\laragon\www\bi_parking\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\laragon\www\bi_parking\system\Model.php(268): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\bi_parking\system\BaseModel.php(656): CodeIgniter\Model->doFirst()
+#6 C:\laragon\www\bi_parking\app\Controllers\Auth\Saldo.php(16): CodeIgniter\BaseModel->first()
+#7 C:\laragon\www\bi_parking\system\CodeIgniter.php(934): App\Controllers\Auth\Saldo->ceksaldo()
+#8 C:\laragon\www\bi_parking\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth\Saldo))
+#9 C:\laragon\www\bi_parking\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\laragon\www\ParkingManagementSystem\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in C:\laragon\www\bi_parking\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 C:\laragon\www\bi_parking\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\laragon\www\bi_parking\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\laragon\www\bi_parking\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\laragon\www\bi_parking\system\Model.php(268): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\laragon\www\bi_parking\system\BaseModel.php(656): CodeIgniter\Model->doFirst()
+#5 C:\laragon\www\bi_parking\app\Controllers\Auth\Saldo.php(16): CodeIgniter\BaseModel->first()
+#6 C:\laragon\www\bi_parking\system\CodeIgniter.php(934): App\Controllers\Auth\Saldo->ceksaldo()
+#7 C:\laragon\www\bi_parking\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth\Saldo))
+#8 C:\laragon\www\bi_parking\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon\www\ParkingManagementSystem\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-08-01 08:52:30 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `user`
+JOIN `kartu` ON `kartu`.`id_kartu` = `user`.`id_kartu`
+WHERE `npm` = :npm:
+ LIMIT 1', [...], false)
+ 3 SYSTEMPATH\Model.php(268): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(656): CodeIgniter\Model->doFirst()
+ 5 APPPATH\Controllers\Auth\Saldo.php(16): CodeIgniter\BaseModel->first()
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Auth\Saldo->ceksaldo()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth\Saldo))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-01 14:05:14 --> Undefined array key "nama"
+in APPPATH\Views\r_admin\transaksi_riwayat.php on line 73.
+ 1 APPPATH\Views\r_admin\transaksi_riwayat.php(73): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nama"', 'C:\\laragon\\www\\bi_parking\\app\\Views\\r_admin\\transaksi_riwayat.php', 73)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\laragon\\www\\bi_parking\\app\\Views\\r_admin\\transaksi_riwayat.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('r_admin/transaksi_riwayat', [], true)
+ 5 APPPATH\Controllers\Admin\Transaksi.php(401): view('r_admin/transaksi_riwayat', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin\Transaksi->riwayat()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Transaksi))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-01 14:05:18 --> Undefined array key "nama"
+in APPPATH\Views\r_admin\transaksi_riwayat.php on line 73.
+ 1 APPPATH\Views\r_admin\transaksi_riwayat.php(73): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nama"', 'C:\\laragon\\www\\bi_parking\\app\\Views\\r_admin\\transaksi_riwayat.php', 73)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\laragon\\www\\bi_parking\\app\\Views\\r_admin\\transaksi_riwayat.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('r_admin/transaksi_riwayat', [], true)
+ 5 APPPATH\Controllers\Admin\Transaksi.php(401): view('r_admin/transaksi_riwayat', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin\Transaksi->riwayat()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Transaksi))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-01 14:05:23 --> Undefined array key "nama"
+in APPPATH\Views\r_admin\transaksi_riwayat.php on line 73.
+ 1 APPPATH\Views\r_admin\transaksi_riwayat.php(73): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nama"', 'C:\\laragon\\www\\bi_parking\\app\\Views\\r_admin\\transaksi_riwayat.php', 73)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\laragon\\www\\bi_parking\\app\\Views\\r_admin\\transaksi_riwayat.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('r_admin/transaksi_riwayat', [], true)
+ 5 APPPATH\Controllers\Admin\Transaksi.php(401): view('r_admin/transaksi_riwayat', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin\Transaksi->riwayat()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Transaksi))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-01 14:05:27 --> Undefined array key "nama"
+in APPPATH\Views\r_admin\transaksi_riwayat.php on line 73.
+ 1 APPPATH\Views\r_admin\transaksi_riwayat.php(73): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nama"', 'C:\\laragon\\www\\bi_parking\\app\\Views\\r_admin\\transaksi_riwayat.php', 73)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\laragon\\www\\bi_parking\\app\\Views\\r_admin\\transaksi_riwayat.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('r_admin/transaksi_riwayat', [], true)
+ 5 APPPATH\Controllers\Admin\Transaksi.php(401): view('r_admin/transaksi_riwayat', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin\Transaksi->riwayat()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Transaksi))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-01 15:15:52 --> syntax error, unexpected token ","
+in APPPATH\Controllers\Admin\Transaksi.php on line 239.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\laragon\\www\\bi_parking\\app\\Controllers\\Admin\\Transaksi.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Admin\\Transaksi')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Admin\\Transaksi')
+ 4 SYSTEMPATH\CodeIgniter.php(892): class_exists('\\App\\Controllers\\Admin\\Transaksi', true)
+ 5 SYSTEMPATH\CodeIgniter.php(486): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-01 15:16:47 --> syntax error, unexpected token ","
+in APPPATH\Controllers\Admin\Transaksi.php on line 239.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\laragon\\www\\bi_parking\\app\\Controllers\\Admin\\Transaksi.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Admin\\Transaksi')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Admin\\Transaksi')
+ 4 SYSTEMPATH\CodeIgniter.php(892): class_exists('\\App\\Controllers\\Admin\\Transaksi', true)
+ 5 SYSTEMPATH\CodeIgniter.php(486): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-01 15:22:53 --> syntax error, unexpected token ","
+in APPPATH\Controllers\Admin\Transaksi.php on line 239.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\laragon\\www\\bi_parking\\app\\Controllers\\Admin\\Transaksi.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Admin\\Transaksi')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Admin\\Transaksi')
+ 4 SYSTEMPATH\CodeIgniter.php(892): class_exists('\\App\\Controllers\\Admin\\Transaksi', true)
+ 5 SYSTEMPATH\CodeIgniter.php(486): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-08-01 15:23:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-08-01 15:23:07 --> syntax error, unexpected token ","
+in APPPATH\Controllers\Admin\Transaksi.php on line 239.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\laragon\\www\\bi_parking\\app\\Controllers\\Admin\\Transaksi.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Admin\\Transaksi')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Admin\\Transaksi')
+ 4 SYSTEMPATH\CodeIgniter.php(892): class_exists('\\App\\Controllers\\Admin\\Transaksi', true)
+ 5 SYSTEMPATH\CodeIgniter.php(486): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-01 15:25:15 --> syntax error, unexpected token ","
+in APPPATH\Controllers\Admin\Transaksi.php on line 239.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\laragon\\www\\bi_parking\\app\\Controllers\\Admin\\Transaksi.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Admin\\Transaksi')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Admin\\Transaksi')
+ 4 SYSTEMPATH\CodeIgniter.php(892): class_exists('\\App\\Controllers\\Admin\\Transaksi', true)
+ 5 SYSTEMPATH\CodeIgniter.php(486): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-01 15:34:36 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Admin\Transaksi.php on line 657.
+ 1 APPPATH\Controllers\Admin\Transaksi.php(657): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\laragon\\www\\bi_parking\\app\\Controllers\\Admin\\Transaksi.php', 657)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin\Transaksi->xenditCallback()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Transaksi))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-01 15:35:18 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Admin\Transaksi.php on line 657.
+ 1 APPPATH\Controllers\Admin\Transaksi.php(657): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\laragon\\www\\bi_parking\\app\\Controllers\\Admin\\Transaksi.php', 657)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin\Transaksi->xenditCallback()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Transaksi))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-01 15:37:17 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Admin\Transaksi.php on line 657.
+ 1 APPPATH\Controllers\Admin\Transaksi.php(657): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\laragon\\www\\bi_parking\\app\\Controllers\\Admin\\Transaksi.php', 657)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin\Transaksi->xenditCallback()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Transaksi))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-01 15:37:53 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Admin\Transaksi.php on line 657.
+ 1 APPPATH\Controllers\Admin\Transaksi.php(657): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\laragon\\www\\bi_parking\\app\\Controllers\\Admin\\Transaksi.php', 657)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin\Transaksi->xenditCallback()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Transaksi))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-01 15:52:51 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Admin\Transaksi.php on line 657.
+ 1 APPPATH\Controllers\Admin\Transaksi.php(657): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\laragon\\www\\bi_parking\\app\\Controllers\\Admin\\Transaksi.php', 657)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin\Transaksi->xenditCallback()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Transaksi))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-01 15:54:28 --> Undefined array key "id"
+in APPPATH\Controllers\Admin\Transaksi.php on line 635.
+ 1 APPPATH\Controllers\Admin\Transaksi.php(635): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', 'C:\\laragon\\www\\bi_parking\\app\\Controllers\\Admin\\Transaksi.php', 635)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin\Transaksi->xenditCallback()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Transaksi))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-01 16:38:50 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Admin\Transaksi.php on line 657.
+ 1 APPPATH\Controllers\Admin\Transaksi.php(657): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\laragon\\www\\bi_parking\\app\\Controllers\\Admin\\Transaksi.php', 657)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin\Transaksi->xenditCallback()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Transaksi))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-01 16:57:25 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Admin\Transaksi.php on line 657.
+ 1 APPPATH\Controllers\Admin\Transaksi.php(657): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\laragon\\www\\bi_parking\\app\\Controllers\\Admin\\Transaksi.php', 657)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin\Transaksi->xenditCallback()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Transaksi))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-01 17:00:51 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Admin\Transaksi.php on line 657.
+ 1 APPPATH\Controllers\Admin\Transaksi.php(657): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\laragon\\www\\bi_parking\\app\\Controllers\\Admin\\Transaksi.php', 657)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin\Transaksi->xenditCallback()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Transaksi))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-01 17:06:37 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Admin\Transaksi.php on line 657.
+ 1 APPPATH\Controllers\Admin\Transaksi.php(657): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\laragon\\www\\bi_parking\\app\\Controllers\\Admin\\Transaksi.php', 657)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin\Transaksi->xenditCallback()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Transaksi))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-01 17:12:36 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Admin\Transaksi.php on line 657.
+ 1 APPPATH\Controllers\Admin\Transaksi.php(657): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\laragon\\www\\bi_parking\\app\\Controllers\\Admin\\Transaksi.php', 657)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin\Transaksi->xenditCallback()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Transaksi))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-01 17:12:51 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Admin\Transaksi.php on line 657.
+ 1 APPPATH\Controllers\Admin\Transaksi.php(657): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\laragon\\www\\bi_parking\\app\\Controllers\\Admin\\Transaksi.php', 657)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin\Transaksi->xenditCallback()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Transaksi))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-01 17:16:51 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Admin\Transaksi.php on line 657.
+ 1 APPPATH\Controllers\Admin\Transaksi.php(657): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\laragon\\www\\bi_parking\\app\\Controllers\\Admin\\Transaksi.php', 657)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin\Transaksi->xenditCallback()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Transaksi))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-01 17:17:15 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Admin\Transaksi.php on line 657.
+ 1 APPPATH\Controllers\Admin\Transaksi.php(657): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\laragon\\www\\bi_parking\\app\\Controllers\\Admin\\Transaksi.php', 657)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin\Transaksi->xenditCallback()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Transaksi))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-01 17:21:51 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Admin\Transaksi.php on line 657.
+ 1 APPPATH\Controllers\Admin\Transaksi.php(657): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\laragon\\www\\bi_parking\\app\\Controllers\\Admin\\Transaksi.php', 657)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin\Transaksi->xenditCallback()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Transaksi))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-01 17:27:52 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Admin\Transaksi.php on line 657.
+ 1 APPPATH\Controllers\Admin\Transaksi.php(657): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\laragon\\www\\bi_parking\\app\\Controllers\\Admin\\Transaksi.php', 657)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin\Transaksi->xenditCallback()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Transaksi))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-01 17:32:51 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Admin\Transaksi.php on line 657.
+ 1 APPPATH\Controllers\Admin\Transaksi.php(657): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\laragon\\www\\bi_parking\\app\\Controllers\\Admin\\Transaksi.php', 657)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin\Transaksi->xenditCallback()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Transaksi))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-01 17:58:50 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Admin\Transaksi.php on line 657.
+ 1 APPPATH\Controllers\Admin\Transaksi.php(657): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\laragon\\www\\bi_parking\\app\\Controllers\\Admin\\Transaksi.php', 657)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin\Transaksi->xenditCallback()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Transaksi))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-01 18:02:51 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Admin\Transaksi.php on line 657.
+ 1 APPPATH\Controllers\Admin\Transaksi.php(657): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\laragon\\www\\bi_parking\\app\\Controllers\\Admin\\Transaksi.php', 657)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin\Transaksi->xenditCallback()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Transaksi))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-01 18:07:52 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Admin\Transaksi.php on line 657.
+ 1 APPPATH\Controllers\Admin\Transaksi.php(657): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\laragon\\www\\bi_parking\\app\\Controllers\\Admin\\Transaksi.php', 657)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin\Transaksi->xenditCallback()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Transaksi))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-01 18:13:51 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Admin\Transaksi.php on line 657.
+ 1 APPPATH\Controllers\Admin\Transaksi.php(657): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\laragon\\www\\bi_parking\\app\\Controllers\\Admin\\Transaksi.php', 657)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin\Transaksi->xenditCallback()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Transaksi))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-01 18:18:51 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Admin\Transaksi.php on line 657.
+ 1 APPPATH\Controllers\Admin\Transaksi.php(657): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\laragon\\www\\bi_parking\\app\\Controllers\\Admin\\Transaksi.php', 657)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin\Transaksi->xenditCallback()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Transaksi))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-01 18:39:51 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Admin\Transaksi.php on line 657.
+ 1 APPPATH\Controllers\Admin\Transaksi.php(657): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\laragon\\www\\bi_parking\\app\\Controllers\\Admin\\Transaksi.php', 657)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin\Transaksi->xenditCallback()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Transaksi))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-01 19:59:51 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Admin\Transaksi.php on line 657.
+ 1 APPPATH\Controllers\Admin\Transaksi.php(657): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\laragon\\www\\bi_parking\\app\\Controllers\\Admin\\Transaksi.php', 657)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin\Transaksi->xenditCallback()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Transaksi))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-01 20:03:51 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Admin\Transaksi.php on line 657.
+ 1 APPPATH\Controllers\Admin\Transaksi.php(657): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\laragon\\www\\bi_parking\\app\\Controllers\\Admin\\Transaksi.php', 657)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin\Transaksi->xenditCallback()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Transaksi))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-01 20:08:52 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Admin\Transaksi.php on line 657.
+ 1 APPPATH\Controllers\Admin\Transaksi.php(657): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\laragon\\www\\bi_parking\\app\\Controllers\\Admin\\Transaksi.php', 657)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin\Transaksi->xenditCallback()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Transaksi))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-01 20:14:51 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Admin\Transaksi.php on line 657.
+ 1 APPPATH\Controllers\Admin\Transaksi.php(657): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\laragon\\www\\bi_parking\\app\\Controllers\\Admin\\Transaksi.php', 657)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin\Transaksi->xenditCallback()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Transaksi))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-01 20:19:51 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Admin\Transaksi.php on line 657.
+ 1 APPPATH\Controllers\Admin\Transaksi.php(657): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\laragon\\www\\bi_parking\\app\\Controllers\\Admin\\Transaksi.php', 657)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin\Transaksi->xenditCallback()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Transaksi))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-01 21:40:51 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Admin\Transaksi.php on line 657.
+ 1 APPPATH\Controllers\Admin\Transaksi.php(657): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\laragon\\www\\bi_parking\\app\\Controllers\\Admin\\Transaksi.php', 657)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin\Transaksi->xenditCallback()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Transaksi))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-01 23:00:50 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Admin\Transaksi.php on line 657.
+ 1 APPPATH\Controllers\Admin\Transaksi.php(657): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\laragon\\www\\bi_parking\\app\\Controllers\\Admin\\Transaksi.php', 657)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin\Transaksi->xenditCallback()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Transaksi))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-01 23:04:50 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Admin\Transaksi.php on line 657.
+ 1 APPPATH\Controllers\Admin\Transaksi.php(657): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\laragon\\www\\bi_parking\\app\\Controllers\\Admin\\Transaksi.php', 657)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin\Transaksi->xenditCallback()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Transaksi))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-01 23:09:50 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Admin\Transaksi.php on line 657.
+ 1 APPPATH\Controllers\Admin\Transaksi.php(657): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\laragon\\www\\bi_parking\\app\\Controllers\\Admin\\Transaksi.php', 657)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin\Transaksi->xenditCallback()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Transaksi))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-01 23:15:51 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Admin\Transaksi.php on line 657.
+ 1 APPPATH\Controllers\Admin\Transaksi.php(657): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\laragon\\www\\bi_parking\\app\\Controllers\\Admin\\Transaksi.php', 657)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin\Transaksi->xenditCallback()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Transaksi))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-01 23:20:51 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Admin\Transaksi.php on line 657.
+ 1 APPPATH\Controllers\Admin\Transaksi.php(657): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\laragon\\www\\bi_parking\\app\\Controllers\\Admin\\Transaksi.php', 657)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin\Transaksi->xenditCallback()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Transaksi))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

@@ -14,8 +14,6 @@ class Transaksi extends BaseController
     protected $JenisPembayaranModel;
     protected $hargaModel;
     protected $pager;
-    private $xenditCallbackToken = 'cYJxEJ38axyZym1Wjl3ua9aTiYfryiORBZGCJSTXNDsFhgz6';
-    
 
     public function __construct()
     {
@@ -28,8 +26,6 @@ class Transaksi extends BaseController
         $this->hargaModel = new \App\Models\HargaModel();
         $this->pager = \Config\Services::pager();
     }
-
-
     public function transaksi_inputkodebooking()
     {
         $data =
@@ -94,140 +90,64 @@ class Transaksi extends BaseController
     }
 
     public function transaksi_approve()
-{
-    $validationRules = [
-        'nomor_kartu' => [
-            'rules' => 'is_unique[kartu.nomor_kartu]',
-            'errors' => [
-                'is_unique' => 'Nomor Kartu ini Telah Digunakan Sebelumnya',
-                'required' => 'Harus Di Isi'
+    {
+        $validationRules = [
+            'nomor_kartu' => [
+                'rules' => 'is_unique[kartu.nomor_kartu]',
+                'errors' => [
+                    'is_unique' => 'Nomor Kartu ini Telah Digunakan Sebelumnya',
+                    'required' => 'Harus Di Isi'
+                ]
             ]
-        ]
-    ];
-
-    if (!$this->validate($validationRules)) {
-        session()->setFlashdata('error', $this->validator->listErrors());
-        return redirect()->to("admin/transaksi_inputkodebooking");
-    }
-
-    $kodebooking_transaksi = $this->request->getVar('kode_booking');
-    $nomor_kartu = $this->request->getVar('nomor_kartu');
-
-    $approvedBy = $this->userModel
-        ->where('npm', session('npm'))
-        ->first();
-
-    $pengguna = $this->userModel
-    ->join('transaksi', 'transaksi.npm = user.npm')
-    ->join('kartu', 'kartu.id_kartu = user.id_kartu')
-    ->where('kodebooking_transaksi', $kodebooking_transaksi)
-    ->first();
-
-    $transaksi = $this->transaksiModel
-        ->join('user', 'user.npm = transaksi.npm')
-        ->join('kartu', 'kartu.id_kartu = user.id_kartu')
-        ->join('jenis_pembayaran', 'jenis_pembayaran.id_jenis_pembayaran = transaksi.id_jenis_pembayaran')
-        ->where('kodebooking_transaksi', $kodebooking_transaksi)
-        ->first();
-
-    $this->transaksiModel->save([
-        'id_transaksi' => $transaksi['id_transaksi'],
-        'saldoawal_transaksi' => $transaksi['saldo'],
-        'saldoakhir_transaksi' => $transaksi['saldo'] + $transaksi['nominal_transaksi'],
-        'id_status_transaksi' => 3,
-        'validator' => $approvedBy['nama']
-    ]);
-
-    $kartuData = [
-        'id_kartu' => $transaksi['id_kartu'],
-        'saldo' => $transaksi['saldo'] + $transaksi['nominal_transaksi']
-    ];
-
-    if ($nomor_kartu) {
-        $kartuData['nomor_kartu'] = $nomor_kartu;
-    }
-
-    $this->kartuModel->save($kartuData);
-
-    $logData = [
-        'npm' => session('npm'),
-        'action' => 'transaksi_approve',
-        'details' => 'Transaksi dengan kode booking ' . $kodebooking_transaksi . ' disetujui',
-        'ip_address' => $this->request->getIPAddress()
-    ];
-
-    $logModel = new \App\Models\LogModel();
-    $logModel->insert($logData);
-
-    // Kirim email sebagai bukti pembayaran topup
-    $to = $pengguna['email'];
-    $subject = 'Bukti Pembayaran Topup';
-    $message = '
-        <html>
-        <head>
-            <style>
-                .container {
-                    max-width: 600px;
-                    margin: auto;
-                    padding: 20px;
-                    border: 1px solid #ccc;
-                    border-radius: 10px;
-                    font-family: Arial, sans-serif;
-                }
-                h1 {
-                    color: #333;
-                }
-                p {
-                    margin-bottom: 10px;
-                }
-                .bold {
-                    font-weight: bold;
-                }
-                .note {
-                    color: #999;
-                    font-size: 12px;
-                }
-                .footer {
-                    margin-top: 20px;
-                    text-align: center;
-                    color: #777;
-                    font-size: 12px;
-                }
-            </style>
-        </head>
-        <body>
-            <div class="container">
-                <h1>Bukti Pembayaran Topup</h1>
-                <p>Halo <span class="bold">' . $pengguna['nama'] . '</span>,</p>
-                <p>Terima kasih atas pembayaran Topup yang telah dilakukan. Berikut adalah rincian pembayaran:</p>
-                <p class="bold">Waktu Transaksi:</p>
-                <p>' . date('Y-m-d H:i:s') . '</p>
-                <p class="bold">Nominal Pembayaran:</p>
-                <p>Rp ' . number_format($transaksi['nominal_transaksi'], 0, ',', '.') . '</p>
-                <p class="bold">Sisa Saldo:</p>
-                <p>Rp ' . number_format($transaksi['saldoakhir_transaksi'], 0, ',', '.') . '</p>
-                <p class="bold">Metode Pembayaran:</p>
-                <p> ' . $transaksi['nama_jenis_pembayaran'] . '</p>
-                <p>Simpan email ini sebagai bukti pembayaran Anda.</p>
-                <p class="note">*Jika Anda tidak melakukan transaksi ini, mohon hubungi tim kami segera.</p>
-                <p>Salam,</p>
-                <p class="bold">Biu Parking Management</p>
-            </div>
-            <div class="footer">
-                Email ini dikirim secara otomatis. Mohon jangan membalas email ini.
-            </div>
-        </body>
-        </html>
-    ';
-
-    $email = \Config\Services::email();
-    $email->setTo($to);
-    $email->setFrom('biuparkingmanagement@gmail.com', 'Biu Parking Management');
-    $email->setSubject($subject);
-    $email->setMessage($message);
-    $email->setMailType('html'); // Mengatur jenis email sebagai HTML
-
-    if ($email->send()) {
+        ];
+    
+        if (!$this->validate($validationRules)) {
+            session()->setFlashdata('error', $this->validator->listErrors());
+            return redirect()->to("admin/transaksi_inputkodebooking");
+        }
+    
+        $kodebooking_transaksi = $this->request->getVar('kode_booking');
+        $nomor_kartu = $this->request->getVar('nomor_kartu');
+    
+        $approvedBy = $this->userModel
+            ->where('npm', session('npm'))
+            ->first();
+    
+        $transaksi = $this->transaksiModel
+            ->join('user', 'user.npm = transaksi.npm')
+            ->join('kartu', 'kartu.id_kartu = user.id_kartu')
+            ->where('kodebooking_transaksi', $kodebooking_transaksi)
+            ->first();
+    
+        $this->transaksiModel->save([
+            'id_transaksi' => $transaksi['id_transaksi'],
+            'saldoawal_transaksi' => $transaksi['saldo'],
+            'saldoakhir_transaksi' => $transaksi['saldo'] + $transaksi['nominal_transaksi'],
+            'id_status_transaksi' => 3,
+            'validator' => $approvedBy['nama']
+        ]);
+    
+        $kartuData = [
+            'id_kartu' => $transaksi['id_kartu'],
+            'saldo' => $transaksi['saldo'] + $transaksi['nominal_transaksi']
+        ];
+    
+        if ($nomor_kartu) {
+            $kartuData['nomor_kartu'] = $nomor_kartu;
+        }
+    
+        $this->kartuModel->save($kartuData);
+    
+        $logData = [
+            'npm' => session('npm'),
+            'action' => 'transaksi_approve',
+            'details' => 'Transaksi dengan kode booking ' . $kodebooking_transaksi . ' disetujui',
+            'ip_address' => $this->request->getIPAddress()
+        ];
+    
+        $logModel = new \App\Models\LogModel();
+        $logModel->insert($logData);
+    
         $data = [
             'title' => 'Parking Management System',
             'user' => $this->userModel
@@ -243,51 +163,53 @@ class Transaksi extends BaseController
                 ->first(),
             'harga' => $this->request->getVar('total_harga'),
         ];
-
+    
         return view('r_admin/transaksi_approve', $data);
-    } 
-}
-public function topup()
-{
-    // Validate the input data
-    if (!$this->validate([
-        'nominal' => [
-            'rules' => 'numeric',
-            'errors' => [
-                'numeric' => 'Pilih Nominal Saldo!',
-            ]
-        ],
-        'jenis_pembayaran' => [
-            'rules' => 'numeric|required',
-            'errors' => [
-                'numeric' => 'Pilih Metode Pembayaran!',
-                'required' => 'Pilih Metode Pembayaran!'
-            ]
-        ],
-    ])) {
-        session()->setFlashdata('error', $this->validator->listErrors());
-        return redirect()->back()->withInput();
     }
+    
+    
 
-    // Check user's status and ongoing transactions
-    $user = $this->userModel->where('npm', session('npm'))->first();
-    $transaksiData = $this->transaksiModel->where('npm', session('npm'))->findAll();
-    $transaksiJenis = array_column($transaksiData, 'id_status_transaksi');
-
-    if ($user['id_status'] == 1 && in_array(1, $transaksiJenis)) {
-        session()->setFlashdata('error', 'Transaksi gagal. Anda sudah memiliki transaksi yang sedang diproses.');
-        return redirect()->back()->withInput();
-    } elseif ($user['id_status'] == 2) {
-        $masaBerlaku = strtotime($user['masa_berlaku']);
-        $currentTime = time();
-
-        if ($masaBerlaku > $currentTime || in_array(1, $transaksiJenis)) {
-            session()->setFlashdata('error', 'Transaksi gagal. Anda sudah memiliki transaksi yang sedang diproses atau masa berlaku Member belum habis.');
+    public function topup()
+    {
+        // Validate the input data
+        if (!$this->validate([
+            'nominal' => [
+                'rules' => 'numeric',
+                'errors' => [
+                    'numeric' => 'Pilih Nominal Saldo!',
+                ]
+            ],
+            'jenis_pembayaran' => [
+                'rules' => 'numeric|required',
+                'errors' => [
+                    'numeric' => 'Pilih Metode Pembayaran!',
+                    'required' => 'Pilih Metode Pembayaran!'
+                ]
+            ],
+        ])) {
+            session()->setFlashdata('error', $this->validator->listErrors());
             return redirect()->back()->withInput();
         }
-    }
-
-    // Continue with the top-up process if conditions above are not met
+    
+        // Check user's status and ongoing transactions
+        $user = $this->userModel->where('npm', session('npm'))->first();
+        $transaksiData = $this->transaksiModel->where('npm', session('npm'))->findAll();
+        $transaksiJenis = array_column($transaksiData, 'id_status_transaksi');
+    
+        if ($user['id_status'] == 1 && in_array(1, $transaksiJenis)) {
+            session()->setFlashdata('error', 'Transaksi gagal. Anda sudah memiliki transaksi yang sedang diproses.');
+            return redirect()->back()->withInput();
+        } elseif ($user['id_status'] == 2) {
+            $masaBerlaku = strtotime($user['masa_berlaku']);
+            $currentTime = time();
+    
+            if ($masaBerlaku > $currentTime || in_array(1, $transaksiJenis)) {
+                session()->setFlashdata('error', 'Transaksi gagal. Anda sudah memiliki transaksi yang sedang diproses atau masa berlaku Member belum habis.');
+                return redirect()->back()->withInput();
+            }
+        }
+    
+        // Continue with the top-up process if conditions above are not met
     $kodebooking_transaksi = substr(str_shuffle(str_repeat("0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ", 6)), 0, 6);
     $npm = session('npm');
     $nominal_saldo = $this->request->getVar('nominal');
@@ -296,12 +218,50 @@ public function topup()
     $id_jenis_pembayaran = $this->request->getVar('jenis_pembayaran');
     $id_status_transaksi = $this->request->getVar('status_transaksi');
     $saldo_akhir = $saldo_awal + $nominal_saldo;
-    $fee_ewallet = $nominal_saldo * 0.020;
-    $fee_bank = $nominal_saldo * 0.250;
-    $fee_qris = $nominal_saldo * 0.010;
-    $params = [
+
+    if (!in_array($id_jenis_pembayaran, [1, 2, 3, 4, 5])) {
+        // Invalid jenis_pembayaran value
+        session()->setFlashdata('error', 'Metode pembayaran tidak valid.');
+        return redirect()->back()->withInput();
+    }
+
+    if (in_array($id_jenis_pembayaran, [1, 2])) {
+        // Handle direct top-up methods (without Xendit)
+        $transaksi = [
+            'kodebooking_transaksi' => $kodebooking_transaksi,
+            'npm' => $npm,
+            'id_jenis_transaksi' => $id_jenis_transaksi,
+            'saldoawal_transaksi' => $saldo_awal,
+            'nominal_transaksi' => $nominal_saldo,
+            'saldoakhir_transaksi' => $saldo_akhir,
+            'id_jenis_pembayaran' => $id_jenis_pembayaran,
+            'id_status_transaksi' => $id_status_transaksi
+            
+        ];
+        $this->transaksiModel->save($transaksi);
+
+        // Optionally, you can add a success message here.
+        session()->setFlashdata('success', 'Top-up berhasil dilakukan.');
+
+        // Redirect the user to a success page or any other appropriate page.
+        return redirect()->to("user/transaksi_result/$kodebooking_transaksi/$nominal_saldo/$id_jenis_pembayaran");
+    } else {
+        $transaksi = [
+            'kodebooking_transaksi' => $kodebooking_transaksi,
+            'npm' => $npm,
+            'id_jenis_transaksi' => $id_jenis_transaksi,
+            'saldoawal_transaksi' => $saldo_awal,
+            'nominal_transaksi' => $nominal_saldo,
+            'saldoakhir_transaksi' => $saldo_akhir,
+            'id_jenis_pembayaran' => $id_jenis_pembayaran,
+            'id_status_transaksi' => $id_status_transaksi
+            
+        ];
+        $this->transaksiModel->save($transaksi);
+        // Handle Xendit-based top-up methods
+        $params = [
             'external_id' => $kodebooking_transaksi,
-            'description' => 'TOPUP SALDO',
+            'description' => 'TOPUP-SALDO',
             'payer_email' => $user['email'],
             'customer_notification_preference' => [
                 'invoice_created' => ['email'],
@@ -309,42 +269,33 @@ public function topup()
                 'invoice_paid' => ['email'],
                 'invoice_expired' => ['email']
             ],
-            'payment_methods' => [],
-            'fees' => []
+            'success_redirect_url' => 'https://6e95-118-99-106-200.ngrok-free.app/user/riwayatTransaksi', // Corrected the URL format
+            'failure_redirect_url' => 'https://www.monyet.com', // Corrected the URL format
         ];
-    
-        if ($id_jenis_pembayaran == 1) {
-            $transaksi = [
-                'kodebooking_transaksi' => $kodebooking_transaksi,
-                'npm' => $npm,
-                'id_jenis_transaksi' => $id_jenis_transaksi,
-                'saldoawal_transaksi' => $saldo_awal,
-                'nominal_transaksi' => $nominal_saldo,
-                'saldoakhir_transaksi' => $saldo_akhir,
-                'id_jenis_pembayaran' => $id_jenis_pembayaran,
-                'id_status_transaksi' => $id_status_transaksi
-            ];
-            $this->transaksiModel->save($transaksi);
-    
-            // Optionally, you can add a success message here.
-            session()->setFlashdata('success', 'Top-up berhasil dilakukan.');
-    
-            // Redirect the user to a success page or any other appropriate page.
-            return redirect()->to("user/transaksi_result/$kodebooking_transaksi/$nominal_saldo/$id_jenis_pembayaran");
-        } elseif (in_array($id_jenis_pembayaran, [2, 3, 4])) {
-            if ($id_jenis_pembayaran == 2) {
+        switch ($id_jenis_pembayaran) {
+            case 3: // E-Wallet
+                $fee_ewallet = $nominal_saldo * 0.020;
                 $params['amount'] = $nominal_saldo + $fee_ewallet;
                 $params['payment_methods'] = ['OVO', 'DANA', 'SHOPEEPAY', 'LINKAJA'];
                 $params['fees'] = [['type' => 'ADMIN', 'value' => $fee_ewallet]];
-            } elseif ($id_jenis_pembayaran == 3) {
+                break;
+            case 4: // Bank Transfer
+                $fee_bank = $nominal_saldo * 0.250;
                 $params['amount'] = $nominal_saldo + $fee_bank;
                 $params['payment_methods'] = ['BCA', 'BNI', 'BSI', 'BRI', 'MANDIRI', 'PERMATA', 'SAHABAT_SAMPOERNA'];
                 $params['fees'] = [['type' => 'ADMIN', 'value' => $fee_bank]];
-            } elseif ($id_jenis_pembayaran == 4) {
+                break;
+            case 5: // QRIS
+                $fee_qris = $nominal_saldo * 0.010;
                 $params['amount'] = $nominal_saldo + $fee_qris;
                 $params['payment_methods'] = ['QRIS'];
                 $params['fees'] = [['type' => 'ADMIN', 'value' => $fee_qris]];
-            }
+                break;
+            default:
+                // Invalid jenis_pembayaran value (should not reach here if validated before)
+                session()->setFlashdata('error', 'Metode pembayaran tidak valid.');
+                return redirect()->back()->withInput();
+        }
 
         // Assuming XenditService is a custom class for interacting with Xendit API
         $xenditService = new XenditService();
@@ -363,84 +314,15 @@ public function topup()
             session()->setFlashdata('error', 'Terjadi kesalahan saat membuat invoice. Silakan coba lagi nanti.');
             return redirect()->back()->withInput();
         }
-    } else {
-        // Invalid jenis_pembayaran value
-        session()->setFlashdata('error', 'Metode pembayaran tidak valid.');
-        return redirect()->back()->withInput();
     }
 }
-    public function xenditCallback()
-{
-    // Menerima data callback dari Xendit
-    $rawData = file_get_contents('php://input');
-    $callbackData = json_decode($rawData, true);
+    
 
-    // Pastikan callbackData bukan null dan verifikasi Callback Verification Token
-    if ($callbackData) {
-        $xenditCallbackToken = $_SERVER['HTTP_X_CALLBACK_TOKEN'];
-        if ($xenditCallbackToken === $this->xenditCallbackToken) {
-            // Token sesuai, callback valid dari Xendit
-            // Lanjutkan dengan penanganan sesuai status pembayaran
-            $invoiceId = $callbackData['id'];
-            $status = $callbackData['status'];
-            $amount = $callbackData['amount'];
-            $externalId = $callbackData['external_id'];
 
-            if ($status === 'PAID') {
-                // Lakukan tindakan sesuai dengan pembayaran yang berhasil
-                // Misalnya, perbarui status pembayaran di database Anda dan berikan saldo ke pengguna
-                // Contoh:
-                $pengguna = $this->userModel
-                    ->join('transaksi', 'transaksi.npm = user.npm')
-                    ->join('kartu', 'kartu.id_kartu = user.id_kartu')
-                    ->where('kodebooking_transaksi', $externalId)
-                    ->first();
-                $transaksi = $this->transaksiModel
-                    ->join('user', 'user.npm = transaksi.npm')
-                    ->join('kartu', 'kartu.id_kartu = user.id_kartu')
-                    ->join('jenis_pembayaran', 'jenis_pembayaran.id_jenis_pembayaran = transaksi.id_jenis_pembayaran')
-                    ->where('kodebooking_transaksi', $externalId)
-                    ->first();
+    
+    
 
-                $this->transaksiModel->save([
-                    'id_transaksi' => $transaksi['id_transaksi'],
-                    'saldoawal_transaksi' => $transaksi['saldo'],
-                    'saldoakhir_transaksi' => $transaksi['saldo'] + $amount,
-                    'id_status_transaksi' => 3,
-                    'validator' => 'XENDIT'
-                ]);
 
-                $kartuData = [
-                    'id_kartu' => $transaksi['id_kartu'],
-                    'saldo' => $transaksi['saldo'] + $amount,
-                ];
-                $this->kartuModel->save($kartuData);
-
-                $logData = [
-                    'npm' => session('npm'),
-                    'action' => 'transaksi_approve',
-                    'details' => 'Transaksi dengan kode booking ' . $externalId . ' disetujui',
-                    'ip_address' => $this->request->getIPAddress()
-                ];
-
-                $logModel = new \App\Models\LogModel();
-                $logModel->insert($logData);
-                session()->setFlashdata('success', 'Top-up berhasil dilakukan.');
-                return redirect()->to("user/riwayatTransaksi");
-        
-            } elseif ($status === 'EXPIRED') {
-                session()->setFlashdata('error', 'Top-up Kadaluwarsa.');
-                return redirect()->to("user/riwayat");
-            } elseif ($status === 'FAILED') {
-                session()->setFlashdata('error', 'Top-up gagal.');
-                return redirect()->to("user/riwayatTransaksi");
-            }
-        } else {
-            session()->setFlashdata('error', 'GAGAL.');
-                return redirect()->to("user/riwayatTransaksi");
-        }
-    }
-}
 
     public function transaksi_kartuHilang()
 {
@@ -559,7 +441,6 @@ public function transaksi_result($booking_code, $nominal_saldo, $id_jenis_pembay
     return view('r_user/transaksi_formResult', $data);
 }
 
-
 public function riwayat()
 {
     $limit = 9; // Jumlah item per halaman
@@ -638,45 +519,43 @@ public function riwayat()
     return redirect()->back()->withInput();
 }
 
-    
-
-    public function bukti($id_transaksi)
-    {
-        $data = $this->request->getFile('bukti_pembayaran');
-        $id_transaksi_decoded = base64_decode($id_transaksi);
-        // Validasi ukuran file
-        if ($data->getSize() > 4 * 1024 * 1024) {
-            session()->setFlashdata('error', 'Ukuran file melebihi batas maksimum (4MB).');
-            return redirect()->back()->withInput();
-        }
-    
-        $fileName = date('YmdHis') . '_' . $data->getRandomName();
-        $uploadDir = 'uploads/bukti/';
-    
-        $data->move($uploadDir, $fileName);
-    
-        $user = $this->transaksiModel
-            ->join('jenis_transaksi', 'jenis_transaksi.id_jenis_transaksi = transaksi.id_jenis_transaksi')
-            ->join('status_transaksi', 'status_transaksi.id_status_transaksi = transaksi.id_status_transaksi')
-            ->where('id_transaksi', $id_transaksi_decoded)
-            ->first();
-    
-        $this->transaksiModel->update($user['id_transaksi'], ['bukti_pembayaran' => $fileName]);
-    
-        session()->setFlashdata('success', 'Bukti Berhasil diupload.');
+public function bukti($id_transaksi)
+{
+    $data = $this->request->getFile('bukti_pembayaran');
+    $id_transaksi_decoded = base64_decode($id_transaksi);
+    // Validasi ukuran file
+    if ($data->getSize() > 4 * 1024 * 1024) {
+        session()->setFlashdata('error', 'Ukuran file melebihi batas maksimum (4MB).');
         return redirect()->back()->withInput();
     }
+
+    $fileName = date('YmdHis') . '_' . $data->getRandomName();
+    $uploadDir = 'uploads/bukti/';
+
+    $data->move($uploadDir, $fileName);
+
+    $user = $this->transaksiModel
+        ->join('jenis_transaksi', 'jenis_transaksi.id_jenis_transaksi = transaksi.id_jenis_transaksi')
+        ->join('status_transaksi', 'status_transaksi.id_status_transaksi = transaksi.id_status_transaksi')
+        ->where('id_transaksi', $id_transaksi_decoded)
+        ->first();
+
+    $this->transaksiModel->update($user['id_transaksi'], ['bukti_pembayaran' => $fileName]);
+
+    session()->setFlashdata('success', 'Bukti Berhasil diupload.');
+    return redirect()->back()->withInput();
+}
     
     public function cetak($id_transaksi)
     {
         $transaksi = $this->transaksiModel
-            ->select('transaksi.*, user.nama, transaksi.*, user.email, jenis_transaksi.nama_jenis_transaksi, status_transaksi.nama_status_transaksi, jenis_pembayaran.nama_jenis_pembayaran')
             ->join('user', 'user.npm = transaksi.npm')
-            ->join('jenis_transaksi', 'jenis_transaksi.id_jenis_transaksi = transaksi.id_jenis_transaksi')
+            ->join('kartu', 'kartu.id_kartu = user.id_kartu')
             ->join('status_transaksi', 'status_transaksi.id_status_transaksi = transaksi.id_status_transaksi')
-            ->join('jenis_pembayaran', 'jenis_pembayaran.id_jenis_pembayaran = transaksi.id_jenis_pembayaran')
+            ->join('jenis_transaksi', 'jenis_transaksi.id_jenis_transaksi = transaksi.id_jenis_transaksi')
             ->where('id_transaksi', $id_transaksi)
             ->first();
+    
         $data = [
             'title' => 'Parking Management System',
             'user' => $this->userModel

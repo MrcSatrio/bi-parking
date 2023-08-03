@@ -7,7 +7,7 @@ use App\Controllers\BaseController;
 
 class XenditService extends BaseController
 {
-    private $api_key = 'xnd_development_a5B7mjTf8h9JjInsKBlmLsHAHVufOy7K468Yw3aYrzDbotiSYsXmRQ091Boxb';
+    private $api_key = 'xnd_development_0u4Yv65nvJdjycPu1G6VS9lZxXFBnIVMaPYwIgmhQhtSpWHlotJv8x3tR4Ipg';
 
     public function createInvoice($params)
     {

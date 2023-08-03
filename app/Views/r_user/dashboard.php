@@ -10,28 +10,6 @@
     <?php $data['showPopup'] = false; ?>
 <?php endif; ?>
 
-<!-- Menampilkan berkas terbaru -->
-<div class="container">
-    <?php
-    // Mengurutkan array berdasarkan waktu terbaru
-    usort($berkas, function ($a, $b) {
-        return strtotime($b->created_at) - strtotime($a->created_at);
-    });
-
-    // Mengambil satu berkas terbaru
-    $berkasTerbaru = array_slice($berkas, 0, 1);
-    ?>
-
-    <!-- Menampilkan berkas terbaru -->
-    <?php foreach ($berkasTerbaru as $row): ?>
-        <tr>
-            <td>
-                <embed src="<?= base_url('uploads/berkas/' . $row->berkas); ?>" type="application/pdf" width="100%" height="500px">
-            </td>
-        </tr>
-    <?php endforeach; ?>
-</div>
-
 <div class="row">
     <div class="col-xl-3 col-md-3 mb-4 mx-3">
         <div class="card border-left-primary shadow h-100 py-2">
@@ -85,49 +63,77 @@
         </div>
     </div>
 </div>
+<!-- Menampilkan berkas terbaru -->
+<div class="container">
+    <?php
+    // Mengurutkan array berdasarkan waktu terbaru
+    usort($berkas, function ($a, $b) {
+        return strtotime($b->created_at) - strtotime($a->created_at);
+    });
+
+    // Mengambil satu berkas terbaru
+    $berkasTerbaru = array_slice($berkas, 0, 1);
+    ?>
+
+    <!-- Menampilkan berkas terbaru -->
+    <?php foreach ($berkasTerbaru as $row): ?>
+        <tr>
+            <td>
+                <embed src="<?= base_url('uploads/berkas/' . $row->berkas); ?>" type="application/pdf" width="100%" height="500px">
+            </td>
+        </tr>
+    <?php endforeach; ?>
+</div>
+
+
 
 <!-- Popup -->
-<<div class="popup-overlay" id="popupOverlay">
+<div class="popup-overlay" id="popupOverlay">
     <div class="popup-content" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog" role="document">
+        <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="staticBackdropLabel">PERHATIAN</h5>
+                    <h5 class="modal-title text-center" id="staticBackdropLabel">PERHATIAN</h5>
+                    <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close" id="closePopupBtn">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
                 </div>
                 <div class="modal-body">
                     <?php
                     $pesan = ""; // Variabel untuk menyimpan pesan yang akan ditampilkan
 
                     if ($user['npm'] === $user['nomor_kartu']) {
-                        $pesan .= "<li>Harap Aktivasi kartu Anda.</li>";
+                        $pesan .= "<li>Harap Aktivasi kartu Anda ke Aslab.</li>";
                     }
-
+                    
                     if ($user['npm'] . '@gmail.com' === $user['email']) {
                         $pesan .= "<li>Harap Perbarui email Anda.</li>";
                     }
 
-                    if (md5($user['npm']) === ($user['password'])) {
+                    if ($user['npm'] . '.0@gmail.com' === $user['email']) {
+                        $pesan .= "<li>Harap Perbarui email Anda.</li>";
+                    }
+                    
+                    if (md5($user['npm']) === $user['password']) {
                         $pesan .= "<li>Harap Perbarui Password Anda.</li>";
                     }
-
+                    
                     if (!empty($pesan)) {
                         echo '<div class="alert alert-warning" role="alert">';
                         echo "<ul>";
                         echo $pesan;
                         echo "</ul>";
                         echo "</div>";
-                    }
+                    }                    
                     ?>
                 </div>
                 <?php if (!empty($pesan)): ?>
-                <div class="modal-footer">
-                    <button class="btn btn-secondary" type="button" data-bs-dismiss="modal" aria-label="Close" id="closePopupBtn">Tutup</button>
-                </div>
                 <?php endif; ?>
             </div>
         </div>
     </div>
 </div>
+
 
 <?php if (empty($pesan)): ?>
 <script>

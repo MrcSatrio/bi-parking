@@ -7,6 +7,11 @@
         <?= session()->getFlashdata('error'); ?>
     </div>
 <?php endif; ?>
+<?php if (!empty(session()->getFlashdata('success'))) : ?>
+    <div class="alert alert-success" role="alert">
+        <?= session()->getFlashdata('success'); ?>
+    </div>
+<?php endif; ?>
 
 <div class="row justify-content-center">
     <div class="col">
@@ -126,9 +131,6 @@
         </div>
     </div>
 </td>
-
-
-
                                 </tr>
                             <?php endforeach; ?>
                         </tbody>
