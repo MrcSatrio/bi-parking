@@ -39,40 +39,53 @@ class XenditCallback extends BaseController
             }
 
             $_externalId = $arrRequestInput['external_id'];
-        
-            $transaksi = $this->transaksiModel
-                ->join('user', 'user.npm = transaksi.npm')
-                ->join('kartu', 'kartu.id_kartu = user.id_kartu')
-                ->join('jenis_pembayaran', 'jenis_pembayaran.id_jenis_pembayaran = transaksi.id_jenis_pembayaran')
-                ->where('kodebooking_transaksi', $_externalId)
-                ->first();
-            
-            $pengguna = $this->userModel
-                ->join('transaksi', 'transaksi.npm = user.npm')
-                ->join('kartu', 'kartu.id_kartu = user.id_kartu')
-                ->where('kodebooking_transaksi', $_externalId)
-                ->first();
-            
-            if ($transaksi) {
-                $this->transaksiModel->save([
-                    'id_transaksi' => $transaksi['id_transaksi'],
-                    'saldoawal_transaksi' => $transaksi['saldo'],
-                    'saldoakhir_transaksi' => $transaksi['saldo'] + $transaksi['nominal_transaksi'],
-                    'nominal_transaksi' => $transaksi['nominal_transaksi'],
-                    'id_status_transaksi' => 3,
-                    'validator' => 'XENDIT'
-                ]);
-            
-                $kartuData = [
-                    'id_kartu' => $transaksi['id_kartu'],
-                    'saldo' => $transaksi['saldo'] + $transaksi['nominal_transaksi'],
-                ];
-                $this->kartuModel->save($kartuData);
-                session()->setFlashdata('success', 'Transaksi berhasil dilakukan melalui Xendit.');
-            } else {
-                // Optionally, you can add an error message here.
-                session()->setFlashdata('error', 'Transaksi tidak ditemukan.');
-            }
-            
-            // ... Continue with the previous code for handling Xendit callback token ...
-        }}}            
+$_status = $arrRequestInput['status'];
+
+if ($_status == "PAID") {
+    // Perform your necessary operations based on the transaction data for PAID status
+    $transaksi = $this->transaksiModel
+        ->join('user', 'user.npm = transaksi.npm')
+        ->join('kartu', 'kartu.id_kartu = user.id_kartu')
+        ->join('jenis_pembayaran', 'jenis_pembayaran.id_jenis_pembayaran = transaksi.id_jenis_pembayaran')
+        ->where('kodebooking_transaksi', $_externalId)
+        ->first();
+
+    if ($transaksi) {
+        $this->transaksiModel->save([
+            'id_transaksi' => $transaksi['id_transaksi'],
+            'saldoawal_transaksi' => $transaksi['saldo'],
+            'saldoakhir_transaksi' => $transaksi['saldo'] + $transaksi['nominal_transaksi'],
+            'nominal_transaksi' => $transaksi['nominal_transaksi'],
+            'id_status_transaksi' => 3,
+            'validator' => 'XENDIT'
+        ]);
+
+        $kartuData = [
+            'id_kartu' => $transaksi['id_kartu'],
+            'saldo' => $transaksi['saldo'] + $transaksi['nominal_transaksi'],
+        ];
+        $this->kartuModel->save($kartuData);
+        session()->setFlashdata('success', 'Transaksi berhasil dilakukan melalui Xendit.');
+    } else {
+        // Optionally, you can add an error message here.
+        session()->setFlashdata('error', 'Transaksi tidak ditemukan.');
+    }
+} elseif ($_status == "EXPIRED") {
+    $transaksi = $this->transaksiModel
+    ->join('user', 'user.npm = transaksi.npm')
+    ->join('jenis_pembayaran', 'jenis_pembayaran.id_jenis_pembayaran = transaksi.id_jenis_pembayaran')
+    ->where('kodebooking_transaksi', $_externalId)
+    ->first();
+    if ($transaksi) {
+        $this->transaksiModel->save([
+            'id_status_transaksi' => 4,
+        ]);
+
+} else {
+    // Invalid status
+    session()->setFlashdata('error', 'Status transaksi tidak valid.');
+    return redirect()->back();
+}
+
+// ... Continue with the previous code for handling Xendit callback token ...
+        }}}}
